@@ -1,0 +1,214 @@
+import React, { useContext, useEffect, useState } from 'react'
+import datascince from '../../Images/Datascience.png'
+import edx from '../../Images/edx_logo.svg'
+import harvard from '../../Images/harvard_logo.png'
+import Form from 'react-bootstrap/Form'
+import InputGroup from 'react-bootstrap/InputGroup'
+import FormControl from 'react-bootstrap/FormControl'
+import Button from 'react-bootstrap/Button'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
+import { useParams } from 'react-router'
+import { Context } from '../../Api'
+import EnquireNowForm from './../Course/EnquireNowForm';
+import { CurrencyContxt } from '../../Atoms/Contextcurrency';
+
+
+const Certificate = (props) => {
+
+
+    const [allcountryList, setallcountryList] = useState([])
+    const [countryLoad, setcountryLoad] = useState(false)
+
+
+    // setvalPhoneCode
+    const [selectphoneval, setselectphoneval] = useState([]);
+    function setvalPhone(e) {
+        setselectphoneval(e.target.value)
+    }
+    if (selectphoneval == 'Please select your country') {
+        setselectphoneval('')
+    }
+    // phoneSetvalue
+    const [phoneSetvalue, Updatephonevalue] = useState();
+
+    // currency inr/usd
+    const [contextcur, setContextCur] = useContext(CurrencyContxt)
+
+
+    return (
+        <div className='certification-courses full-w partner-marketing-affiliates would full-w'>
+            <div className="container bankingcxc">
+                <div className="row py-16 align-items-center">
+                    <div className="col-xxl-8 col-xl-7 col-12 pb-16 pb-xl-0">
+                        {props.data[0].category_title ?
+                            <h2 className="text-2xl sm:text-3xl xl:text-4xl mb-4 font-bold text-white uppercase">
+                                {props.data[0].category_title} {" "}
+                                <span className="orange-lgclr d-inline-block">
+                                    CERTIFICATION COURSE
+                                </span>
+                            </h2>
+                            : ''}
+                        <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
+                     
+                        {/* {props.data[0].courseList[0].CourseDetails ?
+                            <p className="text-base sm:text-lg text-gray-300 mb-4 font-medium tracking-wide" dangerouslySetInnerHTML={{ __html: props.data[0].courseList[0].CourseDetails }}>
+                            </p> : ""} */}
+
+
+
+                        <div className="row mb-4 text-white">
+                            <div className="col-xxl-6 col-12">
+                                <ul className="px-0 mb-0">
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+
+                                        Live Online
+                                    </li>
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+                                        Student Handouts
+                                    </li>
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+                                        E-learning
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="col-xxl-6 col-12">
+                                <ul className="px-0">
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+                                        Recorded Video
+                                    </li>
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+                                        Mock test
+                                    </li>
+                                    <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
+                                        <div className="mr-2">
+                                            <i className="shadow bi bi-check2 text-dark text-lg mr-1 bg-yellow-400 rounded px-1" />
+                                        </div>{" "}
+                                        Career Guidance
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="mt-5 mt-lg-4">
+                            <a
+                                href={"tel:" + contextcur.title}
+                                target="_blank"
+                                className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn"
+                            >
+                                <span><i className="fa mr-1 fa-phone"></i> {contextcur.title}</span>
+                            </a>
+
+
+
+
+                            {contextcur.currency === 'Asia/Kolkata' ?
+                                <a href="mailto:support@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        support@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'Asia/Singapore' ?
+                                <a href="mailto:support@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        support@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'America/New_York' ?
+                                <a href="mailto:info@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        info@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'SGT' ?
+                                <a href="mailto:support@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        support@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'Europe/London' ?
+                                <a href="mailto:info@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        info@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'Asia/Dubai' ?
+                                <a href="mailto:info@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        info@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+
+                            {contextcur.currency === 'Asia/Dhaka' ?
+                                <a href="mailto:support@careerera.com"
+                                    target='_blank'
+                                    className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+
+                                    <span className='lowercase'>
+                                        <i className="fa mr-2 fa-envelope"></i>
+                                        support@careerera.com
+                                    </span>
+                                </a>
+                                : ''}
+                        </div>
+
+                    </div>
+
+                    {/* form */}
+                    <EnquireNowForm />
+                </div>
+            </div>
+        </div>
+    )
+}
+export default Certificate

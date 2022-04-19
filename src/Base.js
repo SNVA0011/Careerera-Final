@@ -1,0 +1,1 @@
+export const base= "http://caching.careerera.com:9000/apiurl"
