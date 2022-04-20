@@ -7,6 +7,7 @@ import Accordion from "react-bootstrap/Accordion";
 import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel'
 import AnimatedNumbers from "react-animated-numbers";
+
 const Course = () => {
   const { value1, value2 } = useContext(Context)
   const [exactData] = value1
@@ -57,9 +58,6 @@ const Course = () => {
       window.removeEventListener('resize', handleWindowSizeChange);
     }
   }, []);
-
-
-  console.log('exactData-====>', exactData)
 
 
   return (

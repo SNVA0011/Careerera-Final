@@ -1,7 +1,4 @@
-import React, { useContext, useState } from "react";
-import { Context } from "../../Api";
-import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react"; 
 import Why from "../../Atoms/Why";
 
 const MWhy = (props) => {

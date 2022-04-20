@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button';
+import React from "react"; 
 import Why from "../../Atoms/Why";
 
 const CWhy = () => {

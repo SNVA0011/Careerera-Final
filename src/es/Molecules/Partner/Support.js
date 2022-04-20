@@ -1,6 +1,4 @@
-import React, { Fragment } from 'react'
-import pre from '../../../Images/pre_launch.png'
-import post from '../../../Images/post_launch.png'
+import React from 'react' 
 
 const Support = () => {
     return (

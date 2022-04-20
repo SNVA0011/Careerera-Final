@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react"; 
 import whysci_icon_1 from '../../../Images/46.png'
 import whysci_icon_2 from '../../../Images/61.png'
 import whysci_icon_3 from '../../../Images/2.7-MILLION.png'

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Modal from 'react-bootstrap/Modal'
-import Sign from "../Molecules/Course/Sign";
 const ConfirmPopup = () => {
   const [show, setShow] = useState(false);
 

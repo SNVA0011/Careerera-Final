@@ -10,8 +10,7 @@ import { Link } from "react-router-dom";
 const PostGraduation = () => {
     const { value1, value2 } = useContext(Context)
     const [exactData] = value1;
-    const [status] = value2;
-    console.log("bhi", exactData)
+    const [status] = value2; 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])

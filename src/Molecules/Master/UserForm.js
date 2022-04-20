@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React from "react"; 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -7,16 +6,7 @@ import m1 from "../../Images/m1.png";
 import m2 from "../../Images/m2.png";
 import m3 from "../../Images/m3.png";
 import m4 from "../../Images/m4.png";
-import m5 from "../../Images/m5.png";
-import m6 from "../../Images/m6.png";
-import m7 from "../../Images/m7.png";
-import m8 from "../../Images/m8.png";
-import m9 from "../../Images/m9.png";
-import m10 from "../../Images/m10.png";
-import m11 from "../../Images/m11.png";
-import m12 from "../../Images/m12.png";
-import m13 from "../../Images/m13.png";
-import m14 from "../../Images/m14.png";
+import m5 from "../../Images/m5.png"; 
 import "../../style.css";
 
 const options = {

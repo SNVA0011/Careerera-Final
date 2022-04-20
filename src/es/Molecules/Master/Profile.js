@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React  from "react"; 
 import batch from "../../../Images/batch_profile_2.png";
 import education from "../../../Images/education_bg_2.png";
 

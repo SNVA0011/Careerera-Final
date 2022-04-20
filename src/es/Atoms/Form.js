@@ -1,13 +1,11 @@
 import React, { useState, useContext, useRef,useEffect } from "react";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form'; 
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl'
 import { Context } from "../Api";
 import { CurrencyContxt } from "./Contextcurrency";
 import PopUpSuccess from "./PopUpSuccess";
-import ReCAPTCHA from "react-google-recaptcha";
-import context from "react-bootstrap/esm/AccordionContext";
+import ReCAPTCHA from "react-google-recaptcha"; 
 
 
 const Forms = () => {
@@ -54,8 +52,6 @@ const Forms = () => {
 
   // currency inr/usd
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
-
-
 
 
   useEffect(() => {
@@ -106,7 +102,7 @@ const Forms = () => {
     // } 
 
 
-    if (name != "" && email != "" && phoneSetvalue?.length > 0) {
+    if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0) {
       inputref_1.current.classList.remove('bg-red50-error')
       inputref_2.current.classList.remove('bg-red50-error')
       inputref_3.current.classList.remove('bg-red50-error')
@@ -125,7 +121,7 @@ const Forms = () => {
       formdata.append("Country", "INDIA");
       formdata.append("ip_address", "127.0.0.01");
       formdata.append("website_URL", "abc.com");
-      console.log("Response::::::::::", formdata)
+   
 
       fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
         .then(response => response.text())
@@ -150,9 +146,6 @@ const Forms = () => {
   function onChange(value) {
     console.log("Captcha value:", value)
   }
-
-  
-console.log("iiiiii",cntry)
 
   return (
     <div className="">
@@ -345,7 +338,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                       
                       <FormControl
                         placeholder="Teléfono*"
-                        type="tel"
+                        type="number"
                         className='dd placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                             h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
                         value={phoneSetvalue}

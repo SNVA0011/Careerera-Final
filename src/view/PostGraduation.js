@@ -12,7 +12,7 @@ const PostGraduation = () => {
     const { value1, value2 } = useContext(Context)
     const [exactData] = value1;
     const [status] = value2;
-    console.log("bhi", exactData)
+ 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])

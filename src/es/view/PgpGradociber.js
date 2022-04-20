@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Blog from "../Atoms/Blog";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
@@ -12,13 +12,11 @@ import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
 import Hero from "../Molecules/Master/Hero";
 import Light from "../Molecules/Master/Light";
-import MwhyStatic from "../Molecules/Master/MwhyStatic";
-import Profile from "../Molecules/Master/Profile";
+import MwhyStatic from "../Molecules/Master/MwhyStatic"; 
 import rolesoffer from "../../Images/oferta_deroles.png";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import CareerAssistance from '../Atoms/CareerAssistance';
-import { Helmet } from "react-helmet";
-import PopUp from "../Atoms/PopUp";
+import { Helmet } from "react-helmet"; 
 import { Link } from 'react-router-dom'
 import aiMlimg from '../../Images/data_science.png'
 
@@ -39,7 +37,7 @@ const PgpGradociber = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/cyber-security/programa-de-postgrado-en-seguridad-cibernetica" />
             </Helmet>
 
-            <PopUp title="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" />
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" /> */}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA"

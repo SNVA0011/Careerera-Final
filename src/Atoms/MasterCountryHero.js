@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
-import { Context, Provider } from "../Api";
+import { Context } from "../Api";
 import { CurrencyContxt } from './Contextcurrency';
 
 

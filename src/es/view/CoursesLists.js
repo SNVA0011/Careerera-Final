@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import "../style.css";
-import post from "../../Images/Post.svg";
+import "../style.css"; 
 import { Context } from "../Api";
 import fun from "../../Images/fun4.gif"
 import { Helmet } from 'react-helmet'

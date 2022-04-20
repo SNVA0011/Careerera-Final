@@ -56,10 +56,10 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setData(json.records));
-        console.log("1111", data)
+ 
         loadStatus(true)
     }
-    console.log("0000000", logger)
+ 
 
     async function getCourse() {
         const data = await fetch(base, {
@@ -69,7 +69,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records));
-        console.log("P", data)
+ 
 
 
         // const course = await fetch(

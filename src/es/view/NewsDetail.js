@@ -1,21 +1,17 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import Hero from '../Atoms/Hero'
 import blogs from '../../Images/blogs.png'
-import { useParams } from 'react-router'
-import news1 from '../../Images/news1.jpg'
+import { useParams } from 'react-router' 
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import { base } from '../../Base'
 
-
-
 const NewsDetail = () => {
   const [Eventdetails, setEventdetails] = useState([])
   const [Eventdetailssts, setEventdetailssts] = useState(false)
 
-  let { news } = useParams()
-  console.log('NewsDetail.js-news detail js=>', news)
+  let { news } = useParams() 
 
   // List of Eventdetail
   async function Eventsdetail() { 
@@ -28,9 +24,7 @@ const NewsDetail = () => {
   }, []).then((response) => response.json()).then((json) => setEventdetails(json.records));
   setEventdetailssts(true);
   }
-
-  console.log('Eventdetails=>', Eventdetails);
-  console.log('Eventdetailssts=>', Eventdetailssts);
+ 
 
   useEffect(() => {
     Eventsdetail()

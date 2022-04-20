@@ -14,7 +14,6 @@ const NewsDetail = () => {
   const [Eventdetailssts, setEventdetailssts] = useState(false)
 
   let { news } = useParams()
-  console.log('NewsDetail.js-news detail js=>', news)
 
   // List of Eventdetail
   async function Eventsdetail() {
@@ -27,10 +26,6 @@ const NewsDetail = () => {
   }, []).then((response) => response.json()).then((json) => setEventdetails(json.records));
   setEventdetailssts(true);
   }
-
-
-  console.log('Eventdetails=>', Eventdetails);
-  console.log('Eventdetailssts=>', Eventdetailssts);
 
   useEffect(() => {
     Eventsdetail()

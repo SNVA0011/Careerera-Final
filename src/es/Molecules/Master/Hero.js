@@ -1,11 +1,6 @@
-import React, { useContext, useEffect } from "react";
-import { Context } from "../../Api";
-import { useParams } from "react-router";
-import datascince from "../../../Images/Datascience.png";
-import edx from "../../../Images/edx_logo.svg";
-import harvard from "../../../Images/harvard_logo.png";
+import React  from "react"; 
 import "../../style.css";
-import { Route, useLocation, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 
 const Hero = (props) => {
@@ -13,10 +8,10 @@ const Hero = (props) => {
 
     return (
         <div className={"certification-courseslight full-w master overflow-hidden "
-            + (pagelocation.pathname === "/data-science/post-graduate-program-in-data-science" ? 'datascience' : '')
-            + (pagelocation.pathname === "/software-development/post-graduate-program-in-ui-and-ux-design" ? 'uiux' : '')
-            + (pagelocation.pathname === "/internet-marketing/post-graduate-program-in-digital-marketing" ? 'digitalmrk' : '')
-            + (pagelocation.pathname === "/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" || pagelocation.pathname === "/artificial-intelligence-and-machine-learning/programa-de-postgrado-en-inteligencia-artificial-y-aprendizaje-automatico" ? 'aimachine' : '')
+            + (pagelocation.pathname === "/es/data-science/post-graduate-program-in-data-science" ? 'datascience' : '')
+            + (pagelocation.pathname === "/es/software-development/post-graduate-program-in-ui-and-ux-design" ? 'uiux' : '')
+            + (pagelocation.pathname === "/es/internet-marketing/post-graduate-program-in-digital-marketing" ? 'digitalmrk' : '')
+            + (pagelocation.pathname === "/es/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" || pagelocation.pathname === "/es/artificial-intelligence-and-machine-learning/programa-de-postgrado-en-inteligencia-artificial-y-aprendizaje-automatico" ? 'aimachine' : '')
         }>
 
 
@@ -79,7 +74,7 @@ const Hero = (props) => {
                                 }
                             </span>
                         </a>
-                        <Link to={'/es/' + 'batch'} className="btn-site gray md:h-12 no-underline d-inline-block">
+                        <Link to={'batch'} className="btn-site gray md:h-12 no-underline d-inline-block">
                             <span><i className="bi bi-file-text-fill pr-1 text-lg"></i> Próximos lotes</span>
                         </Link>
                     </div>

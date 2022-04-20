@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from 'react-bootstrap/Modal'
 import Sign from "../Molecules/Course/Sign";
-import Forms from "./Form";
+ 
 const PopUp = (props) => {
   const [show, setShow] = useState(false);
 
@@ -23,7 +23,7 @@ const PopUp = (props) => {
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="p-0">
           {/* <div className="grid grid-cols-2 gap-2"> <div> </div> <div> <img src={ds} className="w-100"/> </div> </div> */}
-          <Sign title={props.title} />
+          <Sign title={props.title} Downloadprospectus={props.Downloadprospectus}/>
         </Modal.Body>
       </Modal>
     </>

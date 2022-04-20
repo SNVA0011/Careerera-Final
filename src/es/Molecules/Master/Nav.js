@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React from "react"; 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 

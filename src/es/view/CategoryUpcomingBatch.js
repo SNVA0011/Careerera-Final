@@ -29,6 +29,7 @@ export default function CategoryUpcomingBatch() {
         Catloadsts(true)
     }
 
+
     // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
@@ -60,10 +61,32 @@ export default function CategoryUpcomingBatch() {
 
             {Catsts ?
                 <div>
+
+                    {Catfinal[0].courseList.length == 0 ?
+                        <>
+                            <Hero title="PRÓXIMOS LOTES" />
+
+                            <section className="page_404 py-16">
+                                <div className="container text-center my-sm-3">
+                                    <div className="contant_box_404">
+                                        <i className="bi bi-exclamation-triangle text-danger text-5xl"></i>
+                                        <h3 className="text-xl md:text-2xl font-semibold text-blue-500 my-3">
+                                            No se han encontrado resultados
+                                        </h3>
+                                        <p className='text-base md:text-lg mb-4 font-semibold'>Haga clic en el botón de abajo para volver a la página de inicio.</p>
+                                        <Link to="/es/" className="btn-site invert w-auto no-underline md:h-12 d-inline-flex align-items-center">
+                                            <span>De vuelta a casa</span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </section>
+                        </>
+                        : ''}
+
                     {
                         Catfinal[0].courseList.filter(courseList => courseList.courseFUllURL === idbatchmain + '/' + idbatch).map((listcour, i) =>
                             <>
-                                <Hero title="UPCOMING BATCHES"
+                                <Hero title="PRÓXIMOS LOTES"
                                     batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
                                         <span className="mx-2"> / </span> {listcour.CourseTitel} </>} />
 
@@ -112,7 +135,7 @@ export default function CategoryUpcomingBatch() {
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                        <i class="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ₹{item.INR_Old_price}
@@ -134,12 +157,12 @@ export default function CategoryUpcomingBatch() {
                                                                                 }
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                         <i class="bi bi-building text-gray-500 mr-2"></i>
+                                                                                    <i class="bi bi-building text-gray-500 mr-2"></i>
                                                                                     Careerera ({item.workshop_id})
                                                                                 </p>
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                         <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                    <i class="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                     {item.batch_duration}
 
                                                                                     {item.Totalhour > 0 ?
@@ -147,7 +170,7 @@ export default function CategoryUpcomingBatch() {
                                                                                         : ''}
                                                                                 </p>
                                                                                 <p className="font-semibold mb-1">
-                                                                                       <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                    <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                     {item.batch_category}
                                                                                 </p>
 
@@ -218,7 +241,7 @@ export default function CategoryUpcomingBatch() {
 
                                                                                     {contextcur.currency === 'Asia/Kolkata' ?
                                                                                         <p className="font-semibold mb-1">
-                                                                                             <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                            <i class="bi bi-cash text-gray-500 mr-2"></i>
                                                                                             {' '}
                                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                                 ₹{dats.INR_Old_price}
@@ -245,12 +268,12 @@ export default function CategoryUpcomingBatch() {
                                                                                     </p>
 
                                                                                     <p className="font-semibold mb-1">
-                                                                                          <i class="bi bi-calendar4-event text-gray-500 mr-2"></i>
+                                                                                        <i class="bi bi-calendar4-event text-gray-500 mr-2"></i>
                                                                                         {dats.date}
                                                                                     </p>
 
                                                                                     <p className="font-semibold mb-1">
-                                                                                          <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                        <i class="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                         {dats.batch_duration}
 
                                                                                         {dats.Totalhour > 0 ?
@@ -258,7 +281,7 @@ export default function CategoryUpcomingBatch() {
                                                                                             : ''}
                                                                                     </p>
                                                                                     <p className="font-semibold mb-1">
-                                                                                          <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                        <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                         {dats.batch_category}
                                                                                     </p>
 

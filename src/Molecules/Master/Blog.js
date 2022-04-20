@@ -41,8 +41,6 @@ const options = {
 const Blog = (props) => {
     const final = props.data;
 
-    console.log('final-', final);
-
     return (
         <>
             {final ?

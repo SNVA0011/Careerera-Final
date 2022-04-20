@@ -38,7 +38,7 @@ const Course = () => {
         }, [])
             .then((response) => response.json())
             .then((json) => Catsetfinal(json.records));
-        console.log("P", data)
+ 
         Catloadsts(true)
     }
 

@@ -1,11 +1,6 @@
-import React, { useContext, useEffect } from "react";
-import { Context } from "../../Api";
-import { useParams } from "react-router";
-import datascince from "../../Images/Datascience.png";
-import edx from "../../Images/edx_logo.svg";
-import harvard from "../../Images/harvard_logo.png";
+import React from "react"; 
 import "../../style.css";
-import { Route, useLocation, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
  
 
 const Hero = (props) => {
@@ -73,7 +68,7 @@ const Hero = (props) => {
                         <a href="#query" className="btn-site invert md:h-12 mr-4 no-underline d-inline-block">
                             <span><i className="bi bi-envelope pr-1 text-lg"></i> Enquiry Now</span>
                         </a>
-                        <Link to={''+'batch'} className="btn-site gray md:h-12 no-underline d-inline-block">
+                        <Link to={'batch'} className="btn-site gray md:h-12 no-underline d-inline-block">
                             <span><i className="bi bi-file-text-fill pr-1 text-lg"></i> Upcoming Batch</span>
                         </Link>
                     </div>

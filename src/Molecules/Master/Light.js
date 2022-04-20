@@ -1,7 +1,5 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
-
-import csr from "../../Images/CyberSecurityRole.png"
+import React from "react"; 
+ 
 const Light = (props) => {
 
     return (

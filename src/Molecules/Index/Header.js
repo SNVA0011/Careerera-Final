@@ -1,6 +1,5 @@
 import React from 'react'
-import 'tailwindcss/tailwind.css'
-import Country from '../../Atoms/Country'
+import 'tailwindcss/tailwind.css' 
 import { Link } from 'react-router-dom'
 const Header = () => {
     return (

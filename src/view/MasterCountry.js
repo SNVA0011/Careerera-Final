@@ -30,11 +30,7 @@ const MasterCountry = () => {
     const [allfreeCourLoad, setallFreeCourLoad] = value10
 
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
-
-    console.log('contextcur->', contextcur)
-
-
-
+ 
     const [Catfinal, Catsetfinal] = useState([]);
     const [Catsts, Catloadsts] = useState(false);
 

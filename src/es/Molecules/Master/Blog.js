@@ -1,8 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
-import image1 from "../../../Images/image1.jpg";
-import image2 from "../../../Images/image2.jpg";
-import image3 from "../../../Images/image3.jpg";
+import React, { useContext } from "react"; 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';

@@ -4,7 +4,7 @@ import BatchDetail from "./BatchDetail";
 import { Helmet } from "react-helmet";
 const DetailBatch = () => {
     const citys = useParams();
-    console.log(",,,,", citys)
+ 
 
     useEffect(() => {
         window.scrollTo(0, 0)

@@ -49,10 +49,7 @@ export default function CyberSecurityCity() {
             .then((json) => setData(json.cityDetail));
         setLoad(true);
     }
-
-    console.log('data', data)
-
-
+ 
     useEffect(() => {
         CallData()
         window.scrollTo(0, 0);

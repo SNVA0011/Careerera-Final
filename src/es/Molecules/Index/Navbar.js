@@ -1,12 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../../../Images/logo.svg";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Course from "../../Atoms/Course";
-import Country from "../../Atoms/Country";
+import React, { useState, useContext, useEffect } from "react"; 
+import logo from "../../../Images/logo.svg"; 
 import { Provider } from "../../Api";
 import { Link } from "react-router-dom";
 import Flag from "../../Atoms/Flag";

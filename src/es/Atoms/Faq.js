@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../Api";
-import certi from "../../Images/certi.jpg";
+import React from "react"; 
 import Accordion from 'react-bootstrap/Accordion';
 import "../style.css";
 const Faq = (props) => {

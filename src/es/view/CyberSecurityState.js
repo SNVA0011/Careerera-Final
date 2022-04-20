@@ -21,7 +21,7 @@ import { base } from '../../Base'
 export default function CyberSecurityState() {
     const [conthide, setconthide] = useState(false);
     const cyberstate = useParams()
-    console.log("===>", cyberstate)
+ 
     function showMorecont() {
         setconthide((conthide) => (!conthide))
     }

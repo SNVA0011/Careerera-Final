@@ -1,9 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../Atoms/Hero";
 import blogs from "../../Images/blogs.png";
-import { useParams } from "react-router";
-import news1 from "../../Images/news1.jpg";
-import { Context, Provider } from "../Api";
+import { useParams } from "react-router"; 
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'

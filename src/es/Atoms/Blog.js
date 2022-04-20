@@ -1,7 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../Api";
-import certi from "../../Images/certi.jpg";
-import Accordion from 'react-bootstrap/Accordion';
+import React from "react"; 
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment'
 import OwlCarousel from 'react-owl-carousel';

@@ -1,9 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl'
-import { Context, Provider } from "../../Api";
+import React, { useState, useContext } from 'react'; 
+import { Context } from "../../Api";
 import { CurrencyContxt } from '../../Atoms/Contextcurrency';
 import logo from "../../../Images/logo.svg"
 import Forms from '../../Atoms/Form'

@@ -6,9 +6,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
 import AnimatedNumbers from "react-animated-numbers";
-import { Context } from '../../Api';
-import certificate from "../../../Images/Certificate.svg";
-import post from "../../../Images/Post.svg";
+import { Context } from '../../Api'; 
 
 
 export default function Courses() {

@@ -8,10 +8,7 @@ import { base } from '../Base'
 
 
 const InnerJob = () => {
-    const job = useParams();
-    console.log("jobid", job)
-
-
+    const job = useParams(); 
     const [innerjob, setinnerJob] = useState([])
     const [status, loadStatus] = useState([])
     async function getJob() {

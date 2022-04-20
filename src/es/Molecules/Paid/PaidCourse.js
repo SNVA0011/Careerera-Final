@@ -1,10 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Context, Provider } from '../../Api'
-import Spinner from 'react-bootstrap/Spinner'
-import { Link } from 'react-router-dom'
+import React, { useContext  } from 'react'
+import { Context, Provider } from '../../Api' 
 import fun from '../../../Images/fun4.gif'
-import { CurrencyContxt } from "../../Atoms/Contextcurrency";
-import ScrollAnimation from 'react-animate-on-scroll';
+import { CurrencyContxt } from "../../Atoms/Contextcurrency"; 
 
 const PaidCourse = () => {
     // All courses Api

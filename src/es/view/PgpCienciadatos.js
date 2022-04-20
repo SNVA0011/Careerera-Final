@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import Blog from "../Atoms/Blog";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
@@ -17,8 +17,7 @@ import Profile from "../Molecules/Master/Profile";
 import rolesoffer from "../../Images/roles_offer.png";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import CareerAssistance from '../Atoms/CareerAssistance';
-import { Helmet } from "react-helmet";
-import PopUp from "../Atoms/PopUp";
+import { Helmet } from "react-helmet"; 
 import { Link } from 'react-router-dom'
 import aiMlimg from '../../Images/data_science.png'
 
@@ -38,7 +37,7 @@ const PgpCienciadatos = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/data-science/programa-de-postgrado-en-ciencia-de-datos" />
             </Helmet>
 
-            <PopUp title="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS" />
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS" /> */}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS"

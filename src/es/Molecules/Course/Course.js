@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import "../../style.css";
 import { Context } from "../../Api";
+
 const Courses = () => {
   const { value5, value6 } = useContext(Context);
   const [Catfinal, Catsetfinal] = value5;

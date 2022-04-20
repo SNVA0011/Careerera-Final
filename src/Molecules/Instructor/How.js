@@ -4,9 +4,7 @@ import discuss from '../../Images/ai.png'
 import schedule from '../../Images/tp.png'
 import meet from '../../Images/st.png'
 import pen from '../../Images/ct.png'
-import tool from '../../Images/ca.png'
-import Testimonial from '../../Atoms/Testimonial'
-import deepak from '../../Images/deepak.png'
+import tool from '../../Images/ca.png' 
 import AnimatedNumbers from "react-animated-numbers";
 
 const How = () => {

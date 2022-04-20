@@ -1,6 +1,4 @@
-import React, { useContext } from 'react'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+import React, { useContext } from 'react' 
 import logo from '../../../Images/logo.svg'
 import '../../style.css'
 import Flag from '../../Atoms/Flag'

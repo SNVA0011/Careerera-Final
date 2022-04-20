@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Context, Provider } from '../Api'
-import { useParams, } from "react-router";
-import PgpDatascience from "./PgpDataScience";
+import { useParams, } from "react-router"; 
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import { Link } from "react-router-dom";
 import fun from "../../Images/fun4.gif"

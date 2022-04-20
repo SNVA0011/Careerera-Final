@@ -1,8 +1,5 @@
 import React from "react";
-import i1 from "../../Images/banner.svg";
-import i2 from "../../Images/onlin.svg";
-import i3 from "../../Images/edu.svg";
-
+import i1 from "../../Images/banner.svg"; 
 
 const SideIcon = () => {
     return (

@@ -1,15 +1,11 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Context, Provider } from '../Api'
-import { useParams, } from "react-router";
-import Hero from "../Molecules/Master/Hero";
-import PgpDatascience from "./PgpDataScience";
+import { useParams, } from "react-router"; 
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import { Link } from "react-router-dom";
-import fun from "../../Images/fun4.gif"
-import CountryFooter from "../Atoms/CountryFooter";
+import fun from "../../Images/fun4.gif" 
 import Contactfooter from "../Atoms/Contactfooter";
-import { Helmet } from "react-helmet";
-import StateFooter from "../Atoms/StateFooter";
+import { Helmet } from "react-helmet"; 
 import CityFooter from "../Atoms/CityFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import { base } from '../../Base'

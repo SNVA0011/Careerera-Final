@@ -1,16 +1,14 @@
-import React, { useState, useContext, useRef,useEffect } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl'
 import { Context } from "../Api";
 import { CurrencyContxt } from "./Contextcurrency";
 import PopUpSuccess from "./PopUpSuccess";
 import ReCAPTCHA from "react-google-recaptcha";
-import context from "react-bootstrap/esm/AccordionContext";
+import ZipProspectus from '../Prospectus/PGP-Data-Science.zip'
 
-
-const Forms = () => {
+const Forms = (props) => {
   // FormData
   const [name, setName] = useState("")
   const [email, setemail] = useState("")
@@ -25,7 +23,7 @@ const Forms = () => {
   const inputref_3 = useRef();
   const inputref_4 = useRef();
 
- 
+
 
   // loading
   const [Response, setResponse] = useState(false)
@@ -69,16 +67,13 @@ const Forms = () => {
     myHeaders.append("Cookie", "PHPSESSID=akhmi5a0hkp33oim1o11vkd990");
 
     var formdata = new FormData();
-
-
-
     const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (name === "") {
       alert("Please Enter Full Name")
       inputref_1.current.focus();
       inputref_1.current.classList.add('bg-red50-error')
-    } 
+    }
     else if (email === "") {
       inputref_1.current.classList.remove('bg-red50-error')
       alert("Please Enter Email")
@@ -95,9 +90,9 @@ const Forms = () => {
       inputref_2.current.classList.remove('bg-red50-error')
       alert("Please Enter Mobile No")
       inputref_3.current.focus();
-      inputref_3.current.classList.add('bg-red50-error') 
+      inputref_3.current.classList.add('bg-red50-error')
     }
-    else{
+    else {
       inputref_3.current.classList.remove('bg-red50-error')
     }
     // else if (Notes == "") {
@@ -106,7 +101,7 @@ const Forms = () => {
     // } 
 
 
-    if (name != "" && email != "" && phoneSetvalue?.length > 0) {
+    if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0) {
       inputref_1.current.classList.remove('bg-red50-error')
       inputref_2.current.classList.remove('bg-red50-error')
       inputref_3.current.classList.remove('bg-red50-error')
@@ -125,25 +120,30 @@ const Forms = () => {
       formdata.append("Country", "INDIA");
       formdata.append("ip_address", "127.0.0.01");
       formdata.append("website_URL", "abc.com");
-      console.log("Response::::::::::", formdata)
+
 
       fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
         .then(response => response.text())
         .then(result => setResponse(result))
         .catch(error => console.log('error', error));
-        setvalue(true)
-        setTimeout(function(){
-          setName('');
-          setemail('');
-          Updatephonevalue('');
-           setNotes('');
-           inputref_1.current.value = '';
-           inputref_2.current.value = '';
-           inputref_3.current.value = '';
-        },2000);
-        setTimeout(function(){
-           setvalue(false)
-        },4000);
+      setvalue(true)
+
+      setTimeout(function () {
+        setName('');
+        setemail('');
+        Updatephonevalue('');
+        setNotes('');
+        inputref_1.current.value = '';
+        inputref_2.current.value = '';
+        inputref_3.current.value = '';
+      }, 2000);
+      setTimeout(function () {
+        if (props.prospectusfile == true) {
+          window.location = ZipProspectus
+        }
+
+        setvalue(false) 
+      }, 4000);
     }
   }
 
@@ -151,8 +151,8 @@ const Forms = () => {
     console.log("Captcha value:", value)
   }
 
-  
-console.log("iiiiii",cntry)
+
+
 
   return (
     <div className="">
@@ -234,118 +234,118 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   <>
                     <InputGroup className="bg-white">
 
-                    {contextcur.currency == "Asia/Kolkata" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[3].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
+                      {contextcur.currency == "Asia/Kolkata" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[3].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
 
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
 
 
-                        {contextcur.currency == "Asia/Singapore" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[7].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
+                      {contextcur.currency == "Asia/Singapore" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[7].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
 
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
 
-                        {contextcur.currency == "America/New_York" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[6].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
+                      {contextcur.currency == "America/New_York" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[6].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
 
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
-                        {contextcur.currency == "SGT" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[194].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
+                      {contextcur.currency == "SGT" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[194].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
 
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
 
-                        {contextcur.currency == "Europe/London" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[2].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                      {contextcur.currency == "Europe/London" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[2].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
 
-                        {contextcur.currency == "Asia/Dubai" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[5].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
+                      {contextcur.currency == "Asia/Dubai" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[5].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          } &nbsp;
+                        </InputGroup.Text>
 
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        : <div>
+                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                          </div>}
+                        </div>}
 
 
-                        {contextcur.currency == "Asia/Dhaka" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[30].phonecode :
-                              selectphoneval.toString().split(',')[0] } &nbsp; 
-                          </InputGroup.Text>
-                          : ''}
-                        {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                      {contextcur.currency == "Asia/Dhaka" ?
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval == '' ? cntry[30].phonecode :
+                            selectphoneval.toString().split(',')[0]} &nbsp;
+                        </InputGroup.Text>
+                        : ''}
+                      {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
-                    
 
-                      
+
+
                       <FormControl
                         placeholder="Phone*"
-                        type="tel"
+                        type="number"
                         className='dd placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                             h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
                         value={phoneSetvalue}

@@ -4,9 +4,7 @@ import discuss from '../../Images/network.png'
 import schedule from '../../Images/workforce.png'
 import meet from '../../Images/calculate.png'
 import pen from '../../Images/way.png'
-import tool from '../../Images/skill.png'
-import Testimonial from '../../Atoms/Testimonial'
-import deepak from '../../Images/deepak.png'
+import tool from '../../Images/skill.png' 
 
 const Reason = () => {
     return (
@@ -37,7 +35,7 @@ const Reason = () => {
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">
                                     Realize big rewards for a part-time assignment.
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     As a Careerera instructor, you'll teach 4-14+ weeks
                                     per year. You're free to spend the majority of your
                                     time pursuing other professional opportunities and
@@ -62,7 +60,7 @@ const Reason = () => {
                                     Network with top IT professionals from Fortune 1000
                                     companies.
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     Grow your consulting practice from the classroom.
                                     Gain new clients while demonstrating expertise and
                                     teaching skills that showcase your consulting
@@ -87,7 +85,7 @@ const Reason = () => {
                                     Enjoy full logistical and operational support for
                                     flawless course execution.
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     Concentrate on what you do best in the classroom
                                     ...teaching! Careerera manages course development,
                                     ships hardware, software and course notes, plus
@@ -114,7 +112,7 @@ const Reason = () => {
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">
                                     Expand your skills.
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     Careerera encourages your professional growth. You
                                     will have the opportunity to audit many of our
                                     courses, in or outside your field of expertise. We
@@ -143,7 +141,7 @@ const Reason = () => {
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">
                                     Find scheduling flexibility.
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     A scheduling coordinator dedicated to your course(s)
                                     and sensitive to your individual availability will
                                     work with you on short- and long-term schedules.
@@ -167,7 +165,7 @@ const Reason = () => {
                                     Gain immediate access to the latest advances in
                                     software and hardware
                                 </h4>
-                                <p className="text-base">
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">
                                     Careerera begins instruction on new technologies
                                     often before the product is offered for public sale.
                                     You have access to all course-specific information,

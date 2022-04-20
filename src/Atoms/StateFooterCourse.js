@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
-import { Link } from "react-router-dom";
-import { useParams } from 'react-router'
+import { Link } from "react-router-dom"; 
 import { base } from '../Base'
 
 const StateFooterCourse = (props) => {
@@ -22,9 +21,7 @@ const StateFooterCourse = (props) => {
       .then((json) => setdata(json.countyList));
     setload(true)
   }
-
-  console.log('props.title-',props.title)
-  console.log('props.id-',props.id)
+ 
 
   useEffect(() => {
     CallApi()

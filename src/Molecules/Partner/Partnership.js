@@ -1,11 +1,9 @@
 import React from 'react'
 import application from '../../Images/application.png'
 import discuss from '../../Images/discuss.png'
-import schedule from '../../Images/schedule.png'
-import meet from '../../Images/meet.png'
+import schedule from '../../Images/schedule.png' 
 import pen from '../../Images/pen.png'
-import tool from '../../Images/tool.png'
-import Testimonial from '../../Atoms/Testimonial'
+import tool from '../../Images/tool.png' 
 import deepak from '../../Images/deepak.png'
 
 const Partnership = () => {

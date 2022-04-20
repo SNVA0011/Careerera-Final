@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React  from "react"; 
 import "../../style.css";
 import Retail from '../../Images/data-science-icon/Retail.png'
 import Ecommerce from '../../Images/data-science-icon/E-commerce.png'

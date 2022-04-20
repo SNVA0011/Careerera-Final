@@ -1,11 +1,7 @@
-import React, { useContext, useState } from "react";
-import { Context } from "../Api";
-import Collapse from 'react-bootstrap/Collapse';
-import Button from 'react-bootstrap/Button';
+import React from "react";
 
 const DataScience = (props) => {
         const final = props.data;
-
 
         return (
                 <>

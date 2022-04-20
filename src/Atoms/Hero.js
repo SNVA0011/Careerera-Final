@@ -1,5 +1,5 @@
 import React from 'react'
-import pic1 from '../Images/Datascience4.png'
+ 
 const Hero = (props) => {
    
     return (

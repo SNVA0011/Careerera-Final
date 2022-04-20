@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Blog from "../Atoms/Blog";
+import React, { useEffect } from "react"; 
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
 import Highlight from "../Atoms/Highlight";
@@ -13,13 +12,10 @@ import Completition from "../Molecules/Master/Completition";
 import Hero from "../Molecules/Master/Hero";
 import Light from "../Molecules/Master/Light";
 import MwhyStatic from "../Molecules/Master/MwhyStatic";
-import Profile from "../Molecules/Master/Profile";
-import rolesoffer from "../../Images/oferta_deroles.png";
+import Profile from "../Molecules/Master/Profile"; 
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import CareerAssistance from '../Atoms/CareerAssistance';
-import { Helmet } from "react-helmet";
-import PopUp from "../Atoms/PopUp";
-import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet"; 
 import aiMlimg from '../../Images/ai-ml-img.jpg'
 import Contentvariar from "../../Images/data-science-icon/Content-management-system.png"
 import Avariar from "../../Images/data-science-icon/A-client-services.png"
@@ -51,7 +47,7 @@ const PgpAidizaje = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/artificial-intelligence-and-machine-learning/programa-de-postgrado-en-inteligencia-artificial-y-aprendizaje-automatico" />
             </Helmet>
 
-            <PopUp title="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO" />
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO" /> */}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO"

@@ -72,10 +72,7 @@ const BatchDetail = (props) => {
     window.scrollTo(0, 0);
   }, [contextcur.currency])
 
-  console.log("date====>", date)
-  console.log("workid.workid  ====>", workid.workid)
-  console.log(Load ? ('Detail==>', Detail) : 'Api Load...');
-
+ 
   return (
     <>
 

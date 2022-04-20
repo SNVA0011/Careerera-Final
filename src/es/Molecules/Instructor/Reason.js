@@ -4,9 +4,7 @@ import discuss from '../../../Images/network.png'
 import schedule from '../../../Images/workforce.png'
 import meet from '../../../Images/calculate.png'
 import pen from '../../../Images/way.png'
-import tool from '../../../Images/skill.png'
-import Testimonial from '../../Atoms/Testimonial'
-import deepak from '../../../Images/deepak.png'
+import tool from '../../../Images/skill.png' 
 
 const Reason = () => {
     return (
@@ -35,7 +33,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Obtenga grandes recompensas por una asignación de medio tiempo.</h4>
 
-                                <p className="text-base">Como instructor de Careerera, enseñará de 4 a 14 semanas o más
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Como instructor de Careerera, enseñará de 4 a 14 semanas o más
                                     por año. Eres libre de gastar la mayor parte de tu
                                     tiempo buscando otras oportunidades profesionales y
                                     objetivos.</p>
@@ -56,7 +54,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Red con los mejores profesionales de TI de Fortune 1000 empresas.</h4>
 
-                                <p className="text-base">Haga crecer su práctica de consultoría desde el aula.
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Haga crecer su práctica de consultoría desde el aula.
                                     Obtenga nuevos clientes mientras demuestra experiencia y
                                     habilidades de enseñanza que muestran su consultoría
                                     talentos.</p>
@@ -77,7 +75,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Disfrute de todo el apoyo logístico y operativo para ejecución impecable del curso.</h4>
 
-                                <p className="text-base">Concéntrate en lo que haces mejor en el aula.
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Concéntrate en lo que haces mejor en el aula.
                                     ...¡enseñando! Careerera gestiona el desarrollo del curso,
                                     incluye hardware, software y notas del curso, además
                                     coordina el viaje y el alojamiento, y nos encargamos de todo
@@ -101,7 +99,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Amplíe sus habilidades.</h4>
 
-                                <p className="text-base">Careera fomenta tu crecimiento profesional. Tú
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Careera fomenta tu crecimiento profesional. Tú
                                     tendrá la oportunidad de auditar muchos de nuestros
                                     cursos, dentro o fuera de su campo de especialización. Nosotros
                                     también ofrecen programas de capacitación y tutoría
@@ -127,7 +125,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Encuentre flexibilidad de horarios.</h4>
 
-                                <p className="text-base">Un coordinador de programación dedicado a su(s) curso(s)
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Un coordinador de programación dedicado a su(s) curso(s)
                                     y sensible a su disponibilidad individual
                                     trabajar con usted en horarios a corto y largo plazo.</p>
                             </div>
@@ -147,7 +145,7 @@ const Reason = () => {
                             <div className="text-left pl-5">
                                 <h4 className="font-semibold text-xl md:text-2xl mb-2">Obtenga acceso inmediato a los últimos avances en software y hardware</h4>
 
-                                <p className="text-base">Carrera inicia instrucción en nuevas tecnologías
+                                <p className="text-base font-medium md:text-lg text-gray-500 mb-0 mt-2">Carrera inicia instrucción en nuevas tecnologías
                                     a menudo antes de que el producto se ofrezca a la venta pública.
                                     Tienes acceso a toda la información específica del curso,
                                     historial y actualizaciones. También tienes una línea abierta de

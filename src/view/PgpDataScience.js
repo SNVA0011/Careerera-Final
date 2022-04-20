@@ -55,7 +55,11 @@ const PgpDataScience = (props) => {
 
 
             </Helmet>
-            <PopUp title="Post Graduate Program in Data Science" />
+
+            <PopUp
+             title="Post Graduate Program in Data Science" 
+              Downloadprospectus={true} />
+
             <Hero
                 categoryUrl="DATA SCIENCE"
                 duration="12-Months Online Program"
@@ -730,11 +734,13 @@ const PgpDataScience = (props) => {
                 box1='Learn Insights on Futuristic Approaches'
                 box2='Workshops on Resume Review & Interview Preparation'
                 box3='Career Guidance and Mentorship by Careerera and Industry Leaders' />
+
             <Light image={roles} />
+
             <UserformsApplication />
-            <Sign
-                title="Data Science"
-            />
+
+            <Sign title="Data Science"  Downloadprospectus={true} />
+
             <Faq
 
                 ques1="Q1 : What is the PGP in Data Science course from Careerera and what makes it different from individual courses?"

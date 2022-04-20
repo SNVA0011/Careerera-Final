@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React from "react"; 
 import data2 from "../../../Images/Datascience1.png";
 import "../../style.css"
 const Completition = (props) => {

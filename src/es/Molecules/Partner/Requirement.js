@@ -1,7 +1,4 @@
-import React from 'react'
-import requiremnet1 from '../../../Images/requirement-1.png'
-import requiremnet2 from '../../../Images/requirement-2.png'
-import requiremnet3 from '../../../Images/requirement-3.png'
+import React from 'react' 
 
 const Requirement = () => {
     return (

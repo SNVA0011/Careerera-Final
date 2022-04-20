@@ -1,11 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import partner from '../../../Images/Partner.jpg'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+import FormControl from 'react-bootstrap/FormControl' 
 import { Context, Provider } from "../../Api";
 import { CurrencyContxt } from '../../Atoms/Contextcurrency'
 

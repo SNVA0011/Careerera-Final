@@ -1,15 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
-import datascince from '../../../Images/Datascience.png'
-import edx from '../../../Images/edx_logo.svg'
-import harvard from '../../../Images/harvard_logo.png'
-import Form from 'react-bootstrap/Form'
-import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
-import Button from 'react-bootstrap/Button'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
-import { useParams } from 'react-router'
-import { Context } from '../../Api'
+import React, {useState } from 'react'
 import EnquireNowForm from './../Course/EnquireNowForm';
 
 

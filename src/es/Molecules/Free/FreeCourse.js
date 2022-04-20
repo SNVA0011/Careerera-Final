@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Context, Provider } from '../../Api'
-import Spinner from 'react-bootstrap/Spinner'
+import { Context, Provider } from '../../Api' 
 import { Link } from 'react-router-dom'
 import fun from '../../../Images/fun4.gif'
 import { CurrencyContxt } from "../../Atoms/Contextcurrency";

@@ -8,9 +8,7 @@ export default function Contactfooter() {
             <div className='container pt-16 pb-10'>
                 <h3 className='font-semibold text-3xl mb-2'>Contact Us</h3>
                 <span className="heading-border-line m-0 d-block left-0 mb-5"></span>
-
-
-
+                
                 <div className='full-w contact-page'>
                     {contextcur.currency === 'Asia/Kolkata' ? (
                         <div className="row">

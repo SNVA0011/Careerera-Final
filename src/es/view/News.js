@@ -1,10 +1,7 @@
-import news from '../../Images/news.png'
-import news1 from '../../Images/news1.jpg'
+import news from '../../Images/news.png' 
 
-import React, { useContext, useState, useEffect } from 'react'
-import Hero from '../Atoms/Hero'
-import blogs from '../../Images/blogs.png'
-import { Context, Provider } from '../Api'
+import React, {   useState, useEffect } from 'react'
+import Hero from '../Atoms/Hero' 
 import fun from '../../Images/fun4.gif'
 import { Link } from 'react-router-dom'
 import Moment from 'react-moment'

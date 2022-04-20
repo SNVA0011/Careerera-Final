@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
-import Accordion from 'react-bootstrap/Accordion';
+import React from "react"; 
 import "../../style.css";
 
 const Cariculam = (props) => {

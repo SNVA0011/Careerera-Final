@@ -11,8 +11,7 @@ import UserformsApplication from '../Molecules/Course/UserformsApplication';
 import { Helmet } from 'react-helmet'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
-import CountryFooterCourse from '../Atoms/CountryFooterCourse';
+import EnquireNowForm from '../Molecules/Course/EnquireNowForm'; 
 import { useParams } from 'react-router';
 import StateFooterCourse from '../Atoms/StateFooterCourse';
 import { base } from '../../Base'

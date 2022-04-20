@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from 'react-bootstrap/Modal'
 import Sign from "../Molecules/Course/Sign";
-import Forms from "./Form";
+ 
 const PopUp = (props) => {
   const [show, setShow] = useState(false);
 

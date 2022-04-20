@@ -2,8 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router";
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import Accordion from 'react-bootstrap/Accordion'
-import { Link } from "react-router-dom";
-import { ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom"; 
 import { Helmet } from 'react-helmet'
 import Hero from "./../Atoms/Hero";
 import fun from '../../Images/fun4.gif'
@@ -71,9 +70,7 @@ const BatchDetail = (props) => {
     window.scrollTo(0, 0);
   }, [contextcur.currency])
 
-  console.log("date====>", date)
-  console.log("workid.workid  ====>", workid.workid )
-  console.log(Load ? ('Detail==>',Detail) : 'Api Load...');
+ 
 
   return (
     <>

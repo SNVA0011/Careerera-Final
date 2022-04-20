@@ -1,11 +1,5 @@
 import React from "react";
-import data from "../../../Images/Data_Science_Image.jpg"
-import m1 from "../../../Images/m1.png";
-import m2 from "../../../Images/m2.png";
-import m3 from "../../../Images/m3.png";
-import m4 from "../../../Images/m4.png";
-import m5 from "../../../Images/m5.png";
-import m6 from "../../../Images/m6.png";
+import data from "../../../Images/Data_Science_Image.jpg" 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';

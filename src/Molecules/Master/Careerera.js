@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { Context } from "../../Api";
+import React from "react"; 
 
 const Careerera = (props) => {
 

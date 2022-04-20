@@ -1,8 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl'
+import React, {  useState, useContext } from 'react'; 
 import { Context, Provider } from "../../Api";
 import { CurrencyContxt } from '../../Atoms/Contextcurrency';
 import logo from "../../Images/logo.svg"
@@ -41,12 +37,16 @@ const Sign = (props) => {
             <div className="my-auto w-100 px-3">
               <img src={logo} className='logo-full' alt='logo' />
               <p className='mb-0'>
-                <span className="lgfont font-bold enrol">Download</span> the Course  <br></br>
+                {props.Downloadprospectus ?
+               <>
+               <span className="lgfont font-bold enrol">Download</span> the Course  <br></br>
                 <span>Prospectus of</span><br></br>
-                <strong className='lgfont font-bold' dangerouslySetInnerHTML={{ __html: props.title }}></strong>
+               </>
+               :''}
+                <strong className='lgfont font-bold enrol' dangerouslySetInnerHTML={{ __html: props.title }}></strong>
                </p>
               <p className="call_box mb-0">
-                {/* OR<br></br> */}
+                OR<br></br>
                 Call Us at
                 <div className='text-center'>
                   <a href={"tel:" + contextcur.title} className="btn-site invert orangebtn no-underline">
@@ -59,7 +59,7 @@ const Sign = (props) => {
         </div>
 
         <div className="col-md-7 col-12 px-4">
-        <Forms/>
+        <Forms prospectusfile={props.Downloadprospectus}/>
         </div>
 
 

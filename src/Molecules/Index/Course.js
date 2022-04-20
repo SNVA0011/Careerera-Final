@@ -59,9 +59,7 @@ const Course = () => {
       window.removeEventListener('resize', handleWindowSizeChange);
     }
   }, []);
-
-
-  console.log('exactData-====>', exactData)
+ 
 
 
   return (

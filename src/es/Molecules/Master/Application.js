@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Context } from "../../Api";
+import React from "react"; 
 import Applybyfilling from '../../../Images/Apply-by-filling.png'
 import Admissions from '../../../Images/Admissions.png'
 import Shortlisted from '../../../Images/Shortlisted.png'

@@ -1,12 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import Hero from '../Atoms/Hero'
-import login from '../../Images/blogs.png'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+import login from '../../Images/blogs.png' 
 import { CurrencyContxt } from '../Atoms/Contextcurrency'
 
 import { Context, Provider } from "../Api";

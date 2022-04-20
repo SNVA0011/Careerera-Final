@@ -65,10 +65,7 @@ const Master = () => {
     const rndInt = randomIntFromInterval(8, 9)
     const Random = rndInt / 2;
     const realRandom = Random.toFixed(1)
-
-
-
-    console.log('course_about ====>', final);
+ 
 
 
     function randomIntFromInterva(min, max) { // min and max included 
