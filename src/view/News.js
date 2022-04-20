@@ -11,7 +11,7 @@ import Moment from 'react-moment'
 import { Helmet } from 'react-helmet'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { base } from '../Base'
- 
+
 
 const News = () => {
     // const { value15, value16 } = useContext(Context)

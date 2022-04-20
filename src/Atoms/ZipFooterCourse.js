@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router'
-import { base } from "../Base";
+import { base } from '../Base'
 
 const ZipFooterCourse = (props) => {
   const [data, setdata] = useState([])
@@ -13,7 +13,7 @@ const ZipFooterCourse = (props) => {
   async function CallApi() {
 
 
-    const dat = await fetch(`'`+base+`'`, {
+    const dat = await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/zip.php?service="+props.title.replace(/\s/g, '-')+"&state="+props.id+"&city="+props.id3+"&county="+props.id2}),
       headers: {

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import about1 from '../../Images/about1.png'
 import about2 from '../../Images/about2.png'
 import about3 from '../../Images/about3.png'
@@ -19,14 +19,32 @@ import alok from '../../Images/alok.jpg'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import AnimatedNumbers from "react-animated-numbers";
+import Spinner from 'react-bootstrap/Spinner'
+import { base } from '../../Base'
 
 
 const About = () => {
 
+    const [Blog, setBlog] = useState([])
+    const [blogsts, setblogsts] = useState(false)
+
+    // List of Blog
+    async function Bloglist() {
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/common/BlogList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setBlog(json.records));
+        setblogsts(true);
+    }
+
+
     useEffect(() => {
+        Bloglist()
         window.scrollTo(0, 0);
     }, []);
-
 
     return (
         <div className='full-w about-page'>
@@ -45,7 +63,7 @@ const About = () => {
                         <div className="col-lg-6 col-12 order-2 order-lg-1  mt-4 mt-lg-0">
                             <div className="sec_title">
                                 <h1 className="text-2xl md:text-3xl font-bold">
-                                    Sobre <span className="orange-clrsite">nosotros</span>
+                                    Sobre <span className="orange-clrsite">Nosotros</span>
                                 </h1>
                                 <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                             </div>
@@ -174,9 +192,9 @@ const About = () => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                     </div>
 
-                    <div className="row align-items-center">
+                    <div className="row align-items-center justify-content-center">
                         {/* 1st */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Live Online'} src={live} className="mx-auto rounded-circle" width="92" />
@@ -185,7 +203,7 @@ const About = () => {
                             </div>
                         </div>
                         {/* 2nd */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'E-Learning'} src={learning} className="mx-auto rounded-circle" width="92" />
@@ -195,7 +213,7 @@ const About = () => {
                         </div>
 
                         {/* 3rd */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Creative Courses'} src={Creative} className="mx-auto rounded-circle" width="92" />
@@ -205,7 +223,7 @@ const About = () => {
                         </div>
 
                         {/* 4th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Quiz & Exam'} src={Quiz} className="mx-auto rounded-circle" width="92" />
@@ -215,7 +233,7 @@ const About = () => {
                         </div>
 
                         {/* 5th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Cost & Time'} src={Cost} className="mx-auto rounded-circle" width="92" />
@@ -225,7 +243,7 @@ const About = () => {
                         </div>
 
                         {/* 6th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Flexible Learning'} src={Flexible} className="mx-auto rounded-circle" width="92" />
@@ -235,7 +253,7 @@ const About = () => {
                         </div>
 
                         {/* 7th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Discussion'} src={Discussion} className="mx-auto rounded-circle" width="92" />
@@ -245,7 +263,7 @@ const About = () => {
                         </div>
 
                         {/* 8th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Certificate'} src={Certificate} className="mx-auto rounded-circle" width="92" />
@@ -255,7 +273,7 @@ const About = () => {
                         </div>
 
                         {/* 9th */}
-                        <div className='col-lg-4 col-sm-6 col-12'>
+                        <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
                                     <img alt={'Trained Faculty'} src={Trained} className="mx-auto rounded-circle" width="92" />
@@ -272,13 +290,13 @@ const About = () => {
             <div className="container pt-16 pb-4">
                 <div className="sec_title text-center">
                     <h2 className="text-2xl md:text-3xl font-bold">
-                        NUESTRA <span className="orange-clrsite">FUNDADOR</span>
+                    NUESTRAS  <span className="orange-clrsite">FUNDADORAS</span>
                     </h2>
                     <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                 </div>
 
                 <div className="row pt-3 align-items-center justify-content-center">
-                    <div className="col-xl-4 col-lg-5 col-sm-6 col-12">
+                    <div className="col-xl-4 col-md-5  col-12">
                         <div className="single-team-box">
                             <div className="image">
                                 <img src={vivek} alt="Vivek K Singh" className='rounded border' />
@@ -309,10 +327,10 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="col-xl-1 col-lg-1 col-sm-1 col-12 d-none d-lg-block"></div>
+                    <div className="col-xl-1 col-md-1   col-12 d-none d-md-block"></div>
 
 
-                    <div className="col-xl-4 col-lg-5 col-sm-6 col-12">
+                    <div className="col-xl-4 col-md-5   col-12  mt-5 mt-md-0">
                         <div className="single-team-box">
                             <div className="image">
                                 <img src={alok} alt="Alok K Singh" className='rounded-circle border' />
@@ -383,7 +401,7 @@ const About = () => {
                                     <div className='row mb-3'>
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                     <div className='d-inline-block'><AnimatedNumbers  animateToNumber={60} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>+
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">Los paises</p>
@@ -391,7 +409,7 @@ const About = () => {
                                         </div>
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                     <div className='d-inline-block'><AnimatedNumbers  animateToNumber={253851} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">Usuarios</p>
@@ -400,7 +418,7 @@ const About = () => {
 
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                     <div className='d-inline-block'><AnimatedNumbers  animateToNumber={29} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">Trayectoria profesional</p>
@@ -408,7 +426,7 @@ const About = () => {
                                         </div>
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={146} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">Cursos</p>
@@ -417,7 +435,7 @@ const About = () => {
 
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={1054} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">próximas clases</p>
@@ -425,7 +443,7 @@ const About = () => {
                                         </div>
                                         <div className="col-sm-6 col-12">
                                             <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-semibold text-3xl md:text-4xl xxl:text-5xl">
+                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={47} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">aprendizaje electronico</p>
@@ -456,42 +474,40 @@ const About = () => {
                     <div className="col-lg-6 col-12 order-2 order-lg-1  mt-4 mt-lg-0">
                         <div className="sec_title">
                             <h2 className="text-2xl md:text-3xl font-bold">
-                                De
-                                <span className="orange-clrsite">nuestro blog</span>
-                            </h2>
-                            <p className="text-gray-500 text-base md:text-lg fw-medium">
-                                La importancia del aprendizaje automático para los científicos de datos
-                            </p>
+                            De Nuestro <span className="orange-clrsite">Blog</span>
+                            </h2> 
                             <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                         </div>
-                        <p className="text-gray-800 pt-2">
-                            Big Data, Machine Learning (ML) e Inteligencia Artificial (IA) son conceptos
-                            bien establecidos que han tenido relevancia durante mucho tiempo. Sin
-                            embargo, la capacidad de aplicar algoritmos y cálculos numéricos a datos
-                            masivos solo ha cobrado impulso recientemente. La misma dinámica que ha
-                            impulsado la popularidad de la minería de datos está alimentando un mayor
-                            interés en el aprendizaje automático. El aumento de los volúmenes y la
-                            variedad de datos, el procesamiento informático más económico y potente y el
-                            almacenamiento de datos rentable son algunos ejemplos. Todo este imp...
-                        </p>
-                        <p className="font-bold text-xl mb-0 text-gray-800 mt-5">
-                            La ciberseguridad como opción de carrera y su alcance
-                        </p>
-                        <p className="text-gray-800 pt-2">
-                            Las organizaciones se han visto cada vez más expuestas a la piratería y los
-                            ataques cibernéticos a medida que nuestra economía global ha dado lugar a
-                            más informática y comunicaciones basadas en Internet en todo el mundo. La
-                            demanda de seguridad cibernética está en su punto más alto, ya que el
-                            entorno comercial global cambia al almacenamiento y la gestión de datos en
-                            línea y en la nube. Esto ha aumentado la demanda de expertos en
-                            ciberseguridad que estén familiarizados y sean expertos en inteligencia
-                            artificial y ciencia de datos. En términos de conjuntos de habilidades y
-                            ocupaciones, la amplitud de la ciberseguridad ha gr...
-                        </p>
-                        <Link to="/es/blog"
-                            className="md:h-12 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
-                            <span>VER TODO</span>
-                        </Link>
+
+                        <div className='blog_bxrow'>
+                            {
+
+                                blogsts ?
+                                    <>
+                                        {Blog.length > 0 && Blog.slice(0, 2).map((item, index) => {
+                                            return (
+                                                <div className='mb-5' key={item.id}>
+                                                    <Link class="decoration-0 font-semibold mb-3 text-xl md:text-2xl" to={'/blog/' + item.url} > {item.title} </Link>
+                                                    <p className="text-gray-500 pt-2 sm:text-lg mtetx-medium mb-0" dangerouslySetInnerHTML={{ __html: item.Discription }}>
+                                                    </p>
+                                                </div>
+                                            )
+                                        })}
+
+                                        <Link to="/es/blog" className="md:h-12 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+                                            <span>VER TODO</span>
+                                        </Link>
+
+                                    </>
+                                    : <div className="text-center py-20">
+                                        <Spinner animation="border" role="status">
+                                            <span className="visually-hidden">Cargando...</span>
+                                        </Spinner>
+                                    </div>
+                            }
+                        </div>
+                        
+                        
                     </div>
 
                     <div className='col-lg-6 col-12 order-1 order-lg-2'>

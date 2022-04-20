@@ -20,7 +20,8 @@ import Profile from "../Molecules/Master/Profile";
 import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
-import { base } from '../Base';
+import { base } from '../Base'
+
 
 export default function CyberSecurityCity() {
 
@@ -29,8 +30,6 @@ export default function CyberSecurityCity() {
     function showMorecont() {
         setconthide((conthide) => (!conthide))
     }
-
-
 
     const [data, setData] = useState([])
     const [load, setLoad] = useState(false)

@@ -8,7 +8,8 @@ import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import fun from '../Images/fun4.gif'
-import { base } from "../Base";
+import { base } from '../Base'
+
 
 const BlogDetailArabic = () => {
   const urlar = useParams()

@@ -6,7 +6,9 @@ import news1 from '../../Images/news1.jpg'
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
-import { base } from "../../Base";
+import { base } from '../../Base'
+
+
 
 const NewsDetail = () => {
   const [Eventdetails, setEventdetails] = useState([])
@@ -17,7 +19,7 @@ const NewsDetail = () => {
 
   // List of Eventdetail
   async function Eventsdetail() { 
-    await fetch(`'`+base+`'`, {
+    await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsDetails.php?Url=' + news }),
       headers: {

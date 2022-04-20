@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router'
-import { base } from "../Base";
+import { base } from '../Base'
 
 const CountryFooter = (props) => {
   const [data, setdata] = useState([])
@@ -13,7 +13,7 @@ const CountryFooter = (props) => {
   async function CallApi() {
 
 
-    const dat = await fetch(`'`+base+`'`, {
+    const dat = await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
       headers: {

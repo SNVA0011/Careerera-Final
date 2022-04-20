@@ -8,7 +8,8 @@ import gurgaon3Img from '../Images/training-rooms/gurgaon-3.jpg';
 import gurgaon2Img from '../Images/training-rooms/gurgaon-2.jpg';
 import gurgaon1Img from '../Images/training-rooms/gurgaon-1.jpg';
 import { Link } from "react-router-dom";
-
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 
 
@@ -104,7 +105,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={noida1Img} className="class_rooms_img" alt="Noida" title="Noida"></img>
+                                        <Zoom><img src={noida1Img} className="class_rooms_img" alt="Noida" title="Noida"></img></Zoom>
                                     </div>
                                 </div>
                             </li>
@@ -112,7 +113,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={noida3Img} className="class_rooms_img" alt="Noida" title="Noida"></img>
+                                        <Zoom><img src={noida3Img} className="class_rooms_img" alt="Noida" title="Noida"></img></Zoom>
                                     </div>
                                 </div>
                             </li>
@@ -120,7 +121,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={noida2Img} className="class_rooms_img" alt="Noida" title="Noida"></img>
+                                        <Zoom><img src={noida2Img} className="class_rooms_img" alt="Noida" title="Noida"></img></Zoom>
                                     </div>
                                 </div>
                             </li>
@@ -206,7 +207,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={gurgaon3Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img>
+                                        <Zoom><img src={gurgaon3Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img></Zoom>
                                     </div>
                                 </div>
                             </li>
@@ -214,7 +215,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={gurgaon2Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img>
+                                        <Zoom><img src={gurgaon2Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img></Zoom>
                                     </div>
                                 </div>
                             </li>
@@ -222,7 +223,7 @@ export default function TrainingRoom() {
                             <li className="col-lg-4 col-sm-6 col-12 mb-4">
                                 <div className="text-white h-100 px-4 py-4 rounded-lg hover:bg-blue-900">
                                     <div className="time_content">
-                                        <img src={gurgaon1Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img>
+                                        <Zoom><img src={gurgaon1Img} className="class_rooms_img" alt="Gurgaon" title="Gurgaon"></img></Zoom>
                                     </div>
                                 </div>
                             </li>

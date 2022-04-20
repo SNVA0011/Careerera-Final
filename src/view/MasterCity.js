@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import StateFooter from "../Atoms/StateFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { base } from "../Base";
+import { base } from '../Base'
 
 
 const MasterCity = () => {

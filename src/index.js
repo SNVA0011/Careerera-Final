@@ -5,12 +5,11 @@ import App from './App'
 import AppSpanish from './es/AppSpanish'
 import { BrowserRouter } from 'react-router-dom'
 
-
 ReactDOM.render(
     <>
         <BrowserRouter>
             {
-                window.location.pathname.indexOf("/es") > -1 ?
+                window.location.pathname.split('/')[1] === 'es' ?
                     <AppSpanish />
                     :
                     <App />

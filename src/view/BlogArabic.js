@@ -12,6 +12,7 @@ import { useParams } from 'react-router'
 import NotFound from './NotFound'
 import { base } from '../Base'
 
+
 const BlogArabic = () => {
     // const { value13, value14 } = useContext(Context)
     // const [Blog, setBlog] = value13

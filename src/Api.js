@@ -8,7 +8,7 @@ export const Context = createContext()
 export const Provider = (props) => {
     let { id } = useParams()
     let { news } = useParams()
-
+ 
 
     // Store Api data in variable of usestate
     const [exactData, setData] = useState([])
@@ -39,7 +39,7 @@ export const Provider = (props) => {
     // Logger()
     const [logger, setLogger] = useState([])
 
-console.log("lp",`"${base}"`)
+
     // Menu API -
     async function getData() {
         const Api = "https://my.careerera.com/API/course/TopCategoryMenubar.php"
@@ -132,6 +132,18 @@ console.log("lp",`"${base}"`)
     }
 
 
+    // async function CallApi(){
+    //     fetch(base, {
+    //       method: 'POST',
+    //       body: JSON.stringify({"apiurl":"https://my.careerera.com/API/course/TopCategoryMenubar.php"}),
+    //       headers: {
+    //         'Content-type': 'application/json; charset=UTF-8',
+    //       },
+    //     },[])
+    //       .then((response) => response.json())
+    //       .then((json) => console.log("real",json));
+
+    //   } 
 
     useEffect(() => {
         getData()

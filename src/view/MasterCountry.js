@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import StateFooter from "../Atoms/StateFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { base } from "../Base";
+import { base } from '../Base'
 
 
 const MasterCountry = () => {
@@ -79,6 +79,17 @@ const MasterCountry = () => {
 
 
 
+    //   async function getCourse() {
+    //       const course = await fetch(
+    //           'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST'
+    //       )
+    //       const courseapi = await course.json()
+    //       Catsetfinal(courseapi.records)
+    //       Catloadsts(true)
+    //   }
+
+    // currency inr/usd
+    //   const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
 
     const [countrycaptial, setCountrycaptial] = useState(country.country);

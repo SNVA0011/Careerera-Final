@@ -7,7 +7,9 @@ import { ListGroup } from "react-bootstrap";
 import { Helmet } from 'react-helmet'
 import Hero from "./../Atoms/Hero";
 import fun from '../Images/fun4.gif'
-import { base } from "../Base";
+import { base } from '../Base'
+
+
 
 const BatchDetail = (props) => {
   const data = useParams()

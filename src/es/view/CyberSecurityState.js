@@ -15,7 +15,8 @@ import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';
 import CityFooterCourse from '../Atoms/CityFooterCourse';
-import { base } from '../../Base';
+import { base } from '../../Base'
+
 
 export default function CyberSecurityState() {
     const [conthide, setconthide] = useState(false);
@@ -43,9 +44,6 @@ export default function CyberSecurityState() {
             .then((json) => setData(json.countyDetail));
         setLoad(true);
     }
-
-
-
 
     useEffect(() => {
         CallData()

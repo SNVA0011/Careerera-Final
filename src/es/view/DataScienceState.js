@@ -14,7 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import { useParams } from 'react-router';
 import CityFooterCourse from '../Atoms/CityFooterCourse';
-import { base } from '../../Base';
+import { base } from '../../Base'
 
 
 export default function DataScienceState() {

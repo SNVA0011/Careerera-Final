@@ -6,7 +6,7 @@ import fun from '../../Images/fun4.gif'
 import { Link } from 'react-router-dom'
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { base } from "../../Base";
+import { base } from '../../Base'
 
 
 export default function CategoryUpcomingBatch() {
@@ -19,7 +19,7 @@ export default function CategoryUpcomingBatch() {
 
     // List of BlogDetails
     async function getCourse() {
-        await fetch(`'`+base+`'`, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CategoryPage.php?url=' + idbatchmain + '&timeZone=EST' }),
             headers: {

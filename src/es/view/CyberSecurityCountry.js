@@ -15,7 +15,9 @@ import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';
 import StateFooterCourse from '../Atoms/StateFooterCourse';
-import { base } from '../../Base';
+import { base } from '../../Base'
+
+
 
 export default function CyberSecurityContry() {
     const [conthide, setconthide] = useState(false);
@@ -32,7 +34,7 @@ export default function CyberSecurityContry() {
     async function CallData() {
         const isuue = cyberCoutry.cyberCoutry;
         const fixed = isuue.replace("-", "%20")
-        await fetch(`'`+base+`'`, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/statesDetail.php?service=cyber-security&state=" + fixed }),
             headers: {

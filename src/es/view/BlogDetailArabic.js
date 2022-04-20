@@ -8,7 +8,9 @@ import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import fun from '../../Images/fun4.gif'
-import { base } from "../../Base";
+import { base } from '../../Base'
+
+
 
 const BlogDetailArabic = () => {
   const urlar = useParams()
@@ -20,7 +22,7 @@ const BlogDetailArabic = () => {
 
   // List of BlogDetails
   async function BlogDetails() {
-    await fetch(`'`+base+`'`, {
+    await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/arBlogDetails.php?Url=" + urlar.urlar }),
       headers: {

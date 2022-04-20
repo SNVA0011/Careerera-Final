@@ -66,6 +66,7 @@ const PgpArtificalIntelligence = () => {
 
 
             <NavStatic
+                containerleftbox='true'
                 about='AI &amp; ML'
                 Why='Why AI &amp; ML'
                 Program="Program Highlights"
@@ -75,6 +76,7 @@ const PgpArtificalIntelligence = () => {
                 faq="FAQ"
                 Review="Reviews"
             />
+
             <DescriptionStatic
                 title="Artificial Intelligence & Machine Learning"
                 heading="Build smarter and more intelligent systems."

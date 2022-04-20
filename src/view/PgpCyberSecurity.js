@@ -67,6 +67,7 @@ const PgpCyberSecurity = () => {
 
 
             <NavStatic
+             containerleftbox='true'
                 Why='Why Cyber Security?'
                 Program="Program Highlights"
                 Carriculum="Curriculum"

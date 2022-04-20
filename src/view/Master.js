@@ -28,8 +28,8 @@ import CountryFooter from '../Atoms/CountryFooter'
 import PopUp from '../Atoms/PopUp'
 import { useLocation } from 'react-router'
 import NotFound from './NotFound'
-import { base } from '../Base'
 // import {  } from "react-router-dom";
+import { base } from '../Base'
 
 
 const Master = () => {
@@ -137,7 +137,10 @@ const Master = () => {
                             title={final[0].CourseTitel}
                         />
 
-                        <Navs blogShow={final[0].blog_List ? true : false} />
+                        <Navs
+                            faqShow={final[0].faq_List ? true : false}
+                            blogShow={final[0].blog_List ? true : false}
+                        />
 
 
                         <DataScience data={final[0].course_about} title={final[0].CourseTitel} />

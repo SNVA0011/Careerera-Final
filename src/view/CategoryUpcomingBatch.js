@@ -6,7 +6,7 @@ import fun from '../Images/fun4.gif'
 import { Link } from 'react-router-dom'
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { base } from "../Base";
+import { base } from '../Base'
 
 
 export default function CategoryUpcomingBatch() {

@@ -70,6 +70,7 @@ const PgpDataScience = (props) => {
             />
 
             <NavStatic
+             containerleftbox='true'
                 about="Data Science"
                 Why='Why Data Science'
                 Program="Program Highlights"

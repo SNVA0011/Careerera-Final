@@ -50,13 +50,13 @@ const Hero = () => {
               </h1>
 
               <span className="text-xl md:text-2xl light font-light tracking-wide  text-center text-lg-left d-block">
-              Únase a Careerera para empresas  <strong className='orange-clrsite'>programa Socio con nosotros</strong>
+              Únase a Careerera para empresas  <strong className='orange-clrsite'>Programa socio con nosotros</strong>
               </span>
 
               <span className="heading-border-line d-block left-0 mt-3 mb-4 mx-auto mx-lg-0 "></span>
 
               <h3 className='text-lg md:text-xl font-semibold tracking-normal'>Con nuestros servicios en la red de su empresa, puede ayudar a su organización a llegar más lejos como socio de canal:</h3>
-              <ul className='p-0 text-gray-300 font-medium text-base md:text-lg '>
+              <ul className='p-0 text-gray-300 font-medium text-base md:text-lg'>
                 <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Trabaje para la prestigiosa firma de educación superior de India, que tiene oficinas en APAC, EE. UU., Dubái, India, Reino Unido, Malasia y Europa.</li>
                 <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Desarrolle nuevas capacidades, innove más rápidamente y colabore en ideas.</li>
                 <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Encuentre nuevas estrategias para expandir las ventas y el pipeline de su empresa</li>

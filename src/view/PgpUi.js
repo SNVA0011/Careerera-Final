@@ -63,6 +63,7 @@ const PgpUi = () => {
 
 
             <NavStatic
+             containerleftbox='true'
                 about="UI & UX"
                 Why='Why UI & UX'
                 Program="Program Highlights"

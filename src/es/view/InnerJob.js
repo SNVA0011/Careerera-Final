@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet'
 import Hero from "../Atoms/Hero";
 import fun from "../../Images/fun4.gif"
-import { base } from "../../Base";
+import { base } from '../../Base'
+
 
 const InnerJob = () => {
     const job = useParams();
@@ -14,7 +15,7 @@ const InnerJob = () => {
     const [innerjob, setinnerJob] = useState([])
     const [status, loadStatus] = useState([])
     async function getJob() {
-        const data = await fetch(`'`+base+`'`, {
+        const data = await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "http://jobs.snva.com/api/jobs?api_token=Nxo9A8Koga6hVuTfEWeEBZNbK5OeJYYauuEH6Q9s3Gd9JuMea7XjprMtI4L1" }),
             headers: {
@@ -80,22 +81,22 @@ const InnerJob = () => {
                                                 <div className="overflow-hidden">
                                                     <div className="row">
 
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-xxl-3 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">locación de trabajo</p>
-                                                            <p className="text-base font-bold mb-0">{items.city}, {items.country}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.city}, {items.country}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-xxl-3 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Aperturas</p>
-                                                            <p className="text-base font-bold mb-0">{items.openings}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.openings}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-xxl-3 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Tipo de trabajo</p>
-                                                            <p className="text-base font-bold mb-0">{items.work_type}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.work_type}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-xxl-3 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Salario</p>
-                                                            {items.show_sal == 1 ? <p className="text-base font-bold mb-0">No divulgado</p> :
-                                                                <p className="text-base font-bold mb-0">{items.currency} {items.min_sal} - {items.currency} {items.max_sal}</p>}
+                                                            {items.show_sal == 1 ? <p className="text-lg font-bold mb-0">No divulgado</p> :
+                                                                <p className="text-lg font-bold mb-0">{items.currency} {items.min_sal} - {items.currency} {items.max_sal}</p>}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -103,7 +104,7 @@ const InnerJob = () => {
 
                                                 <div className="mt-2 mb-3 font-medium text-gray-600 leading-loose content-innerjob" dangerouslySetInnerHTML={{ __html: items.content }}></div>
 
-                                                <Link to="" className="md:h-12 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn mt-3">
+                                                <Link to="" className="btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn mt-3">
                                                     <span>Aplica ya</span>
                                                 </Link>
                                             </div>

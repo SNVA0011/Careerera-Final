@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import StateFooter from "../Atoms/StateFooter";
 import CityFooter from "../Atoms/CityFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
-import { base } from "../Base";
+import { base } from '../Base'
 
 
 const MasterState = () => {
@@ -41,9 +41,7 @@ const MasterState = () => {
     const [load, setload] = useState(false)
 
 
-
     async function CallApi() {
-
         const dat = await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),

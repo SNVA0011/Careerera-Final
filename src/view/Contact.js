@@ -71,7 +71,7 @@ const Contact = () => {
               <h3 className="font-bold text-left  text-gray-700 text-3xl md:text-4xl">
                 Contact Us
               </h3>
-              <p className="text-left ">
+              <p className="text-left font-medium text-gray-500">
                 Welcome to our Website. We are glad to have you around.
               </p>
               <div className="border-t-2 border-gray-500 w-10 mb-5"></div>
@@ -307,7 +307,7 @@ const Contact = () => {
               <h3 className="font-bold text-left  text-gray-700 text-3xl md:text-4xl">
                 Send A Message
               </h3>
-              <p className="text-left mb-5">
+              <p className="text-left mb-3 font-medium text-gray-500">
                 Your email address will not be published. Required
                 fields are marked.
               </p>

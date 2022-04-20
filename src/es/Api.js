@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router'
-import { base } from '../Base'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
+import { base } from '../Base'
 
 export const Context = createContext()
 
@@ -124,6 +124,19 @@ export const Provider = (props) => {
         }, []).then((response) => response.json()).then((json) => setallcountryList(json.records));
         setcountryLoad(true);
     }
+
+    // async function CallApi(){
+    //     fetch(base, {
+    //       method: 'POST',
+    //       body: JSON.stringify({"apiurl":"https://my.careerera.com/API/course/TopCategoryMenubar.php"}),
+    //       headers: {
+    //         'Content-type': 'application/json; charset=UTF-8',
+    //       },
+    //     },[])
+    //       .then((response) => response.json())
+    //       .then((json) => console.log("real",json));
+
+    //   } 
 
     // escoursoslist Api
     async function escoursoslist() {

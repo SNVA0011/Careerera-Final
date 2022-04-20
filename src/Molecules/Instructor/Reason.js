@@ -13,7 +13,7 @@ const Reason = () => {
         <div className='full-w greatan-instructor'>
         
             <div className="container py-16">
-            <h1 className="font-bold text-3xl md:text-4xl text-center mb-5 text-black">
+            <h1 className="font-bold text-3xl md:text-4xl text-center mb-5 text-black text-capitalize">
                         Great Reasons to Become a{' '}
                         <span className="text-blue-500 sitblu-clrsite">
                             Careerera Instructor

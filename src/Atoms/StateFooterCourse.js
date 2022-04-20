@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router'
-import { base } from "../Base";
+import { base } from '../Base'
 
 const StateFooterCourse = (props) => {
   const [data, setdata] = useState([])
@@ -11,7 +11,7 @@ const StateFooterCourse = (props) => {
 
 
   async function CallApi() {
-    const dat = await fetch(`'`+base+`'`, {
+    const dat = await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/county1.php?service="+props.title.replace(/\s/g, '-')+"&state="+props.id }),
       headers: {

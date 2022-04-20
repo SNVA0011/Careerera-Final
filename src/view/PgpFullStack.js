@@ -86,6 +86,7 @@ const PgpFullStack = () => {
          
 
          <NavStatic
+          containerleftbox='true'
             about="Full Stack"
             Why='Why Full Stack'
             Program="Program Highlights"

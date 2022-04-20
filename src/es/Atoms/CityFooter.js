@@ -2,16 +2,14 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router'
-import { base } from "../../Base";
+import { base } from '../../Base'
 
 const CityFooter = (props) => {
   const [data, setdata] = useState([])
   const [load, setload] = useState([])
 
-
-
   async function CallApi() {
-    const dat = await fetch(`'`, {
+    const dat = await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_citys.php?id="+props.id }),
       headers: {

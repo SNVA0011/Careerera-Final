@@ -28,8 +28,8 @@ import CountryFooter from '../Atoms/CountryFooter'
 import PopUp from '../Atoms/PopUp'
 import { useLocation } from 'react-router'
 import NotFound from './NotFound'
-import { base } from '../../Base'
 // import {  } from "react-router-dom";
+import { base } from '../../Base'
 
 
 const Master = () => {

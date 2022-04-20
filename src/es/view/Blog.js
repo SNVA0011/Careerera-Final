@@ -25,7 +25,7 @@ const Blog = () => {
 
     // List of Blog
     async function Bloglist() {
-         await fetch(`'`+base+`'`, {
+         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/common/BlogList.php' }),
             headers: {

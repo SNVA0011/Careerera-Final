@@ -73,7 +73,7 @@ const Contact = () => {
               <h3 className="font-bold text-left  text-gray-700 text-3xl md:text-4xl uppercase">
                 Contáctenos
               </h3>
-              <p className="text-left ">
+              <p className="text-left font-medium text-gray-500">
                 Bienvenido a nuestro sitio web. Estamos contentos de tenerte cerca.
               </p>
               <div className="border-t-2 border-gray-500 w-10 mb-5"></div>
@@ -309,9 +309,8 @@ const Contact = () => {
               <h3 className="font-bold text-left  text-gray-700 text-3xl md:text-4xl capitalize">
                 Enviar un mensaje
               </h3>
-              <p className="text-left mb-5">
+              <p className="text-left mb-3 font-medium text-gray-500">
                 Su dirección de correo electrónico No será publicado, Campos requeridos están marcados.
-
               </p>
 
               {/* FORM */}

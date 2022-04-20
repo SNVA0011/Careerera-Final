@@ -15,7 +15,9 @@ import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';
 import ZipFooterCourse from '../Atoms/ZipFooterCourse';
-import { base } from '../../Base';
+import { base } from '../../Base'
+
+
 
 export default function CyberSecurityCity() {
     const cybercity = useParams()

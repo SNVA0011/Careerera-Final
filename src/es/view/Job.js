@@ -4,16 +4,13 @@ import Hero from "../Atoms/Hero";
 import { Helmet } from 'react-helmet'
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import fun from "../../Images/fun4.gif"
-import { base } from "../../Base";
-
+import { base } from '../../Base'
 
 const Job = () => {
-
-
     const [job, setJob] = useState([])
     const [status, loadStatus] = useState([])
     async function getJob() {
-        const data = await fetch(`'`+base+`'`, {
+        const data = await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "http://jobs.snva.com/api/jobs?api_token=Nxo9A8Koga6hVuTfEWeEBZNbK5OeJYYauuEH6Q9s3Gd9JuMea7XjprMtI4L1" }),
             headers: {
@@ -81,22 +78,22 @@ const Job = () => {
                                                 <div className="overflow-hidden">
                                                     <div className="row">
 
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">locación de trabajo</p>
-                                                            <p className="text-base font-bold mb-0">{items.city}, {items.country}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.city}, {items.country}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Aperturas</p>
-                                                            <p className="text-base font-bold mb-0">{items.openings}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.openings}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-md-4 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Tipo de trabajo</p>
-                                                            <p className="text-base font-bold mb-0">{items.work_type}</p>
+                                                            <p className="text-lg font-bold mb-0">{items.work_type}</p>
                                                         </div>
-                                                        <div className="border-r-2 border-gray-300 col-12">
+                                                        <div className="border-r-2 border-gray-300 col-md-6 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Salario</p>
-                                                            {items.show_sal == 1 ? <p className="text-base font-bold mb-0">No divulgado</p> :
-                                                                <p className="text-base font-bold mb-0">
+                                                            {items.show_sal == 1 ? <p className="text-lg font-bold mb-0">No divulgado</p> :
+                                                                <p className="text-lg font-bold mb-0">
 
 
                                                                     {items.currency} {items.min_sal} - {items.currency} {items.max_sal}</p>}
@@ -107,7 +104,7 @@ const Job = () => {
 
                                                 {/* <p className="mt-2 mb-3 font-medium text-gray-600 leading-loose"><i className="bi bi-file-earmark-text mr-1"></i> Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit.</p> */}
 
-                                                <Link to={'/es/jobs/'+items.job_url + "/" + items.id} className="md:h-12 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
+                                                <Link to={'/es/jobs/'+items.job_url + "/" + items.id} className="mt-3 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
                                                     <span>Leer más</span>
                                                 </Link>
                                             </div>

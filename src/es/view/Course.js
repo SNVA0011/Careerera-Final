@@ -29,7 +29,7 @@ const Course = () => {
 
 
     async function getCourse() {
-        const data = await fetch(`'`+base+`'`, {
+        const data = await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id.id + "&timeZone=EST" }),
             headers: {

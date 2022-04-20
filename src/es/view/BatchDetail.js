@@ -7,7 +7,8 @@ import { ListGroup } from "react-bootstrap";
 import { Helmet } from 'react-helmet'
 import Hero from "./../Atoms/Hero";
 import fun from '../../Images/fun4.gif'
-import { base } from "../../Base";
+import { base } from '../../Base'
+
 
 const BatchDetail = (props) => {
   const data = useParams()
@@ -37,7 +38,7 @@ const BatchDetail = (props) => {
 
 
   async function ListCall() {
-    await fetch(`'`+base+`'`, {
+    await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/batch_location.php" }),
       headers: {

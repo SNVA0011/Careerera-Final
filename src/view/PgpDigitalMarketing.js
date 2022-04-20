@@ -90,6 +90,7 @@ const PgpDigitalMarketing = () => {
 
  
             <NavStatic
+             containerleftbox='true'
                 about='Digital Marketing'
                 Why='Why Digital Marketing'
                 Program="Program Highlights"

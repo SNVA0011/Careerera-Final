@@ -77,8 +77,6 @@ const App = (props) => {
         title: '+1-844-889-4054',
     })
 
- 
-
     return (
         <div className='d-flex flex-column minh-100'>
             <CurrencyContxt.Provider value={[contextcur, setContextCur]}>

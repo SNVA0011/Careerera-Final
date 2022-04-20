@@ -15,7 +15,7 @@ import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import { useParams } from 'react-router';
 import Country from '../Atoms/Country';
 import StateFooterCourse from '../Atoms/StateFooterCourse';
-import { base } from '../../Base';
+import { base } from '../../Base'
 
 
 export default function DataScienceCountry() {
