@@ -138,14 +138,14 @@ const How = () => {
                                 <div className="main_heading heading_center mb-5">
                                 <h2 className="font-bold text-3xl md:text-4xl text-center text-white">
                                         What we have <span className='orange-clrsite d-inline-block'>Achieved so far</span></h2>
-                                    <span class="heading-border-line d-block left-0 mt-4 mb-4 mx-auto"></span>
+                                    <span className="heading-border-line d-block left-0 mt-4 mb-4 mx-auto"></span>
                                 </div>
                             </div>
                             <div className="col-xs-12 col-sm-6 col-lg-3">
                                 <ul className="counter_number px-0 mb-5">
                                     <li className="font-bold text-4xl md:text-5xl mb-1 text-blue-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-full mb-3  text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                         </svg>
                                         <div className='animated_numberscenter w-100'>
                                             <AnimatedNumbers animateToNumber={253851}></AnimatedNumbers>
@@ -160,7 +160,7 @@ const How = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-full mb-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path d="M12 14l9-5-9-5-9 5 9 5z" />
                                             <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                                         </svg>
                                         <div className='animated_numberscenter w-100'>
                                             <AnimatedNumbers animateToNumber={146}></AnimatedNumbers>
@@ -173,7 +173,7 @@ const How = () => {
                                 <ul className="counter_number px-0 mb-5">
                                     <li className="font-bold text-4xl md:text-5xl mb-1 text-blue-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-full mb-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                                         </svg>
                                         <div className='animated_numberscenter w-100'>
                                             <AnimatedNumbers animateToNumber={1054}></AnimatedNumbers>
@@ -186,7 +186,7 @@ const How = () => {
                                 <ul className="counter_number px-0 mb-5">
                                     <li className="font-bold text-4xl md:text-5xl mb-1 text-blue-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-full mb-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                                         </svg>
                                         <div className='animated_numberscenter w-100'>
                                             <AnimatedNumbers animateToNumber={47}></AnimatedNumbers>

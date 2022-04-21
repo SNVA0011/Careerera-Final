@@ -1,39 +1,44 @@
-import React from "react"; 
+import React from "react";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
 import Highlight from "../Atoms/Highlight";
 import NavStatic from "../Atoms/NavStatic";
 import Testimonial from "../Atoms/Testimonial";
 import Sign from "../Molecules/Course/Sign";
-import UserformsApplication from "../Molecules/Course/UserformsApplication"; 
+import UserformsApplication from "../Molecules/Course/UserformsApplication";
 import Capstone from "../Molecules/Master/Capstone";
 import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
 import Hero from "../Molecules/Master/Hero";
 import Light from "../Molecules/Master/Light";
-import MWhy from "../Molecules/Master/MWhy"; 
-import Profile from "../Molecules/Master/Profile"; 
+import MWhy from "../Molecules/Master/MWhy";
+import Profile from "../Molecules/Master/Profile";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import dgrole from "../../Images/dgrole.png";
 import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
+
+
 
 const PgpDigitalMarketing = () => {
+    let { dats } = useParams()
+
     return (
         <div className="static-pgpintell">
             <Helmet>
-            <title>Post Graduate Program (PGP) in Digital Marketing | Careerera</title>  
+                <title>Post Graduate Program (PGP) in Digital Marketing | Careerera</title>
 
-<meta name="description" content="Enroll for the Post Graduate Program in Digital Marketing certification course training at Careerera. Its is an 12 Month Online Course training to become a Digital Marketing Professional."/>
-<meta name="keywords" content="Digital Marketing certification, PGP in Digital Marketing, Digital Marketing online training, Digital Marketing certification training, Digital Marketing online course"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/es/internet-marketing/post-graduate-program-in-digital-marketing"/>
+                <meta name="description" content="Enroll for the Post Graduate Program in Digital Marketing certification course training at Careerera. Its is an 12 Month Online Course training to become a Digital Marketing Professional." />
+                <meta name="keywords" content="Digital Marketing certification, PGP in Digital Marketing, Digital Marketing online training, Digital Marketing certification training, Digital Marketing online course" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <link rel="canonical" href="https://www.careerera.com/es/internet-marketing/post-graduate-program-in-digital-marketing" />
 
-<script type="application/ld+json">
-{`{"@context":"https://schema.org","@type":"Course",
+                <script type="application/ld+json">
+                    {`{"@context":"https://schema.org","@type":"Course",
 "@id":"https://www.careerera.com/internet-marketing/post-graduate-program-in-digital-marketing",
 "name":"Post Graduate Program In Digital Marketing",
 "description":"Enroll for the Post Graduate Program in Digital Marketing certification course training at Careerera. Its is an 12 Month Online Course training to become a Digital Marketing Professional",
@@ -46,10 +51,12 @@ const PgpDigitalMarketing = () => {
 "audienceType":["I can easily say that this course is quite simply the best online resource on Digital Marketing. The concepts were explained in a logical, well-developed, and complete way. The instructors possessed a great knowledge about the subject matter and it was evidenced by their teaching. The order of the topics was set very aptly as all the topics followed a linear progression of one topic after another and were presented very logically. The assignments and the projects were a source of practice for me in the form of a precise measuring yardstick for my progress and skills.
 "]}}`}
 
-</script>
+                </script>
+                
             </Helmet>
 
-<PopUp title="Post Graduate Program in Digital Marketing"/>
+            <PopUp title="Post Graduate Program in Digital Marketing" urlpath={dats} />
+
             <Hero
                 categoryUrl="DIGITAL MARKETING"
                 duration="12-Months Online Program"
@@ -744,7 +751,7 @@ Digital marketing is extremely important in today’s world which runs almost co
             /> */}
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
-            <CountryFooter  pagetitle="Digital Marketing"/>
+            <CountryFooter pagetitle="Digital Marketing" />
         </div>
     )
 }

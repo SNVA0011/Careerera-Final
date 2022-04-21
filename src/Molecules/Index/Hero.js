@@ -83,7 +83,7 @@ const Hero = () => {
                 </div>
                 <div className="pt-sm-4 text-left flex-grow-1">
                 <h2 className="text-lg md:text-xl lg:text-xl xl:text-2xl font-light mb-0 text-white d-flex flex-sm-row flex-column align-items-sm-center">LEARN COURSES <span className="font-bold text-base xl:text-lg sitblu-clrsite bg-blue-200 d-inline-block px-3 py-1 rounded-3xl align-middle ml-3 leading-normal">
-                  <i class="bi bi-play-circle-fill mr-1"></i> LIVE AND ONLINE</span></h2>
+                  <i className="bi bi-play-circle-fill mr-1"></i> LIVE AND ONLINE</span></h2>
                 </div>
               </div>
       

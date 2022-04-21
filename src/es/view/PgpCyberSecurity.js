@@ -22,23 +22,23 @@ import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
 
 const PgpCyberSecurity = () => {
+    let { dats } = useParams()
     return (
         <div className="static-pgpintell">
             <Helmet>
-            <title>Post Graduate Program in Cyber Security | PGP in Cyber Security</title>
-
-<meta name="description" content="Find Post Graduate program in Cyber Security at Careerera. Take your caliber for securing and protecting data to the next level with PGP in Cyber Security certification."/>
-<meta name="keywords" content="PGP in Cyber Security,  Post Graduate in Cyber Security,  pg in cybersecurity,  Post Graduate Program in Cyber Security,  PGP in Cyber Security certification,  PGP in Cyber Security Certification Training,  PGP in Cyber Security program,  PGP in Cybe"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/es/cyber-security/post-graduate-program-in-cyber-security"/>
-
-
-
+                <title>Post Graduate Program in Cyber Security | PGP in Cyber Security</title>
+                <meta name="description" content="Find Post Graduate program in Cyber Security at Careerera. Take your caliber for securing and protecting data to the next level with PGP in Cyber Security certification." />
+                <meta name="keywords" content="PGP in Cyber Security,  Post Graduate in Cyber Security,  pg in cybersecurity,  Post Graduate Program in Cyber Security,  PGP in Cyber Security certification,  PGP in Cyber Security Certification Training,  PGP in Cyber Security program,  PGP in Cybe" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <link rel="canonical" href="https://www.careerera.com/es/cyber-security/post-graduate-program-in-cyber-security" />
             </Helmet>
-<PopUp title="Post Graduate Program in Cyber Security"/>
+
+            <PopUp title="Post Graduate Program in Cyber Security" urlpath={dats}/>
+
             <Hero
                 categoryUrl="CYBER SECURITY"
                 duration="12-Months Online Program"
@@ -1406,9 +1406,9 @@ const PgpCyberSecurity = () => {
              "
                 ques10="Q10: Who all can enroll for this Course? "
                 ans10="Fresh Graduates, IT and Technology Professionals, Project Leads and Managers in IT/Tech Companies, Tech Support Engineers, and Admins can feel free to enroll for this course."
-            ques12="Q11 : Do Cyber security professionals have positive career opportunities in the coming
+                ques12="Q11 : Do Cyber security professionals have positive career opportunities in the coming
 future?"
-            ans12="Cyber security is a must-have for any online business. Businesses, governments, and
+                ans12="Cyber security is a must-have for any online business. Businesses, governments, and
 non-profit organizations are making considerable expenditures in cyber defenses and
 hiring an expanding number of cyber security professionals as cyber threats develop and
 change. As a result, as per the Bureau of Labor Statistics, the demand for cybersecurity
@@ -1454,7 +1454,7 @@ by 33% between 2020 and 2030."
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
 
-              <CountryFooter  pagetitle="Cyber Security"/>
+            <CountryFooter pagetitle="Cyber Security" />
         </div>
     )
 }

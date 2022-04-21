@@ -72,7 +72,7 @@ export default function DataScienceState() {
                 <h1 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-white uppercase">
                   Data Science <span className="orange-lgclr d-inline-block"> CERTIFICATION COURSE IN {statecourse.statecourse}</span>
                 </h1>
-                <span class="heading-border-line d-block left-0  mt-3 mb-4"></span>
+                <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
 
 
                 <p className="text-base sm:text-lg md:text-xl text-white my-8 font-medium  tracking-wide">

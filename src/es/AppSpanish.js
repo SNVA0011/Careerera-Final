@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Index from './view/Index'
-import Master from './view/Master' 
+import Master from './view/Master'
 import Free from './view/Free'
 import Paid from './view/Paid'
 import { Provider } from './Api'
@@ -13,9 +13,9 @@ import Partner from './view/Partner'
 import Instructor from './view/Instructor'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { menuCloseMob } from './Atoms/Contextcurrency'
-import Blog from './view/Blog' 
+import Blog from './view/Blog'
 import BlogDetail from './view/BlogDetail'
-import NewsDetail from './view/NewsDetail' 
+import NewsDetail from './view/NewsDetail'
 import Help from './view/Help'
 import Payment from './view/Payment'
 import Disclaimer from './view/Disclaimer'
@@ -25,7 +25,7 @@ import Refund from './view/Refund'
 import TermsandCondition from './view/TermsandCondition'
 import Rescheduling from './view/Rescheduling'
 import Contact from './view/Contact'
-import About from './view/About' 
+import About from './view/About'
 import NotFound from './view/NotFound'
 import CategoryUpcomingBatch from './view/CategoryUpcomingBatch'
 import PostGraduation from './view/PostGraduation'
@@ -36,12 +36,12 @@ import TrainingRoom from './view/TrainingRoom'
 import Mocktest from './view/Mocktest'
 import Media from './view/Media'
 import PartnerAll from './view/PartnerAll'
-import FullTestimonial from './view/FullTestimonial' 
-import MocktestRegisterForm from './view/MocktestRegisterForm' 
+import FullTestimonial from './view/FullTestimonial'
+import MocktestRegisterForm from './view/MocktestRegisterForm'
 import Job from './view/Job'
-import InnerJob from './view/InnerJob' 
+import InnerJob from './view/InnerJob'
 import BatchDetail from './view/BatchDetail'
-import DetailBatch from './view/DetailBatch' 
+import DetailBatch from './view/DetailBatch'
 import BlogDetailArabic from './view/BlogDetailArabic'
 import CoursesLists from './view/CoursesLists'
 import PgpCienciadatos from './view/PgpCienciadatos'
@@ -55,7 +55,23 @@ const AppSpanish = (props) => {
         currency: 'America/New_York',
         title: '+1-844-889-4054',
     })
- 
+
+
+    // remove console 
+        function RemoveConsole() {
+        const noop = () => { }
+        ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
+            'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
+            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+            'timeline', 'timelineEnd', 'timeStamp', 'trace',
+        ].forEach((method) => {
+            window.console[method] = noop
+        });
+    }
+    RemoveConsole()
+    // if (process.env.NODE_ENV === "production") {
+    //     RemoveConsole()
+    // }  
 
 
     return (

@@ -45,8 +45,11 @@ import capsTTargeted from "../Images/data-science-icon/Targeted-marketing.png"
 import capsTCarry from "../Images/data-science-icon/Carry-out-promotional.png"
 import capsTAnalyze from "../Images/data-science-icon/Analyze-competitors.png"
 import capsTUtilize from "../Images/data-science-icon/Utilize-Visual-keyword-tools.png"
+import { useParams } from 'react-router'
 
 const PgpDigitalMarketing = () => {
+    let { dats } = useParams()
+
     return (
         <div className="static-pgpintell">
             <Helmet>
@@ -75,7 +78,9 @@ const PgpDigitalMarketing = () => {
                 </script>
             </Helmet>
 
-            <PopUp title="Post Graduate Program in Digital Marketing" />
+            <PopUp title="Post Graduate Program in Digital Marketing" urlpath={dats}/>
+
+
             <Hero
                 categoryUrl="DIGITAL MARKETING"
                 duration="12-Months Online Program"
@@ -863,51 +868,51 @@ Media advertisement by 2020.'
                 cantitle='Here are all the answers to your bubbling questions.'
 
                 ques1='Q1 : What is the PGP in Digital Marketing course from Careerera and what makes it different from individual courses?'
-                ans1='<div class="accord_body_content">
+                ans1='<div className="accord_body_content">
                 <p>A : Post Graduate Program in Digital Marketing is a carefully designed learning path that has been created by some of the leading industry experts. The structure of the course curriculum has been set up in a way that even a complete beginner to Digital Marketing will be able to follow the course progression and understand all the course materials clearly. Our world-class instructors will ensure that you become a master of Digital Marketing by the time you complete the course.</p>
 
               </div>'
                 ques2='Q2 : Can Careerera provide the PGP in Digital Marketing course at a location near me?'
-                ans2='<div class="accord_body_content">
+                ans2='<div className="accord_body_content">
                   <p>A : Our course content is intended to reach learners globally. Whether you reside in any country be it India, Canada, USA, Philippines, Singapore, Malaysia, Australia, or European countries like UK, Germany, Netherlands, Germany or somewhere else, you will be able to access our content 24/7, at any time of the day. The reason for this is that our content is available 100% online. You can access all of our content sitting at your home or office.</p>
                
               </div>'
                 ques3='Q3 : Can I ask for a support and doubt clearing session if I want to understand the topics at a deeper level?'
-                ans3='<div class="accord_body_content">
+                ans3='<div className="accord_body_content">
                 <p>A : Careerera offers 24/7 query resolution and you can file a ticket with a dedicated support team at any time. We provide both email and video chat support for all the queries. If your query does not get resolved in a suitable amount of time through email, we will arrange live one on one sessions with our world-class instructors who would be more than happy to guide you through your doubts.</p>
                 <p>You may be happy to learn that Careeerera does not stop its learners from contacting the instructors even after they have completed the course. They can create as many support tickets as they want; we do not place any limit on the number of tickets they can create.</p>
 
               </div>'
                 ques4='Q4 : Which kind of projects are assigned as part of the training?'
-                ans4='<div class="accord_body_content">
+                ans4='<div className="accord_body_content">
                 <p>A : Careerera assigns the most up to date, relevant, and practical high-value projects to its learners. They carry a lot of real world value as they are designed carefully by our world-class instructors to provide practical and hands-on experience to the learners as they complete them. We provide you with a safe and trusted route through which you can implement the learning and knowledge you have acquired in a real-world industrial environment. These projects are a part of every course at Careerera and they will thoroughly test your learning, skills, and practical knowledge, making you fully and comprehensively ready for the industry jobs.</p>
                 <p>You will have the opportunity to work on extremely exciting and demanding projects in the fields of hi-tech IT, Marketing, Sales, Ecommerce, Insurance, Banking, Networking etc. After completing the projects successfully your skills will be equivalent to 6 full months of painstaking and rigorous industry experience.</p>
 
               </div>'
                 ques5='Q5 : Does Careerera provide any kind of job assistance?'
-                ans5='<div class="accord_body_content">
+                ans5='<div className="accord_body_content">
                 <p>Careerera supports its learners by providing placement assistance to all learners who successfully complete the course and pass all the exams, projects, and assignments. We have partnerships with lots of MNCs and other top employers around the world. Through our networks of contacts, you can successfully land a job in several outstanding organizations and equally great enterprises. We also conduct several free seminars and workshops on how to create one’s resume and how to prepare for job interviews. We will also conduct counselling sessions which will be for Career mentoring and participating in Career fairs.</p>
 
               </div>'
                 ques6='Q6 : What is the definition of Digital Marketing? What makes it so important?'
-                ans6='<div class="accord_body_content">
+                ans6='<div className="accord_body_content">
                 <p>A : Digital Marketing is the process of using the internet, mobile devices, social media, search engines, and other channels to connect with consumers. Many marketing experts consider digital marketing to be a completely new field which requires many novel ways of reaching customers and different ways of comprehending the behaviour of customers compared to traditional marketing.</p>
                 <p>Digital marketing pinpoints a precise segment of the customer base and seeks to interact with them in profitable ways. Digital Marketing is growing rapidly as a field and includes email ads, search result ads, and promoted tweets – whatever includes marketing along with customer feedback or a both-sides interaction in between the customer and the company. There are many types of digital marketing, or digital marketing channels, such as Website marketing, Pay-per-Click (PPC) advertising, Content marketing, Email marketing, Social Media marketing, Affiliate marketing, Video marketing, SMS messaging etc. </p>
                 <p>Digital marketing is extremely important in today’s world which runs almost completely on the digital platform. There are many different digital channels being released every few days and the businesses and organizations have to stay abreast of these developments or be caught up forever in playing catchup. So the tools and techniques of Digital Marketing are very important to introduce one’s product to the modern target demographic.</p>
 
               </div>'
                 ques7='Q7 : Is a Digital Marketer a good Career choice?'
-                ans7='<div class="accord_body_content">
+                ans7='<div className="accord_body_content">
                 <p>A : Digital Marketing is in huge demand in many industries, ranging from IT to Finance to Ecommerce to Manufacturing to Healthcare to Retail.  It is the fastest growing job on Linkedin and is predicted to create 11.5 million jobs by 2026. This makes Digital Marketer a very lucrative career choice. Also, the number of people who actually possess the requisite skillsets to become a complete Digital Marketer is very little. Thus, there is a high demand of Digital Marketer but a low supply of qualified people. So Digital Marketers can demand as big a salary as they want and the companies will have to comply with their demands.</p>
 
               </div>'
                 ques8='Q8 : What are the skills required to start a job in the field of Digital Marketing?'
-                ans8='<div class="accord_body_content">
+                ans8='<div className="accord_body_content">
                 <p>A : A Digital Marketer should have the ability to analyze data and draw insights so that they can track customer behaviour using data. He should possess organization and project management skills because running multiple digital campaigns becomes very complex very quickly. He will also need to lead and direct internal and external teams to manage projects and deliverables. He should also possess advanced social media knowledge because Digital Marketers have to build engaging communities on social media.</p>
 
               </div>'
                 ques9='Q9 : Who is eligible for taking the PGP in Digital Marketing course from Careerera?'
-                ans9='<div class="accord_body_content">
+                ans9='<div className="accord_body_content">
                 <p>A : Companies who will seek to hire Digital marketers will look for the following degrees - 
 
 
@@ -918,28 +923,28 @@ Media advertisement by 2020.'
 
               </div>'
                 ques10='Q10 : What are the tools and technologies used to teach this PGP in Digital Marketing course from Careerera?'
-                ans10='<div class="accord_body_content">
+                ans10='<div className="accord_body_content">
                 <p>A : Wyng, Woobox, Facebook’s Power Editor, Mailchimp, AdRoll, Canva are some of the tools and technologies used in this course.</p>
 
               </div>'
                 ques11='Q11 : What is the duration of this PGP in Digital Marketing course from Careerera?'
-                ans11='<div class="accord_body_content">
+                ans11='<div className="accord_body_content">
                 <p>A : The PGP in Digital Marketing course from Careerera is a 9 month long online program.</p>
 
               </div>'
                 ques12='Q12 : Which topics are covered in the course curriculum of the PGP in Digital Marketing course from Careerera?'
-                ans12='<div class="accord_body_content">
+                ans12='<div className="accord_body_content">
                 <p>A : What do you mean by digital marketing?, Understanding the process of Digital Marketing, Enlightening brand visibility, Niche targeted traffic concepts, Implementing strategies for lead generation, Registering domain and webhosting, Introduction to SEO, Introduction to SERP, How google algorithms work, Niche targeted keyword research, Tools for competitor analysis, Static and dynamic web optimization</p>
 
               </div>'
                 ques13='Q13 : Which sectors are the capstone projects based on?'
-                ans13='<div class="accord_body_content">
+                ans13='<div className="accord_body_content">
                 <p>A : Retail, Web and Social Media, Supply Chain, Entrepreneurship, E-commerce, Banking, Healthcare, Insurance, Finance and Accounts etc.</p>
 
               </div>'
                 ques14='Q14 : Why should one choose Careerera?'
-                ans14='<div class="accord_body_content">
-                <ul class="faq_ul_list">
+                ans14='<div className="accord_body_content">
+                <ul className="faq_ul_list">
                   <li>  As an education provider, Careerera aims at developing the overall personality of an individual so that they can progress into becoming highly skilled working professionals.</li>
 <li> Careerera’s faculty utilize contemporary tactics in order to deliver training sessions which include one-to-one interaction between the participants and the instructor.</li>
 <li> The trainers appointed for Careerera’s courses possess a very high level of expertise in their subjects and fields. Therefore Careerera can easily guarantee positive results for all the participants.</li>

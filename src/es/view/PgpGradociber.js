@@ -19,9 +19,11 @@ import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet"; 
 import { Link } from 'react-router-dom'
 import aiMlimg from '../../Images/data_science.png'
+import { useParams } from 'react-router'
 
 
 const PgpGradociber = () => {
+    let { dats } = useParams()
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -37,7 +39,7 @@ const PgpGradociber = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/cyber-security/programa-de-postgrado-en-seguridad-cibernetica" />
             </Helmet>
 
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" /> */}
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" /> urlpath={dats}*/}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA"
@@ -1504,17 +1506,17 @@ const PgpGradociber = () => {
                     targetblankbx='true'
 
                     date1={'26-Agto'}
-                    title1={<>CISA vs CISSP: ¿Cuál es el adecuado para usted? <span class="cost">leer más</span></>}
+                    title1={<>CISA vs CISSP: ¿Cuál es el adecuado para usted? <span className="cost">leer más</span></>}
                     url1={"https://my.careerera.com/eventimages/Newsid_347_images0.jpg"}
                     redirect1={"https://www.careerera.com/blog/cisa-vs-cissp-which-one-is-right-for-you"}
 
                     date2={'11-Agto'}
-                    title2={<>¿Vale la pena una certificación de ciberseguridad? <span class="cost">leer más</span></>}
+                    title2={<>¿Vale la pena una certificación de ciberseguridad? <span className="cost">leer más</span></>}
                     url2={"https://my.careerera.com/eventimages/Newsid_343_images0.jpg"}
                     redirect2={"https://www.careerera.com/blog/is-a-cybersecurity-certification-worth-it"}
 
                     date3={'27-Mar'}
-                    title3={<>¿Cómo me convierto en un profesional de la seguridad cibernética en 2021?   <span class="cost">leer más</span></>}
+                    title3={<>¿Cómo me convierto en un profesional de la seguridad cibernética en 2021?   <span className="cost">leer más</span></>}
                     url3={"https://my.careerera.com/eventimages/Newsid_339_images0.jpg"}
                     redirect3={"https://www.careerera.com/blog/how-do-i-become-a-cyber-security-professional"}
                 />

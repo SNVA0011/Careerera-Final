@@ -5,7 +5,7 @@ import toplayer from '../../Images/mocktest/top-layer.png'
 const Why = () => {
     return (
         <div className='testimonials-areamock whyobject-sc learnus' id='online_education'>
-            <div className="shape-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div>
+            <div className="shape-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div>
 
             <div className='full-w overflow-hidden'>
                 <div className="container py-16">
@@ -47,9 +47,9 @@ const Why = () => {
                                 </div>
                                 <h3 className='text-lg md:text-xl font-bold tracking-normal mb-3 '>How you can benefit from this program:</h3>
                                 <ul className="p-0 font-medium text-base md:text-lg">
-                                    <li className='d-flex mb-2'><i class="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Add a parallel path of income to your existing business.</li>
-                                    <li className='d-flex mb-2'><i class="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Become a Channel partner of a prestigious brand.</li>
-                                    <li className='d-flex mb-2'><i class="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Introduce a broad selection of innovative learning solutions to your existing enterprise customers.</li>
+                                    <li className='d-flex mb-2'><i className="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Add a parallel path of income to your existing business.</li>
+                                    <li className='d-flex mb-2'><i className="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Become a Channel partner of a prestigious brand.</li>
+                                    <li className='d-flex mb-2'><i className="bi bi-check-circle-fill mr-3 text-2xl orange-clrsite"></i> Introduce a broad selection of innovative learning solutions to your existing enterprise customers.</li>
                                 </ul>
                             </div>
 

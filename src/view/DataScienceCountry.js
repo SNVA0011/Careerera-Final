@@ -66,7 +66,7 @@ export default function DataScienceCountry() {
                 <h1 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-white uppercase">
                   Data Science <span className="orange-lgclr d-inline">CERTIFICATION COURSE IN {countrycourse.countrycourse.replace('-', ' ')} </span>
                 </h1>
-                <span class="heading-border-line d-block left-0  mt-3 mb-4"></span>
+                <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
 
                 <p className="text-base sm:text-lg md:text-xl text-white my-8 font-medium  tracking-wide">
                   Go beyond the basics and leverage your decision-making abilities while you navigate through the vast metrics and visualizations with Careerera's Data Science certification course in {countrycourse.countrycourse}. Get into immersive training by industry experts with course programs curated conscientiously giving students exposure to hands-on practical projects and key technologies. Unriddle the data ecosystem and foster actionable recommendations by creating a data-driven framework for your organization and yourself. Reading code to comprehend syntax is made easy and quick with the Data Science course at Careerera. Learn, grow and inspire to act based n facts with this world-class Data Science course in <span className='capitalize'>{countrycourse.countrycourse.replace('-', ' ')}</span>, and propel your Data science career to the next level.
@@ -95,8 +95,8 @@ export default function DataScienceCountry() {
               </div>
 
               {data[0] ?
-                <div class="blog-detials-single">
-                  <div class="content st data-scinece-othercer" dangerouslySetInnerHTML={{ __html: data[0].state_desc }}>
+                <div className="blog-detials-single">
+                  <div className="content st data-scinece-othercer" dangerouslySetInnerHTML={{ __html: data[0].state_desc }}>
                   </div>
                 </div>
                 : ''}

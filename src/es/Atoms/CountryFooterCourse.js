@@ -10,7 +10,7 @@ const CountryFooterCourse = (props) => {
 
 
   async function CallApi() {
-    const dat = await fetch(base, {
+   await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/state1.php?service="+props.title.replace(/\s/g, '-') }),
       headers: {

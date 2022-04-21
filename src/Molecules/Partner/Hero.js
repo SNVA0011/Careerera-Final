@@ -47,7 +47,7 @@ const Hero = () => {
                 Upgrade your business with Careerera for Business
               </h1>
 
-              <span class="text-xl md:text-2xl light font-light tracking-wide  text-center text-lg-left d-block">
+              <span className="text-xl md:text-2xl light font-light tracking-wide  text-center text-lg-left d-block">
                 Join Careerera for Business  <strong className='orange-clrsite'>Partner with us program</strong>
               </span>
 
@@ -55,12 +55,12 @@ const Hero = () => {
 
               <h3 className='text-lg md:text-xl font-semibold tracking-normal'>With our services in your enterprise network, you can help your organisation go farther as a Channel Partner:</h3>
               <ul className='p-0 text-gray-300 font-medium text-base md:text-lg '>
-                <li className='d-flex mb-2'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Work for India's prestigious higher education firm, which has offices in APAC, USA, Dubai, India, UK, Malaysia and Europe.</li>
-                <li className='d-flex mb-2'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Develop new capabilities, innovate more quickly, and collaborate on ideas.</li>
-                <li className='d-flex mb-2'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Find new strategies to expand your company's sales and pipeline</li>
-                <li className='d-flex mb-2'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Become a part of a dynamic ecosystem with an ever-expanding variety of solutions.</li>
-                <li className='d-flex mb-2'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Gain access to new markets and clients.</li>
-                <li className='d-flex'><i class="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Demonstration of our services</li>
+                <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Work for India's prestigious higher education firm, which has offices in APAC, USA, Dubai, India, UK, Malaysia and Europe.</li>
+                <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Develop new capabilities, innovate more quickly, and collaborate on ideas.</li>
+                <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Find new strategies to expand your company's sales and pipeline</li>
+                <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Become a part of a dynamic ecosystem with an ever-expanding variety of solutions.</li>
+                <li className='d-flex mb-2'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Gain access to new markets and clients.</li>
+                <li className='d-flex'><i className="bi bi-check2-circle mr-3 text-2xl orange-clrsite"></i> Demonstration of our services</li>
               </ul>
 
               <hr></hr>
@@ -69,14 +69,14 @@ const Hero = () => {
                   <div className="row">
                     <div className='col-md-6 mb-3 col-12'>
                       <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="tel:+919643034607" target='_blank' rel='noreferrer' >
-                        <i class="bi  bi-telephone roundmail-ul mr-2 orange-clrsite"></i>
+                        <i className="bi  bi-telephone roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>+91 9643-034-607</span>
                       </a>
                     </div>
 
                     <div className='col-md-6 mb-3 col-12'>
                       <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="https://api.whatsapp.com/send?phone=+919643034607&text=Hi%2C%20I%20am%20interested%20in%20Partner%20with%20us%20program%20of%20Careerera" target='_blank' rel='noreferrer' >
-                        <i class="bi bi-whatsapp roundmail-ul mr-2 orange-clrsite"></i>
+                        <i className="bi bi-whatsapp roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>+91 9643-034-607</span>
                       </a>
                     </div>
@@ -84,7 +84,7 @@ const Hero = () => {
 
                     <div className='col-md-6 col-12'>
                       <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="mailto:partnerwithus@careerera.com" target='_blank' rel='noreferrer' >
-                        <i class="bi bi-envelope roundmail-ul mr-2 orange-clrsite"></i>
+                        <i className="bi bi-envelope roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>partnerwithus@careerera.com</span>
                       </a>
                     </div>
@@ -303,13 +303,13 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
           <div className='text-center mt-5'>
             <a href="#online_education" className="btn-site invert no-underline down-pprog">
-              <span><i class="bi bi-arrow-down-circle text-2xl"></i></span>
+              <span><i className="bi bi-arrow-down-circle text-2xl"></i></span>
             </a>
           </div>
 
         </div>
 
-        <div class="overflow-hidden ppt-clistaff mt-shapeneed"><div class="shape-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div></div>
+        <div className="overflow-hidden ppt-clistaff mt-shapeneed"><div className="shape-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div></div>
       </div>
     </div>
   )

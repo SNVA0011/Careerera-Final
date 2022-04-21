@@ -26,7 +26,7 @@ import PopUp from "../Atoms/PopUp";
 import fullSimg from "../Images/uiux_img.jpg";
 import full_stack_batch_profile2 from "../Images/full_stack_batch_profile_2.svg";
 import full_stack_education_bg2 from "../Images/full_stack_education_bg_2.svg";
-
+import { useParams } from 'react-router'
 import pgUiimTconcep from "../Images/data-science-icon/THE-CONCEPT.png"
 import pgUiimTHE from "../Images/data-science-icon/THE-CHALLENGE.png"
 import pgUiimMY from "../Images/data-science-icon/MY-ROLE.png"
@@ -40,6 +40,9 @@ import pgUiimSURVEY from "../Images/data-science-icon/SURVEY-FINDINGS.png"
 
 
 const PgpUi = () => {
+    
+let { dats } = useParams()
+
     return (
         <div className="static-pgpintell">
             <Helmet>
@@ -47,7 +50,7 @@ const PgpUi = () => {
                 <meta name="description" content="Enroll in Post Graduate Certification in UI & UX Design course gives you wide coverage to main ideas and techniques. Careerera helps to equip your career PGP in UI & UX Design." />
                 <meta name="keywords" content="PGP In UI Design, Post Graduate Program In UI Design, Post Graduate Program In UX Design, Post Graduate Certification In UI Design, Post Graduate Certification In UX Design" />
             </Helmet>
-            <PopUp title="Post Graduate Program in UI and UX " />
+            <PopUp title="Post Graduate Program in UI and UX " urlpath={dats}/>
 
             <Hero
                 categoryUrl="UI & UX DESIGN"
@@ -473,7 +476,7 @@ const PgpUi = () => {
 
                 ques1='Q1 : What is the PGP in UI/UX design course from Careerera and what makes it different
 from individual courses?'
-                ans1='<div class="accord_body_content">
+                ans1='<div className="accord_body_content">
                 <p>A : Post Graduate Program in UI/UX is a carefully designed learning path that has been
 created by some of the leading industry experts. The structure of the course curriculum has
 been set up in a way that even a complete beginner to UI/UX design will be able to follow the
@@ -483,7 +486,7 @@ the course.</p>
 
               </div>'
                 ques2='Q2 : Can Careerera provide the PGP in UI/UX design course at a location near me?'
-                ans2='<div class="accord_body_content">
+                ans2='<div className="accord_body_content">
                   <p>A : Our course content is intended to reach learners globally. Whether you reside in any
 country be it India, Canada, USA, Philippines, Singapore, Malaysia, Australia, or European
 countries like UK, Germany, Netherlands, Germany or somewhere else, you will be able to
@@ -493,7 +496,7 @@ available 100% online. You can access all of our content sitting at your home or
               </div>'
                 ques3='Q3 : Can I ask for a support and doubt clearing session if I want to understand the topics at a
 deeper level?'
-                ans3='<div class="accord_body_content">
+                ans3='<div className="accord_body_content">
                 <p>A : Careerera offers 24/7 query resolution and you can file a ticket with a dedicated support
 team at any time. We provide both email and video chat support for all the queries. If your
 query does not get resolved in a suitable amount of time through email, we will arrange live
@@ -505,7 +508,7 @@ tickets as they want; we do not place any limit on the number of tickets they ca
 
               </div>'
                 ques4='Q4 : Which kind of projects are assigned as part of the training?'
-                ans4='<div class="accord_body_content">
+                ans4='<div className="accord_body_content">
                 <p>A : Careerera assigns the most up to date, relevant, and practical high-value projects to its
 learners. They carry a lot of real world value as they are designed carefully by our world-class
 instructors to provide practical and hands-on experience to the learners as they complete
@@ -521,7 +524,7 @@ painstaking and rigorous industry experience.</p>
 
               </div>'
                 ques5='Q5 : Does Careerera provide any kind of job assistance?'
-                ans5='<div class="accord_body_content">
+                ans5='<div className="accord_body_content">
                 <p>Careerera supports its learners by providing placement assistance to all learners who
 successfully complete the course and pass all the exams, projects, and assignments. We
 have partnerships with lots of MNCs and other top employers around the world. Through our
@@ -532,7 +535,7 @@ counselling sessions which will be for Career mentoring and participating in Car
 
               </div>'
                 ques6='Q6 : What is the definition of UI/UX design? What makes it so important?'
-                ans6='<div class="accord_body_content">
+                ans6='<div className="accord_body_content">
                 <p>A : The function of a UI/UX designer is to create and design optimal user interfaces and user
 experiences. They are responsible for ensuring that the user has a smooth interaction with
 the software and can navigate around the software easily and without any hassles. In today’s
@@ -564,7 +567,7 @@ flows.</li>
 
               </div>'
                 ques7='Q7 : Is UI/UX designer a good Career choice?'
-                ans7='<div class="accord_body_content">
+                ans7='<div className="accord_body_content">
                 <p>A : UI/UX design is in huge demand in many industries, ranging from IT to Finance to
 Ecommerce to Manufacturing to Healthcare to Retail. It is the fastest growing job on Linkedin
 and is predicted to create 11.5 million jobs by 2026. This makes UI/UX design a very lucrative
@@ -576,7 +579,7 @@ as big a salary as they want and the companies will have to comply with their de
 
               </div>'
                 ques8='Q8 : What are the skills required to start a job in the field of UI/UX design?'
-                ans8='<div class="accord_body_content">
+                ans8='<div className="accord_body_content">
                 <p>A : The skills you will require to land a job in the field of UI/UX design are – HTML, CSS,
 Javascript, knowledge of various front-end platforms, customer and competitor analysis skills,
 user research skills, prototyping and wireframing skills, testing and iterating skills,
@@ -584,7 +587,7 @@ coordination skills.</p>
 
               </div>'
                 ques9='Q9 : Who is eligible for taking the PGP in UI/UX design course from Careerera?'
-                ans9='<div class="accord_body_content">
+                ans9='<div className="accord_body_content">
                 <p>A : Companies who will seek to hire UI/UX designers will look for the following degrees -  </p>
                 <p>12 th pass from the Science stream or IT stream.</p>
                 <p>For fresh graduates or college students - A degree in B.Tech/M.Tech (Any Trade), IT, BCA,
@@ -598,18 +601,18 @@ programming experience. We teach all the modules from scratch.</p>
               </div>'
                 ques10='Q10 : What are the tools and technologies used to teach this PGP in UI/UX design course
 from Careerera?'
-                ans10='<div class="accord_body_content">
+                ans10='<div className="accord_body_content">
                 <p>A : HTML, CSS, Javascript, Adobe XD, Axure, Balsamiq, Figma, Adobe Photoshop, Sketch.</p>
 
               </div>'
                 ques11='Q11 : What is the duration of this PGP in UI/UX design course from Careerera?'
-                ans11='<div class="accord_body_content">
+                ans11='<div className="accord_body_content">
                 <p>A : The PGP in UI/UX design course from Careerera is a 12 month long online program.</p>
 
               </div>'
                 ques12='Q12 : Which topics are covered in the course curriculum of the PGP in UI/UX design course
 from Careerera?'
-                ans12='<div class="accord_body_content">
+                ans12='<div className="accord_body_content">
                 <p>A : There are several topics pertinent to the field of UI/UX design which are covered in this
 PGP in UI/UX design course. Some of them are as follows – User interaction, Cognitive
 model, Mental model, Elements of UX design, Persona in UX design, UX process, Flow chat,
@@ -619,28 +622,28 @@ Applying the usability test feedback.</p>
 
               </div>'
                 ques13='Q13 : Which sectors are the capstone projects based on?'
-                ans13='<div class="accord_body_content">
+                ans13='<div className="accord_body_content">
                 <p>A : Retail, Web and Social Media, Supply Chain, Entrepreneurship, E-commerce, Banking,
 Healthcare, Insurance, Finance and Accounts etc.</p>
 
               </div>'
                 ques14='Q14 : Is there any guarantee of placement after the completion of the PGP in UI/UX design
 course?'
-                ans14='<div class="accord_body_content">
+                ans14='<div className="accord_body_content">
                 <p>A : Yes, there is a 100% guarantee of placement after the completion of the course.</p>
 
               </div>'
                 ques15='Q15 : Is there a refund of the course fees in case I do not get placed after the completion of
 the course?'
-                ans15='<div class="accord_body_content">
+                ans15='<div className="accord_body_content">
                 <p>A : It is not likely to happen given our past success rate with the placements of our learners.
 However, if it so happens that one of our learners does not get placed, we will provide a full
 refund of the course fees directly into the learner’s bank account with no questions asked. </p>
 
               </div>'
                 ques16='Q16 : Why should one choose Careerera?'
-                ans16='<div class="accord_body_content">
-                <ul class="faq_ul_list">
+                ans16='<div className="accord_body_content">
+                <ul className="faq_ul_list">
                   <li> As an education provider, Careerera aims at developing the overall personality of an
 individual so that they can progress into becoming highly skilled working professionals.</li>
 <li>Careerera’s faculty utilize contemporary tactics in order to deliver training sessions

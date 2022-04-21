@@ -18,7 +18,7 @@ import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
 import fullSimg from "../Images/ai-ml-img.jpg";
-
+import { useParams } from 'react-router'
 import csr from "../Images/ai-ml-roles-offer.png";
 import full_stack_batch_profile2 from "../Images/full_stack_batch_profile_2.svg";
 import full_stack_education_bg2 from "../Images/full_stack_education_bg_2.svg";
@@ -35,17 +35,18 @@ import fullStItem from "../Images/data-science-icon/Item-catalog-application.png
 
 
 const PgpArtificalIntelligence = () => {
+    let { dats } = useParams()
+
     return (
         <div className='static-pgpintell'>
             <Helmet>
                 <title>Post Graduate (PG) Program in AI and Machine Learning | Careerera</title>
-
                 <meta name="description" content="Get PG Diploma in Machine Learning and Artificial Intelligence courses at Careerera. PGP in AI and ML give the learners exposure to all the important developments from the industry." />
                 <meta name="keywords" content="PG Program in Artificial Intelligence and Machine Learning, pg diploma in machine learning and ai, machine learning courses online, ai and machine learning course, artificial intelligence training, artificial intelligence course online, artificial intelligence certification, post graduate program in machine learning & ai, post graduate, program in machine learning & artificial intelligence, pgp in machine learning & ai, pgp in machine learning & artificial intelligence" />
                 <link rel="canonical" href="https://www.careerera.com/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" />
-
             </Helmet>
-            <PopUp title="PGP in Artificial Intelligence and Machine Learning" />
+
+            <PopUp title="PGP in Artificial Intelligence and Machine Learning" urlpath={dats}/>
 
             <Hero
                 categoryUrl="ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"
@@ -609,7 +610,7 @@ const PgpArtificalIntelligence = () => {
 
                 ques1='1 : What is the PGP in Artificial Intelligence and Machine Learning course from Careerera and
       what makes it different from individual courses?'
-                ans1='<div class="accord_body_content">
+                ans1='<div className="accord_body_content">
         <p>A : Post Graduate Program in Artificial Intelligence and Machine Learning is a carefully
           designed learning path that has been created by some of the leading industry experts. The
           structure of the course curriculum has been set up in a way that even a complete beginner to
@@ -621,7 +622,7 @@ const PgpArtificalIntelligence = () => {
       </div>'
                 ques2='Q2 : Can Careerera provide the PGP in Artificial Intelligence and Machine Learning course at
       a location near me?'
-                ans2='<div class="accord_body_content">
+                ans2='<div className="accord_body_content">
         <p>A : Our course content is intended to reach learners globally. Whether you reside in any
           country be it India, Canada, USA, Philippines, Singapore, Malaysia, Australia, or European
           countries like UK, Germany, Netherlands, Germany or somewhere else, you will be able to
@@ -631,7 +632,7 @@ const PgpArtificalIntelligence = () => {
       </div>'
                 ques3='Q3 : Can I ask for a support and doubt clearing session if I want to understand the topics at a
       deeper level?'
-                ans3='<div class="accord_body_content">
+                ans3='<div className="accord_body_content">
         <p>A : Careerera offers 24/7 query resolution and you can file a ticket with a dedicated support
           team at any time. We provide both email and video chat support for all the queries. If your
           query does not get resolved in a suitable amount of time through email, we will arrange live
@@ -643,7 +644,7 @@ const PgpArtificalIntelligence = () => {
 
       </div>'
                 ques4='Q4 : Which kind of projects are assigned as part of the training?'
-                ans4='<div class="accord_body_content">
+                ans4='<div className="accord_body_content">
         <p>A : Careerera assigns the most up to date, relevant, and practical high-value projects to its
           learners. They carry a lot of real world value as they are designed carefully by our world-class
           instructors to provide practical and hands-on experience to the learners as they complete
@@ -660,7 +661,7 @@ const PgpArtificalIntelligence = () => {
 
       </div>'
                 ques5='Q5 : Does Careerera provide any kind of job assistance?'
-                ans5='<div class="accord_body_content">
+                ans5='<div className="accord_body_content">
         <p>Careerera supports its learners by providing placement assistance to all learners who
           successfully complete the course and pass all the exams, projects, and assignments. We
           have partnerships with lots of MNCs and other top employers around the world. Through our
@@ -672,7 +673,7 @@ const PgpArtificalIntelligence = () => {
       </div>'
                 ques6='Q6 : What is the definition of Artificial Intelligence and Machine Learning? What makes it so
       important?'
-                ans6='<div class="accord_body_content">
+                ans6='<div className="accord_body_content">
         <p>A : Artificial Intelligence and Machine learning are a very important part of Computer Science.
           They are quite interrelated with each other and have many points in common. Artificial
           Intelligence is at its most basic level a technology which enables machines to exhibit
@@ -698,7 +699,7 @@ const PgpArtificalIntelligence = () => {
 
       </div>'
                 ques7='Q7 : Is Artificial Intelligence and Machine Learning expert a good Career choice?'
-                ans7='<div class="accord_body_content">
+                ans7='<div className="accord_body_content">
         <p>A : Artificial Intelligence and Machine Learning is in huge demand in many industries, ranging
           from IT to Finance to Ecommerce to Manufacturing to Healthcare to Retail. It is the fastest
           growing job on Linkedin and is predicted to create 20 million jobs by 2026. This makes
@@ -713,7 +714,7 @@ const PgpArtificalIntelligence = () => {
       </div>'
                 ques8='Q8 : What are the skills required to start a job in the field of Artificial Intelligence and Machine
       Learning?'
-                ans8='<div class="accord_body_content">
+                ans8='<div className="accord_body_content">
         <p>A : The skills you will require to land a job in the field of Artificial Intelligence and Machine
           Learning are – Testing and iterating skills, Python functions, packages, and routines
           knowledge, Mathematical knowledge, Physics knowledge, Mechanics knowledge, cognitive
@@ -723,7 +724,7 @@ const PgpArtificalIntelligence = () => {
       </div>'
                 ques9='Q9 : Who is eligible for taking the PGP in Artificial Intelligence and Machine Learning course
         from Careerera?'
-                ans9='<div class="accord_body_content">
+                ans9='<div className="accord_body_content">
           <p>A : Companies who will seek to hire Artificial Intelligence and Machine Learningers will look
             for the following degrees - </p>
           <p>12 th pass from the Science stream or IT stream.</p>
@@ -737,20 +738,20 @@ const PgpArtificalIntelligence = () => {
         </div>'
                 ques10='Q10 : What are the tools and technologies used to teach this PGP in Artificial Intelligence and
         Machine Learning course from Careerera?'
-                ans10='<div class="accord_body_content">
+                ans10='<div className="accord_body_content">
           <p>A : Pandas, Numpy, Matplotlib, Seaborn, Sci-kit, Anaconda, Jupyter, NLTK, Python, Keras.</p>
 
         </div>'
                 ques11='Q11 : What is the duration of this PGP in Artificial Intelligence and Machine Learning course
         from Careerera?'
-                ans11='<div class="accord_body_content">
+                ans11='<div className="accord_body_content">
           <p>A : The PGP in Artificial Intelligence and Machine Learning course from Careerera is a 12
             month long online program.</p>
 
         </div>'
                 ques12='Q12 : Which topics are covered in the course curriculum of the PGP in Artificial Intelligence
         and Machine Learning course from Careerera?'
-                ans12='<div class="accord_body_content">
+                ans12='<div className="accord_body_content">
           <p>A : There are several topics pertinent to the field of Artificial Intelligence and Machine
             Learning which are covered in this PGP in Artificial Intelligence and Machine Learning course.
             Some of them are as follows – NLP, Deep learning, Reinforcement learning, Graphical
@@ -761,15 +762,15 @@ const PgpArtificalIntelligence = () => {
 
         </div>'
                 ques13='Q13 : Which sectors are the capstone projects based on?'
-                ans13='<div class="accord_body_content">
+                ans13='<div className="accord_body_content">
           <p>A : Retail, Web and Social Media, Supply Chain, Entrepreneurship, E-commerce, Banking,
             Healthcare, Insurance, Finance and Accounts etc.</p>
 
         </div>'
                 ques14='Q14 : What is the target audience of this course?'
-                ans14='<div class="accord_body_content">
+                ans14='<div className="accord_body_content">
           <p>Audience Profile :</p>
-          <p class="mb-1">The intended audience for the PG Program in Artificial Intelligence and Machine Learning are:</p>
+          <p className="mb-1">The intended audience for the PG Program in Artificial Intelligence and Machine Learning are:</p>
           <ul>
           <li>IT Professionals</li>
           <li>Data Professionals</li>
@@ -779,7 +780,7 @@ const PgpArtificalIntelligence = () => {
           </ul>
         </div>'
                 ques15='Q15 : Why should one choose Careerera?'
-                ans15='<div class="accord_body_content"><ul>
+                ans15='<div className="accord_body_content"><ul>
           <li>As an education provider, Careerera aims at developing the overall personality of an
             individual so that they can progress into becoming highly skilled working professionals.</li>
           <li>Careerera’s faculty utilize contemporary tactics in order to deliver training sessions

@@ -178,11 +178,11 @@ const BatchDetail = (props) => {
                 }
 
  
-                <p className="text-lg mb-3 mt-16"><i class="bi bi-calendar4-event mr-1  sitblu-clrsite text-xl"></i> <span className="font-semibold sitblu-clrsite text-xl mr-2">Orientation Date:-</span>
+                <p className="text-lg mb-3 mt-16"><i className="bi bi-calendar4-event mr-1  sitblu-clrsite text-xl"></i> <span className="font-semibold sitblu-clrsite text-xl mr-2">Orientation Date:-</span>
                   <span className="d-block mb-1"></span>
                   {Detail[0].batchDetails[0].Date} ({contextcur.currency})</p>
                 <hr className="w-25"></hr>
-                <p className="text-lg mb-1"><i class="bi bi-clock-history mr-1  sitblu-clrsite text-xl"></i> <span className="font-semibold sitblu-clrsite text-xl mr-2">Class Time:-</span>
+                <p className="text-lg mb-1"><i className="bi bi-clock-history mr-1  sitblu-clrsite text-xl"></i> <span className="font-semibold sitblu-clrsite text-xl mr-2">Class Time:-</span>
                   <span className="d-block mb-1"></span>
                   {Detail[0].batchDetails[0].Time.slice(0, 17)}({contextcur.currency}) </p>
                 <p className="text-red-500 font-semibold text-sm sm:text-base mt-3">Note: Date and class time can change in the wake of unavoidable circumstances</p>

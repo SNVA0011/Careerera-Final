@@ -7,7 +7,7 @@ export const Context = createContext()
 
 export const Provider = (props) => {
     let { id } = useParams()
-    let { news } = useParams()
+    // let { news } = useParams()
 
 
     // Store Api data in variable of usestate
@@ -43,13 +43,12 @@ export const Provider = (props) => {
     // console.log('Currency=>',contextcur);
 
     // Logger()
-    const [logger, setLogger] = useState([])
+    // const [logger, setLogger] = useState([])
 
 
     // Menu API -
-    async function getData() {
-        const Api = "https://my.careerera.com/API/course/TopCategoryMenubar.php"
-        const data = await fetch(base, {
+    async function getData() { 
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/course/TopCategoryMenubar.php" }),
             headers: {
@@ -62,7 +61,7 @@ export const Provider = (props) => {
  
 
     async function getCourse() {
-        const data = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CategoryPage.php?url=' + id + "&timeZone=EST" }),
             headers: {
@@ -94,7 +93,7 @@ export const Provider = (props) => {
 
     // Live Online Api
     async function AllfreeCourse() {
-        const data = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' + contextcur.currency }),
             headers: {
@@ -140,7 +139,7 @@ export const Provider = (props) => {
 
     // escoursoslist Api
     async function escoursoslist() {
-        const coursos = await fetch(base, {
+         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CourseList.php?Language=2' }),
             headers: {
@@ -154,7 +153,7 @@ export const Provider = (props) => {
 
     // escoursoslist Api
     async function allbatchlist() {
-        const batch = await fetch(base, {
+         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/AllBatchList.php?Language=2&timeZone=' + contextcur.currency }),
             headers: {

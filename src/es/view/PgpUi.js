@@ -1,24 +1,28 @@
-import React from "react"; 
+import React from "react";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
 import Highlight from "../Atoms/Highlight";
 import NavStatic from "../Atoms/NavStatic";
 import Testimonial from "../Atoms/Testimonial";
 import Sign from "../Molecules/Course/Sign";
-import UserformsApplication from "../Molecules/Course/UserformsApplication"; 
+import UserformsApplication from "../Molecules/Course/UserformsApplication";
 import Capstone from "../Molecules/Master/Capstone";
 import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
-import Hero from "../Molecules/Master/Hero"; 
-import MWhy from "../Molecules/Master/MWhy"; 
-import Profile from "../Molecules/Master/Profile"; 
+import Hero from "../Molecules/Master/Hero";
+import MWhy from "../Molecules/Master/MWhy";
+import Profile from "../Molecules/Master/Profile";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
+
 
 const PgpUi = () => {
+    let { dats } = useParams()
+
     return (
         <div className="static-pgpintell">
             <Helmet>
@@ -26,7 +30,9 @@ const PgpUi = () => {
                 <meta name="description" content="Enroll in Post Graduate Certification in UI & UX Design course gives you wide coverage to main ideas and techniques. Careerera helps to equip your career PGP in UI & UX Design." />
                 <meta name="keywords" content="PGP In UI Design, Post Graduate Program In UI Design, Post Graduate Program In UX Design, Post Graduate Certification In UI Design, Post Graduate Certification In UX Design" />
             </Helmet>
-<PopUp title="Post Graduate Program in UI and UX "/>
+
+            <PopUp title="Post Graduate Program in UI and UX " urlpath={dats} />
+
             <Hero
                 categoryUrl="UI & UX DESIGN"
                 duration="12-Months Online Program"
@@ -382,7 +388,7 @@ Designers have to -
             /> */}
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
-              <CountryFooter  pagetitle="UI and UX"/>
+            <CountryFooter pagetitle="UI and UX" />
         </div>
     )
 }

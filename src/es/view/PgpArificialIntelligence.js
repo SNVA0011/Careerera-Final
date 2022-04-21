@@ -17,8 +17,10 @@ import Profile from "../Molecules/Master/Profile";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
 
 const PgpArtificalIntelligence = () => {
+    let { dats } = useParams()
     return (
         <div className='static-pgpintell'>
             <Helmet>
@@ -27,7 +29,10 @@ const PgpArtificalIntelligence = () => {
                 <meta name="keywords" content="PG Program in Artificial Intelligence and Machine Learning, pg diploma in machine learning and ai, machine learning courses online, ai and machine learning course, artificial intelligence training, artificial intelligence course online, artificial intelligence certification, post graduate program in machine learning & ai, post graduate, program in machine learning & artificial intelligence, pgp in machine learning & ai, pgp in machine learning & artificial intelligence" />
                 <link rel="canonical" href="https://www.careerera.com/es/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" />
             </Helmet>
-            <PopUp title="PGP in Artificial Intelligence and Machine Learning" />
+
+            <PopUp title="PGP in Artificial Intelligence and Machine Learning" urlpath={dats}/>
+
+ 
 
             <Hero
                 categoryUrl="ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"

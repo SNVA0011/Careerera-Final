@@ -22,23 +22,28 @@ import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
+
+
 
 const PgpFullStack = () => {
+   let { dats } = useParams()
+
    return (
       <div className="static-pgpintell">
          <Helmet>
-         <title>Post Graduate Program(PGP) & Certification in UI & UX Design</title>
+            <title>Post Graduate Program(PGP) & Certification in UI & UX Design</title>
 
-         <title>Post Graduate Program in Full Stack Development | PGP in Full Stack | Careerera</title>
+            <title>Post Graduate Program in Full Stack Development | PGP in Full Stack | Careerera</title>
 
-<meta name="description" content="Post Graduate Program in full stack development is designed by industry experts. PGP in full stack at Careerera expertise you in technologies like Java, Angular, Spring Boot, Hibernate, and JSPs, MVC, and web services."/>
-<meta name="keywords" content="PGP in Full Stack Development, Post Graduate Program in Full Stack Development, Full Stack Post Graduate Program, PGP in Full Stack Development Course, PGP in Full Stack, Post Graduate Certification in Full Stack, PGP certification in Full Stack"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/es/software-development/pgp-in-full-stack-development"/>
+            <meta name="description" content="Post Graduate Program in full stack development is designed by industry experts. PGP in full stack at Careerera expertise you in technologies like Java, Angular, Spring Boot, Hibernate, and JSPs, MVC, and web services." />
+            <meta name="keywords" content="PGP in Full Stack Development, Post Graduate Program in Full Stack Development, Full Stack Post Graduate Program, PGP in Full Stack Development Course, PGP in Full Stack, Post Graduate Certification in Full Stack, PGP certification in Full Stack" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <link rel="canonical" href="https://www.careerera.com/es/software-development/pgp-in-full-stack-development" />
 
-<script type="application/ld+json">
-{`{"@context":"https://schema.org","@type":"Course",
+            <script type="application/ld+json">
+               {`{"@context":"https://schema.org","@type":"Course",
 "@id":"https://www.careerera.com/software-development/pgp-in-full-stack-development",
 "name":"Post Graduate Program In Full Stack Development",
 "description":"Post Graduate Program in full stack development is designed by industry experts. PGP in full stack at Careerera expertise you in technologies like Java, Angular, Spring Boot, Hibernate, and JSPs, MVC, and web services.",
@@ -53,7 +58,9 @@ const PgpFullStack = () => {
 
 
          </Helmet>
-<PopUp title="Post Graduate Program in Full Stack "/>
+
+         <PopUp title="Post Graduate Program in Full Stack " urlpath={dats}/>
+
          <Hero
             categoryUrl="Full Stack Development"
             duration="12-Months Online Program"
@@ -812,28 +819,28 @@ const PgpFullStack = () => {
              "
             ques10="Q10: Who all can enroll for this Course? "
             ans10="Fresh Graduates, IT and Technology Professionals, Project Leads and Managers in IT/Tech Companies, Tech Support Engineers, and Admins can feel free to enroll for this course."
-         ques12="Q11 : Which languages should I know as a Full-stack developer?"
-         ans12="Full-stack developers work with a wide range of programming languages. Having only one
+            ques12="Q11 : Which languages should I know as a Full-stack developer?"
+            ans12="Full-stack developers work with a wide range of programming languages. Having only one
 favorite coding language could be a red flag. An applicant should ideally be fluent in a few
 languages, especially ones with which he/she can design the front end and others with which
 he/she can manage the back end. A candidate should be able to show this effectively,
 remembering to include the most commonly used languages such as HTML, CSS, and Python."
-         ques13="Q12 : What are the most significant characteristics of a Full Stack Developer?"
-         ans13="The best qualities that are necessary for a full stack developer are being adept at the various
+            ques13="Q12 : What are the most significant characteristics of a Full Stack Developer?"
+            ans13="The best qualities that are necessary for a full stack developer are being adept at the various
 coding languages, as these skills are the foundation upon which a successful professional can
 be formed. Prospective professionals should also possess coordination abilities they would
 need when working in a team, emphasizing the importance of great observation skills in this
 capacity."
-         ques14="Q13 : Differentiate a front-end developer from a full-stack developer"
-         ans14="A front-end developer creates the user-interactive aspects of a product, whereas full stack
+            ques14="Q13 : Differentiate a front-end developer from a full-stack developer"
+            ans14="A front-end developer creates the user-interactive aspects of a product, whereas full stack
 developers can handle both the front end and the back end in other words - the entire stack of
 technology."
-         ques15="Q14 : Is it possible to become a full-stack developer with only a high school diploma?"
-         ans15="Employers often require an associate degree, although this position could be filled by someone
+            ques15="Q14 : Is it possible to become a full-stack developer with only a high school diploma?"
+            ans15="Employers often require an associate degree, although this position could be filled by someone
 with a high school certificate, work experience, and relevant skill certification."
-         ques16="Q15 : Aside from education, training, and abilities, what factors influence a full stack
+            ques16="Q15 : Aside from education, training, and abilities, what factors influence a full stack
 developer's salary?"
-         ans16="Salaries for all professions, including full-stack developers, can be influenced by corporate
+            ans16="Salaries for all professions, including full-stack developers, can be influenced by corporate
 characteristics and requirements, geographical location, and interview performance.
               "
          // ques17=""
@@ -858,7 +865,7 @@ characteristics and requirements, geographical location, and interview performan
          />
          <Testimonial title1="STUDENT'S"
             title2="Review" />
-             <CountryFooter  pagetitle="Full Stack"/>
+         <CountryFooter pagetitle="Full Stack" />
       </div>
    )
 }

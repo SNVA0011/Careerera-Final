@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Index from './view/Index'
 import Master from './view/Master'
@@ -18,7 +18,6 @@ import Blog from './view/Blog'
 import News from './view/News'
 import BlogDetail from './view/BlogDetail'
 import NewsDetail from './view/NewsDetail'
-import Login from './view/Login'
 import Help from './view/Help'
 import Payment from './view/Payment'
 import Disclaimer from './view/Disclaimer'
@@ -52,7 +51,6 @@ import MocktestRegisterForm from './view/MocktestRegisterForm'
 import MasterCountry from './view/MasterCountry'
 import Job from './view/Job'
 import InnerJob from './view/InnerJob'
-import StateCountry from './view/MasterState'
 import MasterState from './view/MasterState'
 import MasterCity from './view/MasterCity'
 import DataScienceCountry from './view/DataScienceCountry'
@@ -66,8 +64,7 @@ import BatchDetail from './view/BatchDetail'
 import DetailBatch from './view/DetailBatch'
 import BlogArabic from './view/BlogArabic'
 import BlogDetailArabic from './view/BlogDetailArabic'
-import Form from './Atoms/Form'
-import Forms from './Atoms/Form'
+
 
 const App = (props) => {
     const [mobmenuclose, setMobmenuclose] = useState();
@@ -76,6 +73,24 @@ const App = (props) => {
         currency: 'America/New_York',
         title: '+1-844-889-4054',
     })
+
+    
+    // remove console 
+    function RemoveConsole() {
+        const noop = () => { }
+        ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
+            'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
+            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+            'timeline', 'timelineEnd', 'timeStamp', 'trace',
+        ].forEach((method) => {
+            window.console[method] = noop
+        });
+    }
+    RemoveConsole()
+    // if (process.env.NODE_ENV === "production") {
+    //     RemoveConsole()
+    // }  
+
 
     return (
         <div className='d-flex flex-column minh-100'>

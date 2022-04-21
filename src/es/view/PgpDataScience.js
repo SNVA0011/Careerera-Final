@@ -6,36 +6,38 @@ import Highlight from "../Atoms/Highlight";
 import NavStatic from "../Atoms/NavStatic";
 import Testimonial from "../Atoms/Testimonial";
 import Sign from "../Molecules/Course/Sign";
-import UserformsApplication from "../Molecules/Course/UserformsApplication"; 
+import UserformsApplication from "../Molecules/Course/UserformsApplication";
 import Capstone from "../Molecules/Master/Capstone";
 import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
 import Hero from "../Molecules/Master/Hero";
 import Light from "../Molecules/Master/Light";
-import MWhy from "../Molecules/Master/MWhy"; 
+import MWhy from "../Molecules/Master/MWhy";
 import Profile from "../Molecules/Master/Profile";
 import roles from "../../Images/roles_offer.png";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
-import CountryFooter from "../Atoms/CountryFooter"; 
+import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
+import { useParams } from 'react-router'
 
 const PgpDataScience = (props) => {
-
+    let { dats } = useParams()
+ 
     return (
         <div className="static-pgpintell">
             <Helmet>
-            <title>Post Graduate Program (PGP) in Data Science | Careerera</title>
+                <title>Post Graduate Program (PGP) in Data Science | Careerera</title>
 
-<meta name="description" content="Post Graduate Program in Data Science course gives you wide coverage of main ideas and techniques from Python, Data Analysis to Machine Learning, and more. Careerera helps to equip your career PGP program in Data Science."/>
-<meta name="keywords" content="post graduate program in data science, post graduate certification in data science, pgp program in data science, post graduate diploma in data science, pgp in data science"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/es/data-science/post-graduate-program-in-data-science"/>
+                <meta name="description" content="Post Graduate Program in Data Science course gives you wide coverage of main ideas and techniques from Python, Data Analysis to Machine Learning, and more. Careerera helps to equip your career PGP program in Data Science." />
+                <meta name="keywords" content="post graduate program in data science, post graduate certification in data science, pgp program in data science, post graduate diploma in data science, pgp in data science" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <link rel="canonical" href="https://www.careerera.com/es/data-science/post-graduate-program-in-data-science" />
 
-<script type="application/ld+json">
-{`{"@context":"https://schema.org","@type":"Course",
+                <script type="application/ld+json">
+                    {`{"@context":"https://schema.org","@type":"Course",
 "@id":"https://www.careerera.com/data-science/post-graduate-program-in-data-science",
 "name":"Post Graduate Program in Data Science",
 "description":"Post Graduate Program in Data Science course gives you wide coverage of main ideas and techniques from Python, Data Analysis to Machine Learning, and more. Careerera helps to equip your career PGP program in Data Science.",
@@ -50,7 +52,9 @@ const PgpDataScience = (props) => {
 
 
             </Helmet>
-<PopUp title="Post Graduate Program in Data Science"/>
+
+            <PopUp title="Post Graduate Program in Data Science" urlpath={dats}/>
+
             <Hero
                 categoryUrl="DATA SCIENCE"
                 duration="12-Months Online Program"
@@ -650,8 +654,8 @@ const PgpDataScience = (props) => {
             <Light image={roles} />
             <UserformsApplication />
             <Sign
-            title="Data Science"
-             />
+                title="Data Science"
+            />
             <Faq
 
                 ques1="Q1 : What is the PGP in Data Science course from Careerera and what makes it different from individual courses?"
@@ -707,7 +711,7 @@ const PgpDataScience = (props) => {
                 ques15="Q14 : Is there any guarantee of placement after the completion of the PGP in Data Science course?"
                 ans15="A : We provide dedicated placement assistance after the program completion. We give guidance on resume writing, Conduct Workshops on Interview Preparation."
                 ques16="Q15 : Why should one choose Careerera?"
-                ans16='<ul class="faq_ul_list">
+                ans16='<ul className="faq_ul_list">
                 <li>As an education provider, Careerera aims at developing the overall personality of an
 individual so that they can progress into becoming highly skilled working professionals.</li>
 <li>Careerera’s faculty utilize contemporary tactics in order to deliver training sessions
@@ -745,7 +749,7 @@ their work on the other.</li>
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
 
-            <CountryFooter pagetitle="Data Science"/>
+            <CountryFooter pagetitle="Data Science" />
         </div>
     )
 }

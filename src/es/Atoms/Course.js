@@ -190,12 +190,12 @@ const Course = (props) => {
                                                                             </Link>
 
 
-                                                                            <Link to={'/es/'+totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]}
+                                                                            <Link to={'/es/'+totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]}
                                                                                 className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold"
                                                                                 onClick={(e) => setHidemenust(true)} key={ei}>
                                                                                 <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                     <div className="pr-smtime-2">
-                                                                                        {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                        {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                     </div>
 
                                                                                     <div className="text-gray-600 text-nowrap">
@@ -316,10 +316,10 @@ const Course = (props) => {
                                                                                                 </div>
                                                                                             </Link>
 
-                                                                                            <Link to={'/es/'+totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
+                                                                                            <Link to={'/es/'+totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
                                                                                                 <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                                     <div className="pr-smtime-2">
-                                                                                                        {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                                        {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                                     </div>
 
                                                                                                     <div className="text-gray-600 text-nowrap">

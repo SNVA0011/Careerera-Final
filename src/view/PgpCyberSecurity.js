@@ -18,7 +18,7 @@ import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
-
+import { useParams } from 'react-router'
 import capSnetwork from "../Images/data-science-icon/network-based.png";
 import capShost from "../Images/data-science-icon/host-based.png";
 import capShoney from "../Images/data-science-icon/honey-pot.png";
@@ -32,6 +32,8 @@ import fullSimg from "../Images/data_science.png";
 
 
 const PgpCyberSecurity = () => {
+    let { dats } = useParams()
+
     return (
         <div className="static-pgpintell">
             <Helmet>
@@ -46,7 +48,9 @@ const PgpCyberSecurity = () => {
 
 
             </Helmet>
-            <PopUp title="Post Graduate Program in Cyber Security" />
+
+            <PopUp title="Post Graduate Program in Cyber Security" urlpath={dats}/>
+
             <Hero
                 categoryUrl="CYBER SECURITY"
                 duration="12-Months Online Program"

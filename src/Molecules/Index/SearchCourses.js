@@ -22,6 +22,7 @@ export default function SearchCourses() {
     const handleShow = () => setShow(true)
 
     return status ? (
+        exactData.length > 0 ?
         <>
             <Button
                 variant="outline-primary"
@@ -90,7 +91,7 @@ export default function SearchCourses() {
                     </div>
                 </Modal.Body>
             </Modal>
-        </>
+        </> : ''
     ) : (
         <div className="mt-1">
             <div

@@ -23,16 +23,16 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-bar-chart-line text-6xl sitblu-clrsite"></i>
-                                <sup className='act-cseleor'><i class="bi bi-graph-up-arrow"></i></sup>
+                                <i className="bi bi-bar-chart-line text-6xl sitblu-clrsite"></i>
+                                <sup className='act-cseleor'><i className="bi bi-graph-up-arrow"></i></sup>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>Sales</h4>
                                
 
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Training and Activity Planners for on-ground marketing & sales team</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Training and Activity Planners for on-ground marketing & sales team</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>In-Centre Career Counselor training</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>In-Centre Career Counselor training</p>
 
                             </li>
                         </ul>
@@ -41,16 +41,16 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-mortarboard text-6xl sitblu-clrsite"></i>
+                                <i className="bi bi-mortarboard text-6xl sitblu-clrsite"></i>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>Faculty</h4>
 
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Training on content delivery</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Training on content delivery</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Training on latest course/curriculum updates</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Training on latest course/curriculum updates</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Industry updates</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Industry updates</p>
 
                             </li>
                         </ul>
@@ -59,14 +59,14 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-person-workspace text-6xl sitblu-clrsite"></i>
+                                <i className="bi bi-person-workspace text-6xl sitblu-clrsite"></i>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>Operations/Administration</h4>
 
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Operations set - up by Careerera team as per Operation Manual</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Operations set - up by Careerera team as per Operation Manual</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Daily Operations and Centre Management Training with reports</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Daily Operations and Centre Management Training with reports</p>
 
 
                             </li>
@@ -77,14 +77,14 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-pc-display text-6xl sitblu-clrsite"></i>
-                                <sup className='botrin-learn'><i class="bi bi-gear"></i></sup>
+                                <i className="bi bi-pc-display text-6xl sitblu-clrsite"></i>
+                                <sup className='botrin-learn'><i className="bi bi-gear"></i></sup>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>IT Infrastructure</h4>
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Software training and system integration with Careerera IT infrastructure for secure communication & transactions</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Software training and system integration with Careerera IT infrastructure for secure communication & transactions</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Virtual Learning Platform</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Virtual Learning Platform</p>
 
                             </li>
                         </ul>
@@ -93,15 +93,15 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-headset text-6xl sitblu-clrsite"></i>
-                                <sup className='plus-brbroot'><i class="bi bi-person-plus"></i></sup>
+                                <i className="bi bi-headset text-6xl sitblu-clrsite"></i>
+                                <sup className='plus-brbroot'><i className="bi bi-person-plus"></i></sup>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>Marketing Support</h4>
 
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Communication & Branding guidelines and artworks.</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Communication & Branding guidelines and artworks.</p>
                                 <p className='text-gray-500 font-medium d-flex text-left border-top mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Collaterals, Brochures & other takeaways & displays.</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Collaterals, Brochures & other takeaways & displays.</p>
 
                             </li>
                         </ul>
@@ -110,13 +110,13 @@ const Support = () => {
                     <div className="col-xl-4 col-md-6 col-12 border">
                         <ul className="p-0 text-gray-700 leading-relaxed m-0">
                             <li className="font-medium text-base">
-                                <i class="bi bi-hand-index text-6xl sitblu-clrsite"></i>
-                                <sup className='hand-relmn'><i class="bi bi-gear-wide"></i></sup>
+                                <i className="bi bi-hand-index text-6xl sitblu-clrsite"></i>
+                                <sup className='hand-relmn'><i className="bi bi-gear-wide"></i></sup>
                                 <h4 className='font-bold text-xl capitalize mb-0 pt-2'>Handholding</h4>
 
                                 <span className="heading-border-line"></span>
                                 <p className='text-gray-500 font-medium d-flex text-left mb-0 py-2'>
-                                    <i class="bi bi-check2-all mr-2 text-xl"></i>Dedicated Relationship Manager assigned to business partner</p>
+                                    <i className="bi bi-check2-all mr-2 text-xl"></i>Dedicated Relationship Manager assigned to business partner</p>
 
                             </li>
                         </ul>

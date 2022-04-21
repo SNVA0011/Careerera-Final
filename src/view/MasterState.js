@@ -224,7 +224,7 @@ const MasterState = () => {
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ₹{item.INR_Old_price}
@@ -233,7 +233,7 @@ const MasterState = () => {
                                                                                     </p>
                                                                                     :
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ${item.Old_price}
@@ -243,12 +243,12 @@ const MasterState = () => {
                                                                                 }
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                    <i class="bi bi-building text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                     Careerera ({item.workshop_id})
                                                                                 </p>
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                       <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                       <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                     {item.batch_duration}
 
                                                                                     {item.Totalhour > 0 ?
@@ -256,7 +256,7 @@ const MasterState = () => {
                                                                                         : ''}
                                                                                 </p>
                                                                                 <p className="font-semibold">
-                                                                                       <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                       <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                     {item.batch_category}
                                                                                 </p>
 
@@ -350,7 +350,7 @@ const MasterState = () => {
 
                                                                     {contextcur.currency === 'Asia/Kolkata' ?
                                                                         <p className="font-semibold mb-1">
-                                                                             <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                             <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                             {' '}
                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                 ₹{items.INR_Old_price}
@@ -359,7 +359,7 @@ const MasterState = () => {
                                                                         </p>
                                                                         :
                                                                         <p className="font-semibold mb-1">
-                                                                             <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                             <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                             {' '}
                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                 ${items.Old_price}
@@ -370,17 +370,17 @@ const MasterState = () => {
 
 
                                                                     <p className="font-semibold mb-1">
-                                                                        <i class="bi bi-building text-gray-500 mr-2"></i>
+                                                                        <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                         Careerera ({items.workshop_id})
                                                                     </p>
 
                                                                     <p className="font-semibold mb-1">
-                                                                          <i class="bi bi-calendar4-event text-gray-500 mr-2"></i>
+                                                                          <i className="bi bi-calendar4-event text-gray-500 mr-2"></i>
                                                                         {items.date} <span className="text-gray-500">-To-</span> {items.Enddate}
                                                                     </p>
 
                                                                     <p className="font-semibold mb-1">
-                                                                           <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                           <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                         {
                                                                             items.batch_duration.includes("Month") ? getWords(parseInt(items.batch_duration)) : items.batch_duration
                                                                         }
@@ -390,7 +390,7 @@ const MasterState = () => {
                                                                             : ''}
                                                                     </p>
                                                                     <p className="font-semibold">
-                                                                           <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                           <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                         {items.batch_category}
                                                                     </p>
 

@@ -8,7 +8,7 @@ const CountryFooter = (props) => {
   const [load, setload] = useState([])
 
   async function CallApi() {
-    const dat = await fetch(base, {
+    await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
       headers: {

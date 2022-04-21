@@ -30,8 +30,11 @@ import Itemvariar from "../../Images/data-science-icon/Item-catalog-application.
 import IayMl_1 from "../../Images/IA-y-ML.png"
 import IayMl_2 from "../../Images/IA-y-ML_2.png"
 import IayMl_3 from "../../Images/ai-ml-roles-offer.png"
+import { useParams } from 'react-router'
 
 const PgpAidizaje = () => {
+
+    let { dats } = useParams()
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -46,8 +49,9 @@ const PgpAidizaje = () => {
                 <meta name="keywords" content="PG Program in Artificial Intelligence and Machine Learning, pg diploma in machine learning and ai, machine learning courses online, ai and machine learning course, artificial intelligence training, artificial intelligence course online, artificial intelligence certification, post graduate program in machine learning & ai, post graduate, program in machine learning & artificial intelligence, pgp in machine learning & ai, pgp in machine learning & artificial intelligence" />
                 <link rel="canonical" href="https://www.careerera.com/es/artificial-intelligence-and-machine-learning/programa-de-postgrado-en-inteligencia-artificial-y-aprendizaje-automatico" />
             </Helmet>
-
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO" /> */}
+        
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO"
+                  urlpath={dats} /> */}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO"
@@ -462,56 +466,56 @@ const PgpAidizaje = () => {
                 faqcurso="empty"
                 subfaqcurso='Despeja tus consultas y dudas aquí.'
                 ques1='P1 : Qué es el curso PGP en Inteligencia Artificial y Machine Learning de Careerera y qué lo hace diferente de los cursos individuales'
-                ans1='<div class="accord_body_content">
+                ans1='<div className="accord_body_content">
    <p>R :El programa de posgrado en inteligencia artificial y aprendizaje automático es una ruta de aprendizaje cuidadosamente diseñada que ha sido creada por algunos de los principales expertos de la industria. La estructura del plan de estudios del curso se ha establecido de manera que incluso un principiante completo en Inteligencia Artificial y Aprendizaje Automático podrá seguir la progresión del curso y comprender todos los materiales del curso con claridad. Nuestros instructores de clase mundial se asegurarán de que se convierta en un maestro en Inteligencia Artificial y Aprendizaje Automático cuando complete el curso. </p>
 </div>'
 
                 ques2='P2: ¿Puede Careerera proporcionar el curso de PGP en Inteligencia Artificial y Aprendizaje Automático en un lugar cercano a mí?'
-                ans2='<div class="accord_body_content">
+                ans2='<div className="accord_body_content">
    <p>R: El contenido de nuestro curso está destinado a llegar a estudiantes de todo el mundo. Ya sea que resida en cualquier país, ya sea India, Canadá, EE. UU., Filipinas, Singapur, Malasia,
       Australia o países europeos como Reino Unido, Alemania, Países Bajos, Alemania o en cualquier otro lugar, podrá acceder a nuestro contenido las 24 horas del día, los 7 días de la semana, en en cualquier momento del día. La razón de esto es que nuestro contenido está disponible 100% online. Puede acceder a todo nuestro contenido desde su casa u oficina.
    </p>
 </div>'
 
                 ques3='P3 : ¿Puedo pedir una sesión de apoyo y aclaración de dudas si quiero entender los temas a un nivel más profundo?'
-                ans3='<div class="accord_body_content">
+                ans3='<div className="accord_body_content">
    <p>R: Careerera ofrece resolución de consultas 24/7 y puede presentar un ticket con un equipo de soporte dedicado en cualquier momento. Proporcionamos soporte por correo electrónico y video chat para todas las consultas. Si su consulta no se resuelve en un tiempo adecuado a través del correo electrónico, organizaremos sesiones individuales en vivo con nuestros instructores de clase mundial que estarán más que felices de guiarlo a través de sus dudas.</p>
    <p>Es posible que le alegra saber que Careeerera no impide que sus alumnos se comuniquen con los instructores incluso después de que hayan completado el curso. Pueden crear tantos tickets de soporte como deseen; no ponemos ningún límite en el número de entradas que pueden crear.</p>
 </div>'
 
                 ques4='P4 : ¿Qué tipo de proyectos se asignan como parte de la capacitación?'
-                ans4='<div class="accord_body_content">
+                ans4='<div className="accord_body_content">
    <p>R: Careerera asigna a sus alumnos los proyectos más actualizados, relevantes y prácticos de alto valor. Tienen mucho valor en el mundo real, ya que están diseñados cuidadosamente por nuestros instructores de clase mundial para brindar experiencia práctica y práctica a los alumnos a medida que los completan. Le proporcionamos una ruta segura y confiable a través de la cual puede implementar el aprendizaje y el conocimiento que ha adquirido en un entorno industrial del mundo real. Estos proyectos son parte de todos los cursos en Careerera y pondrán a prueba a fondo su aprendizaje, habilidades y conocimientos prácticos, lo que lo preparará completa e integralmente para los trabajos de la industria.</p>
    <p>Usted tendrá la oportunidad de trabajar en proyectos extremadamente emocionantes y exigentes en los campos de TI de alta tecnología, Marketing, Ventas, Comercio electrónico, Seguros, Banca, Redes, etc. Después de completar los proyectos con éxito, sus habilidades serán equivalentes a 6 meses completos de experiencia en la industria minuciosa y rigurosa.</p>
 </div>'
 
                 ques5='P5 : ¿Careerera proporciona algún tipo de asistencia laboral?'
-                ans5='<div class="accord_body_content">
+                ans5='<div className="accord_body_content">
    <p>Careerera apoya a sus estudiantes al proporcionar asistencia de colocación a todos los estudiantes que completan con éxito el curso y aprueban todos los exámenes, proyectos y tareas. Tenemos asociaciones con muchas MNCs y otros empleadores de primer nivel en todo el mundo. A través de nuestras redes de contactos, puede conseguir con éxito un trabajo en varias organizaciones destacadas e igualmente grandes empresas. También llevamos a cabo varios seminarios y talleres
       gratuitos sobre cómo crear el currículum y cómo prepararse para las entrevistas de trabajo. También llevaremos a cabo sesiones de asesoramiento que serán para la tutoría de carrera y la participación en ferias de carreras.
    </p>
 </div>'
 
                 ques6='P6 : ¿Cuál es la definición de Inteligencia Artificial y Machine Learning? ¿Qué lo hace tan importante?'
-                ans6='<div class="accord_body_content">
+                ans6='<div className="accord_body_content">
    <p>R : La Inteligencia Artificial y el Aprendizaje Automático son una parte muy importante de la Informática. Están bastante interrelacionados entre sí y tienen muchos puntos en común. La Inteligencia Artificial es en su nivel más básico una tecnología que permite a las máquinas exhibir simulaciones del comportamiento humano. El objetivo principal de la IA es desarrollar sistemas informáticos inteligentes que puedan resolver problemas complejos del mundo de una manera similar a la humana. El aprendizaje automático y el aprendizaje profundo son dos componentes principales de la IA. La IA es un campo vasto y tiene una gama muy diversa de aplicaciones y alcance. Los sistemas de IA están más preocupados por utilizar la ciencia de la probabilidad y la predicción para maximizar las posibilidades de éxito de un sistema en la resolución de un problema. La inteligencia artificial tiene 3 etapas principales de operación: aprendizaje, razonamiento y autocorrección. A menudo, los humanos tienen que lidiar no solo con datos estructurados, sino también con datos semiestructurados y no estructurados. Por lo tanto, cualquier sistema de IA debe estar completamente equipado para manejar no solo datos estructurados, sino también datos semiestructurados y no estructurados.</p>
    <p>El aprendizaje automático es un subconjunto de la inteligencia artificial. Depende en gran medida de datos pasados. Es una ciencia que permite a las máquinas aprender sobre nuevos patrones y nuevos cursos de acción sobre la base de datos pasados relacionados con el mismo dominio del problema. A los sistemas informáticos se les enseña cómo proceder a lo largo de ciertas líneas de acción y cómo tomar ciertas decisiones cuando se enfrentan a una cierta matriz de elecciones y problemas. Es por eso que este campo se llama "aprendizaje" automático. El aprendizaje automático es mucho más estrecho en alcance que el amplio alcance de la Inteligencia Artificial. Los sistemas informáticos entrenados por el aprendizaje automático solo pueden realizar acciones y tareas para las que se les han enseñado explícitamente las líneas de respuesta apropiadas. No pueden predecir problemas y conjuntos de soluciones de antemano como las máquinas "inteligentes" del alcance más amplio de la Inteligencia Artificial.</p>
 </div>'
 
                 ques7='P7 : ¿Es el experto en Inteligencia Artificial y Aprendizaje Automático una buena opción de carrera?'
-                ans7='<div class="accord_body_content">
+                ans7='<div className="accord_body_content">
    <p>R: La inteligencia artificial y el aprendizaje automático tienen una gran demanda en muchas industrias, que van desde TI hasta finanzas, comercio electrónico, fabricación, atención médica y venta minorista. Es el trabajo de más rápido crecimiento en Linkedin y se prevé que cree 20 millones de emp
       Inteligencia Artificial y el Aprendizaje Automático sean una opción de carrera muy lucrativa. Además el número de personas que realmente poseen los conjuntos de habilidades necesarias para convertirse en un experto completo en Inteligencia Artificial y Aprendizaje Automático es muy poco. Por lo tanto, existe una alta demanda de expertos en Inteligencia Artificial y Machine Learning pero una baja oferta de personas cualificadas. Así que los expertos en Inteligencia Artificial y Machine Learning pueden exigir un salario tan grande como quieran y las empresas tendrán que cumplir con sus demandas.
    </p>
 </div>'
 
                 ques8='Q8 : ¿Cuáles son las habilidades requeridas para comenzar un trabajo en el campo de la Inteligencia Artificial y el Aprendizaje Automático?'
-                ans8='<div class="accord_body_content">
+                ans8='<div className="accord_body_content">
    <p>R: Las habilidades que necesitará para conseguir un trabajo en el campo de la Inteligencia Artificial y el Aprendizaje Automático son: Habilidades de prueba e iteración, funciones de Python, paquetes y conocimientos de rutinas, conocimiento matemático, conocimiento de física, conocimiento de mecánica, conocimiento de teoría del aprendizaje cognitivo, conocimiento de procesamiento del lenguaje, habilidades de pensamiento crítico, curiosidad, habilidades de pensamiento listas para usar, habilidades técnicas, conocimiento de técnicas de procesamiento de señales.</p>
 </div>'
 
                 ques9='P9 : ¿Quién es elegible para tomar el curso PGP en Inteligencia Artificial y Aprendizaje Automático de Careerera?'
-                ans9='<div class="accord_body_content">
+                ans9='<div className="accord_body_content">
    <p>R: Las empresas que buscarán contratar Inteligencia Artificial y Machine Learningers buscarán los siguientes grados: </p>
    <p>12º pase de la corriente de Ciencia o corriente de TI.</p>
    <p>Para recién graduados o estudiantes universitarios - Un título en B.Tech/M.Tech (Cualquier Oficio), TI, BCA, MCA o B.Sc</p>
@@ -519,47 +523,47 @@ const PgpAidizaje = () => {
 </div>'
 
                 ques10='P10 : ¿Cuáles son las herramientas y tecnologías utilizadas para impartir este curso de PGP en Inteligencia Artificial y Machine Learning de Careerera?'
-                ans10='<div class="accord_body_content">
+                ans10='<div className="accord_body_content">
    <p>R : Pandas, Numpy, Matplotlib, Seaborn, Sci-kit, Anaconda, Jupyter, NLTK, Python, Keras.</p>
 </div>'
 
                 ques11='P11 : ¿Cuál es la duración de este curso de PGP en Inteligencia Artificial y Machine Learning de Careerera?'
-                ans11='<div class="accord_body_content">
+                ans11='<div className="accord_body_content">
    <p>R: El curso PGP en Inteligencia Artificial y Aprendizaje Automático de Careerera es un programa en línea de 12 meses de duración.</p>
 </div>'
 
                 ques12='P12 : ¿Qué temas están cubiertos en el plan de estudios del curso PGP en Inteligencia Artificial y Aprendizaje Automático de Careerera?'
-                ans12='<div class="accord_body_content">
+                ans12='<div className="accord_body_content">
    <p>R: Hay varios temas pertinentes al campo de la Inteligencia Artificial y el Aprendizaje Automático que se cubren en este curso de PGP en Inteligencia Artificial y Aprendizaje Automático. Algunos de ellos son los siguientes: PNL, aprendizaje profundo, aprendizaje por refuerzo, modelos gráficos junto con análisis predictivos y estadísticas, conceptos de análisis estadístico, Introducción a la probabilidad y teorema de Bayes, funciones, paquetes y rutinas de Python, regresión lineal (tanto univariada como multivariante), regresión polinómica (tanto univariante como multivariante), clasificación K-NN, máquinas vectoriales de soporte, etc.</p>
 </div>'
 
                 ques13='P13 : ¿En qué sectores se basan los proyectos de capitalización?'
-                ans13='<div class="accord_body_content">
+                ans13='<div className="accord_body_content">
    <p>R: Venta al por menor, web y redes sociales, cadena de suministro, emprendimiento, comercio electrónico, banca, atención médica, seguros, finanzas y cuentas, etc.</p>
 </div>'
 
                 ques14='P14 : ¿Cuál es el público objetivo de este curso?'
-                ans14='<div class="accord_body_content">
+                ans14='<div className="accord_body_content">
 <p>Perfil de la audiencia :</p>
-   <p class="mb-1">Los públicos previstos para el Programa PG en Inteligencia Artificial y Machine Learning son:</p>
-   <ul class="list-disc pl-6 text-base"> 
-   <li class="mb-2">Profesionales de TI</li>
-   <li class="mb-2">Profesionales de datos</li>
-   <li class="mb-2">Individuals con habilidades básicas de programación interesados en la IA y ML</li>
-   <li class="mb-2">Los científicos de datos que ven para obtener un gran impulso en sus carreras</li>
-   <li class="mb-2">Profesionales que buscan un cambio de carrera hacia AI &amp; ML</li>
+   <p className="mb-1">Los públicos previstos para el Programa PG en Inteligencia Artificial y Machine Learning son:</p>
+   <ul className="list-disc pl-6 text-base"> 
+   <li className="mb-2">Profesionales de TI</li>
+   <li className="mb-2">Profesionales de datos</li>
+   <li className="mb-2">Individuals con habilidades básicas de programación interesados en la IA y ML</li>
+   <li className="mb-2">Los científicos de datos que ven para obtener un gran impulso en sus carreras</li>
+   <li className="mb-2">Profesionales que buscan un cambio de carrera hacia AI &amp; ML</li>
    </ul>
 </div>'
 
                 ques15='P15 : ¿Por qué hay que elegir Careerera?'
-                ans15='<div class="accord_body_content">
-<ul class="list-disc pl-6 text-base">
-   <li class="mb-2">Como proveedor de educación, Careerera tiene como objetivo desarrollar la personalidad general de un individuo para que pueda progresar y convertirse en profesionales de trabajo altamente calificados.</li>
-   <li class="mb-2">La facultad de Careerera utiliza tácticas contemporáneas para ofrecer sesiones de capacitación que incluyen la interacción uno a uno entre los participantes y el instructor.</li>
-   <li class="mb-2">Los formadores designados para los cursos de Careerera poseen un nivel muy alto de experiencia en sus materias y campos. Por lo tanto, Careerera puede garantizar fácilmente resultados positivos para todos los participantes.</li>
-   <li class="mb-2">Se proporciona orientación las 24 horas del sistema de la información las 24 horas del sistema a la vez a quienes la necesitan por llamada, correo electrónico o videollamada.</li>
-   <li class="mb-2">Los candidatos pueden optar por clases de demostración para tener una buena idea de las sesiones de entrenamiento reales.</li>
-   <li class="mb-2">Careerera proporciona el modelo de formación en aula virtual en vivo en línea con el fin de facilitar a los profesionales que trabajan asistir a las sesiones, por un lado, mientras que equilibran su trabajo por el otro.</li>
+                ans15='<div className="accord_body_content">
+<ul className="list-disc pl-6 text-base">
+   <li className="mb-2">Como proveedor de educación, Careerera tiene como objetivo desarrollar la personalidad general de un individuo para que pueda progresar y convertirse en profesionales de trabajo altamente calificados.</li>
+   <li className="mb-2">La facultad de Careerera utiliza tácticas contemporáneas para ofrecer sesiones de capacitación que incluyen la interacción uno a uno entre los participantes y el instructor.</li>
+   <li className="mb-2">Los formadores designados para los cursos de Careerera poseen un nivel muy alto de experiencia en sus materias y campos. Por lo tanto, Careerera puede garantizar fácilmente resultados positivos para todos los participantes.</li>
+   <li className="mb-2">Se proporciona orientación las 24 horas del sistema de la información las 24 horas del sistema a la vez a quienes la necesitan por llamada, correo electrónico o videollamada.</li>
+   <li className="mb-2">Los candidatos pueden optar por clases de demostración para tener una buena idea de las sesiones de entrenamiento reales.</li>
+   <li className="mb-2">Careerera proporciona el modelo de formación en aula virtual en vivo en línea con el fin de facilitar a los profesionales que trabajan asistir a las sesiones, por un lado, mientras que equilibran su trabajo por el otro.</li>
    </ul>
 </div>'
             />

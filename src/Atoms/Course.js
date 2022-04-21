@@ -70,16 +70,16 @@ const Course = (props) => {
 
 
 
-
     return (
         <>
 
             {status ? (
-                <div className="megamenu-wrapper mega">
+                <div className="megamenu-wrapper mega"> 
+                    {exactData.length > 0 ? 
                     <div className="dropdown" onMouseEnter={(e) => setHidemenust(false)}
                         onMouseLeave={(e) => setHidemenust(true)}>
                         <button className="dropdown-toggle btn btn-success">
-                            <i class="bi bi-grid"></i> All Courses
+                            <i className="bi bi-grid"></i> All Courses
                         </button>
 
                         <div className="dropdown-menu" style={{ 'display': hidemenust ? 'none' : 'block' }}>
@@ -139,7 +139,7 @@ const Course = (props) => {
                                                                                 <div className={"eiml-shadow " + (dat.courseType === 'Long' ? 'blue' : 'red')}></div>
                                                                                 <div className="course-type topfix">
                                                                                     <div className="course-typeinn">
-                                                                                        <i class="bi bi-clock text-base"></i>
+                                                                                        <i className="bi bi-clock text-base"></i>
                                                                                         <span className="font-bold ml-2">
                                                                                             {
                                                                                                 dat.courseType
@@ -161,11 +161,11 @@ const Course = (props) => {
                                                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                 <div className="flex-grow-1">
                                                                                     <div className="post-total-rating text-sm">
-                                                                                        <i class="fas fa-star mr-1"></i>
-                                                                                        <i class="fas fa-star mr-1"></i>
-                                                                                        <i class="fas fa-star mr-1"></i>
-                                                                                        <i class="fas fa-star mr-1"></i>
-                                                                                        <i class="fas fa-star mr-1"></i>
+                                                                                        <i className="fas fa-star mr-1"></i>
+                                                                                        <i className="fas fa-star mr-1"></i>
+                                                                                        <i className="fas fa-star mr-1"></i>
+                                                                                        <i className="fas fa-star mr-1"></i>
+                                                                                        <i className="fas fa-star mr-1"></i>
                                                                                         <span className="ml-2 text-black">5.0</span>
                                                                                     </div>
                                                                                     <p className="font-bold text-gray-600 course-title">
@@ -179,18 +179,18 @@ const Course = (props) => {
                                                                         </Link>
 
 
-                                                                        <Link to={totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]}
+                                                                        <Link to={totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]}
                                                                             className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold"
                                                                             onClick={(e) => setHidemenust(true)} key={ei}>
                                                                             <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                 <div className="pr-smtime-2">
-                                                                                    {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                    {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                 </div>
 
                                                                                 <div className="text-gray-600 text-nowrap">
                                                                                     {dat.duration ?
                                                                                         <>
-                                                                                            <i class="bi bi-calendar4 mr-2"></i>
+                                                                                            <i className="bi bi-calendar4 mr-2"></i>
                                                                                             {dat.duration.toString().replace("Online", "").replace("Program", "").replace("Online Program", "")}
                                                                                         </>
                                                                                         : ''}
@@ -267,7 +267,7 @@ const Course = (props) => {
                                                                                                     <div className={"eiml-shadow " + (dat.courseType === 'Long' ? 'blue' : 'red')}></div>
                                                                                                     <div className="course-type topfix">
                                                                                                         <div className="course-typeinn">
-                                                                                                            <i class="bi bi-clock text-base"></i>
+                                                                                                            <i className="bi bi-clock text-base"></i>
                                                                                                             <span className="font-bold ml-2">
                                                                                                                 {
                                                                                                                     dat.courseType
@@ -289,11 +289,11 @@ const Course = (props) => {
                                                                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                                     <div className="flex-grow-1">
                                                                                                         <div className="post-total-rating text-sm">
-                                                                                                            <i class="fas fa-star mr-1"></i>
-                                                                                                            <i class="fas fa-star mr-1"></i>
-                                                                                                            <i class="fas fa-star mr-1"></i>
-                                                                                                            <i class="fas fa-star mr-1"></i>
-                                                                                                            <i class="fas fa-star mr-1"></i>
+                                                                                                            <i className="fas fa-star mr-1"></i>
+                                                                                                            <i className="fas fa-star mr-1"></i>
+                                                                                                            <i className="fas fa-star mr-1"></i>
+                                                                                                            <i className="fas fa-star mr-1"></i>
+                                                                                                            <i className="fas fa-star mr-1"></i>
                                                                                                             <span className="ml-2 text-black">5.0</span>
                                                                                                         </div>
                                                                                                         <p className="font-bold text-gray-600 course-title">
@@ -305,16 +305,16 @@ const Course = (props) => {
                                                                                                 </div>
                                                                                             </Link>
 
-                                                                                            <Link to={totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
+                                                                                            <Link to={totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
                                                                                                 <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                                     <div className="pr-smtime-2">
-                                                                                                        {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                                        {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                                     </div>
 
                                                                                                     <div className="text-gray-600 text-nowrap">
                                                                                                         {dat.duration ?
                                                                                                             <>
-                                                                                                                <i class="bi bi-calendar4 mr-2"></i>
+                                                                                                                <i className="bi bi-calendar4 mr-2"></i>
                                                                                                                 {dat.duration.toString().replace("Online", "").replace("Program", "").replace("Online Program", "")}
                                                                                                             </>
                                                                                                             : ''}
@@ -344,6 +344,7 @@ const Course = (props) => {
 
                         </div>
                     </div>
+                    :''}
                 </div>
             ) : (
                 <div className="text-center mt-3">

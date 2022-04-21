@@ -80,7 +80,7 @@ const RelatedCourses=(props)=>{
 
                                                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                                                     <p className="font-semibold mb-1">
-                                                                                                                         <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                                         {' '}
                                                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                                                             ₹{item.INR_Old_price}
@@ -89,7 +89,7 @@ const RelatedCourses=(props)=>{
                                                                                                                     </p>
                                                                                                                     :
                                                                                                                     <p className="font-semibold mb-1">
-                                                                                                                        <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                                        <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                                         {' '}
                                                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                                                             ${item.Old_price}
@@ -99,16 +99,16 @@ const RelatedCourses=(props)=>{
                                                                                                                 }
 
                                                                                                                 <p className="font-semibold mb-1">
-                                                                                                                         <i class="bi bi-building text-gray-500 mr-2"></i>
+                                                                                                                         <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                                                     Careerera ({item.workshop_id})
                                                                                                                 </p>
 
                                                                                                                 <p className="font-semibold mb-1">
-                                                                                                                         <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                                                         <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                                                     {item.batch_duration}
                                                                                                                 </p>
                                                                                                                 <p className="font-semibold">
-                                                                                                                       <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                                                       <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                                                     {item.batch_category}
                                                                                                                 </p>
                                                                                                             </div>
@@ -174,7 +174,7 @@ const RelatedCourses=(props)=>{
                                                                                                                 <div className='flex-grow-1 pb-2'>
                                                                                                                     {contextcur.currency === 'Asia/Kolkata' ?
                                                                                                                         <p className="font-semibold mb-1">
-                                                                                                                             <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                                             <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                                             {' '}
                                                                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                                                                 ₹{dats.INR_Old_price}
@@ -183,7 +183,7 @@ const RelatedCourses=(props)=>{
                                                                                                                         </p>
                                                                                                                         :
                                                                                                                         <p className="font-semibold mb-1">
-                                                                                                                            <i class="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                                            <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                                             {' '}
                                                                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                                                                 ${dats.Old_price}
@@ -194,15 +194,15 @@ const RelatedCourses=(props)=>{
 
 
                                                                                                                     <p className="font-semibold mb-1">
-                                                                                                                             <i class="bi bi-building text-gray-500 mr-2"></i>
+                                                                                                                             <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                                                         Careerera ({dats.workshop_id})
                                                                                                                     </p>
                                                                                                                     <p className="font-semibold mb-1">
-                                                                                                                             <i class="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                                                             <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                                                         {dats.batch_duration}
                                                                                                                     </p>
                                                                                                                     <p className="font-semibold">
-                                                                                                                           <i class="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                                                           <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                                                         {dats.batch_category}
                                                                                                                     </p>
                                                                                                                 </div>

@@ -43,7 +43,7 @@ const Forms = () => {
     setselectphoneval(e.target.value)
   }
 
-  if (selectphoneval == 'Please select your country') {
+  if (selectphoneval === 'Please select your country') {
     setselectphoneval('')
   }
 
@@ -227,9 +227,9 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   <>
                     <InputGroup className="bg-white">
 
-                    {contextcur.currency == "Asia/Kolkata" ?
+                    {contextcur.currency === "Asia/Kolkata" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[3].phonecode :
+                            + {selectphoneval === '' ? cntry[3].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp; 
                           </InputGroup.Text>
@@ -244,9 +244,9 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
 
 
-                        {contextcur.currency == "Asia/Singapore" ?
+                        {contextcur.currency === "Asia/Singapore" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[7].phonecode :
+                            + {selectphoneval === '' ? cntry[7].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp; 
                           </InputGroup.Text>
@@ -260,9 +260,9 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </div>}
 
 
-                        {contextcur.currency == "America/New_York" ?
+                        {contextcur.currency === "America/New_York" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[6].phonecode :
+                            + {selectphoneval === '' ? cntry[6].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp; 
                           </InputGroup.Text>
@@ -275,40 +275,9 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                       </InputGroup.Text> */}
                           </div>}
 
-                        {contextcur.currency == "SGT" ?
+                        {contextcur.currency === "SGT" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[194].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency == "Europe/London" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[2].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency == "Asia/Dubai" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[5].phonecode :
+                            + {selectphoneval === '' ? cntry[194].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp; 
                           </InputGroup.Text>
@@ -322,14 +291,45 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </div>}
 
 
-                        {contextcur.currency == "Asia/Dhaka" ?
+                        {contextcur.currency === "Europe/London" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[30].phonecode :
+                            + {selectphoneval === '' ? cntry[2].phonecode :
+                              selectphoneval.toString().split(',')[0]
+                            } &nbsp; 
+                          </InputGroup.Text>
+                          : <div>
+                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        + {selectphoneval == '' ? cntry[0].phonecode :
+                          selectphoneval.toString().split(',')[0]
+                        }
+                      </InputGroup.Text> */}
+                          </div>}
+
+
+                        {contextcur.currency === "Asia/Dubai" ?
+                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                            + {selectphoneval === '' ? cntry[5].phonecode :
+                              selectphoneval.toString().split(',')[0]
+                            } &nbsp; 
+                          </InputGroup.Text>
+
+                          : <div>
+                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        + {selectphoneval == '' ? cntry[0].phonecode :
+                          selectphoneval.toString().split(',')[0]
+                        }
+                      </InputGroup.Text> */}
+                          </div>}
+
+
+                        {contextcur.currency === "Asia/Dhaka" ?
+                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                            + {selectphoneval === '' ? cntry[30].phonecode :
                               selectphoneval.toString().split(',')[0] } &nbsp; 
                           </InputGroup.Text>
                           : ''}
                         {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval === '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -346,7 +346,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                         onChange={(e) => { Updatephonevalue(e.target.value) }}
                         aria-label="Text input with dropdown button" />
                     </InputGroup>
-                    {selectphoneval == '' ?
+                    {selectphoneval === '' ?
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                       :
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />

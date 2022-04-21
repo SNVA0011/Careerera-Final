@@ -184,7 +184,7 @@ const Master = () => {
                             title2="Hablar" />
 
                         {/* <CountryFooter pagetitle={final[0].CourseTitel} /> */}
-                        {/* <PopUp title={final[0].CourseTitel} /> */}
+                        {/* <PopUp title={final[0].CourseTitel}  urlpath={dats} /> */}
                     </>
                     : <NotFound />}
 

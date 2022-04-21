@@ -20,9 +20,12 @@ import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet"; 
 import { Link } from 'react-router-dom'
 import aiMlimg from '../../Images/data_science.png'
-
+import { useParams } from 'react-router'
 
 const PgpCienciadatos = () => {
+    
+    let { dats } = useParams()
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -37,7 +40,7 @@ const PgpCienciadatos = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/data-science/programa-de-postgrado-en-ciencia-de-datos" />
             </Helmet>
 
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS" /> */}
+            {/* <PopUp title="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS" urlpath={dats}/> */}
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS"
@@ -810,17 +813,17 @@ const PgpCienciadatos = () => {
                     targetblankbx='true'
 
                     date1={'14-Apr'}
-                    title1={<>Algoritmos de ciencia de datos: los aspirantes deben saber <span class="cost">Leer más</span></>}
+                    title1={<>Algoritmos de ciencia de datos: los aspirantes deben saber <span className="cost">Leer más</span></>}
                     url1={"https://my.careerera.com/eventimages/Newsid_255_images0.jpg"}
                     redirect1={"https://www.careerera.com/blog/data-science-algorithms"}
 
                     date2={'02-Apr'}
-                    title2={<>Depth Insights - Ciencia de datos vs. Análisis de datos vs. Aprendizaje automático <span class="cost">Leer más</span></>}
+                    title2={<>Depth Insights - Ciencia de datos vs. Análisis de datos vs. Aprendizaje automático <span className="cost">Leer más</span></>}
                     url2={"https://my.careerera.com/eventimages/Newsid_251_images0.jpg"}
                     redirect2={"https://www.careerera.com/blog/data-science-vs-data-analytics-vs-machine-learning"}
 
                     date3={'27-Estropear'}
-                    title3={<>¿Por qué el lenguaje Python es la mejor opción para los científicos de datos? <span class="cost">Leer más</span></>}
+                    title3={<>¿Por qué el lenguaje Python es la mejor opción para los científicos de datos? <span className="cost">Leer más</span></>}
                     url3={"https://my.careerera.com/eventimages/Newsid_249_images0.jpg"}
                     redirect3={"https://www.careerera.com/blog/why-python-language-is-the-best-choice-for-data-scientists"}
                 />

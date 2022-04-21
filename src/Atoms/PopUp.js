@@ -9,12 +9,10 @@ const PopUp = (props) => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    const timeoutID = window.setTimeout(() => {
-        handleShow()
-    }, 4000);
-
-    return () => window.clearTimeout(timeoutID );
-}, []);
+    setTimeout(() => {
+      handleShow()
+     }, 4000)
+}, [props.urlpath]);
 
 
   return (

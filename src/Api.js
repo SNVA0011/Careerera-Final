@@ -7,9 +7,8 @@ export const Context = createContext()
 
 export const Provider = (props) => {
     let { id } = useParams()
-    let { news } = useParams()
+    // let { news } = useParams()
  
-
     // Store Api data in variable of usestate
     const [exactData, setData] = useState([])
     const [Catfinal, Catsetfinal] = useState([])
@@ -37,31 +36,36 @@ export const Provider = (props) => {
  
 
     // Logger()
-    const [logger, setLogger] = useState([])
+    // const [logger, setLogger] = useState([])
 
 
     // Menu API -
-    async function getData() {
-        const Api = "https://my.careerera.com/API/course/TopCategoryMenubar.php"
-        const data = await fetch(base, {
+    async function getData() { 
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/course/TopCategoryMenubar.php" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setData(json.records));
+        }, []).then((response) => response.json()).then((json) => setData(json.records)).catch((error) => {
+            setData('');
+            console.log('error-', error);
+        });
  
         loadStatus(true) 
  } 
 
     async function getCourse() {
-        const data = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal('');
+            console.log('error-', error);
+        });
  
 
 
@@ -83,7 +87,10 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setFreeCour(json.records));
+        }, []).then((response) => response.json()).then((json) => setFreeCour(json.records)).catch((error) => {
+            setFreeCour('');
+            console.log('error-', error);
+        });
 
 
 
@@ -98,13 +105,16 @@ export const Provider = (props) => {
 
     // Live Online Api
     async function AllfreeCourse() {
-        const data = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' + contextcur.currency }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records));
+        }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records)).catch((error) => {
+            setallFreeCour('');
+            console.log('error-', error);
+        });
 
 
         // const allfree_course = await fetch(
@@ -125,7 +135,10 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records));
+        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records)).catch((error) => {
+            setallcountryList('');
+            console.log('error-', error);
+        });
         setcountryLoad(true);
     }
 
@@ -148,12 +161,10 @@ export const Provider = (props) => {
         getCourse()
         freeCourse()
         AllfreeCourse()
-        Allcountrylist()
-
+        Allcountrylist() 
     }, [])
 
  
-
     return (
         <>
             <Context.Provider
