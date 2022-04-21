@@ -58,7 +58,7 @@ const AppSpanish = (props) => {
 
 
     // remove console 
-        function RemoveConsole() {
+    function RemoveConsole() {
         const noop = () => { }
         ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
             'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
