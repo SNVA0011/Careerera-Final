@@ -42,7 +42,7 @@ const CityFooterCourse = (props) => {
                   <ul className='list-disc text-base row'>
                     {data.map((items, i) => (
                       <>
-                        <li className='col-xxl-3 col-lg-6 col-12'><Link to={items.url}>{items.city}</Link></li>
+                        <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={items.url}>{items.city}</Link></li>
                       </>
                     ))}
 

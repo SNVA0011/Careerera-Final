@@ -338,17 +338,17 @@ const About = () => {
 
                                 <ul className="social">
                                     <li>
-                                        <a href="https://www.facebook.com/vivek00999" target="_blank">
+                                        <a href="https://www.facebook.com/vivek00999" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-facebook-f" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/the_vivek_ks" target="_blank">
+                                        <a href="https://twitter.com/the_vivek_ks" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-twitter" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/the-vivek-k-singh/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/the-vivek-k-singh/" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-linkedin-in" />
                                         </a>
                                     </li>
@@ -372,17 +372,17 @@ const About = () => {
 
                                 <ul className="social">
                                     <li>
-                                        <a href="https://www.facebook.com/alok0099" target="_blank">
+                                        <a href="https://www.facebook.com/alok0099" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-facebook-f" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/alok0099" target="_blank">
+                                        <a href="https://twitter.com/alok0099" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-twitter" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/alok-singh-104991157/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/alok-singh-104991157/" target='_blank' rel='noreferrer' >
                                             <i className="fab fa-linkedin-in" />
                                         </a>
                                     </li>

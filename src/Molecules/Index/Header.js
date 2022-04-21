@@ -20,7 +20,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className='col-lg-7 col-12 pb-2 pt-1 text-right'>
-                            <a href="https://payment.careerera.com/" target="_blank" className="no-underline">
+                            <a href="https://payment.careerera.com/" target='_blank' rel='noreferrer'  className="no-underline">
                                 <span className="text-sm xl:text-xs font-semibold text-gray-600 capitalize">
                                     Online Payment<span className='px-2'>|</span>
                                 </span>
@@ -33,7 +33,7 @@ const Header = () => {
                             </Link>
 
                             <a href="https://news.careerera.com/"
-                            target="_blank"
+                            target='_blank' rel='noreferrer' 
                                  className="no-underline">
                                 <span className="text-sm xl:text-xs font-semibold text-gray-600 capitalize">
                                     Career News<span className='px-2'>|</span></span>
@@ -46,14 +46,14 @@ const Header = () => {
                             </Link>
 
                             <a href="https://my.careerera.com/signup.php"
-                                target="_blank"
+                                target='_blank' rel='noreferrer' 
                                 className="no-underline">
                                 <span className=" text-sm xl:text-xs font-semibold text-gray-600 capitalize">
                                     Registration<span className='px-2'>|</span>
                                 </span>{' '}
                             </a>
 
-                            <a href="https://my.careerera.com/" target="_blank" className="no-underline">
+                            <a href="https://my.careerera.com/" target='_blank' rel='noreferrer'  className="no-underline">
                                 <span className="text-sm xl:text-xs font-semibold text-gray-600 capitalize">
                                     Login
                                 </span>

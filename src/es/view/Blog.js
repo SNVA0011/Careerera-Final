@@ -202,7 +202,7 @@ const Blog = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                                 className="mr-2"
                                                                             >
                                                                                 <i className="fab fa-linkedin-in text-xl text-blue-500 mr-4"></i>
@@ -215,7 +215,7 @@ const Blog = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                                 className="mr-2"
                                                                             >
                                                                                 <i className="fab fa-twitter text-xl text-blue-400 mr-4"></i>
@@ -228,7 +228,7 @@ const Blog = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                             >
                                                                                 <i className="fab fa-facebook-f text-xl text-blue-800 mr-4"></i>
                                                                             </a>

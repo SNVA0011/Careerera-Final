@@ -2,8 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router";
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import Accordion from 'react-bootstrap/Accordion'
-import { Link } from "react-router-dom";
-import { ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom"; 
 import { Helmet } from 'react-helmet'
 import Hero from "./../Atoms/Hero";
 import fun from '../Images/fun4.gif'
@@ -189,9 +188,9 @@ const BatchDetail = (props) => {
                 <p className="text-red-500 font-semibold text-sm sm:text-base mt-3">Note: Date and class time can change in the wake of unavoidable circumstances</p>
               </div>
 
-              {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid + "&currency=Rs"} target="_blank" className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
+              {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid + "&currency=Rs"} target='_blank' rel='noreferrer'  className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
                 <span> Enroll Now</span>
-              </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid} target="_blank" className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
+              </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid} target='_blank' rel='noreferrer'  className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
                 <span> Enroll Now</span>
               </a>}
 
@@ -216,7 +215,7 @@ const BatchDetail = (props) => {
                         <ul className='list-disc text-base row'>
                           {List.map((item, i) => {
                             return (
-                              <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + data.data + "/" + item.url + "/liveonline/" + date.date + "/" + workid.workid}>{item.name}</Link></li>
+                              <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={"/" + data.data + "/" + item.url + "/liveonline/" + date.date + "/" + workid.workid}>{item.name}</Link></li>
                             )
                           })}
                         </ul>

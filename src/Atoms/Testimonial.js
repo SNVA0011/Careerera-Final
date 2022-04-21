@@ -125,7 +125,7 @@ const Testimonial = (props) => {
 
 
                                             <div className="mt-4 d-flex flex-xl-row align-items-center justify-content-between">
-                                                <a href={item.linkedin} target="_blank">
+                                                <a href={item.linkedin} target='_blank' rel='noreferrer' >
                                                     <i className="fab fa-linkedin fa-2x"></i>
                                                 </a>
 
@@ -153,7 +153,7 @@ const Testimonial = (props) => {
                                                     {You.map((items, i) => {
                                                         return (
                                                             <>
-                                                                <div className="item">
+                                                                <div className="item" key={i}>
                                                                     <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
                                                                         <iframe className="embed-responsive-item" src={items.video_url}></iframe>
                                                                     </div>

@@ -1,5 +1,4 @@
-import React,{useEffect} from 'react'
-import Footer from '../Molecules/Index/Footer'
+import React,{useEffect} from 'react' 
 import Hero from '../Molecules/Instructor/Hero'
 import How from '../Molecules/Instructor/How'
 import Reason from '../Molecules/Instructor/Reason'
@@ -12,8 +11,7 @@ const Instructor = () => {
     return (
         <>
           <Helmet>
-            <title>Become An Instructor</title>
-            
+            <title>Become An Instructor</title> 
           </Helmet>
 
             <Hero />

@@ -1,15 +1,11 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Context, Provider } from '../Api'
-import { useParams, } from "react-router";
-import Hero from "../Molecules/Master/Hero";
-import PgpDatascience from "./PgpDataScience";
+import { useParams, } from "react-router"; 
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import { Link } from "react-router-dom";
-import fun from "../Images/fun4.gif"
-import CountryFooter from "../Atoms/CountryFooter";
+import fun from "../Images/fun4.gif" 
 import Contactfooter from "../Atoms/Contactfooter";
-import { Helmet } from "react-helmet";
-import StateFooter from "../Atoms/StateFooter";
+import { Helmet } from "react-helmet"; 
 import CityFooter from "../Atoms/CityFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import { base } from '../Base'
@@ -270,7 +266,7 @@ const MasterState = () => {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'http://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                                    target="_blank"
+                                                                                    target='_blank' rel='noreferrer' 
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -408,7 +404,7 @@ const MasterState = () => {
                                                                     </Link>
 
                                                                     <a href={'http://my.careerera.com/signup.php?batchid=' + items.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                        target="_blank"
+                                                                        target='_blank' rel='noreferrer' 
                                                                         className="no-underline btn-site gray">
                                                                         <span>Enroll Now</span>
                                                                     </a>
@@ -458,7 +454,7 @@ const MasterState = () => {
                             Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
                                 items.Curriculum?.length > 0 ?
                                     <>
-                                        <div className="col-12 d-none d-md-block">
+                                        <div className="col-12 d-none d-md-block" key={i}>
                                             <div className="list-group mb-2 shadow-md">
                                                 <div className="d-flex list-group-item py-3 flex-column flex-md-row text-white font-semibold bg-snocurri text-lg">
                                                     <div className="text-nowrap pr-3 chapterleft-bx">

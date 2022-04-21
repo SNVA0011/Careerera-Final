@@ -24,7 +24,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel:+91-92-5000-4000" target="_blank">+91-92-5000-4000</a>
+                                            href="tel:+91-92-5000-4000" target='_blank' rel='noreferrer' >+91-92-5000-4000</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -37,7 +37,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel:+91-92-5000-4000" target="_blank">+91-92-5000-4000</a>
+                                            href="tel:+91-92-5000-4000" target='_blank' rel='noreferrer' >+91-92-5000-4000</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -67,7 +67,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Kundan@careerera.com" target="_blank">Kundan@careerera.com</a>
+                                            href="mailto:Kundan@careerera.com" target='_blank' rel='noreferrer' >Kundan@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel:+91-92-5000-4000" target="_blank">+91-92-5000-4000</a>
+                                            href="tel:+91-92-5000-4000" target='_blank' rel='noreferrer' >+91-92-5000-4000</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -99,7 +99,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:ashwani@careerera.net" target="_blank">ashwani@careerera.net</a>
+                                            href="mailto:ashwani@careerera.net" target='_blank' rel='noreferrer' >ashwani@careerera.net</a>
                                     </div>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +65-31-591-123" target="_blank"> +65-31-591-123</a>
+                                            href="tel: +65-31-591-123" target='_blank' rel='noreferrer' > +65-31-591-123</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -135,7 +135,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +65-31-591-123" target="_blank"> +65-31-591-123</a>
+                                            href="tel: +65-31-591-123" target='_blank' rel='noreferrer' > +65-31-591-123</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -165,7 +165,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:pooja.arora@careerera.com" target="_blank">pooja.arora@careerera.com</a>
+                                            href="mailto:pooja.arora@careerera.com" target='_blank' rel='noreferrer' >pooja.arora@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +65-31-591-123" target="_blank"> +65-31-591-123</a>
+                                            href="tel: +65-31-591-123" target='_blank' rel='noreferrer' > +65-31-591-123</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -197,7 +197,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:neha.dwivedi@careerera.com" target="_blank">neha.dwivedi@careerera.com</a>
+                                            href="mailto:neha.dwivedi@careerera.com" target='_blank' rel='noreferrer' >neha.dwivedi@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -233,7 +233,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -263,7 +263,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Sandeep@careerera.com" target="_blank">Sandeep@careerera.com</a>
+                                            href="mailto:Sandeep@careerera.com" target='_blank' rel='noreferrer' >Sandeep@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +282,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -295,7 +295,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:aditya@careerera.com" target="_blank">aditya@careerera.com</a>
+                                            href="mailto:aditya@careerera.com" target='_blank' rel='noreferrer' >aditya@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +381-65-454-7847" target="_blank"> +381-65-454-7847</a>
+                                            href="tel: +381-65-454-7847" target='_blank' rel='noreferrer' > +381-65-454-7847</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -331,7 +331,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +348,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +381-65-454-7847" target="_blank"> +381-65-454-7847</a>
+                                            href="tel: +381-65-454-7847" target='_blank' rel='noreferrer' > +381-65-454-7847</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -361,7 +361,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Sandeep@careerera.com" target="_blank">Sandeep@careerera.com</a>
+                                            href="mailto:Sandeep@careerera.com" target='_blank' rel='noreferrer' >Sandeep@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +380,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +381-65-454-7847" target="_blank"> +381-65-454-7847</a>
+                                            href="tel: +381-65-454-7847" target='_blank' rel='noreferrer' > +381-65-454-7847</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -393,7 +393,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:aditya@careerera.com" target="_blank">aditya@careerera.com</a>
+                                            href="mailto:aditya@careerera.com" target='_blank' rel='noreferrer' >aditya@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +44-203-769-0986" target="_blank"> +44-203-769-0986</a>
+                                            href="tel: +44-203-769-0986" target='_blank' rel='noreferrer' > +44-203-769-0986</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -429,7 +429,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +44-203-769-0986" target="_blank"> +44-203-769-0986</a>
+                                            href="tel: +44-203-769-0986" target='_blank' rel='noreferrer' > +44-203-769-0986</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -459,7 +459,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Sandeep@careerera.com" target="_blank">Sandeep@careerera.com</a>
+                                            href="mailto:Sandeep@careerera.com" target='_blank' rel='noreferrer' >Sandeep@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -478,7 +478,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +44-203-769-0986" target="_blank"> +44-203-769-0986</a>
+                                            href="tel: +44-203-769-0986" target='_blank' rel='noreferrer' > +44-203-769-0986</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -491,7 +491,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:aditya@careerera.com" target="_blank">aditya@careerera.com</a>
+                                            href="mailto:aditya@careerera.com" target='_blank' rel='noreferrer' >aditya@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -514,7 +514,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +971-56-583-7368" target="_blank"> +971-56-583-7368</a>
+                                            href="tel: +971-56-583-7368" target='_blank' rel='noreferrer' > +971-56-583-7368</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -527,7 +527,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -544,7 +544,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +971-56-583-7368" target="_blank"> +971-56-583-7368</a>
+                                            href="tel: +971-56-583-7368" target='_blank' rel='noreferrer' > +971-56-583-7368</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -557,7 +557,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Sandeep@careerera.com" target="_blank">Sandeep@careerera.com</a>
+                                            href="mailto:Sandeep@careerera.com" target='_blank' rel='noreferrer' >Sandeep@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -576,7 +576,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +971-56-583-7368" target="_blank"> +971-56-583-7368</a>
+                                            href="tel: +971-56-583-7368" target='_blank' rel='noreferrer' > +971-56-583-7368</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -589,7 +589,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:aditya@careerera.com" target="_blank">aditya@careerera.com</a>
+                                            href="mailto:aditya@careerera.com" target='_blank' rel='noreferrer' >aditya@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -612,7 +612,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -625,7 +625,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:support@careerera.com" target="_blank">support@careerera.com</a>
+                                            href="mailto:support@careerera.com" target='_blank' rel='noreferrer' >support@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -642,7 +642,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -655,7 +655,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:Sandeep@careerera.com" target="_blank">Sandeep@careerera.com</a>
+                                            href="mailto:Sandeep@careerera.com" target='_blank' rel='noreferrer' >Sandeep@careerera.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -674,7 +674,7 @@ export default function Contactfooter() {
                                             Phone No.
                                         </span>
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel: +1-844-889-4054" target="_blank"> +1-844-889-4054</a>
+                                            href="tel: +1-844-889-4054" target='_blank' rel='noreferrer' > +1-844-889-4054</a>
                                     </div>
                                 </div>
                                 <div className="bg-white rounded-lg shadow-sm p-3 d-flex mt-2">
@@ -687,7 +687,7 @@ export default function Contactfooter() {
                                         </span>
 
                                         <a className="text-gray-500 font-semibold no-underline"
-                                            href="mailto:aditya@careerera.com" target="_blank">aditya@careerera.com</a>
+                                            href="mailto:aditya@careerera.com" target='_blank' rel='noreferrer' >aditya@careerera.com</a>
                                     </div>
                                 </div>
                             </div>

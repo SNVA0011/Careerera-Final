@@ -427,12 +427,12 @@ const Privacy = () => {
                         Si no desea que los datos relacionados con sus visitas a nuestros sitios web
                         se recopilen a través de Google Analytics, puede optar por no participar
                         instalando el{" "}
-                        <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">
+                        <a href="https://tools.google.com/dlpage/gaoptout" target='_blank' rel='noreferrer' >
                             complemento del navegador de exclusión voluntaria de Google Analytics.{" "}
                         </a>
                         Puede optar por no participar en las audiencias personalizadas de Facebook
                         visitando la página de exclusión de Facebook.{" "}
-                        <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">
+                        <a href="https://tools.google.com/dlpage/gaoptout" target='_blank' rel='noreferrer' >
                             <font style={{ verticalAlign: "inherit" }} />
                         </a>{" "}
                         <font style={{ verticalAlign: "inherit" }} />

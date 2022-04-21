@@ -68,14 +68,14 @@ const Hero = () => {
                 <div className='mailto-partnerjoin text-left text-base md:text-lg font-light'>
                   <div className="row">
                     <div className='col-md-6 mb-3 col-12'>
-                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="tel:+919643034607" target="_blank">
+                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="tel:+919643034607" target='_blank' rel='noreferrer' >
                         <i class="bi  bi-telephone roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>+91 9643-034-607</span>
                       </a>
                     </div>
 
                     <div className='col-md-6 mb-3 col-12'>
-                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="https://api.whatsapp.com/send?phone=+919643034607&text=Hi%2C%20I%20am%20interested%20in%20Partner%20with%20us%20program%20of%20Careerera" target="_blank">
+                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="https://api.whatsapp.com/send?phone=+919643034607&text=Hi%2C%20I%20am%20interested%20in%20Partner%20with%20us%20program%20of%20Careerera" target='_blank' rel='noreferrer' >
                         <i class="bi bi-whatsapp roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>+91 9643-034-607</span>
                       </a>
@@ -83,7 +83,7 @@ const Hero = () => {
                  
 
                     <div className='col-md-6 col-12'>
-                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="mailto:partnerwithus@careerera.com" target="_blank">
+                      <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="mailto:partnerwithus@careerera.com" target='_blank' rel='noreferrer' >
                         <i class="bi bi-envelope roundmail-ul mr-2 orange-clrsite"></i>
                         <span className='d-inline-block'>partnerwithus@careerera.com</span>
                       </a>
@@ -114,7 +114,7 @@ const Hero = () => {
                       <Form.Select onChange={setvalPhone} value={selectphoneval} className="mb-3">
                         <option selected>Please select your country</option>
                         {cntry.map((item, i) =>
-                          <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                          <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                         )}
                       </Form.Select>
 

@@ -1,8 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, {  useState, useEffect } from 'react'
 import Hero from '../Atoms/Hero'
-import blogs from '../Images/blogs.png'
-import news1 from '../Images/news1.jpg'
-import { Context, Provider } from '../Api'
+import blogs from '../Images/blogs.png' 
 import fun from '../Images/fun4.gif'
 import { Link } from 'react-router-dom'
 import Moment from 'react-moment'
@@ -183,8 +181,7 @@ const BlogArabic = () => {
                                                                             .map((_, i) => (
                                                                                 <button
                                                                                     className="px-3 leading-none py-1 text-white
-                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase"
-                                                                                >
+                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                                                                                     <span className="text-sm">
                                                                                         {item.Tags[i]}
                                                                                     </span>
@@ -200,7 +197,7 @@ const BlogArabic = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                                 className="mr-2"
                                                                             >
                                                                                 <i className="fab fa-linkedin-in text-xl text-blue-500 mr-4"></i>
@@ -213,7 +210,7 @@ const BlogArabic = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                                 className="mr-2"
                                                                             >
                                                                                 <i className="fab fa-twitter text-xl text-blue-400 mr-4"></i>
@@ -226,7 +223,7 @@ const BlogArabic = () => {
                                                                                     '/blog/' +
                                                                                     item.url
                                                                                 }
-                                                                                target="_blank"
+                                                                                target='_blank' rel='noreferrer' 
                                                                             >
                                                                                 <i className="fab fa-facebook-f text-xl text-blue-800 mr-4"></i>
                                                                             </a>
@@ -299,8 +296,7 @@ const BlogArabic = () => {
                                                             {new Array(freeAllbatch[0].length - 1)
                                                                 .fill()
                                                                 .map((_, index) => (
-                                                                    <li
-                                                                        className={
+                                                                    <li key={index} className={
                                                                             'page-item dots' +
                                                                             (pagination_st == index
                                                                                 ? ' active'

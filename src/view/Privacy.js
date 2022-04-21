@@ -375,7 +375,7 @@ const Privacy = () => {
                         <p>
                             If you do not wish to have data relating to your visits to our websites
                             collected through Google Analytics, you may opt-out by installing the{" "}
-                            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">
+                            <a href="https://tools.google.com/dlpage/gaoptout" target='_blank' rel='noreferrer' >
                                 Google Analytics opt-out browser add-on.
                             </a>{" "}
                             You may opt-out of Facebook Custom Audiences by visiting Facebook’s opt-out

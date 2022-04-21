@@ -226,7 +226,7 @@ const FreeCourse = () => {
                                                                     'https://my.careerera.com/signup.php?batchid=' +
                                                                     dats.workshop_id
                                                                 }
-                                                                target="_blank"
+                                                                target='_blank' rel='noreferrer' 
                                                                 className="no-underline btn-site gray">
                                                                 <span>Enroll Now</span>
                                                             </a>

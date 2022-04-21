@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Context, Provider } from '../Api'
-import { useParams, } from "react-router";
-import PgpDatascience from "./PgpDataScience";
+import { useParams, } from "react-router"; 
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import { Link } from "react-router-dom";
 import fun from "../Images/fun4.gif"
@@ -250,7 +249,7 @@ const MasterCountry = () => {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'http://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                                    target="_blank"
+                                                                                    target='_blank' rel='noreferrer' 
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -387,7 +386,7 @@ const MasterCountry = () => {
                                                                     </Link>
 
                                                                     <a href={'http://my.careerera.com/signup.php?batchid=' + items.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                        target="_blank"
+                                                                        target='_blank' rel='noreferrer' 
                                                                         className="no-underline btn-site gray">
                                                                         <span>Enroll Now</span>
                                                                     </a>
@@ -495,7 +494,7 @@ const MasterCountry = () => {
                 {Catfinal[0].courseList.filter((titleitem) => titleitem.courseFUllURL == country.id + "/" + country.dats).map((titleitem, i) => {
                     return (
                         <>
-                            <StateFooter pagetitle={titleitem.CourseTitel} id={(data.filter((items) => items.countries_url == country.country)[0].id)} />
+                            <StateFooter pagetitle={titleitem.CourseTitel} id={(data.filter((items) => items.countries_url == country.country)[0].id)}  key={i}/>
                         </>
                     )
                 })}

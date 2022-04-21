@@ -43,7 +43,7 @@ const ZipFooterCourse = (props) => {
                   <ul className='list-disc text-base row'>
                     {data.map((items, i) => (
                       <>
-                        <li className='col-xxl-3 col-lg-6 col-12'><Link to={'/es/'+items.zip}>{items.zip}</Link></li>
+                        <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={'/es/'+items.zip}>{items.zip}</Link></li>
                       </>
                     ))}
 

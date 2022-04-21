@@ -5,8 +5,6 @@ const Faq = (props) => {
 
   const final = props.data;
 
-
-
   return (
     <div className="scroll-spbx our_faq_sec bg-blue-50 scroll-spbx" id="FAQ">
 

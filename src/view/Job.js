@@ -61,7 +61,7 @@ const Job = () => {
                             <div className="col-xxl-9 col-lg-8 col-12">
                                 {job.map((items, i) => {
                                     return (
-                                        <div className="d-flex w-100 media flex-column flex-sm-row">
+                                        <div className="d-flex w-100 media flex-column flex-sm-row" key={i}>
 
                                             <div className="media-left text-center">
                                                 <div className="bg-gray-50 rounded-xl text-sm overflow-hidden shadow-md  font-semibold">

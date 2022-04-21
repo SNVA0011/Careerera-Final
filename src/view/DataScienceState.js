@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import certificate from '../Images/Certificate.svg'
-import whysci_icon_1 from '../Images/46.png'
-import whysci_icon_2 from '../Images/61.png'
-import whysci_icon_3 from '../Images/2.7-MILLION.png'
-import whysci_icon_4 from '../Images/33.5.png'
-import whysci_icon_5 from '../Images/2020.png'
-import Accordion from 'react-bootstrap/Accordion'
+import certificate from '../Images/Certificate.svg' 
 import UserformsApplication from '../Molecules/Course/UserformsApplication';
-import { Helmet } from 'react-helmet'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Helmet } from 'react-helmet' 
 import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import { useParams } from 'react-router';
 import CityFooterCourse from '../Atoms/CityFooterCourse';

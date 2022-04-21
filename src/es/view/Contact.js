@@ -83,7 +83,7 @@ const Contact = () => {
                       Teléfono
                     </span>
 
-                    <a className="text-gray-500 font-semibold no-underline" href={"tel:" + contextcur.title} target="_blank">
+                    <a className="text-gray-500 font-semibold no-underline" href={"tel:" + contextcur.title} target='_blank' rel='noreferrer' >
                       {contextcur.title}
                     </a>
                   </div>
@@ -99,40 +99,40 @@ const Contact = () => {
                     </span>
 
                     {contextcur.currency == "Asia/Kolkata" ?
-                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         support@careerera.com
                       </a> : ''}
 
                     {contextcur.currency == "Asia/Singapore" ?
-                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         support@careerera.com
                       </a> : ''}
 
 
                     {contextcur.currency == "America/New_York" ?
-                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         info@careerera.com
                       </a> : ''}
 
                     {contextcur.currency == "SGT" ?
-                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         support@careerera.com
                       </a> : ''}
 
 
                     {contextcur.currency == "Europe/London" ?
-                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         info@careerera.com
                       </a> : ''}
 
                     {contextcur.currency == "Asia/Dubai" ?
-                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:info@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         info@careerera.com
                       </a> : ''}
 
 
                     {contextcur.currency == "Asia/Dhaka" ?
-                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target="_blank">
+                      <a href="mailto:support@careerera.com" className="text-gray-500 font-semibold no-underline" target='_blank' rel='noreferrer' >
                         support@careerera.com
                       </a> : ''}
                   </div>

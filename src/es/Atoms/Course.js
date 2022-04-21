@@ -93,7 +93,7 @@ const Course = (props) => {
                                             {exactData.map((item, i) => (
                                                 <div className="font-left mb-1 rounded">
                                                     {/* <Link to={'/es/'+item.category_url}>Hello</Link> */}
-                                                    <Link to={'/es/'+item.category_url}
+                                                    <Link to={'/es/'+item.category_url}  key={i}
                                                         onClick={(e) => { setHidemenust(true) }}
                                                         className={
                                                             'd-flex justify-content-between course w-full rounded-sm md:text-base xl:text-lg' +
@@ -247,7 +247,7 @@ const Course = (props) => {
                                         <Accordion className="megamenu-wrapper" defaultActiveKey="0">
                                             {exactData.map((item, i) => (
                                                 <>
-                                                    <Accordion.Item eventKey={i} className={"evertkey-" + i}>
+                                                    <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                                                         <Accordion.Header name={item.category_title}
                                                             onClick={(e) => add(item.category_title, item.category_url, item.Course.length)}
                                                             onMouseEnter={() => add(item.category_title, item.category_url, item.Course.length)}>

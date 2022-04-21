@@ -265,7 +265,7 @@ const MasterState = () => {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'http://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                                    target="_blank"
+                                                                                    target='_blank' rel='noreferrer' 
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -392,7 +392,7 @@ const MasterState = () => {
                                                                     </Link>
 
                                                                     <a href={'http://my.careerera.com/signup.php?batchid=' + items.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                        target="_blank"
+                                                                        target='_blank' rel='noreferrer' 
                                                                         className="no-underline btn-site gray">
                                                                         <span>Enroll Now</span>
                                                                     </a>

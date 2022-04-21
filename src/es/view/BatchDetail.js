@@ -181,9 +181,9 @@ const BatchDetail = (props) => {
                 <p className="text-red-500 font-semibold text-sm sm:text-base mt-3">Nota: la fecha y la hora de la clase pueden cambiar debido a circunstancias inevitables</p>
               </div>
 
-              {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid + "&currency=Rs"} target="_blank" className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
+              {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid + "&currency=Rs"} target='_blank' rel='noreferrer'  className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
                 <span> Enlístate ahora</span>
-              </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid} target="_blank" className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
+              </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + workid.workid} target='_blank' rel='noreferrer'  className='mt-2 no-underline btn-site gray md:h-12 d-inline-flex justify-content-center align-items-center'>
                 <span> Enlístate ahora</span>
               </a>}
 
@@ -207,7 +207,7 @@ const BatchDetail = (props) => {
                         <ul className='list-disc text-base row'>
                           {List.map((item, i) => {
                             return (
-                              <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/es/" + data.data + "/" + item.url + "/liveonline/" + date.date + "/" + workid.workid}>{item.name}</Link></li>
+                              <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={"/es/" + data.data + "/" + item.url + "/liveonline/" + date.date + "/" + workid.workid}>{item.name}</Link></li>
                             )
                           })}
                         </ul>

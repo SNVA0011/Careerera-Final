@@ -165,21 +165,21 @@ const Partnership = () => {
                                             <a
                                                 className="shadow-md social-button facebook text-center"
                                                 href="https://www.facebook.com/careerera"
-                                                target="_blank">
+                                                target='_blank' rel='noreferrer' >
 
                                                 <i className="fab fa-facebook-f"></i>
                                             </a>
                                             <a
                                                 className="shadow-md social-button twitter"
                                                 href="https://twitter.com/Careerera1"
-                                                target="_blank">
+                                                target='_blank' rel='noreferrer' >
 
                                                 <i className="fab fa-twitter"></i>
                                             </a>
                                             <a
                                                 className="shadow-md social-button linkedin mr-0"
                                                 href="https://www.linkedin.com/company/careerera"
-                                                target="_blank">
+                                                target='_blank' rel='noreferrer' >
 
                                                 <i className="fab fa-linkedin"></i>
                                             </a>

@@ -185,7 +185,7 @@ export default function CategoryUpcomingBatch() {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id}
-                                                                                    target="_blank"
+                                                                                    target='_blank' rel='noreferrer' 
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENLÍSTATE AHORA</span>
                                                                                 </a>
@@ -300,7 +300,7 @@ export default function CategoryUpcomingBatch() {
                                                                                         <span>Leer más</span>
                                                                                     </Link>
                                                                                     <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
-                                                                                        target="_blank"
+                                                                                        target='_blank' rel='noreferrer' 
                                                                                         className="no-underline btn-site gray">
                                                                                         <span>Enlístate ahora</span>
                                                                                     </a>

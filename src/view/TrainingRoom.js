@@ -42,7 +42,7 @@ export default function TrainingRoom() {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                     </div>
 
-                    <div className="course_content_area pt-10">
+                    <div className="course_content_area pt-10 text-gray-500 font-medium">
                         <div className='row'>
                             <div className='col-12 mb-3 xl:text-lg'>
                                 <p>Careerera: to deliver training rooms in Noida</p>
@@ -50,7 +50,7 @@ export default function TrainingRoom() {
 
                             </div>
                             <div className='col-lg-6 col-12'>
-                                <p className='font-bold text-lg mb-1'>Our training room makes learning better with:</p>
+                                <p className='font-bold text-lg mb-1 text-black'>Our training room makes learning better with:</p>
                                 <ul className="list-disc pl-6 text-base">
                                     <li className='mb-2'>Completely Furnished labs with advanced machines</li>
                                     <li className='mb-2'>Power backup</li>
@@ -59,12 +59,12 @@ export default function TrainingRoom() {
                                     <li className='mb-2'>High-speed connectivity</li>
                                 </ul>
                                 <p>Careerera, offers training room in Noida for professional certification training with a rich learning environment, setup and great end services as per training needs.</p>
-                                <h3 className="mt-8 font-semibold text-xl sm:text-2xl">Training location in Noida:</h3>
+                                <h3 className="mt-8 font-semibold text-xl sm:text-2xl text-black">Training location in Noida:</h3>
                                 <p>The training location is in (B-44) Sector 59, Noida. The training rooms are having a total combined seating capacity 75 + participants in 3 training rooms. These rooms are well furnished with required amenities</p>
 
                             </div>
                             <div className='col-lg-6 col-12'>
-                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl">Facilities available:</h4>
+                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl text-black">Facilities available:</h4>
                                 <ul className="list-disc pl-6 text-base">
                                     <li className='mb-2'>Advanced projector</li>
                                     <li className='mb-2'>Essentials (pad-pen, white-board and markers) for learning</li>
@@ -72,7 +72,7 @@ export default function TrainingRoom() {
                                     <li className='mb-2'>4 GB RAM to 32 GB RAM machines are accessible</li>
                                     <li className='mb-2'>Refreshments</li>
                                 </ul>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">We have met all the needs of the training room:</h4>
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">We have met all the needs of the training room:</h4>
                                 <ul className="list-disc pl-6 text-base">
                                     <li className='mb-2'>Space</li>
                                     <li className='mb-2'>Accessibility</li>
@@ -144,11 +144,11 @@ export default function TrainingRoom() {
 
             {/*=========== discription_sec ===========*/}
             <div className="discription_sec">
-                <div className="container py-16">
+                <div className="container py-16 text-gray-500 font-medium">
                     <div className="course_content_area">
                         <div className='row'>
                             <div className='col-lg-6 col-12'>
-                                <h2 className="font-semibold text-xl sm:text-2xl">Training Rooms in Gurugram</h2>
+                                <h2 className="font-semibold text-xl sm:text-2xl text-black">Training Rooms in Gurugram</h2>
                                 <p>Careerera: to deliver training rooms in Gurugram</p>
                                 <p>Companies know the worth of offering their workforces the best training room structures available; they advance the general learning experience and lift learners’ knowledge remembering. Looking at this advancement which is essential nowadays, Careerera has put forward itself in offering training rooms in Gurgaon.</p>
                                 <p>Our training room makes learning better with:</p>
@@ -160,11 +160,11 @@ export default function TrainingRoom() {
                                     <li className='mb-2'>High-speed connectivity</li>
                                 </ul>
                                 <p>Careerera, offers training room in Noida for professional certification training with a rich learning environment, setup and great end services as per training needs.</p>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">Training location in Gurgaon:</h4>
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">Training location in Gurgaon:</h4>
                                 <p>The training location is in 435 Udyog Vihar, Phase V, AIHP Horizon Tower, Gurugram. These rooms are well furnished with required amenities</p>
                             </div>
                             <div className='col-lg-6 col-12'>
-                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl">Facilities available:</h4>
+                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl text-black">Facilities available:</h4>
                                 <ul className="list-disc pl-6 text-base">
                                     <li className='mb-2'>Advanced projector</li>
                                     <li className='mb-2'>Essentials (pad-pen, white-board and markers) for learning</li>
@@ -174,7 +174,7 @@ export default function TrainingRoom() {
                                     <li className='mb-2'> One time breakfast or lunch is provided, as per the timings of the session.
                                     </li>
                                 </ul>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">We have met all the needs of the training room:</h4>
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">We have met all the needs of the training room:</h4>
                                 <ul className="list-disc pl-6 text-base">
                                     <li className='mb-2'>Space</li>
                                     <li className='mb-2'>Accessibility</li>
@@ -287,7 +287,7 @@ export default function TrainingRoom() {
                                             Email
                                         </span>
 
-                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com" target="_blank" rel="noreferrer">info@careerera.com</a>
+                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com" target='_blank' rel='noreferrer'  >info@careerera.com</a>
                                     </div>
                                 </div>
 
@@ -334,7 +334,7 @@ export default function TrainingRoom() {
                                             Email
                                         </span>
 
-                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com " target="_blank" rel="noreferrer">info@careerera.com </a>
+                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com " target='_blank' rel='noreferrer'  >info@careerera.com </a>
                                     </div>
                                 </div>
 

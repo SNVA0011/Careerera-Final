@@ -40,7 +40,7 @@ export default function TrainingRoom() {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                     </div>
 
-                    <div className="course_content_area pt-10">
+                    <div className="course_content_area pt-10  text-gray-500 font-medium">
                         <div className="row">
                             <div className="col-12 mb-3 xl:text-lg">
                                 <p>Careerera: para entregar salas de formación en Noida</p>
@@ -53,7 +53,7 @@ export default function TrainingRoom() {
                                 </p>
                             </div>
                             <div className="col-lg-6 col-12">
-                                <p className="font-bold text-lg mb-1">
+                                <p className="font-bold text-lg mb-1 text-black">
                                     Nuestra sala de formación hace que el aprendizaje sea mejor con:
                                 </p>
                                 <ul className="list-disc pl-6 text-base">
@@ -71,7 +71,7 @@ export default function TrainingRoom() {
                                     configuración y excelentes servicios finales según las necesidades de
                                     capacitación.
                                 </p>
-                                <h3 className="mt-8 font-semibold text-xl sm:text-2xl">
+                                <h3 className="mt-8 font-semibold text-xl sm:text-2xl text-black">
                                     Lugar de entrenamiento en Noida:
                                 </h3>
                                 <p>
@@ -82,7 +82,7 @@ export default function TrainingRoom() {
                                 </p>
                             </div>
                             <div className="col-lg-6 col-12">
-                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl">
+                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl text-black">
                                     Facilidades disponibles:
                                 </h4>
                                 <ul className="list-disc pl-6 text-base">
@@ -97,7 +97,7 @@ export default function TrainingRoom() {
                                     </li>
                                     <li className="mb-2">refrescos</li>
                                 </ul>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">
                                     Hemos cubierto todas las necesidades de la sala de formación:
                                 </h4>
                                 <ul className="list-disc pl-6 text-base">
@@ -174,11 +174,11 @@ export default function TrainingRoom() {
 
             {/*=========== discription_sec ===========*/}
             <div className="discription_sec">
-                <div className="container py-16">
+                <div className="container py-16 text-gray-500 font-medium">
                     <div className="course_content_area">
                         <div className="row">
                             <div className="col-lg-6 col-12">
-                                <h2 className="font-semibold text-xl sm:text-2xl">
+                                <h2 className="font-semibold text-xl sm:text-2xl text-black">
                                     Salas de formación en Gurugram
                                 </h2>
                                 <p>Careerera: para entregar salas de formación en Gurugram</p>
@@ -208,7 +208,7 @@ export default function TrainingRoom() {
                                     aprendizaje, configuración y excelentes servicios finales según las
                                     necesidades de capacitación.
                                 </p>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">
                                     Lugar de entrenamiento en Gurgaon:
                                 </h4>
                                 <p>
@@ -218,7 +218,7 @@ export default function TrainingRoom() {
                                 </p>
                             </div>
                             <div className="col-lg-6 col-12">
-                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl">
+                                <h4 className="mt-8 mt-lg-0 font-semibold text-xl sm:text-2xl text-black">
                                     Facilidades disponibles:
                                 </h4>
                                 <ul className="list-disc pl-6 text-base">
@@ -237,7 +237,7 @@ export default function TrainingRoom() {
                                         la sesión.
                                     </li>
                                 </ul>
-                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl">
+                                <h4 className="mt-8 font-semibold text-xl sm:text-2xl text-black">
                                     Hemos cubierto todas las necesidades de la sala de formación:
                                 </h4>
                                 <ul className="list-disc pl-6 text-base">
@@ -352,7 +352,7 @@ export default function TrainingRoom() {
                                             Email
                                         </span>
 
-                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com" target="_blank" rel="noreferrer">info@careerera.com</a>
+                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com" target='_blank' rel='noreferrer'  >info@careerera.com</a>
                                     </div>
                                 </div>
 
@@ -399,7 +399,7 @@ export default function TrainingRoom() {
                                             Email
                                         </span>
 
-                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com " target="_blank" rel="noreferrer">info@careerera.com </a>
+                                        <a className="text-gray-500 font-semibold no-underline" href="mailto:info@careerera.com " target='_blank' rel='noreferrer'  >info@careerera.com </a>
                                     </div>
                                 </div>
 

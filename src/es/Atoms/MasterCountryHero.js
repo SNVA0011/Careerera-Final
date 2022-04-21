@@ -115,14 +115,14 @@ export default function MasterCountryHero(props) {
 
                             <div className="mt-5 mt-lg-4">
                                 <a href={"tel:" + contextcur.title}
-                                    target="_blank"
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
                                     <span><i className="fa mr-1 fa-phone"></i> {contextcur.title}</span>
                                 </a>
 
                                 {contextcur.currency === 'Asia/Kolkata' ?
                                     <a href="mailto:support@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -134,7 +134,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'Asia/Singapore' ?
                                     <a href="mailto:support@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -146,7 +146,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'America/New_York' ?
                                     <a href="mailto:info@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -158,7 +158,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'SGT' ?
                                     <a href="mailto:support@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -170,7 +170,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'Europe/London' ?
                                     <a href="mailto:info@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -182,7 +182,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'Asia/Dubai' ?
                                     <a href="mailto:info@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -194,7 +194,7 @@ export default function MasterCountryHero(props) {
 
                                 {contextcur.currency === 'Asia/Dhaka' ?
                                     <a href="mailto:support@careerera.com"
-                                        target='_blank'
+                                        target='_blank' rel='noreferrer' 
                                         className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                         <span className='lowercase'>
@@ -240,7 +240,7 @@ export default function MasterCountryHero(props) {
  h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base mb-3">
                                                 <option selected>Please select your country</option>
                                                 {cntry.map((item, i) =>
-                                                    <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                                                    <option key={i} value={[item.phonecode, item.country_title]}>{item.country_title}</option>
                                                 )}
                                             </Form.Select>
 

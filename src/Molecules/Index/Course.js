@@ -83,7 +83,7 @@ const Course = () => {
                   <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
 
                     {exactData.map((item, i) => (
-                      <div className="font-left mb-1 rounded">
+                      <div className="font-left mb-1 rounded" key={i}>
                         <Link to={item.category_url}
                           className={
                             'd-flex justify-content-between course w-full rounded-sm md:text-base xl:text-lg' + (hoveactive === item.category_title ? ' active' : ' ') + (defaultActive && i === 0 ? ' active' : ' ')}
@@ -119,7 +119,7 @@ const Course = () => {
                             (dat, ei) => (
                               <>
 
-                                <div className="no-underline col-xxl-4 col-md-6 col-12 mb-4">
+                                <div className="no-underline col-xxl-4 col-md-6 col-12 mb-4" key={ei}>
                                   <div className="cards h-100 d-flex flex-column">
 
 
@@ -222,7 +222,7 @@ const Course = () => {
                   <Accordion className="megamenu-wrapper" defaultActiveKey="0">
                     {exactData.map((item, i) => (
                       <>
-                        <Accordion.Item eventKey={i} className={"evertkey-" + i}>
+                        <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                           <Accordion.Header name={item.category_title}
                             onClick={(e) => add(item.category_title, item.category_url, item.Course.length)}
                             onMouseEnter={() => add(item.category_title, item.category_url, item.Course.length)}>

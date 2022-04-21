@@ -23,7 +23,7 @@ const PaidCourse = () => {
                             allbatches != undefined ?
                                 allbatches.map((items, i) => (
                                     <>
-                                        <h4>
+                                        <h4 key={i}>
                                             Yes, API have the data of all batches
                                         </h4>
                                     </>

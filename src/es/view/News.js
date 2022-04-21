@@ -165,8 +165,7 @@ const News = () => {
                                                             .map((_, i) => (
                                                                 <button
                                                                     className="px-3 leading-none py-1 text-white
-                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase"
-                                                                >
+                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                                                                     <span className="text-sm">
                                                                         {item.Tags[i]}
                                                                     </span>
@@ -182,7 +181,7 @@ const News = () => {
                                                                     '/blog/' +
                                                                     item.url
                                                                 }
-                                                                target="_blank"
+                                                                target='_blank' rel='noreferrer' 
                                                                 className="mr-2"
                                                             >
                                                                 <i className="fab fa-linkedin-in text-xl text-blue-500 mr-4"></i>
@@ -195,7 +194,7 @@ const News = () => {
                                                                     '/blog/' +
                                                                     item.url
                                                                 }
-                                                                target="_blank"
+                                                                target='_blank' rel='noreferrer' 
                                                                 className="mr-2"
                                                             >
                                                                 <i className="fab fa-twitter text-xl text-blue-400 mr-4"></i>
@@ -208,7 +207,7 @@ const News = () => {
                                                                     '/blog/' +
                                                                     item.url
                                                                 }
-                                                                target="_blank"
+                                                                target='_blank' rel='noreferrer' 
                                                             >
                                                                 <i className="fab fa-facebook-f text-xl text-blue-800 mr-4"></i>
                                                             </a>
@@ -282,8 +281,7 @@ const News = () => {
                                             {new Array(freeAllbatch[0].length - 1)
                                                 .fill()
                                                 .map((_, index) => (
-                                                    <li
-                                                        className={
+                                                    <li key={index} className={
                                                             'page-item dots' +
                                                             (pagination_st == index
                                                                 ? ' active'

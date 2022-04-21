@@ -1,12 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { Provider, Context } from '../Api'
-import Hero from '../Molecules/Partner/Hero'
+import { Provider, Context } from '../Api' 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+import FormControl from 'react-bootstrap/FormControl' 
 import partner from '../Images/Partner.jpg'
 import { Helmet } from 'react-helmet'
 
@@ -109,7 +106,7 @@ const Help = () => {
                                                 <Form.Select onChange={setvalPhone} value={selectphoneval} className="mb-3 bg-white shadow-sm">
                                                     <option selected>Please select your country</option>
                                                     {cntry.map((item, i) =>
-                                                        <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                                                        <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                                                     )}
                                                 </Form.Select>
 

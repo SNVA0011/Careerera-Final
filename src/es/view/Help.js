@@ -106,7 +106,7 @@ const Help = () => {
                                                 <Form.Select onChange={setvalPhone} value={selectphoneval} className="mb-3 bg-white shadow-sm">
                                                     <option selected>Please select your country</option>
                                                     {cntry.map((item, i) =>
-                                                        <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                                                        <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                                                     )}
                                                 </Form.Select>
 

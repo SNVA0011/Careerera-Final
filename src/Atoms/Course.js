@@ -91,7 +91,7 @@ const Course = (props) => {
                                         <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
                                             {/* <h3 className="font-semibold text-lg pl-1 text-blue-500"  >Choose Your Domain</h3> */}
                                             {exactData.map((item, i) => (
-                                                <div className="font-left mb-1 rounded">
+                                                <div className="font-left mb-1 rounded" key={i} >
                                                     {/* <Link to={item.category_url}>Hello</Link> */}
                                                     <Link to={item.category_url}
                                                         onClick={(e) => { setHidemenust(true) }}
@@ -125,7 +125,7 @@ const Course = (props) => {
                                         <div className="col-xxl-9 col-lg-8 col-12 scroll-xxl-9">
 
                                             {exactData.filter(statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science').map((item, e) => (
-                                                <div className="row pt-4">
+                                                <div className="row pt-4" key={e}>
                                                     {item.Course.slice(0, totalcourslice === item.category_title ? showallcour : 6).map(
                                                         (dat, ei) => (
                                                             <>
@@ -236,7 +236,7 @@ const Course = (props) => {
                                         <Accordion className="megamenu-wrapper" defaultActiveKey="0">
                                             {exactData.map((item, i) => (
                                                 <>
-                                                    <Accordion.Item eventKey={i} className={"evertkey-" + i}>
+                                                    <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                                                         <Accordion.Header name={item.category_title}
                                                             onClick={(e) => add(item.category_title, item.category_url, item.Course.length)}
                                                             onMouseEnter={() => add(item.category_title, item.category_url, item.Course.length)}>
@@ -253,7 +253,7 @@ const Course = (props) => {
                                                                 <div className="full-w">
                                                                     <Carousel interval={null}>
                                                                         {item.Course.map((dat, ei) => (
-                                                                            <Carousel.Item>
+                                                                            <Carousel.Item key={ei}>
 
                                                                                 <div onMouseEnter={(e) => setMobmenuclose(false)} onClick={(e) => setMobmenuclose(false)} key={'type-' + ei}>
                                                                                     <div className="no-underline w-100 mb-4">

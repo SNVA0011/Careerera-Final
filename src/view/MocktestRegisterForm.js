@@ -103,7 +103,7 @@ export default function MocktestRegisterForm() {
          h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base">
                                                     <option selected>Please select your country</option>
                                                     {cntry.map((item, i) =>
-                                                        <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                                                        <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                                                     )}
                                                 </Form.Select>
                                             </div>
@@ -147,35 +147,35 @@ export default function MocktestRegisterForm() {
                                 <a
                                     className="mb-0 social-button facebook text-center"
                                     href="https://business.facebook.com/careerera/?business_id=145787346668818"
-                                    target="_blank">
+                                    target='_blank' rel='noreferrer' >
 
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
                                 <a
                                     className="mb-0 social-button twitter"
                                     href="https://twitter.com/Careerera1"
-                                    target="_blank">
+                                    target='_blank' rel='noreferrer' >
 
                                     <i className="fab fa-twitter"></i>
                                 </a>
                                 <a
                                     className="mb-0 social-button linkedin"
                                     href="https://www.linkedin.com/company/careerera"
-                                    target="_blank">
+                                    target='_blank' rel='noreferrer' >
 
                                     <i className="fab fa-linkedin"></i>
                                 </a>
                                 <a
                                     className="mb-0 social-button instagram"
                                     href="https://www.instagram.com/the_career_era/"
-                                    target="_blank">
+                                    target='_blank' rel='noreferrer' >
 
                                     <i className="fab fa-instagram"></i>
                                 </a>
                                 <a
                                     className="mb-0 social-button youtube"
                                     href="javascript:;"
-                                    target="_blank">
+                                    target='_blank' rel='noreferrer' >
                                     <i className="fab fa-youtube"></i>
                                 </a>
                             </div>

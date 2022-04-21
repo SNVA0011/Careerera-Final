@@ -1,7 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import "../style.css";
-import post from "../Images/Post.svg";
-import { Context } from "../Api";
+import React, {  useEffect } from "react";
+import "../style.css"; 
 import m1 from "../Images/m1.png";
 import m2 from "../Images/m2.png";
 import m3 from "../Images/m3.png";

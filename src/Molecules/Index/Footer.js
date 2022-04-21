@@ -38,7 +38,7 @@ const Footer = () => {
 
                         <p className="text-sm font-semibold mt-3 mb-3">
                             {contextcur.currency === 'Asia/Kolkata' ? (
-                                <a target="_blank" href="mailto:support@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     support@careerera.com
@@ -48,7 +48,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'Asia/Singapore' ? (
-                                <a target="_blank" href="mailto:support@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     support@careerera.com
@@ -58,7 +58,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'America/New_York' ? (
-                                <a target="_blank" href="mailto:info@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:info@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     info@careerera.com
@@ -68,7 +68,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'SGT' ? (
-                                <a target="_blank" href="mailto:support@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     support@careerera.com
@@ -78,7 +78,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'Europe/London' ? (
-                                <a target="_blank" href="mailto:info@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:info@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     info@careerera.com
@@ -88,7 +88,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'Asia/Dubai' ? (
-                                <a target="_blank" href="mailto:info@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:info@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     info@careerera.com
@@ -98,7 +98,7 @@ const Footer = () => {
                             )}
 
                             {contextcur.currency === 'Asia/Dhaka' ? (
-                                <a target="_blank" href="mailto:support@careerera.com"
+                                <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
                                     className="mailto-footer">
                                     <i className="far fa-envelope"></i>
                                     support@careerera.com
@@ -116,35 +116,35 @@ const Footer = () => {
                             <a
                                 className="social-button facebook text-center"
                                 href="https://www.facebook.com/careerera"
-                                target="_blank">
+                                target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-facebook-f"></i>
                             </a>
                             <a
                                 className="social-button twitter"
                                 href="https://twitter.com/Careerera1"
-                                target="_blank">
+                                target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a
                                 className="social-button linkedin"
                                 href="https://www.linkedin.com/company/careerera"
-                                target="_blank">
+                                target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-linkedin"></i>
                             </a>
                             <a
                                 className="social-button instagram"
                                 href="https://www.instagram.com/careereraonline/ "
-                                target="_blank">
+                                target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-instagram"></i>
                             </a>
                             <a
                                 className="social-button youtube"
                                 href="https://www.youtube.com/channel/UCQaNKS04OqIjTs9oJaMWbuQ?view_as=subscriber"
-                                target="_blank">
+                                target='_blank' rel='noreferrer' >
                                 <i className="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -253,12 +253,12 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className='mb-2'>
-                                <a href={"https://my.sappmail.net/account/"} target="_blank" className="no-underline text-black text-sm font-semibold">
+                                <a href={"https://my.sappmail.net/account/"} target='_blank' rel='noreferrer'  className="no-underline text-black text-sm font-semibold">
                                     Trainer Email
                                 </a>
                             </li>
                             <li className='mb-2'>
-                                <a href={"https://my.sappmail.net/account/"} target="_blank" className="no-underline text-black text-sm font-semibold">
+                                <a href={"https://my.sappmail.net/account/"} target='_blank' rel='noreferrer'  className="no-underline text-black text-sm font-semibold">
                                     Partner Email
                                 </a>
                             </li>

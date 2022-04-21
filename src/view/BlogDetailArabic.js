@@ -103,7 +103,7 @@ const BlogDetailArabic = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-linkedin"></i>
                       </a>
@@ -116,7 +116,7 @@ const BlogDetailArabic = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-twitter"></i>
                       </a>
@@ -129,7 +129,7 @@ const BlogDetailArabic = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
@@ -147,7 +147,7 @@ const BlogDetailArabic = () => {
                 <hr></hr>
 
                 {BlogDetail[0].Tags.map((item, i) => (
-                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase">
+                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                     <span className="text-xs">
                       {item}
                     </span>

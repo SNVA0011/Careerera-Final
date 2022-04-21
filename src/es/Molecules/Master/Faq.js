@@ -30,7 +30,7 @@ const Faq = (props) => {
                       <Accordion defaultActiveKey="0">
                         {
                           final.map((values, item) =>
-                            <Accordion.Item eventKey={item}>
+                            <Accordion.Item eventKey={item} key={item}>
                               <Accordion.Header className="">
                                 <div className="d-flex"> 
                                   <div className="atful-ans">

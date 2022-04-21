@@ -248,7 +248,7 @@ const MasterCity = () => {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'http://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                                    target="_blank"
+                                                                                    target='_blank' rel='noreferrer' 
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -388,7 +388,7 @@ const MasterCity = () => {
                                                                     </Link>
 
                                                                     <a href={'http://my.careerera.com/signup.php?batchid=' + items.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                        target="_blank"
+                                                                        target='_blank' rel='noreferrer' 
                                                                         className="no-underline btn-site gray">
                                                                         <span>Enroll Now</span>
                                                                     </a>
@@ -438,7 +438,7 @@ const MasterCity = () => {
                             Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
                                 items.Curriculum?.length > 0 ?
                                     <>
-                                        <div className="col-12 d-none d-md-block">
+                                        <div className="col-12 d-none d-md-block" key={i}>
                                             <div className="list-group mb-2 shadow-md">
                                                 <div className="d-flex list-group-item py-3 flex-column flex-md-row text-white font-semibold bg-snocurri text-lg">
                                                     <div className="text-nowrap pr-3 chapterleft-bx">

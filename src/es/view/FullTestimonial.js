@@ -146,7 +146,7 @@ const FullTestimonial = () => {
                             <div className="row">
 
                                 {data.map((item, i) => (
-                                    <div className="col-xxl-4 col-lg-6 col-12 pb-4">
+                                    <div className="col-xxl-4 col-lg-6 col-12 pb-4" key={i}>
                                         <div className='mb-2 shadow-md bg-white p-6 text-left w-full border-2 
                                         border-white rounded-3xl slidebg-h h-100 d-flex flex-column comment-fulllike'>
                                             <div className="flex-grow-1">
@@ -167,7 +167,7 @@ const FullTestimonial = () => {
                                                             )}
                                                             {item.rate < 5 ?
                                                                 new Array(5 - parseInt(item.rate)).fill().map((_, n) =>
-                                                                    <i className="bi bi-star mr-1"></i>
+                                                                    <i className="bi bi-star mr-1" key={n}></i>
                                                                 )
                                                                 : ''}
 
@@ -193,7 +193,7 @@ const FullTestimonial = () => {
                                                     <div className="rounded-social-buttons m-0"> <a
                                                         className="social-button linkedin m-0"
                                                         href={item.linkedin}
-                                                        target="_blank">
+                                                        target='_blank' rel='noreferrer' >
                                                         <i className="fab fa-linkedin"></i>
                                                     </a>
                                                     </div>

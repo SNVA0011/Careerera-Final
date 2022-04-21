@@ -97,7 +97,7 @@ const Certificate = (props) => {
                         <div className="mt-5 mt-lg-4">
                             <a
                                 href={"tel:" + contextcur.title}
-                                target="_blank"
+                                target='_blank' rel='noreferrer' 
                                 className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn"
                             >
                                 <span><i className="fa mr-1 fa-phone"></i> {contextcur.title}</span>
@@ -108,7 +108,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'Asia/Kolkata' ?
                                 <a href="mailto:support@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -120,7 +120,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'Asia/Singapore' ?
                                 <a href="mailto:support@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -132,7 +132,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'America/New_York' ?
                                 <a href="mailto:info@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -144,7 +144,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'SGT' ?
                                 <a href="mailto:support@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -156,7 +156,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'Europe/London' ?
                                 <a href="mailto:info@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -168,7 +168,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'Asia/Dubai' ?
                                 <a href="mailto:info@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>
@@ -180,7 +180,7 @@ const Certificate = (props) => {
 
                             {contextcur.currency === 'Asia/Dhaka' ?
                                 <a href="mailto:support@careerera.com"
-                                    target='_blank'
+                                    target='_blank' rel='noreferrer' 
                                     className="md:h-12 btn-site gray no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
 
                                     <span className='lowercase'>

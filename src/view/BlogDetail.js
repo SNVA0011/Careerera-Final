@@ -1,9 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../Atoms/Hero";
 import blogs from "../Images/blogs.png";
-import { useParams } from "react-router";
-import news1 from "../Images/news1.jpg";
-import { Context, Provider } from "../Api";
+import { useParams } from "react-router"; 
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
@@ -134,7 +132,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-linkedin"></i>
                       </a>
@@ -147,7 +145,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-twitter"></i>
                       </a>
@@ -160,7 +158,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target="_blank"
+                        target='_blank' rel='noreferrer' 
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
@@ -178,7 +176,7 @@ const BlogDetail = () => {
                 <hr></hr>
 
                 {BlogDetail[0].Tags.map((item, i) => (
-                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase">
+                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                     <span className="text-xs">
                       {item}
                     </span>

@@ -61,7 +61,7 @@ export default function EnquireNowForm() {
 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control form-select mb-3 ">
                 <option selected>Please select your country</option>
                 {cntry.map((item, i) =>
-                  <option value={[item.phonecode, item.country_title]}>{item.country_title}</option>
+                  <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                 )}
               </Form.Select>
 

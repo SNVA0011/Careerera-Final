@@ -59,7 +59,7 @@ const InnerJob = () => {
                         {innerjob.filter((items) => items.id == job.di).map((items, i) => {
                             return (
                                 <>
-                                    <div className="d-flex w-100 media flex-column flex-sm-row">
+                                    <div className="d-flex w-100 media flex-column flex-sm-row" key={i}>
 
                                         <div className="media-left text-center">
                                             <div className="bg-gray-50 rounded-xl text-sm overflow-hidden shadow-md  font-semibold">

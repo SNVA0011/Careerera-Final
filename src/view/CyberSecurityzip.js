@@ -8,9 +8,7 @@ import whysci_icon_4 from '../Images/33.5.png'
 import whysci_icon_5 from '../Images/2020.png'
 import Accordion from 'react-bootstrap/Accordion'
 import UserformsApplication from '../Molecules/Course/UserformsApplication';
-import { Helmet } from 'react-helmet'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Helmet } from 'react-helmet' 
 import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';

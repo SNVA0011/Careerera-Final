@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Partner from "../Molecules/Index/Parter";
+import React, { useEffect } from "react"; 
 import c1 from "../Images/c1.jpg";
 import c2 from "../Images/c2.jpg";
 import c3 from "../Images/c3.jpg";

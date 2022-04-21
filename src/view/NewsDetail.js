@@ -77,7 +77,7 @@ const NewsDetail = () => {
                 <hr></hr>
 
                 {Eventdetails[0].Tags.map((item, i) => (
-                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase">
+                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                     <span className="text-xs">
                       {item}
                     </span>

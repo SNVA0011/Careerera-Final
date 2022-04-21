@@ -33,7 +33,7 @@ const RelatedCourses = (props) => {
                                 {
                                     props.data[0] ?
                                         props.data[0].courseList.map((dates, ei) => (
-                                            <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ei} animateOnce={true} className="col-xl-6 col-12 mb-4">
+                                            <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ei} animateOnce={true} className="col-xl-6 col-12 mb-4" key={ei}>
 
                                                 <div className="cards bg-white">
                                                     <div className="p-4 d-flex flex-column">
@@ -113,7 +113,7 @@ const RelatedCourses = (props) => {
 
                                                                                                                             <div className='text-left'>
                                                                                                                                 <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id}
-                                                                                                                                    target="_blank"
+                                                                                                                                    target='_blank' rel='noreferrer' 
                                                                                                                                     className="no-underline btn-site gray">
                                                                                                                                     <span>ENROLL NOW</span>
                                                                                                                                 </a>
@@ -213,7 +213,7 @@ const RelatedCourses = (props) => {
                                                                                                                                         <span>Read More</span>
                                                                                                                                     </Link>
                                                                                                                                     <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
-                                                                                                                                        target="_blank"
+                                                                                                                                        target='_blank' rel='noreferrer' 
                                                                                                                                         className="no-underline btn-site gray">
                                                                                                                                         <span>Enroll Now</span>
                                                                                                                                     </a>
@@ -255,7 +255,7 @@ const RelatedCourses = (props) => {
                                                                                             </thead>
                                                                                             <tbody>
                                                                                                 {dates.Curriculum.map((item, ind) => (
-                                                                                                    <tr>
+                                                                                                    <tr key={ind}>
                                                                                                         <td className="font-semibold font-sm text-nowrap" dangerouslySetInnerHTML={{ __html: item.Unit_num }}></td>
                                                                                                         <td className="font-semibold font-sm" dangerouslySetInnerHTML={{ __html: item.Unit_Name }}></td>
                                                                                                     </tr>
