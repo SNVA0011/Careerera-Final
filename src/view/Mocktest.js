@@ -478,7 +478,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -504,7 +504,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -530,7 +530,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -556,7 +556,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -582,7 +582,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -607,7 +607,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -632,7 +632,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -657,7 +657,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -682,7 +682,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -707,7 +707,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -733,7 +733,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -759,7 +759,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -785,7 +785,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -811,7 +811,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -837,7 +837,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -862,7 +862,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -887,7 +887,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -912,7 +912,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -937,7 +937,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -964,7 +964,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -993,7 +993,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1019,7 +1019,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1047,7 +1047,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1075,7 +1075,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1101,7 +1101,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1126,7 +1126,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1151,7 +1151,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1176,7 +1176,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1201,7 +1201,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1226,7 +1226,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1252,7 +1252,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1278,7 +1278,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1304,7 +1304,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1330,7 +1330,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1356,7 +1356,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1381,7 +1381,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1406,7 +1406,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1431,7 +1431,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1456,7 +1456,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1481,7 +1481,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1507,7 +1507,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1533,7 +1533,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1562,7 +1562,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1588,7 +1588,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1614,7 +1614,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1639,7 +1639,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1664,7 +1664,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1689,7 +1689,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1714,7 +1714,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1739,7 +1739,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1766,7 +1766,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1792,7 +1792,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1818,7 +1818,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1844,7 +1844,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1870,7 +1870,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1895,7 +1895,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1920,7 +1920,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1945,7 +1945,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1970,7 +1970,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -1995,7 +1995,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2023,7 +2023,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2049,7 +2049,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2075,7 +2075,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2104,7 +2104,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2133,7 +2133,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2158,7 +2158,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2186,7 +2186,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2211,7 +2211,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2236,7 +2236,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2261,7 +2261,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2286,7 +2286,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2312,7 +2312,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2341,7 +2341,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2367,7 +2367,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2393,7 +2393,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2418,7 +2418,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2443,7 +2443,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2468,7 +2468,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2493,7 +2493,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2518,7 +2518,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2543,7 +2543,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2569,7 +2569,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2595,7 +2595,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2621,7 +2621,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2647,7 +2647,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2672,7 +2672,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2697,7 +2697,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2722,7 +2722,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2747,7 +2747,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2772,7 +2772,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2798,7 +2798,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2824,7 +2824,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2850,7 +2850,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2876,7 +2876,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2902,7 +2902,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2927,7 +2927,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2955,7 +2955,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -2980,7 +2980,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3005,7 +3005,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3030,7 +3030,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3055,7 +3055,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3081,7 +3081,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3107,7 +3107,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3133,7 +3133,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3159,7 +3159,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3187,7 +3187,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3215,7 +3215,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3240,7 +3240,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3265,7 +3265,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3290,7 +3290,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3316,7 +3316,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3342,7 +3342,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3368,7 +3368,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3394,7 +3394,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3420,7 +3420,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3447,7 +3447,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3472,7 +3472,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3497,7 +3497,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3522,7 +3522,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3547,7 +3547,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3574,7 +3574,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3602,7 +3602,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3627,7 +3627,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3652,7 +3652,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3682,7 +3682,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3707,7 +3707,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3733,7 +3733,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3759,7 +3759,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3785,7 +3785,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3811,7 +3811,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3837,7 +3837,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3863,7 +3863,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3889,7 +3889,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3915,7 +3915,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3941,7 +3941,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3972,7 +3972,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -3999,7 +3999,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4026,7 +4026,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4053,7 +4053,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4080,7 +4080,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4107,7 +4107,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4134,7 +4134,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4161,7 +4161,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4188,7 +4188,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4219,7 +4219,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4244,7 +4244,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4270,7 +4270,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4296,7 +4296,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4322,7 +4322,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4348,7 +4348,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4380,7 +4380,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4406,7 +4406,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4432,7 +4432,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4458,7 +4458,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4483,7 +4483,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4509,7 +4509,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4535,7 +4535,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4561,7 +4561,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4587,7 +4587,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
@@ -4612,7 +4612,7 @@ export default function Mocktest() {
                                                 </div>
                                                 <div className='mt-auto mb-0 py-0'>
                                                     <Link className="durationcou course-type no-underline font-semibold"
-                                                        to="/mocktest-register">
+                                                        to="/mocktest-register.php">
                                                         <span>Enroll Now <i className="bi bi-arrow-right ml-2 align-middle"></i></span>
                                                     </Link>
                                                 </div>
