@@ -125,9 +125,10 @@ const Forms = () => {
 
       fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
         .then(response => response.text())
-        .then(result => setResponse(result))
-        .catch(error => console.log('error', error));
+        .then(result => setResponse(result)).catch(error => setResponse(''));
+
         setvalue(true)
+
         setTimeout(function(){
           setName('');
           setemail('');

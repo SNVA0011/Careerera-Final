@@ -36,8 +36,7 @@ const Master = () => {
         }, []).then((response) => response.json()).then((json) => {
             setfinal(json.records);
         }).catch((error) => {
-            setfinal('');
-            console.log('error-', error);
+            setfinal(''); 
         });
 
         loadsts(true)

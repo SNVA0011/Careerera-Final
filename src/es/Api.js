@@ -159,10 +159,11 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).catch((error) => { console.log('error', error); }).then((json) => {
-            setallbatches(json)
-            allBatchesLoad(true)
-        })
+        }, []).then((response) => response.json()).then((json) => {
+            setallbatches(json) 
+        }).catch((error) => {  setallbatches('') })
+
+        allBatchesLoad(true)
     }
 
    

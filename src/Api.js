@@ -48,8 +48,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setData(json.records)).catch((error) => {
-            setData('');
-            console.log('error-', error);
+            setData(''); 
         });
  
         loadStatus(true) 
@@ -63,8 +62,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
-            Catsetfinal('');
-            console.log('error-', error);
+            Catsetfinal(''); 
         });
  
 
@@ -88,8 +86,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setFreeCour(json.records)).catch((error) => {
-            setFreeCour('');
-            console.log('error-', error);
+            setFreeCour(''); 
         });
 
 
@@ -112,8 +109,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records)).catch((error) => {
-            setallFreeCour('');
-            console.log('error-', error);
+            setallFreeCour(''); 
         });
 
 
@@ -136,8 +132,7 @@ export const Provider = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setallcountryList(json.records)).catch((error) => {
-            setallcountryList('');
-            console.log('error-', error);
+            setallcountryList(''); 
         });
         setcountryLoad(true);
     }
