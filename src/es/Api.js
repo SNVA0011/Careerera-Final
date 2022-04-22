@@ -54,7 +54,9 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setData(json.records));
+        }, []).then((response) => response.json()).then((json) => setData(json.records)).catch((error) => {
+            setData(''); 
+        });
  
         loadStatus(true)
     }
@@ -67,15 +69,10 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal(''); 
+        });
  
-
-
-        // const course = await fetch(
-        //     'https://es.careerera.com/API/course/CategoryPage.php?url=' + id + "&timeZone=EST"
-        // )
-        // const courseapi = await course.json()
-        // Catsetfinal(courseapi.records)
         Catloadsts(true)
     }
 
@@ -87,27 +84,25 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setFreeCour(json.records));
+        }, []).then((response) => response.json()).then((json) => setFreeCour(json.records)).catch((error) => {
+            setFreeCour(''); 
+        });
+        
         setFreeCourLoad(true); 
     }
 
     // Live Online Api
-    async function AllfreeCourse() {
+      async function AllfreeCourse() {
         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' + contextcur.currency }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records));
-
-
-        // const allfree_course = await fetch(
-        //     'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' +
-        //     contextcur.currency
-        // )
-        // const allfree_courseapi = await allfree_course.json()
-        // setallFreeCour(allfree_courseapi.records)
+        }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records)).catch((error) => {
+            setallFreeCour(''); 
+        });
+ 
         setallFreeCourLoad(true);
     }
 
@@ -120,7 +115,10 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records));
+        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records)).catch((error) => {
+            setallcountryList(''); 
+        });
+
         setcountryLoad(true);
     }
 
@@ -145,8 +143,10 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) =>
-            setcursospost(json.records));
+        }, []).then((response) => response.json()).then((json) => setcursospost(json.records)).catch((error) => {
+            setcursospost(''); 
+        });
+            
         cursosPostLoad(true)
     }
 
@@ -159,10 +159,9 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => {
-            setallbatches(json) 
-        }).catch((error) => {  setallbatches('') })
-
+        }, []).then((response) => response.json()).then((json) => setallbatches(json)).catch((error) => {
+            setallbatches(''); 
+        }); 
         allBatchesLoad(true)
     }
 

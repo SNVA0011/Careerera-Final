@@ -41,17 +41,15 @@ const MasterCity = () => {
 
 
     async function CallApi() {
-
-
-        const dat = await fetch(base, {
+      await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setdata(json.records));
+        }, []).then((response) => response.json()).then((json) => setdata(json.records)).catch((error) => {
+            setdata(''); 
+        });  
         setload(true)
     }
 
@@ -61,34 +59,19 @@ const MasterCity = () => {
     // List of BlogDetails
 
     async function getCourse() {
-
-
-        const dat = await fetch(base, {
+      await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal(''); 
+        });  
         Catloadsts(true)
     }
 
-
-
-    //   async function getCourse() {
-    //       const course = await fetch(
-    //           'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST'
-    //       )
-    //       const courseapi = await course.json()
-    //       Catsetfinal(courseapi.records)
-    //       Catloadsts(true)
-    //   }
-
-    // currency inr/usd
-    //   const [contextcur, setContextCur] = useContext(CurrencyContxt);
-
+ 
 
 
     useEffect(() => {

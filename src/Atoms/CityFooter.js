@@ -10,15 +10,16 @@ const CityFooter = (props) => {
 
 
   async function CallApi() {
-    const dat = await fetch(base, {
+    await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_citys.php?id="+props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setdata(json.records));
+    }, []).then((response) => response.json()).then((json) => setdata(json.records)).catch((error) => {
+      setdata(''); 
+  });
+ 
     setload(true)
   }
 

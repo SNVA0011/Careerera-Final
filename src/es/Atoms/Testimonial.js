@@ -4,6 +4,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 import '../style.css'
 import { Link } from 'react-router-dom'
+import { base } from '../../Base'
 
 
 //Owl Carousel Settings
@@ -54,21 +55,29 @@ const Testimonial = (props) => {
     const [You, setYou] = useState([])
     const [loadYou, setloadYou] = useState(false)
 
-    async function CallApi() {
-        const testimonials = await fetch(
-            'https://my.careerera.com/API/course/HomepageComment.php'
-        )
-        const review = await testimonials.json()
-        setdata(review.records[0].Comments)
+    async function CallApi() {  
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageComment.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setdata(json.records[0].Comments)).catch((error) => {
+            setdata(''); 
+        });   
         setload(true)
     }
 
-    async function CallYoutube() {
-        const youtube = await fetch(
-            'https://my.careerera.com/API/common/reviewlinks.php'
-        )
-        const youData = await youtube.json()
-        setYou(youData.records)
+    async function CallYoutube() {  
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/reviewlinks.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setYou(json.records)).catch((error) => {
+            setYou(''); 
+        });   
         setloadYou(true)
     }
 

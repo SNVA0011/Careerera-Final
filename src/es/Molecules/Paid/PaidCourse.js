@@ -13,6 +13,7 @@ const PaidCourse = () => {
     // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
+ 
 
     return (
         <div className='all-batches full-w'>
@@ -20,7 +21,7 @@ const PaidCourse = () => {
                 <>
                     <div className="container py-16">
                         {
-                            allbatches != undefined ?
+                            allbatches != '' ?
                                 allbatches.map((items, i) => (
                                     <>
                                         <h4 key={i}>

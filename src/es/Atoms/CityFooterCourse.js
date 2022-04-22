@@ -17,9 +17,11 @@ const CityFooterCourse = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setdata(json.cityList));
+    }, []).then((response) => response.json()).then((json) => setdata(json.cityList)).catch((error) => {
+      setdata(''); 
+  });
+      
+
     setload(true)
   }
 

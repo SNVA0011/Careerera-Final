@@ -39,9 +39,9 @@ export default function CyberSecurityContry() {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setData(json.stateDetail));
+        }, []).then((response) => response.json()).then((json) => setData(json.stateDetail)).catch((error) => {
+            setData(''); 
+        }); 
         setLoad(true);
     }
 

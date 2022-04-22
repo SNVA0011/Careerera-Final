@@ -4,6 +4,7 @@ import Hero from '../Atoms/Hero'
 import { Context, Provider } from "../Api";
 import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
+import { base } from '../Base'
 
 
 export default function MocktestRegisterForm() {
@@ -12,12 +13,18 @@ export default function MocktestRegisterForm() {
     const [Eventsts, setEventsts] = useState(false)
 
     // List of Event
-    async function Eventslist() {
-        const allEventsList = await fetch(
-            'https://my.careerera.com/API/common/EventsList.php'
-        )
-        const allEventsListapi = await allEventsList.json()
-        setEvent(allEventsListapi.records)
+    async function Eventslist() { 
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setEvent(json.records)).catch((error) => {
+            setEvent(''); 
+        });
+
+
         setEventsts(true)
     }
 

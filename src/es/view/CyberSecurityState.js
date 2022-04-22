@@ -39,9 +39,9 @@ export default function CyberSecurityState() {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setData(json.countyDetail));
+        }, []).then((response) => response.json()).then((json) => setData(json.countyDetail)).catch((error) => {
+            setData(''); 
+        });  
         setLoad(true);
     }
 

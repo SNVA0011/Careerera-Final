@@ -30,9 +30,10 @@ const BatchDetail = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setDetail(json.records));
+    }, []).then((response) => response.json()).then((json) => setDetail(json.records)).catch((error) => {
+      setDetail(''); 
+  }); 
+ 
     setLoad(true);
   }
 
@@ -44,9 +45,10 @@ const BatchDetail = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setList(json.records));
+    }, []).then((response) => response.json()).then((json) => setList(json.records)).catch((error) => {
+      setList(''); 
+  }); 
+ 
     setLoadlist(true);
   }
 

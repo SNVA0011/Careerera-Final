@@ -180,7 +180,7 @@ a.mailto-footer:hover{color:rgb(0, 159, 225)}
 .blog-detials-single .sidebar-bx .btn{padding:4px 15px;border-color:#697b96;background:#fff;color:#697b96;font-size:12px;margin-top:2px;box-shadow:none;border-radius:4px;transition:none;-ms-transition:none;-webkit-transition:none;}
 .blog-detials-single .sidebar-bx a{color:#000;text-decoration:none;display:block;}
 .blog-detials-single .sidebar-bx .d-flex:hover{background:rgb(1 121 246 / 10%);}
-.blog-detials-single .sidebar-bx .d-flex.active {background: rgb(104 122 148 / 10%)}
+.blog-detials-single .sidebar-bx .d-flex.active {background: rgb(105 123 150 / 20%)}
 .blog-detials-single .sidebar-bx a.active,.blog-detials-single .sidebar-bx a:hover{color:#0175ed;}
 .blog-detials-single .sidebar-bx .d-flex.active .btn,.blog-detials-single .sidebar-bx .d-flex:hover .btn{border-color:#0175ed;color:#fff;background:-ms-linear-gradient(95deg, #084f99 0, #007dff 100%);background:-moz-linear-gradient(95deg, #084f99 0, #007dff 100%);background:-webkit-linear-gradient(95deg, #084f99 0, #007dff 100%);}
 .blog-detials-single .content ol, .blog-detials-single .content ul{width:100%;padding:0 0 0 28px;margin:0 0 10px;}

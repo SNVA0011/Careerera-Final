@@ -13,15 +13,15 @@ const InnerJob = () => {
     const [innerjob, setinnerJob] = useState([])
     const [status, loadStatus] = useState([])
     async function getJob() {
-        const data = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "http://jobs.snva.com/api/jobs?api_token=Nxo9A8Koga6hVuTfEWeEBZNbK5OeJYYauuEH6Q9s3Gd9JuMea7XjprMtI4L1" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setinnerJob(json));
+        }, []).then((response) => response.json()).then((json) => setinnerJob(json)).catch((error) => {
+            setinnerJob(''); 
+        });    
 
         loadStatus(true)
     }

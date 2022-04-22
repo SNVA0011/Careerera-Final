@@ -25,7 +25,9 @@ const BlogDetailArabic = () => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, []).then((response) => response.json()).then((json) => setBlogDetail(json.records));
+    }, []).then((response) => response.json()).then((json) => setBlogDetail(json.records)).catch((error) => {
+      setBlogDetail(''); 
+  });  
     setblogDetailsts(true);
   }
 

@@ -64,16 +64,6 @@ export const Provider = (props) => {
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
             Catsetfinal(''); 
         });
- 
-
-
-        // const course = await fetch(
-        //     'https://my.careerera.com/API/course/CategoryPage.php?url=' +
-        //     id +
-        //     '&timeZone=EST'
-        // )
-        // const courseapi = await course.json()
-        // Catsetfinal(courseapi.records)
         Catloadsts(true)
     }
 
@@ -87,16 +77,7 @@ export const Provider = (props) => {
             },
         }, []).then((response) => response.json()).then((json) => setFreeCour(json.records)).catch((error) => {
             setFreeCour(''); 
-        });
-
-
-
-        // const free_course = await fetch(
-        //     'https://my.careerera.com/API/course/FreeElearningBatch.php?timeZone=' +
-        //     contextcur.currency
-        // )
-        // const free_courseapi = await free_course.json()
-        // setFreeCour(free_courseapi.records)
+        }); 
         setFreeCourLoad(true)
     }
 
@@ -111,14 +92,7 @@ export const Provider = (props) => {
         }, []).then((response) => response.json()).then((json) => setallFreeCour(json.records)).catch((error) => {
             setallFreeCour(''); 
         });
-
-
-        // const allfree_course = await fetch(
-        //     'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' +
-        //     contextcur.currency
-        // )
-        // const allfree_courseapi = await allfree_course.json()
-        // setallFreeCour(allfree_courseapi.records)
+ 
         setallFreeCourLoad(true);
     }
 
@@ -136,20 +110,7 @@ export const Provider = (props) => {
         });
         setcountryLoad(true);
     }
-
-
-    // async function CallApi(){
-    //     fetch(base, {
-    //       method: 'POST',
-    //       body: JSON.stringify({"apiurl":"https://my.careerera.com/API/course/TopCategoryMenubar.php"}),
-    //       headers: {
-    //         'Content-type': 'application/json; charset=UTF-8',
-    //       },
-    //     },[])
-    //       .then((response) => response.json())
-  
-
-    //   } 
+ 
 
     useEffect(() => {
         getData()

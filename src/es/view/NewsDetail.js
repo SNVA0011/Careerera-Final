@@ -1,7 +1,7 @@
-import React, {  useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from '../Atoms/Hero'
 import blogs from '../../Images/blogs.png'
-import { useParams } from 'react-router' 
+import { useParams } from 'react-router'
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
@@ -11,26 +11,29 @@ const NewsDetail = () => {
   const [Eventdetails, setEventdetails] = useState([])
   const [Eventdetailssts, setEventdetailssts] = useState(false)
 
-  let { news } = useParams() 
+  let { news } = useParams()
 
   // List of Eventdetail
-  async function Eventsdetail() { 
+  async function Eventsdetail() {
     await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsDetails.php?Url=' + news }),
       headers: {
-          'Content-type': 'application/json; charset=UTF-8',
+        'Content-type': 'application/json; charset=UTF-8',
       },
-  }, []).then((response) => response.json()).then((json) => setEventdetails(json.records));
-  setEventdetailssts(true);
+    }, []).then((response) => response.json()).then((json) => setEventdetails(json.records)).catch((error) => {
+      setEventdetails('');
+    });
+
+    setEventdetailssts(true);
   }
- 
+
 
   useEffect(() => {
     Eventsdetail()
     window.scrollTo(0, 0);
   }, [news])
- 
+
 
   return (
     <div className="full-w news-detailspage">
@@ -40,10 +43,10 @@ const NewsDetail = () => {
             <title>{Eventdetails[0].meta_title}</title>
             <meta name="description" content={Eventdetails[0].meta_description} />
             <meta name="keywords" content={Eventdetails[0].meta_keywords} />
-            <link rel="canonical" href={"https://www.careerera.com/news-events/"+ news.news}></link>
+            <link rel="canonical" href={"https://www.careerera.com/news-events/" + news.news}></link>
           </Helmet>
 
-          <Hero title="NEWS & EVENTS DETAILS" detail=""  batch={<>
+          <Hero title="NEWS & EVENTS DETAILS" detail="" batch={<>
             <Link to="/es/" className="no-underline badge bg-info">Home</Link>
             <span className="mx-2"> / </span>
             <Link to="/es/news-events" className="no-underline badge bg-info">News & Events</Link>
@@ -54,13 +57,13 @@ const NewsDetail = () => {
           <div className="blog-detials-single container py-16">
             <div className="row">
               <div className="col-xxl-8 col-lg-7 col-12">
-              <h3 className="font-bold text-gray-800 text-2xl sm:text-3xl xl:text-4xl mb-3">
+                <h3 className="font-bold text-gray-800 text-2xl sm:text-3xl xl:text-4xl mb-3">
                   {Eventdetails[0].h1}
                 </h3>
 
                 <div className="d-flex  align-items-center mb-4">
-                <p className="font-semibold text-gray-500 mb-0">
-                  <i className="orange-lgclr bi bi-calendar2-event mr-2"></i>
+                  <p className="font-semibold text-gray-500 mb-0">
+                    <i className="orange-lgclr bi bi-calendar2-event mr-2"></i>
                     <Moment format="D-MMM-YYYY">{Eventdetails[0].Date}</Moment>
                   </p>
 

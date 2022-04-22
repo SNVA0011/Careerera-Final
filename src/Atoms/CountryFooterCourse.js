@@ -16,8 +16,9 @@ const CountryFooterCourse = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json()).then((json) => setdata(json.stateList)).catch((error) => { console.log('error', error); });
+    }, []).then((response) => response.json()).then((json) => setdata(json.stateList)).catch((error) => {
+      setdata(''); 
+  });  
     setload(true)
     
   }

@@ -1,25 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Certificate from '../Molecules/Course/Certificate'
-import DataScience from '../Atoms/DataScience'
-import CWhy from '../Molecules/Course/CWhy'
-import Courses from '../Molecules/Course/Course'
-import Explore from '../Molecules/Course/Explore'
-import Highlight from '../Atoms/Highlight'
-import Sign from '../Molecules/Course/Sign'
-import RelatedCourses from '../Molecules/Course/RelatedCourses'
-import Header from '../Molecules/Index/Header'
-import Navbars from '../Molecules/Index/Navbar'
-import Footer from '../Molecules/Index/Footer'
-import Icon from '../Atoms/Icon'
-import SideIcon from '../Atoms/sideIcon'
-import { useLocation, useParams } from 'react-router'
-import { Context, Provider } from '../Api'
+import React, {useEffect, useState } from 'react'
+import Certificate from '../Molecules/Course/Certificate' 
+import RelatedCourses from '../Molecules/Course/RelatedCourses' 
+import { useParams } from 'react-router' 
 import fun from '../../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
 import NotFound from './NotFound'
-import { useNavigate } from 'react-router-dom';
 import { base } from '../../Base'
-
 
 
 const Course = () => {
@@ -29,15 +15,15 @@ const Course = () => {
 
 
     async function getCourse() {
-        const data = await fetch(base, {
+         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id.id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal(''); 
+        }); 
  
         Catloadsts(true)
     }

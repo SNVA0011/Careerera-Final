@@ -38,9 +38,10 @@ export default function DataScienceCity() {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setData(json.cityDetail));
+    }, []).then((response) => response.json()).then((json) => setData(json.cityDetail)).catch((error) => {
+      setData(''); 
+  });  
+   
     setLoad(true);
   }
 

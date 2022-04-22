@@ -14,9 +14,9 @@ const CountryFooter = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setdata(json.records));
+    }, []).then((response) => response.json()).then((json) => setdata(json.records)).catch((error) => {
+      setdata(''); 
+  }); 
     setload(true)
   }
 

@@ -39,15 +39,15 @@ const MasterState = () => {
 
 
     async function CallApi() {
-        const dat = await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setdata((json.records.filter((item) => item.countries_url == country.country))[0].id));
+        }, []).then((response) => response.json()).then((json) => setdata((json.records.filter((item) => item.countries_url == country.country))[0].id)).catch((error) => {
+            setdata(''); 
+        }); 
         setload(true)
     }
 
@@ -60,16 +60,15 @@ const MasterState = () => {
     const [loads, setloads] = useState(false)
 
     async function StateApi() {
-
-        const dats = await fetch(base, {
+ await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_state.php?id=" + data }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setdatas(json.records));
+        }, []).then((response) => response.json()).then((json) => setdatas(json.records)).catch((error) => {
+            setdatas(''); 
+        });     
         setloads(true)
     }
 
@@ -80,17 +79,15 @@ const MasterState = () => {
     // List of BlogDetails
 
     async function getCourse() {
-
-
-        const dat = await fetch(base, {
+ await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal(''); 
+        });   
         Catloadsts(true)
 
     }

@@ -5,16 +5,21 @@ import fun from '../Images/fun4.gif'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { base } from '../Base'
 
 const FullTestimonial = () => {
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
-    async function CallApi() {
-        const testimonials = await fetch(
-            'https://my.careerera.com/API/course/HomepageComment.php'
-        )
-        const review = await testimonials.json()
-        setdata(review.records[0].Comments)
+    async function CallApi() {  
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageComment.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setdata(json.records[0].Comments)).catch((error) => {
+            setdata(''); 
+        }); 
         setload(true)
     }
 

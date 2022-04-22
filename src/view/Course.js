@@ -16,15 +16,16 @@ const Course = () => {
  
 
     async function getCourse() {
-        const data = await fetch(base, {
+         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id.id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => Catsetfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
+            Catsetfinal(''); 
+        }); 
+ 
  
         Catloadsts(true)
     }

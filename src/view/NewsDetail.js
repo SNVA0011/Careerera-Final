@@ -23,7 +23,10 @@ const NewsDetail = () => {
       headers: {
           'Content-type': 'application/json; charset=UTF-8',
       },
-  }, []).then((response) => response.json()).then((json) => setEventdetails(json.records));
+  }, []).then((response) => response.json()).then((json) => setEventdetails(json.records)).catch((error) => {
+    setEventdetails(''); 
+}); 
+   
   setEventdetailssts(true);
   }
 

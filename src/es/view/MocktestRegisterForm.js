@@ -4,6 +4,7 @@ import Hero from '../Atoms/Hero'
 import { Context, Provider } from "../Api";
 import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
+import { base } from '../../Base'
 
 
 export default function MocktestRegisterForm() {
@@ -13,11 +14,17 @@ export default function MocktestRegisterForm() {
 
     // List of Event
     async function Eventslist() {
-        const allEventsList = await fetch(
-            'https://my.careerera.com/API/common/EventsList.php'
-        )
-        const allEventsListapi = await allEventsList.json()
-        setEvent(allEventsListapi.records)
+
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setEvent(json.records)).catch((error) => {
+            setEvent('');
+        });
+
         setEventsts(true)
     }
 
@@ -41,10 +48,10 @@ export default function MocktestRegisterForm() {
                 <title>Mocktest Register</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
-                <link rel="canonical" href="https://www.careerera.com/es/mocktest-register.php"/>
+                <link rel="canonical" href="https://www.careerera.com/es/mocktest-register.php" />
             </Helmet>
 
-            <Hero title="MOCKTEST REGISTER" detail=""  batch={<><Link to="/es/" className='no-underline badge bg-info'>Hogar</Link><span className='mx-1'> / </span><Link to="/es/mocktest" className='no-underline badge bg-info'>Mock Test</Link><span className='mx-1'> / </span>Mocktest Register</>}/>
+            <Hero title="MOCKTEST REGISTER" detail="" batch={<><Link to="/es/" className='no-underline badge bg-info'>Hogar</Link><span className='mx-1'> / </span><Link to="/es/mocktest" className='no-underline badge bg-info'>Mock Test</Link><span className='mx-1'> / </span>Mocktest Register</>} />
 
             <div className="container py-16">
                 <div className="row align-items-center">

@@ -14,9 +14,10 @@ const StateFooterCourse = (props) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }, [])
-      .then((response) => response.json())
-      .then((json) => setdata(json.countyList));
+    }, []).then((response) => response.json()).then((json) => setdata(json.countyList)).catch((error) => {
+      setdata(''); 
+  });   
+     
     setload(true)
   }
  

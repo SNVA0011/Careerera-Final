@@ -21,6 +21,7 @@ import Form from 'react-bootstrap/Form'
 import { Context, Provider } from "../Api";
 import { Helmet } from 'react-helmet'
 import AnimatedNumbers from "react-animated-numbers";
+import { base } from '../../Base'
 
 
 export default function Mocktest() {
@@ -74,11 +75,17 @@ export default function Mocktest() {
 
     // List of Event
     async function Eventslist() {
-        const allEventsList = await fetch(
-            'https://my.careerera.com/API/common/EventsList.php'
-        )
-        const allEventsListapi = await allEventsList.json()
-        setEvent(allEventsListapi.records)
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setEvent(json.records)).catch((error) => {
+            setEvent('');
+        });
+
+
         setEventsts(true)
     }
 
@@ -508,7 +515,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -534,7 +541,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -560,7 +567,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -586,7 +593,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -612,7 +619,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -637,7 +644,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -662,7 +669,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -687,7 +694,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="internet-marketing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="internet-marketing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -712,7 +719,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -737,7 +744,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -763,7 +770,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -789,7 +796,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -815,7 +822,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -841,7 +848,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -867,7 +874,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -892,7 +899,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -917,7 +924,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -942,7 +949,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="big-data-analytics" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"big-data-analytics.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="big-data-analytics" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "big-data-analytics.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -967,7 +974,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -992,7 +999,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="artificial-intelligence-and-machine-learning" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="artificial-intelligence-and-machine-learning" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1020,7 +1027,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="artificial-intelligence-and-machine-learning" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="artificial-intelligence-and-machine-learning" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1049,7 +1056,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="quality-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="quality-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1075,7 +1082,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="quality-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="quality-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1103,7 +1110,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="quality-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="quality-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1131,7 +1138,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1156,7 +1163,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1181,7 +1188,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1206,7 +1213,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1231,7 +1238,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1256,7 +1263,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1282,7 +1289,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="big-data-analytics" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"big-data-analytics.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="big-data-analytics" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "big-data-analytics.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1308,7 +1315,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1334,7 +1341,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="quality-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="quality-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1360,7 +1367,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1386,7 +1393,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="internet-marketing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="internet-marketing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1411,7 +1418,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1436,7 +1443,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1461,7 +1468,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1486,7 +1493,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="devops" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="devops" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1511,7 +1518,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1537,7 +1544,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1563,7 +1570,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="internet-marketing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="internet-marketing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1589,7 +1596,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="medical-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"medical-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="medical-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "medical-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1618,7 +1625,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1644,7 +1651,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1669,7 +1676,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1694,7 +1701,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1719,7 +1726,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="red-hat" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"red-hat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="red-hat" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "red-hat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1744,7 +1751,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1769,7 +1776,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="devops" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="devops" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1794,7 +1801,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="quality-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="quality-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "quality-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1822,7 +1829,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1848,7 +1855,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1874,7 +1881,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1900,7 +1907,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="business-productivity-tools" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"business-productivity-tools.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="business-productivity-tools" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "business-productivity-tools.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1925,7 +1932,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="devops" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="devops" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "devops.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1950,7 +1957,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="business-intelligence" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"business-intelligence.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="business-intelligence" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "business-intelligence.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -1975,7 +1982,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2000,7 +2007,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2025,7 +2032,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-testing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-testing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2051,7 +2058,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2079,7 +2086,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2105,7 +2112,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-testing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-testing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2131,7 +2138,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2160,7 +2167,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2188,7 +2195,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2213,7 +2220,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2241,7 +2248,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2266,7 +2273,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2291,7 +2298,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2316,7 +2323,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2342,7 +2349,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="professional-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"professional-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="professional-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "professional-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2368,7 +2375,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="os-and-database" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"os-and-database.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="os-and-database" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "os-and-database.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2397,7 +2404,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="network-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"network-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="network-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "network-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2423,7 +2430,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-testing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-testing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2448,7 +2455,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2473,7 +2480,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2498,7 +2505,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2523,7 +2530,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2548,7 +2555,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2573,7 +2580,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2599,7 +2606,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2625,7 +2632,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2651,7 +2658,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-protection" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-protection.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-protection" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-protection.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2677,7 +2684,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="artificial-intelligence-and-machine-learning" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="artificial-intelligence-and-machine-learning" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "artificial-intelligence-and-machine-learning.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2702,7 +2709,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2727,7 +2734,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2752,7 +2759,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2777,7 +2784,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2802,7 +2809,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2828,7 +2835,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="networking" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"networking.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="networking" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "networking.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2854,7 +2861,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="it-service-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="it-service-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "it-service-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2880,7 +2887,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2906,7 +2913,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2932,7 +2939,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2957,7 +2964,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -2982,7 +2989,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3010,7 +3017,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="internet-marketing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="internet-marketing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "internet-marketing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3035,7 +3042,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3060,7 +3067,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cyber-security" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cyber-security" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cyber-security.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3085,7 +3092,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3111,7 +3118,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-development" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-development" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-development.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3137,7 +3144,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3163,7 +3170,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="data-science" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="data-science" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "data-science.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3189,7 +3196,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3214,7 +3221,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3242,7 +3249,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3270,7 +3277,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3295,7 +3302,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3320,7 +3327,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3346,7 +3353,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3372,7 +3379,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3398,7 +3405,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3424,7 +3431,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3450,7 +3457,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3475,7 +3482,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3502,7 +3509,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3527,7 +3534,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3552,7 +3559,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3577,7 +3584,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3604,7 +3611,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3629,7 +3636,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cloud-and-virtualization" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cloud-and-virtualization" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cloud-and-virtualization.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3657,7 +3664,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="agile-and-scrum" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="agile-and-scrum" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "agile-and-scrum.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3682,7 +3689,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="software-testing" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="software-testing" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "software-testing.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3712,7 +3719,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="jee_mains" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"jee_mains.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="jee_mains" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "jee_mains.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3737,7 +3744,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="neet" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"neet.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="neet" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "neet.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3763,7 +3770,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="upsc" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"upsc.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="upsc" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "upsc.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3789,7 +3796,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="ssc" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"ssc.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="ssc" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "ssc.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3815,7 +3822,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="gmat" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"gmat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="gmat" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "gmat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3841,7 +3848,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="gre" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"gre.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="gre" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "gre.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3867,7 +3874,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="clat" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"clat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="clat" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "clat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3893,7 +3900,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="cat" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"cat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="cat" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "cat.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3919,7 +3926,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="gate" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"gate.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="gate" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "gate.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3945,7 +3952,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="ielts" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"ielts.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="ielts" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "ielts.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -3971,7 +3978,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="bank_po" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"bank_po.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="bank_po" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "bank_po.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4002,7 +4009,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4029,7 +4036,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4056,7 +4063,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4083,7 +4090,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4110,7 +4117,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4137,7 +4144,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4164,7 +4171,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4191,7 +4198,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4218,7 +4225,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="project-management" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="project-management" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "project-management.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4249,7 +4256,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4274,7 +4281,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4300,7 +4307,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4326,7 +4333,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4352,7 +4359,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4378,7 +4385,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="kids-skill" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="kids-skill" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "kids-skill.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4410,7 +4417,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4436,7 +4443,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4462,7 +4469,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4488,7 +4495,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4513,7 +4520,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4539,7 +4546,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4565,7 +4572,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4591,7 +4598,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4617,7 +4624,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">
@@ -4642,7 +4649,7 @@ export default function Mocktest() {
                                                 <div className="mb-1">
                                                     <div className="pt-2 pl-4 rounded-lg">
                                                         <div className="eiml-shadow blue" />
-                                                        <img alt="languages" src={ `${process.env.PUBLIC_URL}/upcoming_batches_icon/`+"languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
+                                                        <img alt="languages" src={`${process.env.PUBLIC_URL}/upcoming_batches_icon/` + "languages.png"} className="w-1/3 relative top-4 border rounded-full"></img>
                                                     </div>
                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                         <div className="flex-grow-1">

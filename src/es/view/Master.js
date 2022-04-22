@@ -36,9 +36,9 @@ const Master = () => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, [])
-            .then((response) => response.json())
-            .then((json) => setfinal(json.records));
+        }, []).then((response) => response.json()).then((json) => setfinal(json.records)).catch((error) => {
+            setfinal(''); 
+        });  
         loadsts(true)
 
     }
