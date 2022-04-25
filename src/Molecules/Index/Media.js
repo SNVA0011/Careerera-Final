@@ -73,7 +73,7 @@ class Media extends React.Component {
                     <div className="container py-16">
 
                         <div className="mb-1 text-center ">
-                            <h4 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-gray-700 mb-3 softwarelike">Our Media <span className="text-blue-500 sitblu-clrsite">Partner</span></h4>
+                            <h4 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-gray-700 mb-3 softwarelike">In The <span className="text-blue-500 sitblu-clrsite">Media</span></h4>
                         </div>
                         <div className='clearfix w-100'></div>
 

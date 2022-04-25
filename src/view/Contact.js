@@ -190,7 +190,7 @@ const Contact = () => {
                       Maryland Address
                     </span>
                     <p className="text-gray-500 font-semibold">
-                      2 -Industrial Park Drive, E -Waldorf, MD, 20602, United States
+                    101, Paul Mellon Court, Suite 2, Upper Level, Fairfield Station, Waldorf, Maryland, 20602
                     </p>
                   </div>
 
