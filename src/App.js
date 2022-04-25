@@ -86,13 +86,9 @@ const App = (props) => {
             window.console[method] = noop
         });
     }
-    if (process.env.NODE_ENV === "production") {
-        RemoveConsole()
-    }  
+    RemoveConsole()
     useEffect(() => {
-        if (process.env.NODE_ENV === "production") {
-            RemoveConsole()
-        }  
+        RemoveConsole()
     })
   
 
