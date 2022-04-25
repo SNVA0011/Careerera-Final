@@ -50,25 +50,10 @@ const options = {
 
 const Testimonial = (props) => {
 
-    const [data, setdata] = useState([])
-    const [load, setload] = useState(false)
     const [You, setYou] = useState([])
     const [loadYou, setloadYou] = useState(false)
 
-    async function CallApi() {  
-        await fetch(base, {
-            method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageComment.php' }),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        }, []).then((response) => response.json()).then((json) => setdata(json.records[0].Comments)).catch((error) => {
-            setdata(''); 
-        });   
-        setload(true)
-    }
-
-    async function CallYoutube() {  
+    async function CallYoutube() {
         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/reviewlinks.php' }),
@@ -76,13 +61,12 @@ const Testimonial = (props) => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setYou(json.records)).catch((error) => {
-            setYou(''); 
-        });   
+            setYou('');
+        });
         setloadYou(true)
     }
 
-    useEffect(() => {
-        CallApi()
+    useEffect(() => { 
         CallYoutube()
     }, [])
 
@@ -90,25 +74,25 @@ const Testimonial = (props) => {
 
     return (
         <div>
+            {loadYou ?
+                You?.length > 0 ?
+                <div className='scroll-spbx reviewqueries' id="review">
+
+                        <div className='indexhome'>
+                            <div className='testimonials-areamock'>
+                                <div className='partner-spkrat text-center bg-white'>
+                                    <div className="container-xxl py-20 media-prtslider ">
 
 
-            <div className='scroll-spbx reviewqueries' id="review">
-                {load ?
-                    <div className='indexhome'>
-                        <div className='testimonials-areamock'>
-                            <div className='partner-spkrat text-center bg-white'>
-                                <div className="container-xxl py-20 media-prtslider ">
+                                        {/* <p className="text-center text-6xl font-bold text-gray-600 mb-6">In The Media</p> */}
+                                        <p className="text-3xl md:text-4xl  lg:text-5xl  font-bold text-gray-700 mb-3  softwarelike">
+                                            Nuestra {props.title1} <span className="text-blue-500 sitblu-clrsite"> {props.title2}</span>
+                                        </p>
+                                        <div className='clearfix w-100'></div>
 
 
-                                    {/* <p className="text-center text-6xl font-bold text-gray-600 mb-6">In The Media</p> */}
-                                    <p className="text-3xl md:text-4xl  lg:text-5xl  font-bold text-gray-700 mb-3  softwarelike">
-                                        Nuestra {props.title1} <span className="text-blue-500 sitblu-clrsite"> {props.title2}</span>
-                                    </p>
-                                    <div className='clearfix w-100'></div>
-
-
-                                    {/* Reviews by Comments */}
-                                    {/* <div className='full-w position-relative'>
+                                        {/* Reviews by Comments */}
+                                        {/* <div className='full-w position-relative'>
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
                                 {data.map((item, i) => (
                                     <div className="itemss">
@@ -152,49 +136,53 @@ const Testimonial = (props) => {
                         </div> */}
 
 
-                                    {/* Reviews by video */}
-                                    <div className='row'>
-                                        <div className='full-w media-prtslider px-0 pt-2'>
-                                            <div className="w-full explore_Data_science ourclient-staffing">
-                                                <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                                    {You.map((items, i) => {
-                                                        return (
-                                                            <>
-                                                                <div className="item" key={i}>
-                                                                    <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
-                                                                        <iframe className="embed-responsive-item" src={items.video_url}></iframe>
+                                        {/* Reviews by video */}
+                                        <div className='row'>
+                                            <div className='full-w media-prtslider px-0 pt-2'>
+                                                <div className="w-full explore_Data_science ourclient-staffing">
+                                                    <OwlCarousel className="slider-items owl-carousel" {...options}>
+                                                        {You.map((items, i) => {
+                                                            return (
+                                                                <>
+                                                                    <div className="item" key={i}>
+                                                                        <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
+                                                                            <iframe className="embed-responsive-item" src={items.video_url}></iframe>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            </>
-                                                        )
-                                                    })}
-                                                </OwlCarousel>
+                                                                </>
+                                                            )
+                                                        })}
+                                                    </OwlCarousel>
 
+                                                </div>
                                             </div>
+                                        </div>
+
+                                        <div className='mt-6'>
+                                            <Link to="/es/review" className='btn-site invert capitalize no-underline py-3'>
+                                                <span>Ver todo</span>
+                                            </Link>
                                         </div>
                                     </div>
 
-                                    <div className='mt-6'>
-                                        <Link to="/es/review" className='btn-site invert capitalize no-underline py-3'>
-                                            <span>Ver todo</span>
-                                        </Link>
-                                    </div>
+
                                 </div>
 
-
                             </div>
+                        </div>
 
-                        </div>
                     </div>
-                    : <div className="testimonials-areamock overflow-hidden text-center py-5 my-20">
-                        <div className="lds-ellipsis">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>}
-            </div>
+                    : ''
+
+                : <div className="testimonials-areamock overflow-hidden text-center py-5 my-20">
+                    <div className="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>}
+
         </div>
     )
 }

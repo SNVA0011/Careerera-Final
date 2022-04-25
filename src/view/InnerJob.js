@@ -10,7 +10,7 @@ import { base } from '../Base'
 const InnerJob = () => {
     const job = useParams(); 
     const [innerjob, setinnerJob] = useState([])
-    const [status, loadStatus] = useState([])
+    const [status, loadStatus] = useState(false)
     async function getJob() {
        await fetch(base, {
             method: 'POST',

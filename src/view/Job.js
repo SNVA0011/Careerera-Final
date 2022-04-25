@@ -11,7 +11,7 @@ const Job = () => {
 
 
     const [job, setJob] = useState([])
-    const [status, loadStatus] = useState([])
+    const [status, loadStatus] = useState(false)
     async function getJob() {
          await fetch(base, {
             method: 'POST',

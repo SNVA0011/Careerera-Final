@@ -86,14 +86,15 @@ const App = (props) => {
             window.console[method] = noop
         });
     }
-    RemoveConsole()
-    useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
         RemoveConsole()
+    }  
+    useEffect(() => {
+        if (process.env.NODE_ENV === "production") {
+            RemoveConsole()
+        }  
     })
-    // if (process.env.NODE_ENV === "production") {
-    //     RemoveConsole()
-    // }  
-
+  
 
     return (
         <div className='d-flex flex-column minh-100'>
