@@ -4,7 +4,7 @@ export default function Contactfooter() {
     // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     return (
-        <div className='contact-batches testimonials-areamock react-worldcour'>
+        <div className='certification-courseslight full-w'>
             <div className='container pt-16 pb-10'>
                 <h3 className='font-semibold text-3xl mb-2'>Contact Us</h3>
                 <span className="heading-border-line m-0 d-block left-0 mb-5"></span>

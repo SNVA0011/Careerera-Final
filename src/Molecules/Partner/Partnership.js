@@ -1,9 +1,9 @@
 import React from 'react'
 import application from '../../Images/application.png'
 import discuss from '../../Images/discuss.png'
-import schedule from '../../Images/schedule.png' 
+import schedule from '../../Images/schedule.png'
 import pen from '../../Images/pen.png'
-import tool from '../../Images/tool.png' 
+import tool from '../../Images/tool.png'
 import deepak from '../../Images/deepak.png'
 
 const Partnership = () => {
@@ -15,7 +15,7 @@ const Partnership = () => {
 
                     <div className="sec_title text-center">
                         <h2 className="text-2xl md:text-3xl font-bold">
-                        Business Partnership <span className="orange-clrsite">Process</span>
+                            Business Partnership <span className="orange-clrsite">Process</span>
                         </h2>
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                     </div>
@@ -95,7 +95,7 @@ const Partnership = () => {
 
                         </div>
 
-                       
+
 
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const Partnership = () => {
                         <div className='row text-left pt-3'>
                             <div className='col-xl-3 col-12'>
                                 <div className="justify-content-center mt-8">
-                                    <img src={deepak} alt='author_pic' className="rounded-circle mx-auto" />                                   
+                                    <img src={deepak} alt='author_pic' className="rounded-circle mx-auto" />
                                 </div>
                             </div>
                             <div className='col-xl-9 col-12 mt-4 mt-xl-0'>
@@ -157,34 +157,34 @@ const Partnership = () => {
                                         <hr></hr>
 
                                         <div className='full-w text-center d-flex justify-content-between align-items-center flex-column flex-sm-row'>
-                                        <h3 className="text-lg font-semibold text-gray-600 mb-1 mb-sm-0">
-                                            Follow Our Partner
-                                        </h3>
+                                            <h3 className="text-lg font-semibold text-gray-600 mb-1 mb-sm-0">
+                                                Follow Our Partner
+                                            </h3>
 
-                                        <div className="rounded-social-buttons text-center m-0">
-                                            <a
-                                                className="shadow-md social-button facebook text-center"
-                                                href="https://www.facebook.com/careerera"
-                                                target='_blank' rel='noreferrer' >
+                                            <div className="rounded-social-buttons text-center m-0">
+                                                <a
+                                                    className="shadow-md social-button facebook text-center"
+                                                    href="https://www.facebook.com/careerera"
+                                                    target='_blank' rel='noreferrer' >
 
-                                                <i className="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a
-                                                className="shadow-md social-button twitter"
-                                                href="https://twitter.com/Careerera1"
-                                                target='_blank' rel='noreferrer' >
+                                                    <i className="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a
+                                                    className="shadow-md social-button twitter"
+                                                    href="https://twitter.com/Careerera1"
+                                                    target='_blank' rel='noreferrer' >
 
-                                                <i className="fab fa-twitter"></i>
-                                            </a>
-                                            <a
-                                                className="shadow-md social-button linkedin mr-0"
-                                                href="https://www.linkedin.com/company/careerera"
-                                                target='_blank' rel='noreferrer' >
+                                                    <i className="fab fa-twitter"></i>
+                                                </a>
+                                                <a
+                                                    className="shadow-md social-button linkedin mr-0"
+                                                    href="https://www.linkedin.com/company/careerera"
+                                                    target='_blank' rel='noreferrer' >
 
-                                                <i className="fab fa-linkedin"></i>
-                                            </a>
+                                                    <i className="fab fa-linkedin"></i>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -193,6 +193,58 @@ const Partnership = () => {
                     </div>
                 </div>
             </div>
+
+
+
+            {/*======== our counseling office ========*/}
+            <div className="certification-courseslight full-w">
+                <div className="container pt-16 pb-10">
+                    <h3 className="font-semibold text-3xl mb-2">Our Counseling Office</h3>
+                    <span className="heading-border-line m-0 d-block left-0 mb-5" />
+                    <div className="full-w contact-page">
+                        <div className="row">
+                            <div className="col-lg-6 col-12 mb-6"> 
+                                <div className="bg-white rounded-lg shadow-sm p-3 pt-4 d-flex">
+                                    <div className="media-left  w-10 text-left">
+                                    <i className="text-xs fas fa-phone-alt fa-2x text-blue-500"></i> 
+                                    </div>
+                                    <div className="media-body text-left">
+                                        <span className="text-base font-bold mb-1 d-block">
+                                            Phone No.
+                                        </span>
+                                        <a className="text-gray-500 font-semibold no-underline"
+                                            href="tel:+919643032964"
+                                            target="_blank"
+                                            rel="noreferrer">
+                                            +91-9643-032-964
+                                        </a>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                            <div className="col-lg-6 col-12 mb-6"> 
+                                <div className="bg-white rounded-lg shadow-sm p-3 pt-4 d-flex">
+                                    <div className="media-left  w-10 text-left">
+                                    <i className="text-xs fas fa-map-marker-alt fa-2x text-blue-500"></i>
+
+                                    </div>
+                                    <div className="media-body text-left">
+                                        <span className="text-base font-bold mb-1 d-block">
+                                        Address
+                                        </span>
+                                        <p  className="text-gray-500 font-semibold no-underline m-0" >
+                                           C-56, A/28 ,3RD FLOOR, SECTOR 62 NOIDA 
+                                           </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/*====== end our counseling office ======*/}
+
 
         </div>
     )
@@ -203,14 +255,13 @@ export default Partnership
 
 
 
-                                
 
-                                
 
-                                
 
-                                
 
-                                
 
-                                
+
+
+
+
+
