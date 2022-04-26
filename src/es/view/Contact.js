@@ -322,7 +322,7 @@ const Contact = () => {
           <div className="row justify-items-center">
             <div className="col-12 col-lg-8 mx-auto">
               <div className="main_heading">
-                <h3 className="uppercase font-bold text-white text-3xl md:text-4xl">Suscríbete a nuestras noticias</h3>
+                <h3 className="uppercase font-bold text-white text-2xl sm:text-3xl md:text-4xl">Suscríbete a nuestras noticias</h3>
                 <form>
                   <div className="input-group mt-4 flex-column flex-sm-row">
                     <input type="text" className="form-control rounded flex-grow-1" placeholder="Tu email aquí" />

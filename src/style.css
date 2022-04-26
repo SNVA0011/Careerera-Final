@@ -6360,6 +6360,9 @@ sup.hand-relmn {
     line-height: normal;
     padding-bottom: 7px !important;
 }
+.modal-content {
+    border: none;
+}
 
 /* responsive css */
 @media (min-width: 1400px) {
@@ -7304,13 +7307,24 @@ sup.hand-relmn {
     .full-w.contact-page .querysign-full {
         background-image: none;
     }
+    .full-w.banner-pagetitle p.linktitle-batch span.mx-2:last-child {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        height: 10px;
+    }
 }
 
 @media (max-width:575px) {
     body .our_faq_sec.custom_locationall .accordion-header button, .our_faq_sec.custom_locationall .accordion-header button {
         line-height: 1.8;
     }
-
+    .full-w.contact-page .student-coursepopup .text-2xl.font-semibold.text-gray-800 {
+        text-align: left;
+    }
+    .full-w.contact-page .student-coursepopup hr.w-20.hr.mb-0.bg-blue-400.sepfoll-hr {
+        margin-left: 0;
+    }
     .curriculum-masterid .panel-heading, .partner-marketing-affiliates.would .btnlg-learn.partneremail-us {
         font-size: 17px;
     }
@@ -7409,6 +7423,7 @@ sup.hand-relmn {
 
     .subscribe_news.py-5.text-center.w-100 .form-control, .subscribe_news.py-5.text-center.w-100 .btn-site {
         height: 50px !important;
+        text-align: center;
     }
 
     .blog_bxrow {
@@ -7542,7 +7557,7 @@ sup.hand-relmn {
     .full-w.banner-pagetitle p.linktitle-batch {
         letter-spacing: 1.2px;
     }
-
+  
     .student-coursepopup .talwin-formstyle {
         margin-top: -57px;
     }
