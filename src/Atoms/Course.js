@@ -347,11 +347,19 @@ const Course = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            : <div className="text-center mt-3">
-                                <Spinner animation="border" role="status">
-                                    <span className="visually-hidden">Loading...</span>
-                                </Spinner>
-                            </div>}
+                            :
+                            <div className="container scroll-area px-scrollbox-12 d-flex align-items-center justify-content-center">
+                                <div className="row above">
+                                    <div className="col-12">
+                                        <div className="text-center my-2">
+                                        <Spinner animation="border" variant="secondary" role="status">
+                                                <span className="visually-hidden">Loading...</span>
+                                            </Spinner>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        }
                     </div>
 
 

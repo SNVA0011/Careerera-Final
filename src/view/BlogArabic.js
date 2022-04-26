@@ -140,7 +140,7 @@ const BlogArabic = () => {
                                                                         </h2>
                                                                         <div className="text-gray-500 font-semibold mb-3 text-sm lg:text-base">
                                                                             <span className="">
-                                                                                <i className="orange-lgclr text-gray-400 bi bi-clock mr-1"></i>
+                                                                                <i className="orange-lgclr text-gray-400 bi bi-calendar4-event mr-1"></i>
                                                                                 <Moment format="D-MMM-YYYY">
                                                                                     {item.Date}
                                                                                 </Moment>
