@@ -184,7 +184,7 @@ const BlogArabic = () => {
                                                             .map((_, i) => (
                                                                 <button key={i}
                                                                     className="px-3 leading-none py-1 text-white
-                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase"
+                                            bg-blue-600 rounded-3xl mr-2 mb-2 uppercase tags_links"
                                                                 >
                                                                     <span className="text-sm">
                                                                         {item.Tags[i]}

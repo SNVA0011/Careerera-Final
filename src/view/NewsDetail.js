@@ -80,7 +80,7 @@ const NewsDetail = () => {
                 <hr></hr>
 
                 {Eventdetails[0].Tags?.length > 0 && Eventdetails[0].Tags.map((item, i) => (
-                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
+                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase tags_links s" key={i}>
                     <span className="text-xs">
                       {item}
                     </span>
