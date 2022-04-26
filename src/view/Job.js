@@ -58,7 +58,7 @@ const Job = () => {
                         <div className="row">
 
                             <div className="col-xxl-9 col-lg-8 col-12">
-                                {job.length > 0 && job.map((items, i) => {
+                                {job?.length > 0 && job.map((items, i) => {
                                     return (
                                         <div className="d-flex w-100 media flex-column flex-sm-row" key={i}>
 

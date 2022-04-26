@@ -536,7 +536,7 @@ const About = () => {
 
                                 blogsts ?
                                     <>
-                                        {Blog.length > 0 && Blog.slice(0, 2).map((item, index) => {
+                                        {Blog?.length > 0 && Blog.slice(0, 2).map((item, index) => {
                                             return (
                                                 <div className='mb-5' key={item.id}>
                                                     <Link className="decoration-0 font-semibold mb-3 text-xl md:text-2xl" to={'/blog/' + item.url} > {item.title} </Link>

@@ -67,7 +67,7 @@ const Blog = () => {
     }
 
     function setPaginationRight(e) {
-        if (pagination_st == freeAllbatch[0].length - 1) {
+        if (pagination_st == freeAllbatch[0]?.length - 1) {
         } else {
             setPaginationst(pagination_st + 1)
         }
@@ -122,7 +122,7 @@ useEffect(() => {
                     />
                     <div className="container py-20">
                         <div className="row">
-                            {freeAllbatch[0].length > 0 ? (
+                            {freeAllbatch[0]?.length > 0 ? (
                                 freeAllbatch[0][pagination_st].map(
                                     (item, index) => (
                                         <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6*index} animateOnce={true}  key={index} className='col-12 mb-4'>
@@ -177,7 +177,7 @@ useEffect(() => {
                                                                     <span className="tag-caturl">
                                                                         {
                                                                             (typeof item.categoryUrl === 'string' ?
-                                                                                item.categoryUrl.slice(0, 1).replace(/-/g, " ").toUpperCase() + item.categoryUrl.slice(1, item.categoryUrl.length).replace(/-/g, " ")
+                                                                                item.categoryUrl.slice(0, 1).replace(/-/g, " ").toUpperCase() + item.categoryUrl.slice(1, item.categoryUrl?.length).replace(/-/g, " ")
                                                                                 : '')
                                                                         }
                                                                     </span>
@@ -188,7 +188,7 @@ useEffect(() => {
 
 
                                                         <hr className="my-4" />
-                                                        {new Array(item.Tags.length)
+                                                        {new Array(item.Tags?.length)
                                                             .fill()
                                                             .map((_, i) => (
                                                                 <button
@@ -257,7 +257,7 @@ useEffect(() => {
                                 </div>
                             )}
 
-                            {freeAllbatch[0].length > 0 ? (
+                            {freeAllbatch[0]?.length > 0 ? (
                                 <div className='col-12 pt-3'>
                                     <nav className="text-center">
                                         <ul className="pagination justify-content-center blog_bxrowpagi flex-wrap mb-0">
@@ -267,7 +267,7 @@ useEffect(() => {
                                                     (pagination_st == 0
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <Link
@@ -289,7 +289,7 @@ useEffect(() => {
                                                     (pagination_st == 0
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <Link
@@ -305,7 +305,7 @@ useEffect(() => {
                                             </li>
 
                                             {/*------ pagination map ------*/}
-                                            {new Array(freeAllbatch[0].length - 1)
+                                            {new Array(freeAllbatch[0]?.length - 1)
                                                 .fill()
                                                 .map((_, index) => (
                                                     <li key={index} className={
@@ -349,41 +349,41 @@ useEffect(() => {
                                                 className={
                                                     'page-item dots' +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' active'
                                                         : '') +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' activedot'
                                                         : '') +
                                                     (pagination_st - 1 ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' activedot'
                                                         : '') +
                                                     (pagination_st + 1 ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' activedot'
                                                         : '') +
                                                     (pagination_st - 2 ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' activedot'
                                                         : '') +
                                                     (pagination_st + 2 ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' activedot'
                                                         : '')
                                                 }
                                             >
                                                 <Link
                                                     className="page-link"
-                                                    to={'/blog/page='+(freeAllbatch[0].length)}
+                                                    to={'/blog/page='+(freeAllbatch[0]?.length)}
                                                     onClick={() => {
                                                         setPaginationst(
-                                                            freeAllbatch[0].length - 1
+                                                            freeAllbatch[0]?.length - 1
                                                         );
                                                     }}
                                                 >
-                                                    {freeAllbatch[0].length}
+                                                    {freeAllbatch[0]?.length}
                                                 </Link>
                                             </li>
                                             {/*------ end pagination map ------*/}
@@ -393,10 +393,10 @@ useEffect(() => {
                                                 className={
                                                     'nv page-item itemnv-3' +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }>
                                                 <Link
                                                     className="page-link"
@@ -414,17 +414,17 @@ useEffect(() => {
                                                 className={
                                                     'nv page-item itemnv-4' +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }>
                                                 <Link
                                                     className="page-link"
-                                                    to={'/blog/page='+(freeAllbatch[0].length)}
+                                                    to={'/blog/page='+(freeAllbatch[0]?.length)}
                                                     onClick={() => {
                                                         setPaginationst(
-                                                            freeAllbatch[0].length - 1
+                                                            freeAllbatch[0]?.length - 1
                                                         );
                                                     }}
                                                     aria-label="Next"

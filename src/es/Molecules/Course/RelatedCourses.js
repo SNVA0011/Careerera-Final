@@ -34,7 +34,7 @@ const RelatedCourses=(props)=>{
             <div className="row pt-4">
                 {
                     props.data[0] ?
-                    props.data[0].courseList.length > 0 && props.data[0].courseList.map((dates, ei) => (
+                    props.data[0].courseList?.length > 0 && props.data[0].courseList.map((dates, ei) => (
                             <ScrollAnimation animateIn='fadeInUpscrl' key={ei} animateOut='fadeInUpscrlout' delay={6*ei} animateOnce={true}  className="col-xl-6 col-12 mb-4">
 
                                 <div className="cards bg-white">
@@ -50,7 +50,7 @@ const RelatedCourses=(props)=>{
                                             <Accordion className="mb-2">
 
                                                 {dates.CourseBatchList ?
-                                                    dates.CourseBatchList.Elearning.length > 0 || dates.CourseBatchList.LVC.length ?
+                                                    dates.CourseBatchList.Elearning?.length > 0 || dates.CourseBatchList.LVC?.length ?
                                                         <Accordion.Item eventKey="0">
                                                             <Accordion.Header>Próximos lotes</Accordion.Header>
                                                             <Accordion.Body>
@@ -58,12 +58,12 @@ const RelatedCourses=(props)=>{
                                                                     <div className="container p-0">
 
                                                                         {dates.CourseBatchList.Elearning ?
-                                                                            dates.CourseBatchList.Elearning.length > 0 ?
+                                                                            dates.CourseBatchList.Elearning?.length > 0 ?
                                                                                 <div className="full-w">
                                                                                     <h3 className="text-lg md:text-xl font-bold mb-2">Aprendizaje electrónico</h3>
                                                                                     <div className="row">
                                                                                         {
-                                                                                            dates.CourseBatchList.Elearning.length > 0 && dates.CourseBatchList.Elearning.map((item, ind) => (
+                                                                                            dates.CourseBatchList.Elearning?.length > 0 && dates.CourseBatchList.Elearning.map((item, ind) => (
 
                                                                                                 <div className='col-12 mb-4' key={ind}>
                                                                                                     <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
@@ -131,7 +131,7 @@ const RelatedCourses=(props)=>{
 
                                                                                     </div>
 
-                                                                                    {dates.CourseBatchList.Elearning.length > 0 && dates.CourseBatchList.LVC.length > 0 ?
+                                                                                    {dates.CourseBatchList.Elearning?.length > 0 && dates.CourseBatchList.LVC?.length > 0 ?
                                                                                         <hr className="mt-0 mb-5"></hr>
                                                                                         : ''}
 
@@ -143,12 +143,12 @@ const RelatedCourses=(props)=>{
                                                                         <div className="container p-0">
 
                                                                             {dates.CourseBatchList.LVC ?
-                                                                                dates.CourseBatchList.LVC.length > 0 ?
+                                                                                dates.CourseBatchList.LVC?.length > 0 ?
                                                                                     <div className="full-w">
                                                                                         <h3 className="text-lg md:text-xl font-bold mb-2">Vive en línea</h3>
                                                                                         <div className="row">
                                                                                             {
-                                                                                                dates.CourseBatchList.LVC.length > 0 && dates.CourseBatchList.LVC.map((dats, index) => (
+                                                                                                dates.CourseBatchList.LVC?.length > 0 && dates.CourseBatchList.LVC.map((dats, index) => (
 
                                                                                                     <div className='col-12 mb-4' key={index}>
                                                                                                         <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
@@ -240,7 +240,7 @@ const RelatedCourses=(props)=>{
 
                                                 {
                                                     dates.Curriculum ?
-                                                        dates.Curriculum.length > 0 ?
+                                                        dates.Curriculum?.length > 0 ?
                                                             <Accordion.Item className="border-top mt-2" eventKey="1">
                                                                 <Accordion.Header>Plan de estudios</Accordion.Header>
                                                                 <Accordion.Body className="p-3 py-2">
@@ -256,7 +256,7 @@ const RelatedCourses=(props)=>{
                                                                             </thead>
                                                                             <tbody>
                                                                                 {
-                                                                                dates.Curriculum.length > 0 && dates.Curriculum.map((item, ind) => (
+                                                                                dates.Curriculum?.length > 0 && dates.Curriculum.map((item, ind) => (
                                                                                     <tr key={ind}>
                                                                                         <td className="font-semibold font-sm text-nowrap" dangerouslySetInnerHTML={{ __html: item.Unit_num }}></td>
                                                                                         <td className="font-semibold font-sm" dangerouslySetInnerHTML={{ __html: item.Unit_Name }}></td>

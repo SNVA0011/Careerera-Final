@@ -43,7 +43,7 @@ const StateFooter = (props) => {
                 <span dangerouslySetInnerHTML={{__html: props.pagetitle}}></span>, this Course and batch also available in other locations <div className="btn-site invert ml-3"><span>View</span></div></Accordion.Header>
                 <Accordion.Body>
                   <ul className='list-disc text-base row'>
-                    {data.length > 0 && data.map((items, i) => (
+                    {data?.length > 0 && data.map((items, i) => (
                       <>
                         <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={items.states_url}>{items.name}</Link></li>
                       </>

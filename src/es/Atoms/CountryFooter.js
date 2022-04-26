@@ -44,7 +44,7 @@ const CountryFooter = (props) => {
                 <span dangerouslySetInnerHTML={{__html: props.pagetitle}}></span>, este curso y el lote también están disponibles en otras ubicaciones <div className="btn-site invert ml-3"><span>Vista</span></div></Accordion.Header>
                 <Accordion.Body>
                   <ul className='list-disc text-base row'>
-                    {data.length > 0 && data.map((items, i) => (
+                    {data?.length > 0 && data.map((items, i) => (
                       <>
                         <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={'/es/'+items.countries_url}>{items.name}</Link></li>
                       </>

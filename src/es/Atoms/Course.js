@@ -80,14 +80,14 @@ const Course = (props) => {
 
                     <div className="dropdown-menu" style={{ 'display': hidemenust ? 'none' : 'block' }}>
                         {status ?
-                            exactData.length > 0 ?
+                            exactData?.length > 0 ?
                                 <div className="container scroll-area px-scrollbox-12">
                                     {widthsc < 992 ? '' :
                                         <div className="row above">
                                             {/* Course list */}
                                             <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
                                                 {/* <h3 className="font-semibold text-lg pl-1 text-blue-500"  >Choose Your Domain</h3> */}
-                                                {exactData.length > 0 && exactData.map((item, i) => (
+                                                {exactData?.length > 0 && exactData.map((item, i) => (
                                                     <div className="font-left mb-1 rounded">
                                                         {/* <Link to={'/es/'+item.category_url}>Hello</Link> */}
                                                         <Link to={'/es/' + item.category_url} key={i}
@@ -108,7 +108,7 @@ const Course = (props) => {
                                                                 item.category_title
                                                             }
                                                             onMouseEnter={(e) =>
-                                                                add(item.category_title, item.category_url, item.Course.length)
+                                                                add(item.category_title, item.category_url, item.Course?.length)
                                                             }>
 
                                                             {item.category_title}
@@ -121,7 +121,7 @@ const Course = (props) => {
                                             {/* Course detail data */}
                                             <div className="col-xxl-9 col-lg-8 col-12 scroll-xxl-9">
 
-                                                {exactData.length > 0 && exactData
+                                                {exactData?.length > 0 && exactData
                                                     .filter(
                                                         statu
                                                             ? (item) =>
@@ -186,12 +186,12 @@ const Course = (props) => {
                                                                                 </Link>
 
 
-                                                                                <Link to={'/es/' + totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]}
+                                                                                <Link to={'/es/' + totaltitle?.length === 0 ? exactData[0].category_url : totaltitle[1]}
                                                                                     className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold"
                                                                                     onClick={(e) => setHidemenust(true)} key={ei}>
                                                                                     <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                         <div className="pr-smtime-2">
-                                                                                            {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                            {totaltitle?.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                         </div>
 
                                                                                         <div className="text-gray-600 text-nowrap">
@@ -213,7 +213,7 @@ const Course = (props) => {
                                                             )}
 
 
-                                                            {item.Course.length > 6 ?
+                                                            {item.Course?.length > 6 ?
                                                                 <div className="col-12 mt-2 text-center">
                                                                     {totalcourslice === item.category_title ?
                                                                         showallcour > 6 ?
@@ -221,10 +221,10 @@ const Course = (props) => {
                                                                                 <span>Muestra menos</span>
                                                                             </button>
                                                                             :
-                                                                            <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course.length)}>
+                                                                            <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                                                                 <span>Mostrar más</span>
                                                                             </button>
-                                                                        : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course.length)}>
+                                                                        : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                                                             <span>Mostrar más</span>
                                                                         </button>
                                                                     }
@@ -241,12 +241,12 @@ const Course = (props) => {
                                     {widthsc < 992 ?
                                         <div className="our_faq_sec profcourmore">
                                             <Accordion className="megamenu-wrapper" defaultActiveKey="0">
-                                                {exactData.length > 0 && exactData.map((item, i) => (
+                                                {exactData?.length > 0 && exactData.map((item, i) => (
                                                     <>
                                                         <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                                                             <Accordion.Header name={item.category_title}
-                                                                onClick={(e) => add(item.category_title, item.category_url, item.Course.length)}
-                                                                onMouseEnter={() => add(item.category_title, item.category_url, item.Course.length)}>
+                                                                onClick={(e) => add(item.category_title, item.category_url, item.Course?.length)}
+                                                                onMouseEnter={() => add(item.category_title, item.category_url, item.Course?.length)}>
                                                                 {item.category_title}
                                                             </Accordion.Header>
                                                             <Accordion.Body>
@@ -259,7 +259,7 @@ const Course = (props) => {
 
                                                                     <div className="full-w">
                                                                         <Carousel interval={null}>
-                                                                            {item.Course.length > 0 && item.Course.map((dat, ei) => (
+                                                                            {item.Course?.length > 0 && item.Course.map((dat, ei) => (
                                                                                 <Carousel.Item>
 
                                                                                     <div onMouseEnter={(e) => setMobmenuclose(false)} onClick={(e) => setMobmenuclose(false)} key={'type-' + ei}>
@@ -312,10 +312,10 @@ const Course = (props) => {
                                                                                                     </div>
                                                                                                 </Link>
 
-                                                                                                <Link to={'/es/' + totaltitle.length === 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
+                                                                                                <Link to={'/es/' + totaltitle?.length === 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
                                                                                                     <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                                                                         <div className="pr-smtime-2">
-                                                                                                            {totaltitle.length === 0 ? exactData[0].category_title : totaltitle[0]}
+                                                                                                            {totaltitle?.length === 0 ? exactData[0].category_title : totaltitle[0]}
                                                                                                         </div>
 
                                                                                                         <div className="text-gray-600 text-nowrap">

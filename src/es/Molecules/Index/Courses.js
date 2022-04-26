@@ -59,11 +59,11 @@ export default function Courses() {
     function onOpentab(k) {
         setKeyOwl(options)
         if (k === "postgrado") {
-            settotalcour([exactData.filter((item) => item.new_label === '1').length, "Programas De Postgrado"]);
+            settotalcour([exactData.filter((item) => item.new_label === '1')?.length, "Programas De Postgrado"]);
         }
 
         if (k === "caciones") {
-            settotalcour([exactData.filter((item) => item.new_label === '2').length, "Certificaciones"]);
+            settotalcour([exactData.filter((item) => item.new_label === '2')?.length, "Certificaciones"]);
         }
     }
 
@@ -79,7 +79,7 @@ export default function Courses() {
                             Comience Su Carrera Con <span className="orange-lgclr">{totalcour[1]}</span>
                         </h3>
                         <p className="text-center text-gray-700 font-bold text-3xl md:text-4xl lg:text-5xl mb-0">
-                            <span className="d-inline-block procur"><AnimatedNumbers animateToNumber={totalcour === '' ? exactData.filter((item) => item.new_label === '1').length : totalcour[0]}></AnimatedNumbers></span>
+                            <span className="d-inline-block procur"><AnimatedNumbers animateToNumber={totalcour === '' ? exactData.filter((item) => item.new_label === '1')?.length : totalcour[0]}></AnimatedNumbers></span>
                             + {' '} <span className="text-blue-500 sitblu-clrsite"> Profesional</span> Cursos
                         </p>
                         <div className="pt-4 megamenu-wrapper media-prtslider">
@@ -89,7 +89,7 @@ export default function Courses() {
 
                                     <Tab eventKey="postgrado" title="Programas De Postgrado">
                                         <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                            {exactData.length > 0 && exactData.filter((item) => item.new_label === '1').map((dat, ind) => {
+                                            {exactData?.length > 0 && exactData.filter((item) => item.new_label === '1').map((dat, ind) => {
                                                     return (
                                                         <>
                                                             {/* owlitem */}
@@ -163,7 +163,7 @@ export default function Courses() {
                                     <Tab eventKey="caciones" title="Certificaciones">
 
                                         <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                            {exactData.length > 0 && exactData.filter((item) => item.new_label === '2').map((dat, ind) => {
+                                            {exactData?.length > 0 && exactData.filter((item) => item.new_label === '2').map((dat, ind) => {
                                                     return (
                                                         <>
                                                             {/* owlitem */}

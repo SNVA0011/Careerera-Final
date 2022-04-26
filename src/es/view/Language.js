@@ -44,7 +44,7 @@ const Language = () => {
 
 
                         <div className="row">
-                            {exactData[9].Course.length > 0 && exactData[9].Course.map((item, i) => {
+                            {exactData[9].Course?.length > 0 && exactData[9].Course.map((item, i) => {
                                 return (
                                     <div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4" key={i}>
                                         <div className="cards h-100 d-flex flex-column">

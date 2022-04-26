@@ -43,7 +43,7 @@ export default function SearchCourses() {
                 <Modal.Body className="pb-0">
 
                     {status ?
-                        exactData.length > 0 ?
+                        exactData?.length > 0 ?
 
                             <>
                                 <InputGroup>
@@ -63,15 +63,15 @@ export default function SearchCourses() {
                                 <div
                                     className={
                                         'countryflag-menu dropdown' +
-                                        (coursesname.length > 0 ? ' show' : '')
+                                        (coursesname?.length > 0 ? ' show' : '')
                                     }
                                 >
                                     <ul
                                         className={
                                             'dropdown-menu' +
-                                            (coursesname.length > 0 ? ' show' : '')
+                                            (coursesname?.length > 0 ? ' show' : '')
                                         }>
-                                        {exactData.length > 0 && exactData.map((item, i) =>
+                                        {exactData?.length > 0 && exactData.map((item, i) =>
                                             item.Course.filter(({ CourseTitel }) =>
                                                 coursesname === '' ||
                                                 CourseTitel.toLowerCase().includes(

@@ -8,7 +8,7 @@ const Cariculam = (props) => {
   return (
     <>
       {final ?
-      final.length > 0 ?
+      final?.length > 0 ?
         <div className="curriculum-assimilate certification-courseslight full-w scroll-spbx" id="carriculum">
           <div className="container py-16">
             <div className="sec_title">
@@ -25,7 +25,7 @@ const Cariculam = (props) => {
  
 
             <div className="row pt-2">
-              {final.length > 0 && final.map((items, i) => (
+              {final?.length > 0 && final.map((items, i) => (
                 <div className="col-xxl-6 col-12" key={i}>
                   <div className="list-group mb-2 mb-xxl-3 shadow-sm">
                     <div className="d-flex list-group-item py-3 flex-column flex-md-row">

@@ -50,14 +50,14 @@ const FreeCourse = () => {
 
                 <div className="container py-16">
 
-                    {freeCour[0].length > 0 && freeCour[0] ?
+                    {freeCour[0]?.length > 0 && freeCour[0] ?
                         <>
                             <h3 className="font-semibold text-3xl mb-3">
                                 {freeCour[0].Elearning[0].batch_category}
                             </h3>
 
                             <div className="row">
-                                {freeCour[0].Elearning.length > 0 && freeCour[0].Elearning.map((item, i) => (
+                                {freeCour[0].Elearning?.length > 0 && freeCour[0].Elearning.map((item, i) => (
                                     <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * i} animateOnce={true} className='col-lg-6 col-12 mb-4' key={i}>
                                         <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
                                             <div className="">
@@ -146,7 +146,7 @@ const FreeCourse = () => {
                             </h3>
                             : ''}
 
-                        {freeAllbatch[0] && freeAllbatch[0].length > 0 ? <>
+                        {freeAllbatch[0] && freeAllbatch[0]?.length > 0 ? <>
                             <div className="mb-4 mt-2">
                                 <div className="shadow-md bg-light px-4 py-3 text-2xl border font-semibold mb-4 text-white disclaimer-bx rounded-md ">
                                     {freeAllbatch[0][0].date}
@@ -155,10 +155,10 @@ const FreeCourse = () => {
 
 
                             <div className="row">
-                                {freeAllbatch[0].length > 0 && freeAllbatch[0].map((items, i) => (
+                                {freeAllbatch[0]?.length > 0 && freeAllbatch[0].map((items, i) => (
                                     <>
                                         {
-                                        items.groupdata.filter((dats) => dats.New_price === '0.00').length > 0 && 
+                                        items.groupdata.filter((dats) => dats.New_price === '0.00')?.length > 0 && 
                                         items.groupdata.filter((dats) => dats.New_price === '0.00').map((dats, da) => (
                                                 <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * da} animateOnce={true} className='col-lg-6 col-12 mb-4' key={da}>
                                                     <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">

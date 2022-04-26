@@ -78,7 +78,7 @@ const NewsDetail = () => {
 
                 <hr></hr>
 
-                {Eventdetails[0].Tags.length > 0 && Eventdetails[0].Tags.map((item, i) => (
+                {Eventdetails[0].Tags?.length > 0 && Eventdetails[0].Tags.map((item, i) => (
                   <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                     <span className="text-xs">
                       {item}
@@ -93,7 +93,7 @@ const NewsDetail = () => {
                     <span>Publicación reciente</span>
                   </h5>
                   <div className="py-0 scroll">
-                    {Eventdetails[0].RecentBlogList.length > 0 && Eventdetails[0].RecentBlogList.map((item, i) => (
+                    {Eventdetails[0].RecentBlogList?.length > 0 && Eventdetails[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/es/news-events/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
                         <div className="flex-shrink-0 font-light">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">

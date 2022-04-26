@@ -22,7 +22,7 @@ const PaidCourse = () => {
                     <div className="container py-16">
                         {
                             allbatches != '' ?
-                            allbatches.length > 0 && allbatches.map((items, i) => (
+                            allbatches?.length > 0 && allbatches.map((items, i) => (
                                     <>
                                         <h4 key={i}>
                                             Yes, API have the data of all batches

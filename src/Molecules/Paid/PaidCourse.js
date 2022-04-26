@@ -45,15 +45,15 @@ const PaidCourse = () => {
             {allfreeCourLoad ? (
                 <>
                     <div className="container py-16"> 
-                        {freeAllbatch[0].length > 0 && freeAllbatch[0].map((items, i) => (
+                        {freeAllbatch[0]?.length > 0 && freeAllbatch[0].map((items, i) => (
                             <>
 
                                 <div className="shadow-md bg-light px-4 py-3 text-2xl border font-semibold mb-4 text-white disclaimer-bx rounded-md">
                                     {items.date}
                                 </div>
 
-                                <div className={"row" + (i === freeAllbatch[0].length - 1 ? '' : ' pb-20')}>
-                                    {items.groupdata.length > 0 && items.groupdata
+                                <div className={"row" + (i === freeAllbatch[0]?.length - 1 ? '' : ' pb-20')}>
+                                    {items.groupdata?.length > 0 && items.groupdata
                                         .filter((dats) => dats.New_price !== '0.00')
                                         .map((dats, da) => (
                                             <ScrollAnimation className='col-lg-6 col-12 mb-4'animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={da*i} animateOnce={true} key={da}>

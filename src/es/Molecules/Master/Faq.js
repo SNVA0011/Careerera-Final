@@ -7,7 +7,7 @@ const Faq = (props) => {
 
   return (
     <>
-      {final && final.length > 0 ?
+      {final && final?.length > 0 ?
         <div className="scroll-spbx our_faq_sec bg-blue-50 scroll-spbx" id="FAQ">
 
           <div className="container py-16">
@@ -26,10 +26,10 @@ const Faq = (props) => {
               <div className="row pt-3 alsobenefitthose">
                 <div className="col-lg-12 col-12">
                   {
-                    final && final.length > 0 ?
+                    final && final?.length > 0 ?
                       <Accordion defaultActiveKey="0">
                         {
-                          final.length > 0 && final.map((values, item) =>
+                          final?.length > 0 && final.map((values, item) =>
                             <Accordion.Item eventKey={item} key={item}>
                               <Accordion.Header className="">
                                 <div className="d-flex"> 

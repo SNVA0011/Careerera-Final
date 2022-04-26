@@ -215,7 +215,7 @@ const BatchDetail = (props) => {
                         <div className="btn-site invert ml-3"><span>View</span></div></Accordion.Header>
                       <Accordion.Body>
                         <ul className='list-disc text-base row'>
-                          {List.length > 0 && List.map((item, i) => {
+                          {List?.length > 0 && List.map((item, i) => {
                             return (
                               <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={"/" + data.data + "/" + item.url + "/liveonline/" + date.date + "/" + workid.workid}>{item.name}</Link></li>
                             )

@@ -61,7 +61,7 @@ const News = () => {
     }
 
     function setPaginationRight(e) {
-        if (pagination_st == freeAllbatch[0].length - 1) {
+        if (pagination_st == freeAllbatch[0]?.length - 1) {
         } else {
             setPaginationst(pagination_st + 1)
         }
@@ -95,7 +95,7 @@ const News = () => {
 
                     <div className="container py-20">
                         <div className="row">
-                            {freeAllbatch[0].length > 0 ? (
+                            {freeAllbatch[0]?.length > 0 ? (
                                 freeAllbatch[0][pagination_st].map(
                                     (item, index) => (
                                         <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-12 mb-4'>
@@ -150,7 +150,7 @@ const News = () => {
                                                             <span className="tag-caturl">                
                                                                   {
                                                                     (typeof item.categoryUrl === 'string' ? 
-                                                                    item.categoryUrl.slice(0,1).replace(/-/g, " ").toUpperCase() + item.categoryUrl.slice(1, item.categoryUrl.length).replace(/-/g, " ")
+                                                                    item.categoryUrl.slice(0,1).replace(/-/g, " ").toUpperCase() + item.categoryUrl.slice(1, item.categoryUrl?.length).replace(/-/g, " ")
                                                                     : '')
                                                                  }
                                                             </span>
@@ -163,7 +163,7 @@ const News = () => {
                                                         </p>
 
                                                         <hr className="my-4" />
-                                                        {new Array(item.Tags.length)
+                                                        {new Array(item.Tags?.length)
                                                             .fill()
                                                             .map((_, i) => (
                                                                 <button
@@ -232,7 +232,7 @@ const News = () => {
                                 </div>
                             )}
 
-                            {freeAllbatch[0].length > 0 ? (
+                            {freeAllbatch[0]?.length > 0 ? (
                                 <div className='col-12 pt-3'>
 
                                     <nav className="text-center">
@@ -243,7 +243,7 @@ const News = () => {
                                                     (pagination_st == 0
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <a
@@ -265,7 +265,7 @@ const News = () => {
                                                     (pagination_st == 0
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <a
@@ -281,7 +281,7 @@ const News = () => {
                                             </li>
 
                                             {/*------ pagination map ------*/}
-                                            {new Array(freeAllbatch[0].length - 1)
+                                            {new Array(freeAllbatch[0]?.length - 1)
                                                 .fill()
                                                 .map((_, index) => (
                                                     <li key={index} className={
@@ -323,20 +323,20 @@ const News = () => {
                                             <li
                                                 className={
                                                     "page-item dots" +
-                                                    (pagination_st == freeAllbatch[0].length - 1 ? " active" : "") +
-                                                    (pagination_st == freeAllbatch[0].length - 1 ? " activedot" : "") +
-                                                    (pagination_st - 1 == freeAllbatch[0].length - 1 ? " activedot" : "") +
-                                                    (pagination_st + 1 == freeAllbatch[0].length - 1 ? " activedot" : "") +
-                                                    (pagination_st - 2 == freeAllbatch[0].length - 1 ? " activedot" : "") +
-                                                    (pagination_st + 2 == freeAllbatch[0].length - 1 ? " activedot" : "")
+                                                    (pagination_st == freeAllbatch[0]?.length - 1 ? " active" : "") +
+                                                    (pagination_st == freeAllbatch[0]?.length - 1 ? " activedot" : "") +
+                                                    (pagination_st - 1 == freeAllbatch[0]?.length - 1 ? " activedot" : "") +
+                                                    (pagination_st + 1 == freeAllbatch[0]?.length - 1 ? " activedot" : "") +
+                                                    (pagination_st - 2 == freeAllbatch[0]?.length - 1 ? " activedot" : "") +
+                                                    (pagination_st + 2 == freeAllbatch[0]?.length - 1 ? " activedot" : "")
                                                 }>
                                                 <a
                                                     className="page-link"
                                                     href={void 0}
                                                     onClick={() => {
-                                                        setPaginationst(freeAllbatch[0].length - 1);
+                                                        setPaginationst(freeAllbatch[0]?.length - 1);
                                                     }}>
-                                                    {freeAllbatch[0].length}
+                                                    {freeAllbatch[0]?.length}
                                                 </a>
                                             </li>
                                             {/*------ end pagination map ------*/}
@@ -347,10 +347,10 @@ const News = () => {
                                                 className={
                                                     'nv page-item itemnv-3' +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <a
@@ -368,10 +368,10 @@ const News = () => {
                                                 className={
                                                     'nv page-item itemnv-4' +
                                                     (pagination_st ==
-                                                        freeAllbatch[0].length - 1
+                                                        freeAllbatch[0]?.length - 1
                                                         ? ' disabled'
                                                         : '')
-                                                    + (freeAllbatch[0].length == 1 ? ' d-none' : '')
+                                                    + (freeAllbatch[0]?.length == 1 ? ' d-none' : '')
                                                 }
                                             >
                                                 <a
@@ -379,7 +379,7 @@ const News = () => {
                                                     href={void 0}
                                                     onClick={() => {
                                                         setPaginationst(
-                                                            freeAllbatch[0].length - 1
+                                                            freeAllbatch[0]?.length - 1
                                                         )
                                                     }}
                                                     aria-label="Next"

@@ -140,7 +140,7 @@ const MasterState = () => {
 
 
             {Catsts ? <>
-                {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                     return (
                         <>
 
@@ -178,7 +178,7 @@ const MasterState = () => {
 
 
                         {Catsts ? <>
-                            {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                            {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                                 return (
                                     <>
                                         {
@@ -201,12 +201,12 @@ const MasterState = () => {
 
                             <div className="row">
 
-                                {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                                {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                                     return (
                                         <>
                                             {
                                                 items.CourseBatchList.Elearning?.length > 0 ?
-                                                items.CourseBatchList.Elearning.length > 0 && items.CourseBatchList.Elearning.map((item, i) => {
+                                                items.CourseBatchList.Elearning?.length > 0 && items.CourseBatchList.Elearning.map((item, i) => {
                                                         return (
                                                             <>
                                                                 <div className='col-lg-6 col-12 mb-4' key={i}>
@@ -322,7 +322,7 @@ const MasterState = () => {
 
                                 {allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats))?.length > 0 ?
                                     <>
-                                        {allfreeCour[0].LVC.length > 0 && allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats)).map((items, index) => {
+                                        {allfreeCour[0].LVC?.length > 0 && allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats)).map((items, index) => {
                                             return (
                                                 <>
                                                     <div className='col-lg-6 col-12 mb-4' key={index}>
@@ -452,7 +452,7 @@ const MasterState = () => {
                     <div className="row pt-2 curriculum-mstercoun">
 
                         {Catsts ?
-                            Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
+                            Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
                                 items.Curriculum?.length > 0 ?
                                     <>
                                         <div className="col-12 d-none d-md-block" key={i}>
@@ -468,7 +468,7 @@ const MasterState = () => {
                                             </div>
                                         </div>
                                         {
-                                            items.Curriculum.length > 0 && items.Curriculum.map((item, i) =>
+                                            items.Curriculum?.length > 0 && items.Curriculum.map((item, i) =>
                                                 <div className="col-12" key={i}>
                                                     <div className="list-group mb-2 shadow-sm">
                                                         <div className="d-flex list-group-item py-3 flex-column flex-md-row bggrayunit">

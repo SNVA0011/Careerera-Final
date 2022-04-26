@@ -67,10 +67,10 @@ const Course = () => {
           <div className="full-w start-yourcareer ipsumsl">
             <div className="container py-16 megamenu-wrapper">
               <h3 className="text-center text-gray-700 font-bold mb-3 text-base sm:text-lg md:text-xl">
-                Comience Su Carrera Con <span className="orange-lgclr">{totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}</span>
+                Comience Su Carrera Con <span className="orange-lgclr">{totaltitle?.length == 0 ? exactData[0].category_title : totaltitle[0]}</span>
               </h3>
               <p className="text-center text-gray-700 font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
-                <span className="d-inline-block procur"><AnimatedNumbers animateToNumber={totalcour === '' ? exactData[0].Course.length : totalcour}></AnimatedNumbers></span>
+                <span className="d-inline-block procur"><AnimatedNumbers animateToNumber={totalcour === '' ? exactData[0].Course?.length : totalcour}></AnimatedNumbers></span>
                 + {' '} <span className="text-blue-500 sitblu-clrsite"> Profesional</span> Cursos
               </p>
 
@@ -80,7 +80,7 @@ const Course = () => {
                   {/* Course list */}
                   <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
 
-                    {exactData.length > 0 && exactData.map((item, i) => (
+                    {exactData?.length > 0 && exactData.map((item, i) => (
                       <div className="font-left mb-1 rounded" key={i}>
                         <Link to={'/es/'+item.category_url}
                           className={
@@ -90,7 +90,7 @@ const Course = () => {
                             item.category_title
                           }
                           onMouseEnter={(e) =>
-                            add(item.category_title, item.category_url, item.Course.length)
+                            add(item.category_title, item.category_url, item.Course?.length)
                           }>
 
                           {item.category_title}
@@ -102,7 +102,7 @@ const Course = () => {
 
                   {/* Course detail data */}
                   <div className="col-xxl-9 col-lg-8 col-12">
-                    {exactData.length > 0 && exactData.filter( statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science' ).map((item, e) => (
+                    {exactData?.length > 0 && exactData.filter( statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science' ).map((item, e) => (
                         <div className="row pt-4" key={e}>
                           {item.Course.slice(0, totalcourslice === item.category_title ? showallcour : 6).map(
                             (dat, ei) => (
@@ -159,10 +159,10 @@ const Course = () => {
                                     </Link>
 
 
-                                    <Link to={'/es/'+totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
+                                    <Link to={'/es/'+totaltitle?.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
                                       <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                         <div className="pr-smtime-2">
-                                          {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                          {totaltitle?.length == 0 ? exactData[0].category_title : totaltitle[0]}
                                         </div>
 
                                         <div className="text-gray-600 text-nowrap">
@@ -182,7 +182,7 @@ const Course = () => {
                           )}
 
 
-                          {item.Course.length > 6 ?
+                          {item.Course?.length > 6 ?
                             <div className="col-12 mt-2 text-center">
                               {totalcourslice === item.category_title ?
                                 showallcour > 6 ?
@@ -190,10 +190,10 @@ const Course = () => {
                                     <span>Mostrar menos</span>
                                   </button>
                                   :
-                                  <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course.length)}>
+                                  <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                     <span>Mostrar más</span>
                                   </button>
-                                : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course.length)}>
+                                : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                   <span>Mostrar más</span>
                                 </button>
                               }
@@ -210,12 +210,12 @@ const Course = () => {
               {widthsc < 992 ?
                 <div className="our_faq_sec profcourmore">
                   <Accordion className="megamenu-wrapper" defaultActiveKey="0">
-                    {exactData.length > 0 && exactData.map((item, i) => (
+                    {exactData?.length > 0 && exactData.map((item, i) => (
                       <>
                         <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                           <Accordion.Header name={item.category_title}
-                            onClick={(e) => add(item.category_title, item.category_url, item.Course.length)}
-                            onMouseEnter={() => add(item.category_title, item.category_url, item.Course.length)}>
+                            onClick={(e) => add(item.category_title, item.category_url, item.Course?.length)}
+                            onMouseEnter={() => add(item.category_title, item.category_url, item.Course?.length)}>
                             {item.category_title}
                           </Accordion.Header>
                           <Accordion.Body>
@@ -228,7 +228,7 @@ const Course = () => {
 
                               <div className="full-w">
                                 <Carousel interval={null}>
-                                  {item.Course.length > 0 && item.Course.map((dat, ei) => (
+                                  {item.Course?.length > 0 && item.Course.map((dat, ei) => (
                                     <Carousel.Item>
 
                                       <>
@@ -281,10 +281,10 @@ const Course = () => {
                                               </div>
                                             </Link>
 
-                                            <Link to={'/es/'+totaltitle.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
+                                            <Link to={'/es/'+totaltitle?.length == 0 ? exactData[0].category_url : totaltitle[1]} className="durationcou course-type mt-auto mb-0 py-0 no-underline text-gray-900 font-semibold">
                                               <div className="course-typeinn py-3 d-flex justify-content-between flex-column flex-sm-row">
                                                 <div className="pr-smtime-2">
-                                                  {totaltitle.length == 0 ? exactData[0].category_title : totaltitle[0]}
+                                                  {totaltitle?.length == 0 ? exactData[0].category_title : totaltitle[0]}
                                                 </div>
 
                                                 <div className="text-gray-600 text-nowrap">

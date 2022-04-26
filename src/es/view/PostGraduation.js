@@ -41,11 +41,11 @@ const PostGraduation = () => {
                         </div>
 
                         <div className="row">
-                            {exactData.length > 0 && exactData.map((items, i) => {
+                            {exactData?.length > 0 && exactData.map((items, i) => {
                                 return (
                                     <>
 
-                                        {items.Course.length > 0 && items.Course.filter((item) => item.CourseTitel.includes("Post") || item.CourseTitel.includes("Masters")).map((item, i) => {
+                                        {items.Course?.length > 0 && items.Course.filter((item) => item.CourseTitel.includes("Post") || item.CourseTitel.includes("Masters")).map((item, i) => {
                                             return (
                                                 <div className="col-xl-3 col-lg-4 col-sm-6 col-12 mb-4" key={i}>
                                                     <div className="cards h-100 d-flex flex-column">
