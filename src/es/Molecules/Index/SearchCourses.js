@@ -21,7 +21,7 @@ export default function SearchCourses() {
     }
     const handleShow = () => setShow(true)
 
-    return status ? (
+    return (
         <>
             <Button
                 variant="outline-primary"
@@ -42,66 +42,69 @@ export default function SearchCourses() {
             >
                 <Modal.Header closeButton></Modal.Header>
                 <Modal.Body className="pb-0">
-                    <InputGroup>
-                        <FormControl
-                            placeholder="Búsqueda"
-                            value={coursesname}
-                            onChange={(e) => setCoursesname(e.target.value)}
-                        />
-                        <Button
-                            variant="outline-secondary"
-                            className="rounded-circle rounded-scourses shadow-md"
-                        >
-                            <i className="bi bi-search"></i>
-                        </Button>
-                    </InputGroup>
+                    {status ?
+                        exactData.length > 0 ?
+                            <>
+                                <InputGroup>
+                                    <FormControl
+                                        placeholder="Búsqueda"
+                                        value={coursesname}
+                                        onChange={(e) => setCoursesname(e.target.value)}
+                                    />
+                                    <Button
+                                        variant="outline-secondary"
+                                        className="rounded-circle rounded-scourses shadow-md"
+                                    >
+                                        <i className="bi bi-search"></i>
+                                    </Button>
+                                </InputGroup>
 
-                    <div
-                        className={
-                            'countryflag-menu dropdown' +
-                            (coursesname.length > 0 ? ' show' : '')
-                        }>
-                           
-                        <ul
-                            className={
-                                'dropdown-menu' +
-                                (coursesname.length > 0 ? ' show' : '')
-                            }>
-                            {
-                            exactData.length > 0 ?
-                           
+                                <div
+                                    className={
+                                        'countryflag-menu dropdown' +
+                                        (coursesname.length > 0 ? ' show' : '')
+                                    }>
 
-                            exactData.filter(({ CourseTitel }) =>
-                            coursesname === '' ||
-                            CourseTitel.toLowerCase().includes(coursesname.toLowerCase()
-                            )).map((subitem, i) => (
-                        <li
-                            key={subitem.course_id}
-                            className="dropdown-item p-0 rounded-0">
-                            <Link
-                                to={'/es/'+subitem.courseFUllURL}
-                                key={subitem.course_id}
-                                className="dropdown-item rounded-0 py-2"
-                                onClick={()=>{handleClose()}}>
-                                {subitem.CourseTitel}
-                            </Link> 
-                        </li>
-                            ))
+                                    <ul
+                                        className={
+                                            'dropdown-menu' +
+                                            (coursesname.length > 0 ? ' show' : '')
+                                        }>
+                                        {
+                                            exactData.length > 0 ?
+                                                exactData.filter(({ CourseTitel }) =>
+                                                    coursesname === '' ||
+                                                    CourseTitel.toLowerCase().includes(coursesname.toLowerCase()
+                                                    )).map((subitem, i) => (
+                                                        <li
+                                                            key={subitem.course_id}
+                                                            className="dropdown-item p-0 rounded-0">
+                                                            <Link
+                                                                to={'/es/' + subitem.courseFUllURL}
+                                                                key={subitem.course_id}
+                                                                className="dropdown-item rounded-0 py-2"
+                                                                onClick={() => { handleClose() }}>
+                                                                {subitem.CourseTitel}
+                                                            </Link>
+                                                        </li>
+                                                    ))
 
-                              : '' }
-                        </ul>
-                    </div>
+                                                : ''}
+                                    </ul>
+                                </div>
+                            </>
+                            : 
+                            <p className='text-center font-semibold m-0 text-xl'>No Result !</p>
+                            : <div className="mt-1 text-center">
+                            <div className="spinner-border text-secondary" role="status" >
+                                <span className="sr-only">Cargando...</span>
+                            </div>
+                        </div>}
+
                 </Modal.Body>
             </Modal>
         </>
-    ) : (
-        <div className="mt-1">
-            <div
-                className="spinner-border text-secondary search-sprou"
-                role="status"
-            >
-                <span className="sr-only">Cargando...</span>
-            </div>
-        </div>
     )
 }
+
+

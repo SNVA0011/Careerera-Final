@@ -1,6 +1,6 @@
-import React, { useState, useContext, useEffect } from "react"; 
-import logo from "../../Images/logo.svg"; 
-import Course from "../../Atoms/Course"; 
+import React, { useState, useContext, useEffect } from "react";
+import logo from "../../Images/logo.svg";
+import Course from "../../Atoms/Course";
 import { Provider } from "../../Api";
 import { Link } from "react-router-dom";
 import Flag from "../../Atoms/Flag";
@@ -22,10 +22,9 @@ const Navbars = () => {
   const [mobmenuclose, setMobmenuclose] = useContext(menuCloseMob);
   useEffect(() => {
     if (mobmenuclose == false) {
-      setShow(false)
-      
+      setShow(false) 
     }
-   
+
 
 
   });
@@ -33,9 +32,9 @@ const Navbars = () => {
 
   return (
     <div className="full-w">
-                            <Helmet>
-                            <link rel="canonical" href=""></link>
-                        </Helmet>
+      <Helmet>
+        <link rel="canonical" href=""></link>
+      </Helmet>
       <div className="container py-2">
 
 
@@ -73,7 +72,7 @@ const Navbars = () => {
                 <Header />
               </div>
 
-          
+
               <div className="footer-bottom mb-20 mt-3">
                 <Provider>
                   <Flag />
@@ -94,7 +93,7 @@ const Navbars = () => {
           <div className="col-lg-4 col-8 mainlogo-dblock">
             <div className="d-inline-block align-middle mr-10">
               <Link to="/">
-                <img src={logo} className="w-40 mainlogo" alt="logo"/>
+                <img src={logo} className="w-40 mainlogo" alt="logo" />
               </Link>
             </div>
             <div className="align-middle mr-auto d-none d-lg-inline-block allcour-btn">
