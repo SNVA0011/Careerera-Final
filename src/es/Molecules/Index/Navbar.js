@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from "react"; 
-import logo from "../../../Images/logo.svg"; 
+import React, { useState, useContext, useEffect } from "react";
+import logo from "../../../Images/logo.svg";
 import { Provider } from "../../Api";
 import { Link } from "react-router-dom";
 import Flag from "../../Atoms/Flag";
@@ -38,7 +38,7 @@ const Navbars = () => {
       <div className="container py-2">
 
 
-        <Offcanvas show={show} onHide={handleClose} className="offcanvas-menumob">
+        <Offcanvas show={show} onHide={handleClose} placement={'end'} className="offcanvas-menumob">
           <Offcanvas.Header closeButton>
             <Offcanvas.Title><Link to="/es/" className="position-absolute h-100 w-100" onClick={handleClose}></Link></Offcanvas.Title>
           </Offcanvas.Header>
@@ -54,7 +54,7 @@ const Navbars = () => {
             <hr></hr> */}
             <div className="footer">
               <div className="container">
-              <Link
+                <Link
                   onClick={handleClose}
                   to="/es/courses-list"
                   className="no-underline">
@@ -68,9 +68,9 @@ const Navbars = () => {
                   to="/es/all-batches"
                   className="no-underline">
                   <span className="text-sm xl:text-xs font-semibold text-gray-700">
-                  Próximos lotes
+                    Próximos lotes
                   </span>
-                </Link> 
+                </Link>
               </div>
               <hr></hr>
               <div onClick={handleClose}>
@@ -78,14 +78,18 @@ const Navbars = () => {
               </div>
 
 
-              <div className="footer-bottom mb-20 mt-3">
-                <Provider>
-                  <Flag />
-                </Provider>
-              </div>
+
 
             </div>
           </Offcanvas.Body>
+
+          <div class="offcanvas-footer">
+          <div className="footer-bottom">
+              <Provider>
+                <Flag />
+              </Provider>
+            </div>
+          </div>
         </Offcanvas>
 
         <div className="row align-items-center">
@@ -110,7 +114,7 @@ const Navbars = () => {
 
           <div className="col d-none d-lg-block allcour-batchcol">
             <ul className="d-flex flex-wrap justify-content-center align-items-center m-0 p-0">
-            <li className="nav-item">
+              <li className="nav-item">
                 <Link
                   to="/es/courses-list"
                   className="no-underline text-md font-semibold nav-link"
@@ -125,7 +129,7 @@ const Navbars = () => {
                   style={{ color: "rgb(23 35 60)" }}>
                   <span>Próximos lotes</span>
                 </Link>
-              </li> 
+              </li>
             </ul>
           </div>
 

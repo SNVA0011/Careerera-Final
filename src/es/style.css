@@ -2330,16 +2330,18 @@ hr.w-20.hr.hrcer-cr {
     -ms-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
     -o-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
     -moz-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+    border: none;
 }
-
+.offcanvas-footer{
+    padding: 1rem 1rem;
+    margin-top: auto;
+}
 .offcanvas-menumob .footer-bottom .countryflag-menu.dropdown .dropdown-menu {
     margin-bottom: 4px;
     margin-top: auto;
     top: auto !important;
     bottom: 100% !important;
-    background-size: 3px !important;
-    background-position: left center;
-    background: url(../Images/reviews_area.jpg);
+    background: #f9f9f9;
 }
 
 .megamenu-wrapper .our_faq_sec.profcourmore .titlewithbottomline {
@@ -6573,7 +6575,7 @@ sup.hand-relmn {
         height: 31px;
         opacity: 1;
         border-radius: 50%;
-        margin-top: -16px;
+        margin-top: -10px;
         margin-right: -10px;
         background-size: 16px;
     }

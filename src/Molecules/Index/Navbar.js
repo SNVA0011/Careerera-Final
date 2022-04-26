@@ -22,7 +22,7 @@ const Navbars = () => {
   const [mobmenuclose, setMobmenuclose] = useContext(menuCloseMob);
   useEffect(() => {
     if (mobmenuclose == false) {
-      setShow(false) 
+      setShow(false)
     }
 
 
@@ -38,7 +38,7 @@ const Navbars = () => {
       <div className="container py-2">
 
 
-        <Offcanvas show={show} onHide={handleClose} className="offcanvas-menumob">
+        <Offcanvas show={show} onHide={handleClose} placement={'end'} className="offcanvas-menumob">
           <Offcanvas.Header closeButton>
             <Offcanvas.Title><Link to="/" className="position-absolute h-100 w-100" onClick={handleClose}></Link></Offcanvas.Title>
           </Offcanvas.Header>
@@ -73,14 +73,18 @@ const Navbars = () => {
               </div>
 
 
-              <div className="footer-bottom mb-20 mt-3">
-                <Provider>
-                  <Flag />
-                </Provider>
-              </div>
+
 
             </div>
           </Offcanvas.Body>
+
+          <div class="offcanvas-footer">
+            <div className="footer-bottom">
+              <Provider>
+                <Flag />
+              </Provider>
+            </div>
+          </div>
         </Offcanvas>
 
         <div className="row align-items-center">
