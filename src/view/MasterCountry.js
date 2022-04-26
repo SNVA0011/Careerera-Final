@@ -111,7 +111,7 @@ const MasterCountry = () => {
         {load ? <div>
 
             {Catsts ? <>
-                {Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                { Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                     return (
                         <>
                             <Helmet>
@@ -145,7 +145,7 @@ const MasterCountry = () => {
 
 
                         {Catsts ? <>
-                            {Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                            { Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                                 return (
                                     <>
                                         {
@@ -168,13 +168,13 @@ const MasterCountry = () => {
 
                             <div className="row">
 
-                                {Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                                {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                                     return (
                                         <>
 
                                             {
                                                 items.CourseBatchList.Elearning?.length > 0 ?
-                                                    items.CourseBatchList.Elearning.map((item, i) => {
+                                                items.CourseBatchList.Elearning.length > 0 && items.CourseBatchList.Elearning.map((item, i) => {
                                                         return (
                                                             <>
                                                                 <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * i} animateOnce={true} className='col-lg-6 col-12 mb-4' key={i}>
@@ -288,7 +288,7 @@ const MasterCountry = () => {
 
                                 {allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats))?.length > 0 ?
                                     <>
-                                        {allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats)).map((items, index) => {
+                                        {allfreeCour[0].LVC.length > 0 && allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats)).map((items, index) => {
                                             return (
                                                 <>
 
@@ -419,7 +419,7 @@ const MasterCountry = () => {
                     <div className="row pt-2 curriculum-mstercoun">
 
                         {Catsts ?
-                            Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
+                            Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) =>
                                 items.Curriculum?.length > 0 ?
                                     <>
                                         <div className="col-12 d-none d-md-block">
@@ -435,7 +435,7 @@ const MasterCountry = () => {
                                             </div>
                                         </div>
 
-                                        {items.Curriculum.map((item, i) =>
+                                        {items.Curriculum.length > 0 && items.Curriculum.map((item, i) =>
                                             <div className="col-12" key={i}>
                                                 <div className="list-group mb-2 shadow-sm">
                                                     <div className="d-flex list-group-item py-3 flex-column flex-md-row bggrayunit">
@@ -477,7 +477,7 @@ const MasterCountry = () => {
 
 
             {Catsts ? <>
-                {Catfinal[0].courseList.filter((titleitem) => titleitem.courseFUllURL == country.id + "/" + country.dats).map((titleitem, i) => {
+                {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter((titleitem) => titleitem.courseFUllURL == country.id + "/" + country.dats).map((titleitem, i) => {
                     return (
                         <>
                             <StateFooter pagetitle={titleitem.CourseTitel} id={(data.filter((items) => items.countries_url == country.country)[0].id)}  key={i}/>

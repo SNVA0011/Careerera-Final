@@ -80,7 +80,7 @@ const Course = () => {
                   {/* Course list */}
                   <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
 
-                    {exactData.map((item, i) => (
+                    {exactData.length > 0 && exactData.map((item, i) => (
                       <div className="font-left mb-1 rounded" key={i}>
                         <Link to={'/es/'+item.category_url}
                           className={
@@ -102,7 +102,7 @@ const Course = () => {
 
                   {/* Course detail data */}
                   <div className="col-xxl-9 col-lg-8 col-12">
-                    {exactData.filter( statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science' ).map((item, e) => (
+                    {exactData.length > 0 && exactData.filter( statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science' ).map((item, e) => (
                         <div className="row pt-4" key={e}>
                           {item.Course.slice(0, totalcourslice === item.category_title ? showallcour : 6).map(
                             (dat, ei) => (
@@ -210,7 +210,7 @@ const Course = () => {
               {widthsc < 992 ?
                 <div className="our_faq_sec profcourmore">
                   <Accordion className="megamenu-wrapper" defaultActiveKey="0">
-                    {exactData.map((item, i) => (
+                    {exactData.length > 0 && exactData.map((item, i) => (
                       <>
                         <Accordion.Item eventKey={i} className={"evertkey-" + i} key={i}>
                           <Accordion.Header name={item.category_title}
@@ -228,7 +228,7 @@ const Course = () => {
 
                               <div className="full-w">
                                 <Carousel interval={null}>
-                                  {item.Course.map((dat, ei) => (
+                                  {item.Course.length > 0 && item.Course.map((dat, ei) => (
                                     <Carousel.Item>
 
                                       <>

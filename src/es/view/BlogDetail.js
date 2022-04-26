@@ -177,7 +177,7 @@ const BlogDetail = () => {
 
                 <hr></hr>
 
-                {BlogDetail[0].Tags.map((item, i) => (
+                {BlogDetail[0].Tags.length > 0 && BlogDetail[0].Tags.map((item, i) => (
                   <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase" key={i}>
                     <span className="text-xs">
                       {item}
@@ -192,7 +192,7 @@ const BlogDetail = () => {
                     <span>Publicación Reciente</span>
                   </h5>
                   <div className="py-0 scroll">
-                    {BlogDetail[0].RecentBlogList.map((item, i) => (
+                    {BlogDetail[0].RecentBlogList.length > 0 && BlogDetail[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/es/blog/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
                         <div className="flex-shrink-0 font-light">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">

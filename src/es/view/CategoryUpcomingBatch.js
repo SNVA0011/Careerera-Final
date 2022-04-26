@@ -86,8 +86,7 @@ export default function CategoryUpcomingBatch() {
                         </>
                         : ''}
 
-                    {
-                        Catfinal[0].courseList.filter(courseList => courseList.courseFUllURL === idbatchmain + '/' + idbatch).map((listcour, i) =>
+                    {Catfinal[0].courseList.length > 0 && Catfinal[0].courseList.filter(courseList => courseList.courseFUllURL === idbatchmain + '/' + idbatch).map((listcour, i) =>
                             <>
                                 <Hero title="PRÓXIMOS LOTES"
                                     batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
@@ -120,7 +119,7 @@ export default function CategoryUpcomingBatch() {
                                                     <h3 className="font-semibold text-3xl mb-3">Aprendizaje electrónico</h3>
                                                     <div className="row">
                                                         {
-                                                            listcour.CourseBatchList.Elearning.map((item, ind) => (
+                                                            listcour.CourseBatchList.Elearning.length > 0 && listcour.CourseBatchList.Elearning.map((item, ind) => (
 
                                                                 <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ind} animateOnce={true} className='col-lg-6 col-12 mb-4' key={ind}>
                                                                     <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row bg-white">
@@ -216,7 +215,7 @@ export default function CategoryUpcomingBatch() {
                                                         <h3 className="font-semibold text-3xl mb-3">Vive en línea</h3>
                                                         <div className="row">
                                                             {
-                                                                listcour.CourseBatchList.LVC.map((dats, index) => (
+                                                                listcour.CourseBatchList.LVC.length > 0 && listcour.CourseBatchList.LVC.map((dats, index) => (
 
                                                                     <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-lg-6 col-12 mb-4' key={index}>
                                                                         <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row bg-white">

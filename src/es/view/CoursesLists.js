@@ -44,7 +44,7 @@ export default function CoursesLists() {
                             <div className="megamenu-wrapper media-prtslider">
 
                                 <div className="row pt-8">
-                                    {exactData.map((items, i) => {
+                                    {exactData.length > 0 && exactData.map((items, i) => {
                                         return (
                                             <>
                                                 <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={i * 80} animateOnce={true} className="col-lg-4 col-sm-6 col-12 mb-4" key={i}>

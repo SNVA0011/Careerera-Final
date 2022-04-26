@@ -96,7 +96,7 @@ const News = () => {
                     <div className="container py-20">
                         <div className="row">
                             {freeAllbatch[0].length > 0 ? (
-                                freeAllbatch[0][pagination_st].map(
+                                freeAllbatch[0][pagination_st].length > 0 && freeAllbatch[0][pagination_st].map(
                                     (item, index) => (
                                         <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-12 mb-4'>
                                             <div className="border-white px-4 py-4 shadow-lg border-1 rounded-lg blog_bxrow" key={index}>

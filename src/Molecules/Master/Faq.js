@@ -32,7 +32,7 @@ const Faq = (props) => {
                     final ?
                       <Accordion defaultActiveKey="0">
                         {
-                          final.map((values, item) =>
+                          final.length > 0 && final.map((values, item) =>
                             <Accordion.Item eventKey={item} key={item}>
                               <Accordion.Header className="">
                                 <div className="d-flex">

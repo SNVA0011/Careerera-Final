@@ -47,7 +47,7 @@ const Flag = (props) => {
                         id="dropdown-basic-button"
                         size="sm"
                         title="Explore Courses">
-                        {exactData.map((val, e) => (
+                        {exactData.length > 0 && exactData.map((val, e) => (
                             <Dropdown.Item>
                                 <Link
                                     className="no-underline text-black "

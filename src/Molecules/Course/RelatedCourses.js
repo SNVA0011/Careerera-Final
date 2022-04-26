@@ -32,7 +32,7 @@ const RelatedCourses = (props) => {
                             <div className="row pt-4">
                                 {
                                     props.data[0] ?
-                                        props.data[0].courseList.map((dates, ei) => (
+                                    props.data[0].courseList.length > 0 && props.data[0].courseList.map((dates, ei) => (
                                             <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ei} animateOnce={true} className="col-xl-6 col-12 mb-4" key={ei}>
 
                                                 <div className="cards bg-white">
@@ -61,7 +61,7 @@ const RelatedCourses = (props) => {
                                                                                                     <h3 className="text-lg md:text-xl font-bold mb-2">E-Learning</h3>
                                                                                                     <div className="row">
                                                                                                         {
-                                                                                                            dates.CourseBatchList.Elearning.map((item, ind) => (
+                                                                                                           dates.CourseBatchList.Elearning.length > 0 && dates.CourseBatchList.Elearning.map((item, ind) => (
 
                                                                                                                 <div className='col-12 mb-4' key={ind}>
                                                                                                                     <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
@@ -145,7 +145,7 @@ const RelatedCourses = (props) => {
                                                                                                         <h3 className="text-lg md:text-xl font-bold mb-2">Live Online</h3>
                                                                                                         <div className="row">
                                                                                                             {
-                                                                                                                dates.CourseBatchList.LVC.map((dats, index) => (
+                                                                                                                dates.CourseBatchList.LVC.length > 0 && dates.CourseBatchList.LVC.map((dats, index) => (
 
                                                                                                                     <div className='col-12 mb-4' key={index}>
                                                                                                                         <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
@@ -254,7 +254,7 @@ const RelatedCourses = (props) => {
                                                                                                 </tr>
                                                                                             </thead>
                                                                                             <tbody>
-                                                                                                {dates.Curriculum.map((item, ind) => (
+                                                                                                {dates.Curriculum.length > 0 && dates.Curriculum.map((item, ind) => (
                                                                                                     <tr key={ind}>
                                                                                                         <td className="font-semibold font-sm text-nowrap" dangerouslySetInnerHTML={{ __html: item.Unit_num }}></td>
                                                                                                         <td className="font-semibold font-sm" dangerouslySetInnerHTML={{ __html: item.Unit_Name }}></td>

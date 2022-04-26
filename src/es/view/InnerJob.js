@@ -57,7 +57,7 @@ const InnerJob = () => {
 
                         <div className="col-xxl-9 col-lg-8 col-12">
 
-                            {innerjob.filter((items) => items.id == job.di).map((items, i) => {
+                            {innerjob.length > 0 && innerjob.filter((items) => items.id == job.di).map((items, i) => {
                                 return (
                                     <>
                                         <div className="d-flex w-100 media flex-column flex-sm-row" key={i}>

@@ -71,7 +71,7 @@ export default function SearchCourses() {
                                             'dropdown-menu' +
                                             (coursesname.length > 0 ? ' show' : '')
                                         }>
-                                        {exactData.map((item, i) =>
+                                        {exactData.length > 0 && exactData.map((item, i) =>
                                             item.Course.filter(({ CourseTitel }) =>
                                                 coursesname === '' ||
                                                 CourseTitel.toLowerCase().includes(

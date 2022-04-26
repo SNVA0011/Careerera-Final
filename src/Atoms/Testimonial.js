@@ -96,7 +96,7 @@ const Testimonial = (props) => {
                                         {/* Reviews by Comments */}
                                         {/* <div className='full-w position-relative'>
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                {data.map((item, i) => (
+                                {data.length > 0 && data.map((item, i) => (
                                     <div className="itemss">
                                         <div className='mt-4 mb-2 shadow-md bg-white p-6 text-left w-full border-2 border-white rounded-3xl slidebg-h'>
                                             <h2 className="font-semibold capitalize text-2xl text-gray-700">

@@ -89,8 +89,7 @@ export default function Courses() {
 
                                     <Tab eventKey="postgrado" title="Programas De Postgrado">
                                         <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                            {exactData &&
-                                                exactData.filter((item) => item.new_label === '1').map((dat, ind) => {
+                                            {exactData.length > 0 && exactData.filter((item) => item.new_label === '1').map((dat, ind) => {
                                                     return (
                                                         <>
                                                             {/* owlitem */}
@@ -164,8 +163,7 @@ export default function Courses() {
                                     <Tab eventKey="caciones" title="Certificaciones">
 
                                         <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                            {exactData &&
-                                                exactData.filter((item) => item.new_label === '2').map((dat, ind) => {
+                                            {exactData.length > 0 && exactData.filter((item) => item.new_label === '2').map((dat, ind) => {
                                                     return (
                                                         <>
                                                             {/* owlitem */}

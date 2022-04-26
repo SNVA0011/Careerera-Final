@@ -59,7 +59,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               <Form.Select onChange={setvalPhone} value={selectphoneval} className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control form-select mb-3">
                 <option selected>Please select your country</option>
-                {cntry.map((item, i) =>
+                {cntry.length > 0 && cntry.map((item, i) =>
                   <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>
                 )}
               </Form.Select>

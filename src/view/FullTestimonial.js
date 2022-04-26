@@ -151,7 +151,7 @@ const FullTestimonial = () => {
 
                             <div className="row">
 
-                                {data.map((item, i) => (
+                                {data.length > 0 && data.map((item, i) => (
                                     <div className="col-xxl-4 col-lg-6 col-12 pb-4" key={i}>
                                         <div className='mb-2 shadow-md bg-white p-6 text-left w-full border-2 
                                         border-white rounded-3xl slidebg-h h-100 d-flex flex-column comment-fulllike'>

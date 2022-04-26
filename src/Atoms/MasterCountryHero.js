@@ -241,7 +241,7 @@ export default function MasterCountryHero(props) {
                                             <Form.Select onChange={setvalPhone} value={selectphoneval} className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
  h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base mb-3">
                                                 <option selected>Please select your country</option>
-                                                {cntry.map((item, i) =>
+                                                {cntry.length > 0 && cntry.map((item, i) =>
                                                     <option key={i} value={[item.phonecode, item.country_title]}>{item.country_title}</option>
                                                 )}
                                             </Form.Select>
