@@ -122,7 +122,7 @@ const News = () => {
                                                         </h3>
                                                         <div className="text-gray-500 font-semibold mb-3 text-sm lg:text-base">
                                                             <span className="">
-                                                                <i className="orange-lgclr bi bi-clock mr-1"></i>
+                                                                <i className="orange-lgclr bi bi-calendar4-event mr-1"></i>
                                                                 <Moment format="D-MMM-YYYY">
                                                                     {item.Date}
                                                                 </Moment>
