@@ -175,9 +175,8 @@ const BlogArabic = () => {
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <p className="text-base">
-                                                            {item.Discription}
-                                                        </p>
+                                                        <p className="text-base font-medium leading-loose tracking-wide text-gray-600" dangerouslySetInnerHTML={{ __html: item.Discription }}></p>
+
 
                                                         <hr className="my-4" />
                                                         {new Array(item.Tags?.length)

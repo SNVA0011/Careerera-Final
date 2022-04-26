@@ -83,14 +83,14 @@ const BlogDetailArabic = () => {
             <span className="mx-2"> / </span>
             {BlogDetail[0].h1}</>} img={blogs} />
 
-          <div className="blog-detials-single container py-16">
+          <div className="blog-detials-single container py-16 text-right">
             <div className="row">
               <div className="col-xxl-8 col-lg-7 col-12">
                 <h3 className="font-bold text-gray-800 text-2xl sm:text-3xl xl:text-4xl mb-3">
                   {BlogDetail[0].h1}
                 </h3>
 
-                <div className="d-flex  align-items-center mb-4">
+                <div className="d-flex align-items-center mb-4 flex-reverse">
                   <p className="font-semibold text-gray-500 mb-0">
                     <i className="orange-lgclr bi bi-calendar2-event mr-2"></i>
                     <Moment format="D-MMM-YYYY">{BlogDetail[0].Date}</Moment>
@@ -175,7 +175,7 @@ const BlogDetailArabic = () => {
                           <p className="mb-1 text-base font-semibold">
                             {item.title}
                           </p>
-                          <button className="btn btn-primary btn-sm d-flex align-items-center">
+                          <button className="btn btn-primary btn-sm d-flex align-items-center ml-auto">
                             Read More{" "}
                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 d-inline-block" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />

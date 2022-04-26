@@ -491,7 +491,7 @@ const About = () => {
                                             return (
                                                 <div className='mb-5' key={item.id}>
                                                     <Link className="decoration-0 font-semibold mb-3 text-xl md:text-2xl" to={'/es/blog/' + item.url} > {item.title} </Link>
-                                                    <p className="text-gray-500 pt-2 sm:text-lg mtetx-medium mb-0" dangerouslySetInnerHTML={{ __html: item.Discription }}>
+                                                    <p className="text-gray-500 pt-2 sm:text-lg text-medium mb-0" dangerouslySetInnerHTML={{ __html: item.Discription }}>
                                                     </p>
                                                 </div>
                                             )

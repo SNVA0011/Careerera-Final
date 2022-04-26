@@ -111,7 +111,7 @@ const BlogArabic = () => {
                                             Blog </>}
                                         img={blogs}
                                     />
-                                    <div className="container py-20">
+                                    <div className="container py-20 text-right">
                                         <div className="row">
                                             {freeAllbatch[0]?.length > 0 ? (
                                                 freeAllbatch[0][pagination_st]?.length > 0 && freeAllbatch[0][pagination_st].map(
@@ -159,12 +159,10 @@ const BlogArabic = () => {
                                                                             <i className="text-xs bi bi-chevron-compact-right divblog-sep mx-3"></i>
                                                                             <span className="">
                                                                                 <i className="orange-lgclr bi bi-tags mr-1"></i>
-                                                                                <a
-                                                                                    href={
+                                                                                <a href={
                                                                                         '/?s=' +
                                                                                         item.categoryUrl
-                                                                                    }
-                                                                                >
+                                                                                    }>
                                                                                     <span className="tag-caturl">
                                                                                         {
                                                                                             (typeof item.categoryUrl === 'string' ?
@@ -175,7 +173,7 @@ const BlogArabic = () => {
                                                                                 </a>
                                                                             </span>
                                                                         </div>
-                                                                        <p className="text-base" dangerouslySetInnerHTML={{ __html: item.Discription }}></p>
+                                                                        <p className="text-base font-medium leading-loose tracking-wide text-gray-600" dangerouslySetInnerHTML={{ __html: item.Discription }}></p>
 
 
                                                                         <hr className="my-4" />

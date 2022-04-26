@@ -158,7 +158,7 @@ const News = () => {
                                                                 Education
                                                             </span>
                                                         </div>
-                                                        <p className="text-base" dangerouslySetInnerHTML={{ __html: item.Discription }}></p>
+                                                        <p className="text-base  font-medium leading-loose tracking-wide text-gray-500" dangerouslySetInnerHTML={{ __html: item.Discription }}></p>
 
                                                         <hr className="my-4" />
                                                         {new Array(item.Tags?.length)
