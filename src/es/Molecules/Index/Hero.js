@@ -42,21 +42,7 @@ const Hero = () => {
       {/* Hero image at top */}
       <div className="home-banner full-w">
 
-        <div className="area">
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div >
-
+      
         <div className='box'>
           <div className='wave -one'></div>
           <div className='wave -two'></div>

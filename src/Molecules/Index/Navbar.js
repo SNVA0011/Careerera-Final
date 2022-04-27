@@ -20,13 +20,11 @@ const Navbars = () => {
   }
 
   const [mobmenuclose, setMobmenuclose] = useContext(menuCloseMob);
+  
   useEffect(() => {
     if (mobmenuclose == false) {
       setShow(false)
     }
-
-
-
   });
 
 
