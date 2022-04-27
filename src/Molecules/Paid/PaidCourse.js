@@ -56,7 +56,7 @@ const PaidCourse = () => {
                                     {items.groupdata?.length > 0 && items.groupdata
                                         .filter((dats) => dats.New_price !== '0.00')
                                         .map((dats, da) => (
-                                            <ScrollAnimation className='col-lg-6 col-12 mb-4'animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={da*i} animateOnce={true} key={da}>
+                                            <ScrollAnimation className='col-lg-6 col-12 mb-4'animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout'  delay={6 * da} animateOnce={true} key={da}>
                                                 <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
                                                     <div className="">
                                                         <div className="bg-red-600 p-3 text-center text-xs text-white date_freec">

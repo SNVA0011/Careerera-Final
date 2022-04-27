@@ -73,8 +73,9 @@ const Course = (props) => {
             <div className="megamenu-wrapper mega">
                 <div className="dropdown" onMouseEnter={(e) => setHidemenust(false)}
                     onMouseLeave={(e) => setHidemenust(true)}>
-                    <button className="dropdown-toggle btn btn-success">
+                    <button className={"dropdown-toggle btn btn-success "+ (hidemenust ? 'closed' : 'open')}>
                         <i className="bi bi-grid"></i> All Courses
+                        <i class="bi bi-caret-down-fill"></i>
                     </button>
 
 

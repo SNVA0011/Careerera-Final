@@ -6370,6 +6370,36 @@ sup.hand-relmn {
     border: none;
 }
 
+.megamenu-wrapper.mega button.dropdown-toggle.btn.btn-success i.bi.bi-caret-down-fill{
+    position: absolute;
+    left: 10px;
+    color: #0561c0;
+    top: 100%;
+    line-height: normal;
+    margin-top: -20px;
+    font-size: 22px;
+    opacity: 0;
+    display: inline-block;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+ 
+.megamenu-wrapper.mega button.dropdown-toggle.btn.btn-success.open i.bi.bi-caret-down-fill{
+   opacity: 1;
+   margin-top: -10px;
+}
+.offcanvas-menumob .megamenu-wrapper.mega button.dropdown-toggle.btn.btn-success.open i.bi.bi-caret-down-fill {
+    opacity: 1;
+    margin-top: -13px;
+}
+.offcanvas-menumob .megamenu-wrapper.mega button.dropdown-toggle.btn.btn-success i.bi.bi-caret-down-fill{
+    color: #607d8b;
+    left: 4px;
+}
+
 /* responsive css */
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {

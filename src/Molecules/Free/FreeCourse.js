@@ -56,7 +56,7 @@ const FreeCourse = () => {
 
                     <div className="row">
                         {freeCour[0].Elearning?.length > 0 && freeCour[0].Elearning.map((item, i) => (
-                            <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * i} animateOnce={true} className='col-lg-6 col-12 mb-4' key={i}>
+                            <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={10 * i} animateOnce={true} className='col-lg-6 col-12 mb-4' key={i}>
                                 <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row">
                                     <div className="">
                                         <div className="bg-red-600 p-3 text-center text-xs text-white date_freec">
