@@ -2012,14 +2012,14 @@ hr.w-20.hr.hrcer-cr {
 }
 
 .our_faq_sec .accordion-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .our_faq_sec .accordion-item:focus, .our_faq_sec .accordion-header button:focus, .our_faq_sec .accordion-item, .our_faq_sec .accordion-header button {
     border-radius: 30px !important;
     box-shadow: none;
     border: none;
-    box-shadow: 0px 0 0px 1px rgb(255 255 255 / 50%), 0px -1px 14px 0px rgb(0 0 0 / 6%);
+    box-shadow: 0px 0 0px 1px rgb(255 255 255 / 50%), 0px -1px 14px 0px rgb(0 0 0 / 12%)
 }
 
 .our_faq_sec .accordion-header button, .our_faq_sec .accordion-body {

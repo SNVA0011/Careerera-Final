@@ -10,8 +10,6 @@ const Why = (props) => {
   return (
     <>
 
-
-
       {/* why-datasciencesuf */}
       <div className='why-datasciencesuf scroll-spbx bg-blue-50' id='why'>
         {props.customizable ?
