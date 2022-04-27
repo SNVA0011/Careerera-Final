@@ -6092,6 +6092,9 @@ sup.hand-relmn {
     color: #607d8b;
     left: 4px;
 }
+.header-top .mainlogo-dblock .mainlogo{
+    height: 60px;
+}
 
 /* responsive css */
 @media (min-width: 1400px) {
@@ -7123,6 +7126,7 @@ sup.hand-relmn {
 
     .header-top .mainlogo-dblock .mainlogo {
         width: 140px;
+        height: 52.31px;
     }
 
     .header-top-empty {
