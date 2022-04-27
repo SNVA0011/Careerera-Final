@@ -7338,7 +7338,7 @@ sup.hand-relmn {
 
 @media (max-width:991px) and (min-width:768px) {
     .home-banner.full-w .maintitle {
-        font-size: 3rem;
+        font-size: 3.8rem;
     }
 }
 
@@ -7420,7 +7420,9 @@ sup.hand-relmn {
 
     .home-banner .heading-border-line {
         display: block;
-        opacity: 0;
+        opacity: 1;
+    margin: 17px auto 0;
+    left: -21px;
     }
 
     .certification-courseslight.full-w.master .btn-site {
