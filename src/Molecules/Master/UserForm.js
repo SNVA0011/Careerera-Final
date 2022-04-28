@@ -44,7 +44,7 @@ const UserForm = () => {
     return (
         <div className="sers-forour-data media-prtslider full-w">
             <div className="container pb-16">
-                <p className='text-4xl font-bold text-gray-800'>Our <span className="text-blue-500 sitblu-clrsite">Alumani</span></p>
+                <p className='text-4xl font-bold text-gray-800'>Our <span className="text-blue-500 sitblu-clrsite">Alumni</span></p>
                 <p className='text-lg font-semibold text-gray-600'>We have learners for our Data Science Program From Following Companies.</p>
 
                 <div className="pb-2 pt-2 text-center">

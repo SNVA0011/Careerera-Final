@@ -44,7 +44,7 @@ const Certificate = () => {
 
 
                         <div className="row">
-                            {exactData.LVC?.length > 0 && exactData.map((items, i) => {
+                            {exactData?.length > 0 && exactData.map((items, i) => {
                                 return (
                                     <>
 

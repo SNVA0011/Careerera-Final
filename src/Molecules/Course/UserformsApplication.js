@@ -78,7 +78,7 @@ export default function UserformsApplication(props) {
                                     </div>
                                     :
                                     <div className="sec_title">
-                                        <h2 className="text-2xl md:text-3xl font-bold">Our  <span className="orange-clrsite">Alumani</span></h2>
+                                        <h2 className="text-2xl md:text-3xl font-bold">Our  <span className="orange-clrsite">Alumni</span></h2>
                                         <p className="text-gray-500 text-base md:text-lg fw-medium">We have learners for our Data Science Program From Following Companies</p>
                                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                                     </div>
