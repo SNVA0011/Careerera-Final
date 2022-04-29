@@ -27,7 +27,7 @@ const Certificate = (props) => {
                     <div className="row py-16 align-items-center">
                         <div className="col-xxl-8 col-xl-7 col-lg-6 col-12 pb-3 pb-xl-0">
                             {props.data[0] ?
-                                <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-white uppercase">
+                                <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-white uppercase mastercnhero">
                                     {props.data[0].category_title} {" "}
                                     <span className="orange-lgclr d-inline-block">
                                     CURSO DE CERTIFICACIÓN

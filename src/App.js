@@ -64,7 +64,7 @@ import BatchDetail from './view/BatchDetail'
 import DetailBatch from './view/DetailBatch'
 import BlogArabic from './view/BlogArabic'
 import BlogDetailArabic from './view/BlogDetailArabic'
-
+import PgpDataScienceNasscom from './view/PgpDataScienceNasscom'
 
 const App = (props) => {
     const [mobmenuclose, setMobmenuclose] = useState();
@@ -277,6 +277,14 @@ const App = (props) => {
 
                     <Route exact path="/rescheduling-policy" element={<Rescheduling />} />
 
+                    {/* COURSE STATIC */} 
+                     <Route exact path="/pgp-in-data-science-for-nasscom" element={
+                     <CurrencyContxt.Provider
+                        value={[contextcur, setContextCur]}>
+                        <Provider>
+                            <PgpDataScienceNasscom />
+                        </Provider>
+                    </CurrencyContxt.Provider>} />
 
                     {/* MASTERS COURSE STATIC */}
                     <Route exact path="/data-science/post-graduate-program-in-data-science" element={<CurrencyContxt.Provider
@@ -285,8 +293,6 @@ const App = (props) => {
                             <PgpDataScience />
                         </Provider>
                     </CurrencyContxt.Provider>} />
-
-
 
                     <Route exact path="/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>

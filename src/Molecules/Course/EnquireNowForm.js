@@ -4,6 +4,9 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import { Context } from '../../Api'
 import { CurrencyContxt } from '../../Atoms/Contextcurrency'
+import ReCAPTCHA from "react-google-recaptcha";
+
+
 export default function EnquireNowForm() {
   // Country List Api
   const { value11, value12 } = useContext(Context);
@@ -21,10 +24,13 @@ export default function EnquireNowForm() {
   }
   // phoneSetvalue
   const [phoneSetvalue, Updatephonevalue] = useState();
-
-
   // currency inr/usd
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
+
+  function onChange(value) {
+    console.log("Captcha value:", value)
+  }
+
 
   return (
     <>
@@ -192,11 +198,10 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               </InputGroup>
 
               <InputGroup className="mb-4">
-                <InputGroup.Text className="">
-                  5 + 2 =
-                </InputGroup.Text>
-                <FormControl
-                  aria-label="First name" className="" />
+              <ReCAPTCHA
+                  sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
+                  onChange={onChange}
+                />
               </InputGroup>
 
               <div className='full-w'>

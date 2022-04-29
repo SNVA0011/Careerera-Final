@@ -99,7 +99,9 @@ export default function CyberSecurityStatic() {
                             <p className='text-gray-500 text-base md:text-lg fw-medium'>Accelerate your career in Cyber Security</p>
                             <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
                         </div>
-                        <div className="des_content">
+
+                        <div className="blog-detials-single">
+                        <div className="des_content content st">
                             <p>Cybersecurity has not only become a prominent field in the technology age, but it has
                                 also become a desideratum for enterprises, organizations, and decision-makers. The
                                 world at large is facing unprecedented challenges birthed by the rapid advances in
@@ -177,6 +179,7 @@ export default function CyberSecurityStatic() {
                                 </div>
                             </div>
 
+                        </div>
                         </div>
                     </div>
                 </div>

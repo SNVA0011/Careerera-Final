@@ -63,7 +63,8 @@ const PgpArtificalIntelligence = () => {
                 title="ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"
                 heading="Build smarter and more intelligent systems."
                 data={<>
-                    <div className="des_content">
+                <div className="blog-detials-single">
+                    <div className="des_content content st">
                         <p>Artificial Intelligence is perhaps the most popular word in general usage which has its origins
                             in the Computer Science field. This is because of all the science fiction movies containing
                             robots which can speak and spaceships which have automated guidance and defense
@@ -85,6 +86,7 @@ const PgpArtificalIntelligence = () => {
 
 
 
+                    </div>
                     </div>
                 </>}
 

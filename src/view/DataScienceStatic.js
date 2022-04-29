@@ -103,59 +103,62 @@ export default function DataScienceStatic() {
               <p className='text-gray-500 text-base md:text-lg fw-medium'>Accelerate your career in Data Science</p>
               <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
             </div>
-            <div className="des_content">
-              <p>We now live in a period when information on the majority of our movements and acts
-                is captured and stored in real-time. This is attributed to manifold technological
-                breakthroughs. Everywhere, from mobile phones to IoT devices, a growing number of
-                small sensors are utilized, while developments in data storage, indexing, and
-                processing platforms allow us to store and analyze data cheaply and efficiently. It is
-                now cheaper to maintain data than to destroy it. Data science aims to develop
-                strategies and tools for securely and ethically unlocking the value of vast amounts of
-                data. It uses theories and techniques from computer science, statistics, machine
-                learning, and mathematics to comprehend, analyze, and potentially change human,
-                physical, and societal phenomena.</p>
-              <p>As per the Harvard Business Review, Credit card transactions, surfing history, social
-                networking, genetic tests, and a variety of other sources of big data have the
-                potential to alter Science and Industry.</p>
 
-              <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
-                <a href={void (0)}
-                  onClick={() => { showMorecont() }}
-                  className="desc_show_more btn-site no-underline cursor-pointer invert"><span>Show More</span></a>
-              </div>
+            <div className="blog-detials-single">
+              <div className="des_content content st">
+                <p>We now live in a period when information on the majority of our movements and acts
+                  is captured and stored in real-time. This is attributed to manifold technological
+                  breakthroughs. Everywhere, from mobile phones to IoT devices, a growing number of
+                  small sensors are utilized, while developments in data storage, indexing, and
+                  processing platforms allow us to store and analyze data cheaply and efficiently. It is
+                  now cheaper to maintain data than to destroy it. Data science aims to develop
+                  strategies and tools for securely and ethically unlocking the value of vast amounts of
+                  data. It uses theories and techniques from computer science, statistics, machine
+                  learning, and mathematics to comprehend, analyze, and potentially change human,
+                  physical, and societal phenomena.</p>
+                <p>As per the Harvard Business Review, Credit card transactions, surfing history, social
+                  networking, genetic tests, and a variety of other sources of big data have the
+                  potential to alter Science and Industry.</p>
 
-              <div className={"desc_after_click " + (conthide ? 'd-block' : 'd-none')}>
-                <p>From economics and anthropology to computer science and environmental
-                  engineering, the accessibility and rapid growth of data have produced unprecedented
-                  challenges and opportunities in data science study. Organizations are placing
-                  heavyweight on data-driven decisions for scalable and optimized operations.
-                  Careerera is playing a significant role in preparing and training professionals with the
-                  best data science courses infused with a unique blend of computation and domain
-                  knowledge to statistical queries. The institute offers a carefully crafted program
-                  curriculum to best suit the need of the industry.</p>
+                <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
+                  <a href={void (0)}
+                    onClick={() => { showMorecont() }}
+                    className="desc_show_more btn-site no-underline cursor-pointer invert"><span>Show More</span></a>
+                </div>
+
+                <div className={"desc_after_click " + (conthide ? 'd-block' : 'd-none')}>
+                  <p>From economics and anthropology to computer science and environmental
+                    engineering, the accessibility and rapid growth of data have produced unprecedented
+                    challenges and opportunities in data science study. Organizations are placing
+                    heavyweight on data-driven decisions for scalable and optimized operations.
+                    Careerera is playing a significant role in preparing and training professionals with the
+                    best data science courses infused with a unique blend of computation and domain
+                    knowledge to statistical queries. The institute offers a carefully crafted program
+                    curriculum to best suit the need of the industry.</p>
 
 
-                <p>Fostering a unique environment for learning Data science, Careerera focuses on
-                  transforming the application of Data science across diverse sectors, including
-                  medicine, cyber-security, bio-informatics, behavioral analytics, developmental
-                  economics, and several other fields.</p>
+                  <p>Fostering a unique environment for learning Data science, Careerera focuses on
+                    transforming the application of Data science across diverse sectors, including
+                    medicine, cyber-security, bio-informatics, behavioral analytics, developmental
+                    economics, and several other fields.</p>
 
-                <p>The programs involve personalized mentorship, recorded lectures, live sessions, and
-                  practical projects. Careerera believes in endorsing the philosophy of learning through
-                  experimenting. This allows for building in-depth understanding by completing real-
-                  world case studies and practical activities.</p>
-                <p>Select your area of expertise and get the best data science certification online from
-                  an international location, your job site, or your home and catapult your career to the
-                  highest level.</p>
-                <p>The Data Science course online with Careerera focuses on developing strong
-                  mathematical, statistical, computational, and programming skills, as well as
-                  establishing a foundation in data science education through general and focused
-                  electives from data science and other areas of interest.</p>
+                  <p>The programs involve personalized mentorship, recorded lectures, live sessions, and
+                    practical projects. Careerera believes in endorsing the philosophy of learning through
+                    experimenting. This allows for building in-depth understanding by completing real-
+                    world case studies and practical activities.</p>
+                  <p>Select your area of expertise and get the best data science certification online from
+                    an international location, your job site, or your home and catapult your career to the
+                    highest level.</p>
+                  <p>The Data Science course online with Careerera focuses on developing strong
+                    mathematical, statistical, computational, and programming skills, as well as
+                    establishing a foundation in data science education through general and focused
+                    electives from data science and other areas of interest.</p>
 
-                <div className="desc_list_show_less mt-4">
-                  <a href={void (0)} onClick={() => { showMorecont() }} className="desc_show_less btn-site no-underline cursor-pointer">
-                    <span>Show Less</span>
-                  </a>
+                  <div className="desc_list_show_less mt-4">
+                    <a href={void (0)} onClick={() => { showMorecont() }} className="desc_show_less btn-site no-underline cursor-pointer">
+                      <span>Show Less</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1388,10 +1391,10 @@ export default function DataScienceStatic() {
 
 
         {/* UserformsApplication */}
-        <UserformsApplication  customizeheading='true'
-                cantitle='Our'
-                cansubtitle='Users From'
-                cantitleheading='We Have Users For Our Data Science Program From Following Companies'/>
+        <UserformsApplication customizeheading='true'
+          cantitle='Our'
+          cansubtitle='Users From'
+          cantitleheading='We Have Users For Our Data Science Program From Following Companies' />
 
 
 

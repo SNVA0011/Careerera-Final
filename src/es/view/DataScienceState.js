@@ -125,7 +125,7 @@ export default function DataScienceState() {
                 </div>
                 : ''}
 
-              {/*<div className="des_content">
+              {/*<div className="des_content content st">
                 <p  />
 
                 <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>

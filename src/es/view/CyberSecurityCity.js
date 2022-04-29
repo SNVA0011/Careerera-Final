@@ -116,7 +116,8 @@ export default function CyberSecurityCity() {
                                 <p className='text-gray-500 text-base md:text-lg fw-medium'>Acelera tu carrera en Ciberseguridad</p>
                                 <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
                             </div>
-                            <div className="des_content">
+                            <div className="blog-detials-single">
+                            <div className="des_content content st">
                                 <p>La ciberseguridad no solo se ha convertido en un campo prominente en la era de la tecnología, sino que también ha
                                     convertirse también en un desiderátum para empresas, organizaciones y tomadores de decisiones. los
                                     El mundo en general se enfrenta a desafíos sin precedentes generados por los rápidos avances en
@@ -196,6 +197,7 @@ export default function CyberSecurityCity() {
                                     </div>
                                 </div>
 
+                            </div>
                             </div>
                         </div>
                     </div>

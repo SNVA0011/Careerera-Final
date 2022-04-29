@@ -116,7 +116,9 @@ export default function DataScienceCountry() {
                 <p dangerouslySetInnerHTML={{ __html: data[0].state_desc }} />
                 <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
               </div>
-              <div className="des_content">
+
+              <div className="blog-detials-single">
+              <div className="des_content content st">
                 <p />
 
                 {/* <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
@@ -134,6 +136,7 @@ export default function DataScienceCountry() {
                   </a>
                 </div>
               </div> */}
+              </div>
               </div>
             </div>
           </div>

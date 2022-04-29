@@ -8,7 +8,7 @@ import whysci_icon_4 from '../Images/33.5.png'
 import whysci_icon_5 from '../Images/2020.png'
 import Accordion from 'react-bootstrap/Accordion'
 import UserformsApplication from '../Molecules/Course/UserformsApplication';
-import { Helmet } from 'react-helmet' 
+import { Helmet } from 'react-helmet'
 import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';
@@ -43,11 +43,11 @@ export default function CyberSecurityZip() {
             <div className='certification-courses full-w staticsyber p-0'>
                 <div className="container">
                     <div className="row py-16 align-items-center">
-                        <div className="col-xxl-8 col-xl-7 col-lg-6 col-12 pb-3 pb-xl-0"> 
+                        <div className="col-xxl-8 col-xl-7 col-lg-6 col-12 pb-3 pb-xl-0">
                             <h1 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-white uppercase">
-                                    Cyber Security <span className="orange-lgclr d-inline"> CERTIFICATION COURSE IN {cyberzip.cyberzip.replace('-', ' ')}</span>
-                                </h1>
-                                <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
+                                Cyber Security <span className="orange-lgclr d-inline"> CERTIFICATION COURSE IN {cyberzip.cyberzip.replace('-', ' ')}</span>
+                            </h1>
+                            <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
 
                             <p className="text-base sm:text-lg md:text-xl text-white my-8 font-medium  tracking-wide">
                                 Make headway in the Cybersecurity field with a holistic Cyber security course that includes information security, technologies, ethical and legal procedures, data privacy, and reducing cyber risks. Get into deep learning about the incident response and analysis processes. Become a leading player in the field of cybersecurity and ensure privacy, reliability, and integrity of the information security through this Cyber security course. have the upper hand by learning the principles, the state of the practice, and future strategies with this best cyber security certification.
@@ -75,88 +75,89 @@ export default function CyberSecurityZip() {
                         <div className="sec_title">
                             <h2 className='text-2xl md:text-3xl font-bold text-capitalize'>Careerera’s  <span className='orange-clrsite'>Cyber Security</span> Course In {cyberzip.cyberzip.replace('-', ' ')}</h2>
                             <p className='text-gray-500 text-base md:text-lg fw-medium'>Accelerate your career in cyber security</p>
-                                <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
-                            </div>
+                            <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
+                        </div>
 
+                        <div className="blog-detials-single">
+                            <div className="des_content content st">
+                                <p>Cybersecurity has not only become a prominent field in the technology age, but it has
+                                    also become a desideratum for enterprises, organizations, and decision-makers. The
+                                    world at large is facing unprecedented challenges birthed by the rapid advances in
+                                    technology and information. Organizations have to be prepared and well equipped to
+                                    defend against cyberspace threats. There is an inherent need for decision-makers to
+                                    familiarize themselves with the fundamental principles and best cybersecurity
+                                    practices to empower their businesses and operating mechanisms. Citizens across
+                                    the globe are facing the need to be empowered to protect their online identities and
+                                    activities. Cybersecurity hence is an urgent critical component of the technological
+                                    age.&nbsp;
+                                    Careerera is significantly engaging in preparing a new generation of cyber security
+                                    leaders and experts for a safer world. The Cybersecurity course online offered by
+                                    Careerera gives you the career edge through well-formulated courses content
+                                    encompassing a professional, technical, and policy perspective on the issues posed
+                                    by rapid technological breakthroughs. Participants will learn about computer security
+                                    principles, such as cyber-attack protection and prevention. This various cybersecurity
+                                    course programs multidisciplinary approach will provide you with the necessary skills
+                                    for today's cyber workforce by merging computer science and application.</p>
 
-                        <div className="des_content">
-                            <p>Cybersecurity has not only become a prominent field in the technology age, but it has
-                                also become a desideratum for enterprises, organizations, and decision-makers. The
-                                world at large is facing unprecedented challenges birthed by the rapid advances in
-                                technology and information. Organizations have to be prepared and well equipped to
-                                defend against cyberspace threats. There is an inherent need for decision-makers to
-                                familiarize themselves with the fundamental principles and best cybersecurity
-                                practices to empower their businesses and operating mechanisms. Citizens across
-                                the globe are facing the need to be empowered to protect their online identities and
-                                activities. Cybersecurity hence is an urgent critical component of the technological
-                                age.&nbsp;
-                                Careerera is significantly engaging in preparing a new generation of cyber security
-                                leaders and experts for a safer world. The Cybersecurity course online offered by
-                                Careerera gives you the career edge through well-formulated courses content
-                                encompassing a professional, technical, and policy perspective on the issues posed
-                                by rapid technological breakthroughs. Participants will learn about computer security
-                                principles, such as cyber-attack protection and prevention. This various cybersecurity
-                                course programs multidisciplinary approach will provide you with the necessary skills
-                                for today's cyber workforce by merging computer science and application.</p>
-
-                            <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
-                                <a href={void (0)}
-                                    onClick={() => { showMorecont() }}
-                                    className="desc_show_more btn-site no-underline cursor-pointer invert"><span>Show More</span></a>
-                            </div>
-
-                            <div className={"desc_after_click " + (conthide ? 'd-block' : 'd-none')}>
-                                <p>Careerera's cyber security certification course is crafted conscientiously to suit
-                                    learners from both technical as well as non-technical backgrounds. Learners are in
-                                    for massive benefits from the Careerera cyber security course program's flexibility in
-                                    terms of the course syllabus and organization's structure. You can work full-time
-                                    while completing your certification in cyber security, allowing you to put your new
-                                    skills and knowledge to use right away.
-                                    The Cyber Security Certification Course program at Careerera gives students hands-
-                                    on experience with security systems and applications. The courses are intended to
-                                    help students take their careers to the next level by making them have a thorough
-                                    grasp of the legal requirements for cybersecurity and the capacity to lead, manage,
-                                    and contribute to the development of cybersecurity solutions.
-                                    Cybersecurity pervades practically every element of human life. Individuals,
-                                    companies, and society are continually safeguarded from cyber risks that they are
-                                    unaware of. This is due to professionals who comprehend the complicated interplay
-                                    between human behavior and advanced technology in information security.
-
-                                    Careerera is the hub for professionals, as well as aspirants, where young and best
-                                    minds gather to explore, ask questions, and better the world. The Careerera
-                                    curriculum develops more than information security professionals; it develops leaders
-                                    who understand the ramifications of cybersecurity across all industries and aspire to
-                                    lead the way in cybersecurity innovation.
-                                    The interdisciplinary Careerera's Cyber security certification programs focus on the
-                                    convergence of technological, social, political, economic, legal, military, and ethical
-                                    components of cybersecurity. Students graduate with the skills and relationships
-                                    needed to lead cybersecurity in the commercial, public, or philanthropic sectors.
-                                </p><h3 className='font-semibold text-2xl mt-4 mb-2'>What do you take away from our Cyber security online course programs?</h3>
-                                <ul className='list-disc pl-6 text-base'>
-                                    <li>In-depth knowledge of Protecting data, safeguarding computer networks, and
-                                        safe Internet usage, and all the aspects of securing both clean and infected systems.</li>
-                                    <li>Understand critical terminologies and concepts related to cyber law, intellectual
-                                        property and cybercrime, trademarks, and domain theft.</li>
-                                    <li>Learn forensic acquisition, determine computer technology, digital evidence
-                                        collecting, and evidential reporting.</li>
-                                    <li>Demonstrate a thorough understanding of information security principles and
-                                        issues in networks and software systems.</li>
-                                    <li>Assess and manage the risks associated with the development, acquisition, and
-                                        evolution of secure infrastructure.</li>
-                                    <li>Design and develop networked, software, and distributed systems technologies
-                                        using information security ideas.</li>
-                                    <li>In network and software systems, evaluate trade-offs regarding security, policy,
-                                        business, economic, and management considerations.</li>
-                                </ul>
-                                <p></p>
-
-                                <div className="desc_list_show_less mt-4">
-                                    <a href={void (0)} onClick={() => { showMorecont() }} className="desc_show_less btn-site no-underline cursor-pointer">
-                                        <span>Show Less</span>
-                                    </a>
+                                <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
+                                    <a href={void (0)}
+                                        onClick={() => { showMorecont() }}
+                                        className="desc_show_more btn-site no-underline cursor-pointer invert"><span>Show More</span></a>
                                 </div>
-                            </div>
 
+                                <div className={"desc_after_click " + (conthide ? 'd-block' : 'd-none')}>
+                                    <p>Careerera's cyber security certification course is crafted conscientiously to suit
+                                        learners from both technical as well as non-technical backgrounds. Learners are in
+                                        for massive benefits from the Careerera cyber security course program's flexibility in
+                                        terms of the course syllabus and organization's structure. You can work full-time
+                                        while completing your certification in cyber security, allowing you to put your new
+                                        skills and knowledge to use right away.
+                                        The Cyber Security Certification Course program at Careerera gives students hands-
+                                        on experience with security systems and applications. The courses are intended to
+                                        help students take their careers to the next level by making them have a thorough
+                                        grasp of the legal requirements for cybersecurity and the capacity to lead, manage,
+                                        and contribute to the development of cybersecurity solutions.
+                                        Cybersecurity pervades practically every element of human life. Individuals,
+                                        companies, and society are continually safeguarded from cyber risks that they are
+                                        unaware of. This is due to professionals who comprehend the complicated interplay
+                                        between human behavior and advanced technology in information security.
+
+                                        Careerera is the hub for professionals, as well as aspirants, where young and best
+                                        minds gather to explore, ask questions, and better the world. The Careerera
+                                        curriculum develops more than information security professionals; it develops leaders
+                                        who understand the ramifications of cybersecurity across all industries and aspire to
+                                        lead the way in cybersecurity innovation.
+                                        The interdisciplinary Careerera's Cyber security certification programs focus on the
+                                        convergence of technological, social, political, economic, legal, military, and ethical
+                                        components of cybersecurity. Students graduate with the skills and relationships
+                                        needed to lead cybersecurity in the commercial, public, or philanthropic sectors.
+                                    </p><h3 className='font-semibold text-2xl mt-4 mb-2'>What do you take away from our Cyber security online course programs?</h3>
+                                    <ul className='list-disc pl-6 text-base'>
+                                        <li>In-depth knowledge of Protecting data, safeguarding computer networks, and
+                                            safe Internet usage, and all the aspects of securing both clean and infected systems.</li>
+                                        <li>Understand critical terminologies and concepts related to cyber law, intellectual
+                                            property and cybercrime, trademarks, and domain theft.</li>
+                                        <li>Learn forensic acquisition, determine computer technology, digital evidence
+                                            collecting, and evidential reporting.</li>
+                                        <li>Demonstrate a thorough understanding of information security principles and
+                                            issues in networks and software systems.</li>
+                                        <li>Assess and manage the risks associated with the development, acquisition, and
+                                            evolution of secure infrastructure.</li>
+                                        <li>Design and develop networked, software, and distributed systems technologies
+                                            using information security ideas.</li>
+                                        <li>In network and software systems, evaluate trade-offs regarding security, policy,
+                                            business, economic, and management considerations.</li>
+                                    </ul>
+                                    <p></p>
+
+                                    <div className="desc_list_show_less mt-4">
+                                        <a href={void (0)} onClick={() => { showMorecont() }} className="desc_show_less btn-site no-underline cursor-pointer">
+                                            <span>Show Less</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -85,7 +85,9 @@ export default function DataScienceZip() {
               <p className='text-gray-500 text-base md:text-lg fw-medium'>Accelerate your career in Data Science</p>
               <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
             </div>
-            <div className="des_content">
+
+            <div className="blog-detials-single">
+            <div className="des_content content st">
               <p>We now live in a period when information on the majority of our movements and acts
                 is captured and stored in real-time. This is attributed to manifold technological
                 breakthroughs. Everywhere, from mobile phones to IoT devices, a growing number of
@@ -140,6 +142,7 @@ export default function DataScienceZip() {
                   </a>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

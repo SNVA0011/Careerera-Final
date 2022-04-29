@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
 import Highlight from "../Atoms/Highlight";
@@ -6,13 +6,13 @@ import NavStatic from "../Atoms/NavStatic";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
 import Testimonial from "../Atoms/Testimonial";
 import Sign from "../Molecules/Course/Sign";
-import UserformsApplication from "../Molecules/Course/UserformsApplication"; 
+import UserformsApplication from "../Molecules/Course/UserformsApplication";
 import Capstone from "../Molecules/Master/Capstone";
 import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
 import Hero from "../Molecules/Master/Hero";
-import Light from "../Molecules/Master/Light"; 
-import Why from "../Atoms/Why"; 
+import Light from "../Molecules/Master/Light";
+import Why from "../Atoms/Why";
 import Profile from "../Molecules/Master/Profile";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
@@ -46,7 +46,7 @@ const PgpArtificalIntelligence = () => {
                 <link rel="canonical" href="https://www.careerera.com/artificial-intelligence-and-machine-learning/post-graduate-program-in-artificial-intelligence-machine-learning" />
             </Helmet>
 
-            <PopUp title="PGP in Artificial Intelligence and Machine Learning" urlpath={dats}/>
+            <PopUp title="PGP in Artificial Intelligence and Machine Learning" urlpath={dats} />
 
             <Hero
                 categoryUrl="ARTIFICIAL INTELLIGENCE & MACHINE LEARNING"
@@ -77,28 +77,30 @@ const PgpArtificalIntelligence = () => {
                 title="Artificial Intelligence & Machine Learning"
                 heading="Build smarter and more intelligent systems."
                 data={<>
-                    <div className="des_content">
-                        <p>Artificial Intelligence is perhaps the most popular word in general usage which has its origins
-                            in the Computer Science field. This is because of all the science fiction movies containing
-                            robots which can speak and spaceships which have automated guidance and defense
-                            systems. Due to this misappropriation by the media the word has been widely misunderstood.
-                            But anyone who takes an <strong>Artificial Intelligence course online</strong> will learn what the real
-                            meaning of Artificial Intelligence is.</p>
-                        <p>This <strong>Artificial Intelligence certification</strong> will teach the learners that Artificial Intelligence is a
-                            field of computer science in which the programmer attempts to impart human-like intelligence
-                            to machines. They use techniques and algorithms which give machines the ability to engage
-                            in reasoning processes and processes of logic quite similar to what a rational human being
-                            would follow. <strong>Artificial Intelligence training</strong> will let programmers give machines the ability to
-                            understand complex relationships, interpret them meaningfully, and take actionable decisions
-                            on the basis of those calculations. Such machines, if left alone in a navigable environment,
-                            will be able to interpret the elements present in the environment and be able to take certain
-                            paths of actions based on their observations. So Artificial Intelligence lets programmers
-                            impart such powers of perception to machines. Not only will they be able to interpret the
-                            environment, but they will also be able to detect their mistakes, record them, and process
-                            them to learn how to perform better the next time they are in the same environment.</p>
+                    <div className="blog-detials-single">
+                        <div className="des_content content st">
+                            <p>Artificial Intelligence is perhaps the most popular word in general usage which has its origins
+                                in the Computer Science field. This is because of all the science fiction movies containing
+                                robots which can speak and spaceships which have automated guidance and defense
+                                systems. Due to this misappropriation by the media the word has been widely misunderstood.
+                                But anyone who takes an <strong>Artificial Intelligence course online</strong> will learn what the real
+                                meaning of Artificial Intelligence is.</p>
+                            <p>This <strong>Artificial Intelligence certification</strong> will teach the learners that Artificial Intelligence is a
+                                field of computer science in which the programmer attempts to impart human-like intelligence
+                                to machines. They use techniques and algorithms which give machines the ability to engage
+                                in reasoning processes and processes of logic quite similar to what a rational human being
+                                would follow. <strong>Artificial Intelligence training</strong> will let programmers give machines the ability to
+                                understand complex relationships, interpret them meaningfully, and take actionable decisions
+                                on the basis of those calculations. Such machines, if left alone in a navigable environment,
+                                will be able to interpret the elements present in the environment and be able to take certain
+                                paths of actions based on their observations. So Artificial Intelligence lets programmers
+                                impart such powers of perception to machines. Not only will they be able to interpret the
+                                environment, but they will also be able to detect their mistakes, record them, and process
+                                them to learn how to perform better the next time they are in the same environment.</p>
 
 
 
+                        </div>
                     </div>
                 </>}
 

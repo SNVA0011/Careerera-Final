@@ -1,22 +1,24 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
-const DescriptionStatic=(props)=>{
-    const [conthide, setconthide] = useState(false);
-    function showMorecont() {
-      setconthide((conthide) => (!conthide))
-    }
-  
-    return(
-        <>
+const DescriptionStatic = (props) => {
+  const [conthide, setconthide] = useState(false);
+  function showMorecont() {
+    setconthide((conthide) => (!conthide))
+  }
 
-        <div className='discription_sec scroll-spbx' id='DescriptionStatic'>
-          <div className='container py-16'>
-            <div className="sec_title">
-              <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>{props.title}  {props.titlecurso ?  '' :<span className='orange-clrsite'>Curso por Internet</span>}</h2>
-              <p className='text-gray-500 text-base md:text-lg fw-medium'>{props.heading}</p>
-              <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
-            </div>
-            <div className="des_content">
+  return (
+    <>
+
+      <div className='discription_sec scroll-spbx' id='DescriptionStatic'>
+        <div className='container py-16'>
+          <div className="sec_title">
+            <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>{props.title}  {props.titlecurso ? '' : <span className='orange-clrsite'>Curso por Internet</span>}</h2>
+            <p className='text-gray-500 text-base md:text-lg fw-medium'>{props.heading}</p>
+            <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>
+          </div>
+
+          <div className="blog-detials-single">
+            <div className="des_content content st">
               <p>{props.data}</p>
               <p>{props.data1}</p>
 
@@ -45,7 +47,8 @@ const DescriptionStatic=(props)=>{
             </div>
           </div>
         </div>
-        </>
-    )
+      </div>
+    </>
+  )
 }
 export default DescriptionStatic;

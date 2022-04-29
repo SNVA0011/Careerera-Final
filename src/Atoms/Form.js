@@ -393,7 +393,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               <div className="mb-4 col-12">
 
                 <ReCAPTCHA
-                  sitekey={'6LdeVb4eAAAAAKJs8si2knKpwBXB_-bHN9Cxjfah'}
+                  sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
                   onChange={onChange}
                 />
 

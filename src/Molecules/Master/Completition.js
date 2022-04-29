@@ -13,9 +13,7 @@ const Completition = (props) => {
                             {props.customizable ?
                                 <>{props.completiontitle}</>
                                 :
-                                <>On the completion of this program,</>
-                            }
-                                <span className="orange-clrsite d-inline-block">you will:</span></h2>
+                                <>On the completion of this program,</> }  <span className="orange-clrsite d-inline-block">you will:</span></h2>
                             <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                         </div>
 
