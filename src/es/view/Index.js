@@ -71,7 +71,7 @@ const Index = () => {
                     {
                         `                   {"@context": "http://schema.org",
                    "@type": "WebSite",
-                   "url": "https://www.careerera.com/",
+                   "url": "https://www.careerera.com/es/",
                    "potentialAction": {
                      "@type": "SearchAction",
                      "target": "https://www.careerera.com/search?tag={search_term_string}",
@@ -91,7 +91,7 @@ const Index = () => {
                         "/html/head/meta[@name='description']/@content"
                     ]
                 },
-                "url": "https://www.careerera.com/"}`
+                "url": "https://www.careerera.com/es/"}`
                     }
                 </script>
                 <meta property="og:title" content="Leading Online Certification Training Course Provider | Careerera" />

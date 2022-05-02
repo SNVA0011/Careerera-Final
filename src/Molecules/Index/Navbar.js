@@ -56,13 +56,13 @@ const Navbars = () => {
                   onClick={handleClose}
                   to="/all-batches"
                   className="no-underline">
-                  <span className="text-sm xl:text-xs font-semibold text-gray-700">Upcoming Batch </span>
+                  <span className="text-sm xl:text-xs font-semibold text-gray-700">Upcoming Batches</span>
                 </Link>
                 <Link
                   onClick={handleClose}
                   to="/free-courses"
                   className="no-underline">
-                  <span className="text-sm xl:text-xs font-semibold text-gray-700">Free Course</span>
+                  <span className="text-sm xl:text-xs font-semibold text-gray-700">Free Courses</span>
                 </Link>
               </div>
               <hr></hr>
@@ -112,7 +112,7 @@ const Navbars = () => {
                   to="/all-batches"
                   className="no-underline text-md font-semibold nav-link"
                   style={{ color: "rgb(23 35 60)" }}>
-                  <span>Upcoming Batch </span>
+                  <span>Upcoming Batches</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -120,7 +120,7 @@ const Navbars = () => {
                   to="/free-courses"
                   className="no-underline text-md font-semibold nav-link"
                   style={{ color: "rgb(23 35 60)" }}>
-                  <span>Free Course</span>
+                  <span>Free Courses</span>
                 </Link>
               </li>
             </ul>

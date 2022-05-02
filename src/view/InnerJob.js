@@ -121,24 +121,24 @@ const InnerJob = () => {
                     </div>
 
                     <div className="col-xxl-3 col-lg-4 col-12 blog-detials-single">
-                        <div className="sidebar-bx sticky top-32">
+                        <div className="sidebar-bx sticky top-32 jobs-reci">
                             <h5 className="text-xl p-3 font-bold border-bottom bg-orange-100">
                                 <span>RECENT JOBS</span>
                             </h5>
-                            <div className="scroll pt-3">
+                            <div className="scroll">
                                 <a className="px-3 py-1" href="#">
-                                    <div className="flex-grow-1 ms-2 w-100">
-                                        <p className="mb-1 text-base font-semibold">IT-Software / Software Services</p>
+                                    <div className="flex-grow-1 w-100">
+                                        <p className="mb-1 text-base font-semibold jobs-mb-0">IT-Software / Software Services</p>
                                     </div>
                                 </a>
                                 <a className="px-3 py-1" href="#">
-                                    <div className="flex-grow-1 ms-2 w-100">
-                                        <p className="mb-1 text-base font-semibold">Banking and Finance</p>
+                                    <div className="flex-grow-1 w-100">
+                                        <p className="mb-1 text-base font-semibold jobs-mb-0">Banking and Finance</p>
                                     </div>
                                 </a>
                                 <a className="px-3 py-1" href="#">
-                                    <div className="flex-grow-1 ms-2 w-100">
-                                        <p className="mb-1 text-base font-semibold">Banking and Financial Services</p>
+                                    <div className="flex-grow-1 w-100">
+                                        <p className="mb-1 text-base font-semibold jobs-mb-0">Banking and Financial Services</p>
                                     </div>
                                 </a>
                             </div>

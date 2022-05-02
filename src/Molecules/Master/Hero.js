@@ -23,7 +23,7 @@ const Hero = (props) => {
                          <span className="heading-border-line d-block left-0"></span>
                         <h1 className="text-2xl md:text-3xl text-white font-bold mt-1 mb-4 uppercase maintitle" dangerouslySetInnerHTML={{ __html: props.title }} />
                         <div className="row mt-1 mb-4 text-gray-300">
-                            <div className="col-xxl-6 col-12">
+                            <div className="col-md-6 col-12">
                                 <ul className="px-0 mb-0">
                                     <li className="sm:text-lg mb-2 font-semibold tracking-wide d-flex">
                                         <div className="mr-2">
@@ -43,7 +43,7 @@ const Hero = (props) => {
                                             </div> {props.point4}</li>
                                 </ul>
                             </div>
-                            <div className="col-xxl-6 col-12">
+                            <div className="col-md-6 col-12">
                                 <ul className="px-0">
                                     <li className="sm:text-lg mb-2 font-semibold tracking-wide d-flex">
                                         <div className="mr-2">

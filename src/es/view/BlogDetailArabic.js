@@ -168,15 +168,17 @@ const BlogDetailArabic = () => {
                   <div className="py-0 scroll">
                     {BlogDetail[0].RecentBlogList?.length > 0 && BlogDetail[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/ar/blog/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
-                        <div className="flex-shrink-0 font-light">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                          </svg>
+                        <div className="flex-shrink-0 font-light pr-2">
+                        <img src={'https://es.careerera.com/'+item.image} alt={item.title} width='100' className="shadow rounded"></img>
                         </div>
 
-                        <div className="flex-grow-1 ms-2 w-100">
+                        <div className="flex-grow-1 ms-2 w-100 pt-2">
                           <p className="mb-1 text-base font-semibold">
-                            {item.title}
+                            {item.title}<br></br>
+                            <small className="text-gray-500">
+                            <i className="sitblu-clrsite bi bi-calendar2-event mr-2"></i>
+                            <Moment format="D-MMM-YYYY">{item.Date}</Moment> 
+                            </small>
                           </p>
                           <button className="btn btn-primary btn-sm d-flex align-items-center">
                             Leer más{" "}

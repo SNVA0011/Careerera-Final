@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Context, Provider } from '../Api'
-import { useParams, } from "react-router"; 
+import { useParams, } from "react-router";
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import { Link } from "react-router-dom";
 import fun from "../Images/fun4.gif"
@@ -29,7 +29,7 @@ const MasterCountry = () => {
     const [allfreeCourLoad, setallFreeCourLoad] = value10
 
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
- 
+
     const [Catfinal, Catsetfinal] = useState([]);
     const [Catsts, Catloadsts] = useState(false);
 
@@ -37,40 +37,58 @@ const MasterCountry = () => {
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
 
+    // country Api
+    const [getnoindex, setNoindex] = useState([])
+    const [loadNoindex, setNoindexLoad] = useState(false)
+
 
 
     async function CallApi() {
-       await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setdata(json.records)).catch((error) => {
-            setdata(''); 
-        }); 
-         
+            setdata('');
+        });
+
         setload(true)
     }
- 
+
 
     // List of BlogDetails
 
     async function getCourse() {
-       await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
-            Catsetfinal(''); 
-        }); 
- 
+            Catsetfinal('');
+        });
+
         Catloadsts(true)
     }
 
- 
+
+    async function NoindexMeta() {
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/world_countries.php?url=' + countrycaptial }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setNoindex(json.records)).catch((error) => {
+            setNoindex('');
+        });
+        setNoindexLoad(true)
+    }
+
+
 
 
     const [countrycaptial, setCountrycaptial] = useState(country.country);
@@ -78,6 +96,7 @@ const MasterCountry = () => {
     useEffect(() => {
         getCourse()
         CallApi()
+        NoindexMeta()
         setCountrycaptial(countrycaptial.charAt(0).toUpperCase() + countrycaptial.slice(1))
         window.scrollTo(0, 0);
     }, []);
@@ -111,7 +130,7 @@ const MasterCountry = () => {
         {load ? <div>
 
             {Catsts ? <>
-                { Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                     return (
                         <>
                             <Helmet>
@@ -119,7 +138,9 @@ const MasterCountry = () => {
                                 <meta name="description" data-react-helmet="true" content={"Enroll for the " + items.CourseTitel + "course online in " + countrycaptial + ". Get E-learning Live online training session at Careerera. It helps you to achieve your career goals."} />
                                 <meta name="keywords" data-react-helmet="true" content={"" + items.CourseTitel + " " + countrycaptial + ",  " + countrycaptial + " " + items.CourseTitel + ", " + countrycaptial + " " + items.CourseTitel + " online, online " + countrycaptial + " " + items.CourseTitel + ",  " + items.CourseTitel + " in " + countrycaptial + ""} />
                                 <link rel="canonical" href={"https://www.careerera.com/" + country.id + "/" + country.dats + "/" + country.country} />
-
+                                {loadNoindex ?
+                                   getnoindex[0].noindex == 'Yes' ? <meta name="robots" content="noindex, follow"></meta> : ''
+                                : '' }
                             </Helmet>
 
                             <MasterCountryHero title={items.CourseTitel + " in " + countrycaptial} durationasitis={items.Duration} />
@@ -129,6 +150,7 @@ const MasterCountry = () => {
                 })}
             </>
                 : ''}
+
 
             <div className="free-batches bg-gray-50 country-master full-w">
 
@@ -145,7 +167,7 @@ const MasterCountry = () => {
 
 
                         {Catsts ? <>
-                            { Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
+                            {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((items) => items.courseFUllURL == country.id + "/" + country.dats).map((items, i) => {
                                 return (
                                     <>
                                         {
@@ -174,7 +196,7 @@ const MasterCountry = () => {
 
                                             {
                                                 items.CourseBatchList.Elearning?.length > 0 ?
-                                                items.CourseBatchList.Elearning?.length > 0 && items.CourseBatchList.Elearning.map((item, i) => {
+                                                    items.CourseBatchList.Elearning?.length > 0 && items.CourseBatchList.Elearning.map((item, i) => {
                                                         return (
                                                             <>
                                                                 <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * i} animateOnce={true} className='col-lg-6 col-12 mb-4' key={i}>
@@ -193,7 +215,7 @@ const MasterCountry = () => {
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ₹{item.INR_Old_price}
@@ -202,7 +224,7 @@ const MasterCountry = () => {
                                                                                     </p>
                                                                                     :
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ${item.Old_price}
@@ -212,12 +234,12 @@ const MasterCountry = () => {
                                                                                 }
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                     <i className="bi bi-building text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                     Careerera ({item.workshop_id})
                                                                                 </p>
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                       <i className="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                     {item.batch_duration}
 
                                                                                     {item.Totalhour > 0 ?
@@ -225,7 +247,7 @@ const MasterCountry = () => {
                                                                                         : ''}
                                                                                 </p>
                                                                                 <p className="font-semibold">
-                                                                                      <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                     {item.batch_category}
                                                                                 </p>
 
@@ -235,7 +257,7 @@ const MasterCountry = () => {
 
                                                                             <div className='text-left'>
                                                                                 <a href={'http://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                                    target='_blank' rel='noreferrer' 
+                                                                                    target='_blank' rel='noreferrer'
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -318,7 +340,7 @@ const MasterCountry = () => {
 
                                                                     {contextcur.currency === 'Asia/Kolkata' ?
                                                                         <p className="font-semibold mb-1">
-                                                                             <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                            <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                             {' '}
                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                 ₹{items.INR_Old_price}
@@ -327,7 +349,7 @@ const MasterCountry = () => {
                                                                         </p>
                                                                         :
                                                                         <p className="font-semibold mb-1">
-                                                                             <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                            <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                             {' '}
                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                 ${items.Old_price}
@@ -343,12 +365,12 @@ const MasterCountry = () => {
                                                                     </p>
 
                                                                     <p className="font-semibold mb-1">
-                                                                          <i className="bi bi-calendar4-event text-gray-500 mr-2"></i>
+                                                                        <i className="bi bi-calendar4-event text-gray-500 mr-2"></i>
                                                                         {items.date} <span className="text-gray-500">-To-</span> {items.Enddate}
                                                                     </p>
 
                                                                     <p className="font-semibold mb-1">
-                                                                           <i className="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                        <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                         {
                                                                             items.batch_duration.includes("Month") ? getWords(parseInt(items.batch_duration)) : items.batch_duration
                                                                         }
@@ -358,7 +380,7 @@ const MasterCountry = () => {
                                                                             : ''}
                                                                     </p>
                                                                     <p className="font-semibold">
-                                                                           <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                        <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                         {items.batch_category}
                                                                     </p>
 
@@ -372,7 +394,7 @@ const MasterCountry = () => {
                                                                     </Link>
 
                                                                     <a href={'http://my.careerera.com/signup.php?batchid=' + items.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
-                                                                        target='_blank' rel='noreferrer' 
+                                                                        target='_blank' rel='noreferrer'
                                                                         className="no-underline btn-site gray">
                                                                         <span>Enroll Now</span>
                                                                     </a>
@@ -480,7 +502,7 @@ const MasterCountry = () => {
                 {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter((titleitem) => titleitem.courseFUllURL == country.id + "/" + country.dats).map((titleitem, i) => {
                     return (
                         <>
-                            <StateFooter pagetitle={titleitem.CourseTitel} id={(data.filter((items) => items.countries_url == country.country)[0].id)}  key={i}/>
+                            <StateFooter pagetitle={titleitem.CourseTitel} id={(data.filter((items) => items.countries_url == country.country)[0].id)} key={i} />
                         </>
                     )
                 })}

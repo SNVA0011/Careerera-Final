@@ -58,7 +58,7 @@ const Course = () => {
                     "/html/head/meta[@name='description']/@content"
                 ]
             },
-            "url": "https://www.careerera.com/"+${id.id}}`
+            "url": "https://www.careerera.com/es/${id.id}"}`
                                 }
                             </script>
 

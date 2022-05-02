@@ -26,7 +26,7 @@ const CertificateNasscom = (props) => {
                         <span className="heading-border-line d-block left-0  mt-3 mb-4"></span> 
 
                         <div className="row mb-4 text-white">
-                            <div className="col-xxl-6 col-12">
+                            <div className="col-md-6 col-12">
                                 <ul className="px-0 mb-0">
                                     <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
                                         <div className="mr-2">
@@ -55,7 +55,7 @@ const CertificateNasscom = (props) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-xxl-6 col-12">
+                            <div className="col-md-6 col-12">
                                 <ul className="px-0">
                                     <li className="sm:text-lg mb-3 font-semibold tracking-wide d-flex">
                                         <div className="mr-2">

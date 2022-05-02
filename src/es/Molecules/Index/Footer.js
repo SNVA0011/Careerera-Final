@@ -17,26 +17,8 @@ const Footer = () => {
                         <Link to="/es/" className='mb-4 d-inline-block' >
                             <img src={logo} alt='logo' width={169} />
                         </Link>
-                        <ul className='p-0 hoveff'>
-                            <li className='mb-2'>
-                                <Link to="/es/news-events" className="no-underline text-black text-sm font-semibold">
-                                    Noticias y eventos
-
-                                </Link></li>
-                            <li className='mb-2'>
-                                <Link to="/es/blog" className="no-underline text-black text-sm font-semibold">
-
-                                    Blogs y artículos
-                                </Link>
-                            </li>
-                        </ul>
-
-                        <hr></hr>
-
-
-
-
-                        <p className="text-sm font-semibold mt-3 mb-3">
+                        
+                        <p className="text-sm font-semibold mb-3">
                             {contextcur.currency === 'Asia/Kolkata' ? (
                                 <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
                                     className="mailto-footer">
@@ -239,7 +221,7 @@ const Footer = () => {
                     {/* fourth */}
                     <div className="col-xl-3 col-sm-6 col-12 hoveff">
 
-                        <p className="text-2xl md:text-3xl font-semibold mt-4 mb-1 mb-md-2">Ubícanos </p>
+                        <p className="text-2xl md:text-3xl font-semibold mt-4 mb-1 mb-md-2">Otras </p>
                         <ul className='p-0'>
                             <li className='mb-2'>
                                 <Link to="/es/about" className="no-underline text-black text-sm font-semibold">
@@ -249,6 +231,17 @@ const Footer = () => {
                             <li className='mb-2'>
                                 <Link to="/es/contact" className="no-underline text-black text-sm font-semibold">
                                 Contacta con nosotras
+                                </Link>
+                            </li>
+                            <li className='mb-2'>
+                                <Link to="/es/news-events" className="no-underline text-black text-sm font-semibold">
+                                    Noticias y eventos
+
+                                </Link></li>
+                            <li className='mb-2'>
+                                <Link to="/es/blog" className="no-underline text-black text-sm font-semibold">
+
+                                    Blogs y artículos
                                 </Link>
                             </li>
                             <li className='mb-2'>

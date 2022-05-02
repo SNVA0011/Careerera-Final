@@ -46,7 +46,7 @@ export default function CyberSecurityStatic() {
                         "/html/head/meta[@name='description']/@content"
                     ]
                 },
-                "url": "https://www.careerera.com/cyber-security"}`
+                "url": "https://www.careerera.com/es/cyber-security"}`
                     }
                 </script>
                 <link rel="canonical" href="https://www.careerera.com/es/cyber-security" />

@@ -117,7 +117,7 @@ const MasterCity = () => {
                                 <meta name="description" content={"Enroll for the " + items.CourseTitel + "course online in " + country.city + ". Get E-learning Live online training session at Careerera. It helps you to achieve your career goals."} />
                                 <meta name="keywords" content={"" + items.CourseTitel + " " + country.city + ",  " + country.city + " " + items.CourseTitel + ", " + country.city + " " + items.CourseTitel + " online, online " + country.city + " " + items.CourseTitel + ",  " + items.CourseTitel + " in " + country.city + ""} />
                                 <link rel="canonical" href={"https://www.careerera.com/" + country.id + "/" + country.dats + "/" + country.city + "/" + country.state + "/" + country.city} />
-
+                                <meta name="robots" content="noindex, follow"/>
                             </Helmet>
 
                             <MasterCountryHero title={items.CourseTitel + " in " + country.city} durationasitis={items.Duration} />

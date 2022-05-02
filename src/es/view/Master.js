@@ -104,7 +104,7 @@ const Master = () => {
                 "/html/head/meta[@name='description']/@content"
                 ]
                 },
-                "url": "https://www.careerera.com/${country.id}/${country.dats}"`
+                "url": "https://www.careerera.com/es/${country.id}/${country.dats}"`
                                 }
                             </script>
 

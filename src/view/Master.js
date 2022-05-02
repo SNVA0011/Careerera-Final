@@ -64,7 +64,8 @@ const Master = () => {
     useEffect(() => {
         loadsts(false)
         getMaster()
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0); 
+
     }, [dats])
 
     return (

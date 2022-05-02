@@ -48,7 +48,7 @@ export default function DataScienceStatic() {
                         "/html/head/meta[@name='description']/@content"
                     ]
                 },
-                "url": "https://www.careerera.com/data-science"}`
+                "url": "https://www.careerera.com/es/data-science"}`
           }
         </script>
 

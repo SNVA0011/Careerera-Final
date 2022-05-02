@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Certificate from '../Molecules/Course/Certificate' 
-import RelatedCourses from '../Molecules/Course/RelatedCourses' 
-import { useParams } from 'react-router' 
+import Certificate from '../Molecules/Course/Certificate'
+import RelatedCourses from '../Molecules/Course/RelatedCourses'
+import { useParams } from 'react-router'
 import fun from '../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
-import NotFound from './NotFound' 
+import NotFound from './NotFound'
 import { base } from '../Base'
 
 
@@ -13,20 +13,20 @@ const Course = () => {
     const [Catfinal, Catsetfinal] = useState([])
     const [Catsts, Catloadsts] = useState(false)
     const id = useParams()
- 
+
 
     async function getCourse() {
-         await fetch(base, {
+        await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id.id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
-            Catsetfinal(''); 
-        }); 
- 
- 
+            Catsetfinal('');
+        });
+
+
         Catloadsts(true)
     }
 
@@ -60,7 +60,7 @@ const Course = () => {
                     "/html/head/meta[@name='description']/@content"
                 ]
             },
-            "url": "https://www.careerera.com/"+${id.id}}`
+            "url": "https://www.careerera.com/${id.id}"}`
                                 }
                             </script>
 

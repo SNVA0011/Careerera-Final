@@ -30,11 +30,11 @@ const Faq = (props) => {
                 <div className="col-12">
                   {
                     final ?
-                      <Accordion defaultActiveKey="0">
+                      <Accordion defaultActiveKey="0" itemscope itemtype='https://schema.org/FAQPage'>
                         {
                           final?.length > 0 && final.map((values, item) =>
-                            <Accordion.Item eventKey={item} key={item}>
-                              <Accordion.Header className="">
+                            <Accordion.Item eventKey={item} key={item} itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                              <Accordion.Header className=""  itemprop="name">
                                 <div className="d-flex">
                                   <div className="atful-ans">
                                     Q{item + 1} :
@@ -44,7 +44,9 @@ const Faq = (props) => {
                                   </div>
                                 </div> 
                               </Accordion.Header>
-                              <Accordion.Body className="leading-loose font-medium pb-4" dangerouslySetInnerHTML={{ __html: values.Answer }}></Accordion.Body>
+                              <Accordion.Body className="leading-loose font-medium pb-4"  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                              <div itemprop="text" dangerouslySetInnerHTML={{ __html: values.Answer }}></div>
+                              </Accordion.Body>
                             </Accordion.Item>
                           )
                         }

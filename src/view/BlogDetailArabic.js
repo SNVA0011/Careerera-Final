@@ -159,22 +159,23 @@ const BlogDetailArabic = () => {
 
               <div className="col-xxl-4 col-lg-5 col-12 right-sidebar mt-5 mt-lg-0">
                 <div className="sidebar-bx sticky top-32">
-                  <h5 className="text-xl p-3 font-bold border-bottom bg-orange-100">
-                    <span>Recent Post</span>
+                  <h5 className="text-xl p-3 font-bold border-bottom bg-orange-100 ar">
+                    <span>Recent Posts</span>
                   </h5>
                   <div className="py-0 scroll">
                     {BlogDetail[0].RecentBlogList?.length > 0 && BlogDetail[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/ar/blog/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
-                        <div className="flex-shrink-0 font-light">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                          </svg>
-                        </div>
+                       
 
-                        <div className="flex-grow-1 ms-2 w-100">
+                        <div className="flex-grow-1 mr-2 w-100 pt-2">
                           <p className="mb-1 text-base font-semibold">
-                            {item.title}
+                            {item.title}<br></br>
+                            <small className="text-gray-500">
+                            <i className="sitblu-clrsite bi bi-calendar2-event mr-2"></i>
+                            <Moment format="D-MMM-YYYY">{item.Date}</Moment> 
+                            </small>
                           </p>
+
                           <button className="btn btn-primary btn-sm d-flex align-items-center ml-auto">
                             Read More{" "}
                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 d-inline-block" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -182,6 +183,9 @@ const BlogDetailArabic = () => {
                               <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
                             </svg>
                           </button>
+                        </div>
+                        <div className="flex-shrink-0 font-light pl-2">
+                        <img src={'https://my.careerera.com/'+item.image} alt={item.title} width='100' className="shadow rounded"></img>
                         </div>
                       </NavLink>
                     ))}

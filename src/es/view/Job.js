@@ -120,24 +120,24 @@ const Job = () => {
                             </div>
 
                             <div className="col-xxl-3 col-lg-4 col-12 blog-detials-single">
-                                <div className="sidebar-bx sticky top-32">
+                                <div className="sidebar-bx sticky top-32 jobs-reci">
                                     <h5 className="text-xl p-3 font-bold border-bottom bg-orange-100">
                                         <span>INDUSTRIA</span>
                                     </h5>
-                                    <div className="scroll pt-3">
+                                    <div className="scroll">
                                         <a className="px-3 py-1" href="#">
-                                            <div className="flex-grow-1 ms-2 w-100">
-                                                <p className="mb-1 text-base font-semibold">Software de TI / Servicios de software</p>
+                                            <div className="flex-grow-1 w-100">
+                                                <p className="mb-1 text-base font-semibold jobs-mb-0">Software de TI / Servicios de software</p>
                                             </div>
                                         </a>
                                         <a className="px-3 py-1" href="#">
-                                            <div className="flex-grow-1 ms-2 w-100">
-                                                <p className="mb-1 text-base font-semibold">Bancos y finanzas</p>
+                                            <div className="flex-grow-1 w-100">
+                                                <p className="mb-1 text-base font-semibold jobs-mb-0">Bancos y finanzas</p>
                                             </div>
                                         </a>
                                         <a className="px-3 py-1" href="#">
-                                            <div className="flex-grow-1 ms-2 w-100">
-                                                <p className="mb-1 text-base font-semibold">Servicios bancarios y financieros</p>
+                                            <div className="flex-grow-1 w-100">
+                                                <p className="mb-1 text-base font-semibold jobs-mb-0">Servicios bancarios y financieros</p>
                                             </div>
                                         </a>
                                     </div>
