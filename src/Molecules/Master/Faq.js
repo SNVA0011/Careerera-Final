@@ -42,10 +42,7 @@ const Faq = (props) => {
                                   <div className="flex-grow-1 mr-1">
                                     {values.Question}
                                   </div>
-                                </div>
-
-
-
+                                </div> 
                               </Accordion.Header>
                               <Accordion.Body className="leading-loose font-medium pb-4" dangerouslySetInnerHTML={{ __html: values.Answer }}></Accordion.Body>
                             </Accordion.Item>
