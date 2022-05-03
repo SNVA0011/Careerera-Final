@@ -4714,7 +4714,7 @@ export default function Mocktest() {
                                 {/*main_heading*/}
                                 <form className="mocktest_form" action="" method="post" id="Enquire">
                                     <div className="row">
-                                        <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                        <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>User Name</label>
                                             <input
                                                 type="text"
@@ -4727,7 +4727,7 @@ export default function Mocktest() {
                                             />
                                         </div>
                                         {/*cols*/}
-                                        <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                        <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>User Email</label>
                                             <input
                                                 type="email"
@@ -4740,7 +4740,7 @@ export default function Mocktest() {
                                             />
                                         </div>
                                         {/*cols*/}
-                                        <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                        <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>User Password</label>
                                             <input
                                                 type="text"
@@ -4753,7 +4753,7 @@ export default function Mocktest() {
                                             />
                                         </div>
                                         {/*cols*/}
-                                        <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                        <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>Confirm Password</label>
                                             <input
                                                 type="text"
@@ -4766,7 +4766,7 @@ export default function Mocktest() {
                                             />
                                         </div>
                                         {/*cols*/}
-                                        <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                        <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>Contact No.</label>
                                             <input
                                                 type="text"
@@ -4781,7 +4781,7 @@ export default function Mocktest() {
                                         {/*cols*/}
 
                                         {cntryLoad ?
-                                            <div className="mb-4 col-12 col-md-6 col-lg-6">
+                                            <div className="mb-3 col-12 col-md-6 col-lg-6">
                                                 <input
                                                     type="hidden"
                                                     name="CountryFullName"
@@ -4797,7 +4797,7 @@ export default function Mocktest() {
                                                     )}
                                                 </Form.Select>
                                             </div>
-                                            : <div className="mb-4 col-12 col-md-6 col-lg-6 text-center align-self-end">
+                                            : <div className="mb-3 col-12 col-md-6 col-lg-6 text-center align-self-end">
                                                 <button className="btn btn-dark shadow-lg" type="button" disabled>
                                                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                     <span className="sr-only">Loading...</span>
@@ -4806,9 +4806,9 @@ export default function Mocktest() {
                                         {/*cols*/}
                                     </div>
                                     {/*row*/}
-                                    <p className="text-center mb-0 mt-1">
+                                    <p className="text-center mb-0 mt-4">
                                         <button className="btn-site invert capitalize no-underline h-12 rounded-t-3xl">
-                                            <span> Send Message</span>
+                                            <span className="text-lg btn-widelettspc">Send Message</span>
                                         </button>
                                     </p>
                                     <div className="clear" />

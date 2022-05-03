@@ -119,7 +119,7 @@ export default function MocktestRegisterForm() {
                                         <div className="row">
                                             <div className="col-lg-12 col-12">
                                                 <button className="h-12 btn-site w-100 mt-4 invert">
-                                                    <span>Register</span>
+                                                    <span className="text-lg btn-widelettspc">Register</span>
                                                 </button>
                                             </div>
                                         </div>

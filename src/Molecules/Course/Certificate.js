@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react' 
 import EnquireNowForm from './../Course/EnquireNowForm';
 import { CurrencyContxt } from '../../Atoms/Contextcurrency';
+import Forms from '../../Atoms/Form'
 
 
 const Certificate = (props) => {
@@ -194,7 +195,12 @@ const Certificate = (props) => {
                     </div>
 
                     {/* form */}
-                    <EnquireNowForm />
+                    <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
+                    <Forms titlemasterfalse='empty' messageboxnone='empty'/>
+
+                    </div>
+
+                    
                 </div>
             </div>
         </div>

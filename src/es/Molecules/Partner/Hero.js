@@ -3,9 +3,10 @@ import partner from '../../../Images/Partner.jpg'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl' 
+import FormControl from 'react-bootstrap/FormControl'
 import { Context, Provider } from "../../Api";
 import { CurrencyContxt } from '../../Atoms/Contextcurrency'
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Hero = () => {
   // Country List Api
@@ -32,6 +33,10 @@ const Hero = () => {
   const [phoneSetvalue, Updatephonevalue] = useState();
 
 
+  function onChange(value) {
+    // console.log("Captcha value:", value)
+  }
+
 
   return (
     <div className='partner-marketing-affiliates would full-w' style={{
@@ -44,11 +49,11 @@ const Hero = () => {
           <div className='row'>
             <div className="col-xl-7 col-12 pb-4 pb-xl-0">
               <h1 className="text-2xl md:text-3xl font-bold leading-loose tracking-normal  text-center text-lg-left">
-              Mejora tu negocio con Careerera for Business
+                Mejora tu negocio con Careerera for Business
               </h1>
 
               <span className="text-xl md:text-2xl light font-light tracking-wide  text-center text-lg-left d-block">
-              Únase a Careerera para empresas  <strong className='orange-clrsite'>Programa socio con nosotros</strong>
+                Únase a Careerera para empresas  <strong className='orange-clrsite'>Programa socio con nosotros</strong>
               </span>
 
               <span className="heading-border-line d-block left-0 mt-3 mb-4 mx-auto mx-lg-0 "></span>
@@ -80,7 +85,7 @@ const Hero = () => {
                         <span className='d-inline-block'>+91 9643-034-607</span>
                       </a>
                     </div>
-                 
+
 
                     <div className='col-md-6 col-12'>
                       <a className="no-underline text-white d-inline-flex align-items-center font-medium tracking-wide" href="mailto:partnerwithus@careerera.com" target='_blank' rel='noreferrer' >
@@ -140,14 +145,14 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                       <InputGroup className="mb-3">
                         {contextcur.currency == "Asia/Kolkata" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[3].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[3].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
 
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -157,14 +162,14 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "Asia/Singapore" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[7].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[7].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
 
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -173,14 +178,14 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "America/New_York" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[6].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[6].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
 
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -188,14 +193,14 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "SGT" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[194].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[194].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
 
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -204,13 +209,13 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "Europe/London" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[2].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[2].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -219,14 +224,14 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "Asia/Dubai" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[5].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[5].phonecode :
                               selectphoneval.toString().split(',')[0]
                             } &nbsp;
                           </InputGroup.Text>
 
                           : <div>
                             {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -235,12 +240,12 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
                         {contextcur.currency == "Asia/Dhaka" ?
                           <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval == '' ? cntry[30].phonecode :
+                            + {selectphoneval?.length == 0 ? cntry[30].phonecode :
                               selectphoneval.toString().split(',')[0]} &nbsp;
                           </InputGroup.Text>
                           : ''}
                         {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
                       </InputGroup.Text> */}
@@ -251,7 +256,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           value={phoneSetvalue}
                           onChange={(e) => { Updatephonevalue(e.target.value) }}
                           aria-label="Text input with dropdown button" />
-                        {selectphoneval == '' ?
+                        {selectphoneval?.length == 0 ?
                           <input type="hidden" name="phone-bycountry" value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                           :
                           <input type="hidden" name="phone-bycountry" value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
@@ -277,21 +282,16 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   </Form.Group>
 
                   <InputGroup className="mb-4">
-                    <InputGroup.Text className="py-1 fw-medium shadow-sm input-group-text input-group-text">
-                      5 + 2 =
-                    </InputGroup.Text>
-                    <FormControl
-                      aria-label="First name"
-                      placeholder="?"
-                      className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-                                            h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control'
+                    <ReCAPTCHA
+                      sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
+                      onChange={onChange}
                     />
                   </InputGroup>
 
                   <Button
                     className="btn-site w-100 invert shadow-0 btn h-14 btn btn-primary"
                     type="submit">
-                    <span>Consultar ahora</span>
+                    <span className="text-lg btn-widelettspc">Consultar ahora</span>
                   </Button>
                 </div>
               </Form>

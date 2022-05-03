@@ -246,7 +246,7 @@ export default function MasterCountryHero(props) {
 
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm'>
-                                                    + {selectphoneval == '' ? cntry[0].phonecode :
+                                                    + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                                                         selectphoneval.toString().split(',')[0]
                                                     }
                                                 </InputGroup.Text>
@@ -259,7 +259,7 @@ export default function MasterCountryHero(props) {
                                                     required
                                                     onChange={(e) => { Updatephonevalue(e.target.value) }}
                                                     aria-label="Text input with dropdown button" />
-                                                {selectphoneval == '' ?
+                                                {selectphoneval?.length == 0 ?
                                                     <input type="hidden" name="phone-bycountry" value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                                                     :
                                                     <input type="hidden" name="phone-bycountry" value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
@@ -300,7 +300,7 @@ export default function MasterCountryHero(props) {
                                     <Button
                                         className="btn-site w-100 invert shadow-0 btn h-14 btn btn-primary"
                                         type="submit">
-                                        <span>Consultar ahora</span>
+                                        <span className="text-lg btn-widelettspc">Consultar ahora</span>
                                     </Button>
                                 </div>
                             </Form>

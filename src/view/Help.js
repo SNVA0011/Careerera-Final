@@ -1,11 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { Provider, Context } from '../Api' 
+import { Provider, Context } from '../Api'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
-import FormControl from 'react-bootstrap/FormControl' 
+import FormControl from 'react-bootstrap/FormControl'
 import partner from '../Images/Partner.jpg'
 import { Helmet } from 'react-helmet'
+import ReCAPTCHA from "react-google-recaptcha"; 
 
 
 const Help = () => {
@@ -33,13 +34,18 @@ const Help = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    
+  function onChange(value) {
+    // console.log("Captcha value:", value)
+  }
+
     return (
         <div className='help-page'>
             <Helmet>
-            <title>Careerera Support Ticket System </title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/help"/>
+                <title>Careerera Support Ticket System </title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <link rel="canonical" href="https://www.careerera.com/help" />
             </Helmet>
 
             <div style={{ background: 'rgba(0, 0, 0, 0.5)' }}>
@@ -125,10 +131,10 @@ const Help = () => {
                                                         type="email"
                                                         placeholder="Email" />
                                                 </Form.Group>
-                                                
+
                                                 <InputGroup className="mb-3 bg-white shadow-sm">
                                                     <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text input-group-text input-group-text'>
-                                                        + {selectphoneval == '' ? cntry[0].phonecode :
+                                                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                                                             selectphoneval.toString().split(',')[0]
                                                         }
                                                     </InputGroup.Text>
@@ -138,7 +144,7 @@ const Help = () => {
                                                         value={phoneSetvalue}
                                                         onChange={(e) => { Updatephonevalue(e.target.value) }}
                                                         aria-label="Text input with dropdown button" />
-                                                    {selectphoneval == '' ?
+                                                    {selectphoneval?.length == 0 ?
                                                         <input type="hidden" name="phone-bycountry" value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                                                         :
                                                         <input type="hidden" name="phone-bycountry" value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
@@ -149,25 +155,22 @@ const Help = () => {
                                                     className="mb-3"
                                                     controlId="formBasicEmail">
                                                     <Form.Control
-                                                    className='shadow-sm'
+                                                        className='shadow-sm'
                                                         as="textarea" rows={4}
                                                         placeholder="Message" />
                                                 </Form.Group>
 
                                                 <InputGroup className="mb-4">
-                                                    <InputGroup.Text className="py-1 fw-medium shadow-sm input-group-text input-group-text input-group-text">
-                                                        5 + 2 =
-                                                    </InputGroup.Text>
-                                                    <FormControl
-                                                    className='shadow-sm'
-                                                        aria-label="First name"
-                                                        placeholder="?" />
+                                                    <ReCAPTCHA
+                                                        sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
+                                                        onChange={onChange}
+                                                    />
                                                 </InputGroup>
 
                                                 <Button
                                                     className="h-14 btn-site w-100 invert shadow-0"
                                                     type="submit">
-                                                    <span>Submit</span>
+                                                    <span className='text-lg btn-widelettspc'>Submit</span>
                                                 </Button>
                                             </>
                                         ) : (

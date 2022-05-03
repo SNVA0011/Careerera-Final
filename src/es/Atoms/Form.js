@@ -8,7 +8,7 @@ import PopUpSuccess from "./PopUpSuccess";
 import ReCAPTCHA from "react-google-recaptcha"; 
 
 
-const Forms = () => {
+const Forms = (props) => {
   // FormData
   const [name, setName] = useState("")
   const [email, setemail] = useState("")
@@ -114,14 +114,17 @@ const Forms = () => {
         redirect: 'follow'
       };
 
+      if(cntryLoad){
       formdata.append("Name", name);
       formdata.append("Email", email);
-      formdata.append("Mobile", phoneSetvalue);
+      formdata.append("Mobile", selectphoneval?.length == 0  ? '+' + cntry[0].phonecode + '-' + phoneSetvalue : '+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue);
       formdata.append("notes", Notes);
       formdata.append("Country", "INDIA");
       formdata.append("ip_address", "127.0.0.01");
       formdata.append("website_URL", "abc.com");
-   
+
+     
+    }
 
       fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
         .then(response => response.text())
@@ -133,10 +136,12 @@ const Forms = () => {
           setName('');
           setemail('');
           Updatephonevalue('');
+          setselectphoneval('')
            setNotes('');
            inputref_1.current.value = '';
            inputref_2.current.value = '';
            inputref_3.current.value = '';
+           
         },2000);
         setTimeout(function(){
            setvalue(false)
@@ -148,23 +153,27 @@ const Forms = () => {
     // console.log("Captcha value:", value)
   }
 
+ 
   return (
     <div className="">
       <div className="student-coursepopup pop-back scroll-spbx">
-
+ {props.titlemasterfalse ? '' :
         <div className="sec_title">
           <h4 className="text-2xl font-semibold text-gray-800 text-left">
           Complete el siguiente formulario para <span className="orange-clrsite">Inscribirse</span>
           </h4>
           <hr className="w-20 hr mb-0 bg-blue-400 sepfoll-hr" />
         </div>
-
-        <div className="main_heading full-w mb-4 col-12 pt-4">
-          <div className="form-annum talwin-formstyle services-movingr bg-white">
+   }
+        <div className="main_heading full-w mb-3 col-12 pt-4">
+        <div className={"form-annum talwin-formstyle services-movingr bg-white "+(props.titlemasterfalse ? 'enquiry':'')}>
+          {props.titlemasterfalse ?
+          <h4 className="text-center mb-3 font-semibold">Enquire Now</h4>
+          :''}
             <div className="position-relative row min-height-auto">
               {cntryLoad ?
                 <>
-                  <div className="mb-4 col-12">
+                  <div className="mb-3 col-12">
                     <input
                       type="hidden"
                       name="CountryFullName"
@@ -175,13 +184,14 @@ const Forms = () => {
 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control">
                       <option selected>Please select your country</option>
                       {cntry?.length > 0 && cntry.map((item, i) =>
-                        <option  key={i} value={[item.phonecode, item.country_title]} onChange={(e) => setCountry(e.target.value)}>{item.country_title}</option>
+                        <option key={i} value={[item.phonecode, item.country_title]}  
+                        onChange={(e) => setCountry(e.target.value)}>{item.country_title}</option>
                       )}
                     </Form.Select>
                   </div>
                 </>
                 : <>
-                  <div className="mb-4 col-12 text-center align-self-end">
+                  <div className="mb-3 col-12 text-center align-self-end">
                     <button className="btn btn-dark shadow-lg" type="button" disabled>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                       <span className="sr-only">Loading...</span>
@@ -191,7 +201,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*cols*/}
 
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 <input
                   type="text"
                   placeholder="Nombre *"
@@ -207,7 +217,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
 
               {/*cols*/}
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 <input
                   type="email"
                   placeholder="Correo electrónico *"
@@ -223,119 +233,15 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*cols*/}
 
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 {cntryLoad ?
                   <>
                     <InputGroup className="bg-white">
-
-                    {contextcur.currency === "Asia/Kolkata" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[3].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                    <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
                         + {selectphoneval == '' ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-
-                        {contextcur.currency === "Asia/Singapore" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[7].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency === "America/New_York" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[6].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-                        {contextcur.currency === "SGT" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[194].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency === "Europe/London" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[2].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency === "Asia/Dubai" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[5].phonecode :
-                              selectphoneval.toString().split(',')[0]
-                            } &nbsp; 
-                          </InputGroup.Text>
-
-                          : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                          </div>}
-
-
-                        {contextcur.currency === "Asia/Dhaka" ?
-                          <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                            + {selectphoneval === '' ? cntry[30].phonecode :
-                              selectphoneval.toString().split(',')[0] } &nbsp; 
-                          </InputGroup.Text>
-                          : ''}
-                        {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval === '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                    
-
+                      </InputGroup.Text>
                       
                       <FormControl
                         placeholder="Teléfono*"
@@ -347,7 +253,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                         onChange={(e) => { Updatephonevalue(e.target.value) }}
                         aria-label="Text input with dropdown button" />
                     </InputGroup>
-                    {selectphoneval === '' ?
+                    {selectphoneval?.length == 0  ?
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                       :
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
@@ -365,9 +271,8 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               {/*cols*/}
 
               {/*cols*/}
-              <div className="mb-4 col-12">
-
-
+              {props.messageboxnone ?  '' :
+              <div className="mb-3 col-12"> 
                 <Form.Group
                   className="mb-3"
                   controlId="formBasicEmail">
@@ -378,13 +283,13 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control'
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder="Mensaje" />
-                </Form.Group>
-
+                </Form.Group> 
               </div>
+                }
               {/*cols*/}
 
               {/*cols*/}
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
 
                 <ReCAPTCHA
                   sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
@@ -401,8 +306,8 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*row*/}
               <p className="text-center mb-0 mt-4  pt-3">
-                <button className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg" onClick={FormSubmit}>
-                  <span>Enviar</span>
+                <button className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
+                  <span className="text-lg btn-widelettspc">Enviar</span>
                 </button>
               </p>
               <div className="clear" />

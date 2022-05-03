@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css'
 import '../style.css'
 import { Link } from 'react-router-dom'
 import { base } from '../../Base'
-
+import Spinner from 'react-bootstrap/Spinner'
 
 //Owl Carousel Settings
 const options = {
@@ -175,12 +175,7 @@ const Testimonial = (props) => {
                     : ''
 
                 : <div className="testimonials-areamock overflow-hidden text-center py-5">
-                    <div className="lds-ellipsis">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+ <Spinner animation="border" variant="secondary" role="status"><span className="visually-hidden">Loading...</span></Spinner>
                 </div>}
 
         </div>

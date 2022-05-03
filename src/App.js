@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Index from './view/Index'
 import Master from './view/Master'
@@ -74,7 +74,7 @@ const App = (props) => {
         title: '+1-844-889-4054',
     })
 
-    
+
     // remove console 
     function RemoveConsole() {
         const noop = () => { }
@@ -92,8 +92,8 @@ const App = (props) => {
     })
     useEffect(() => {
         RemoveConsole()
-    },[window.location.href])
-  
+    }, [window.location.href])
+
 
     return (
         <div className='d-flex flex-column minh-100'>
@@ -163,9 +163,13 @@ const App = (props) => {
                     <Route exact path="/become-an-instructor" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
-                            <Instructor />
+                            <Provider>
+                                <Instructor />
+                            </Provider>
                         </CurrencyContxt.Provider>
                     } />
+
+
 
 
                     {/* /blog english */}
@@ -280,14 +284,14 @@ const App = (props) => {
 
                     <Route exact path="/rescheduling-policy" element={<Rescheduling />} />
 
-                    {/* COURSE STATIC */} 
-                     <Route exact path="/pgp-in-data-science-for-nasscom" element={
-                     <CurrencyContxt.Provider
-                        value={[contextcur, setContextCur]}>
-                        <Provider>
-                            <PgpDataScienceNasscom />
-                        </Provider>
-                    </CurrencyContxt.Provider>} />
+                    {/* COURSE STATIC */}
+                    <Route exact path="/pgp-in-data-science-for-nasscom" element={
+                        <CurrencyContxt.Provider
+                            value={[contextcur, setContextCur]}>
+                            <Provider>
+                                <PgpDataScienceNasscom />
+                            </Provider>
+                        </CurrencyContxt.Provider>} />
 
                     {/* MASTERS COURSE STATIC */}
                     <Route exact path="/data-science/post-graduate-program-in-data-science" element={<CurrencyContxt.Provider

@@ -136,10 +136,12 @@ const AppSpanish = (props) => {
 
 
                     <Route exact path="/es/become-an-instructor" element={
-                        <CurrencyContxt.Provider
-                            value={[contextcur, setContextCur]}>
-                            <Instructor />
-                        </CurrencyContxt.Provider>
+                         <CurrencyContxt.Provider
+                         value={[contextcur, setContextCur]}>
+                         <Provider>
+                             <Instructor />
+                         </Provider>
+                     </CurrencyContxt.Provider>
                     } />
 
 

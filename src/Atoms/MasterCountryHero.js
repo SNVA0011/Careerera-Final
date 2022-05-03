@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import { Context } from "../Api";
 import { CurrencyContxt } from './Contextcurrency';
+import Forms from './Form'
 
 
 export default function MasterCountryHero(props) {
@@ -213,99 +214,8 @@ export default function MasterCountryHero(props) {
 
 
 
-                        <div className="ml-auto col-xxl-4 col-xl-5 col-12 align-self-center help-page">
-
-                            <Form className="form-annum talwin-formstyle">
-
-                                <div className="waveontopform-above full-w">
-
-                                    {cntryLoad ?
-                                        <>
-                                            <Form.Group
-                                                className="mb-3"
-                                                controlId="formBasicEmail"
-                                            >
-                                                <Form.Control className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
- h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base' type="text" placeholder="Name *" required />
-                                            </Form.Group>
-
-                                            <Form.Group
-                                                className="mb-3"
-                                                controlId="formBasicPassword">
-                                                <Form.Control className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
- h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
-                                                    type="email"
-                                                    placeholder="Email *" required />
-                                            </Form.Group>
-
-                                            <Form.Select onChange={setvalPhone} value={selectphoneval} className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
- h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base mb-3">
-                                                <option selected>Please select your country</option>
-                                                {cntry?.length > 0 && cntry.map((item, i) =>
-                                                    <option key={i} value={[item.phonecode, item.country_title]}>{item.country_title}</option>
-                                                )}
-                                            </Form.Select>
-
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm'>
-                                                    + {selectphoneval == '' ? cntry[0].phonecode :
-                                                        selectphoneval.toString().split(',')[0]
-                                                    }
-                                                </InputGroup.Text>
-                                                <FormControl
-                                                    className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-                                                h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
-                                                    placeholder="Phone *"
-                                                    type="number"
-                                                    value={phoneSetvalue}
-                                                    required
-                                                    onChange={(e) => { Updatephonevalue(e.target.value) }}
-                                                    aria-label="Text input with dropdown button" />
-                                                {selectphoneval == '' ?
-                                                    <input type="hidden" name="phone-bycountry" value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
-                                                    :
-                                                    <input type="hidden" name="phone-bycountry" value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
-                                                }
-                                            </InputGroup>
-                                        </>
-
-                                        : <div className="text-center align-self-center mb-3">
-                                            <div className="p-5">
-                                                <button className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
-                                                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
-                                                    <span className="sr-only">Loading...</span>
-                                                </button>
-                                            </div>
-                                        </div>}
-
-                                    <Form.Group
-                                        className="mb-3"
-                                        controlId="formBasicEmail">
-                                        <Form.Control className='placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
- h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
-                                            as="textarea" rows={4}
-                                            placeholder="Description" />
-                                    </Form.Group>
-
-                                    <InputGroup className="mb-4">
-                                        <InputGroup.Text className="py-1 fw-medium shadow-sm">
-                                            7 + 2 =
-                                        </InputGroup.Text>
-                                        <FormControl
-                                            className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-                                        h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
-                                            aria-label="First name"
-                                            placeholder="?"
-                                        />
-                                    </InputGroup>
-
-                                    <Button
-                                        className="btn-site w-100 invert shadow-0 btn h-14 btn btn-primary"
-                                        type="submit">
-                                        <span>Enquire Now</span>
-                                    </Button>
-                                </div>
-                            </Form>
+                        <div className="ml-auto col-xxl-4 col-xl-5 col-12 align-self-center help-page"> 
+                            <Forms titlemasterfalse='empty' />
                         </div>
 
 

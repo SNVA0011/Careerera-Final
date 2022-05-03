@@ -67,32 +67,35 @@ const Forms = (props) => {
     myHeaders.append("Cookie", "PHPSESSID=akhmi5a0hkp33oim1o11vkd990");
 
     var formdata = new FormData();
+
+
+
     const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (name === "") {
-      alert("Please Enter Full Name")
+      alert("Por favor ingrese el nombre completo")
       inputref_1.current.focus();
       inputref_1.current.classList.add('bg-red50-error')
-    }
+    } 
     else if (email === "") {
       inputref_1.current.classList.remove('bg-red50-error')
-      alert("Please Enter Email")
+      alert("Por favor ingrese el correo electrónico")
       inputref_2.current.focus();
       inputref_2.current.classList.add('bg-red50-error')
     }
     else if (email != "" && regex.test(email) === false) {
       inputref_1.current.classList.remove('bg-red50-error')
-      alert("Please Enter Valid Email Address")
+      alert("Por favor ingrese una dirección de correo electrónico válida")
       inputref_2.current.focus();
       inputref_2.current.classList.add('bg-red50-error')
     }
     else if (phoneSetvalue?.length == 0) {
       inputref_2.current.classList.remove('bg-red50-error')
-      alert("Please Enter Mobile No")
+      alert("Por favor, introduzca el número de móvil")
       inputref_3.current.focus();
-      inputref_3.current.classList.add('bg-red50-error')
+      inputref_3.current.classList.add('bg-red50-error') 
     }
-    else {
+    else{
       inputref_3.current.classList.remove('bg-red50-error')
     }
     // else if (Notes == "") {
@@ -113,37 +116,36 @@ const Forms = (props) => {
         redirect: 'follow'
       };
 
+      if(cntryLoad){
       formdata.append("Name", name);
       formdata.append("Email", email);
-      formdata.append("Mobile", phoneSetvalue);
+      formdata.append("Mobile", selectphoneval?.length == 0  ? '+' + cntry[0].phonecode + '-' + phoneSetvalue : '+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue);
       formdata.append("notes", Notes);
       formdata.append("Country", "INDIA");
       formdata.append("ip_address", "127.0.0.01");
-      formdata.append("website_URL", "abc.com");
-
+      formdata.append("website_URL", "abc.com");  
+      }
 
       fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
         .then(response => response.text())
-        .then(result => setResponse(result))
-        .catch(error => console.log('error', error));
-      setvalue(true)
+        .then(result => setResponse(result)).catch(error => setResponse(''));
 
-      setTimeout(function () {
-        setName('');
-        setemail('');
-        Updatephonevalue('');
-        setNotes('');
-        inputref_1.current.value = '';
-        inputref_2.current.value = '';
-        inputref_3.current.value = '';
-      }, 2000);
-      setTimeout(function () {
-        if (props.prospectusfile == true) {
-          window.location = ZipProspectus
-        }
+        setvalue(true)
 
-        setvalue(false) 
-      }, 4000);
+        setTimeout(function(){
+          setName('');
+          setemail('');
+          Updatephonevalue('');
+          setselectphoneval('')
+           setNotes('');
+           inputref_1.current.value = '';
+           inputref_2.current.value = '';
+           inputref_3.current.value = '';
+           
+        },2000);
+        setTimeout(function(){
+           setvalue(false)
+        },4000);
     }
   }
 
@@ -151,26 +153,29 @@ const Forms = (props) => {
     // console.log("Captcha value:", value)
   }
 
-
-
-
   return (
     <div className="">
       <div className="student-coursepopup pop-back scroll-spbx">
 
-        <div className="sec_title">
-          <h4 className="text-2xl font-semibold text-gray-800 text-left">
-            Fill the below form to <span className="orange-clrsite">Enroll</span>
-          </h4>
-          <hr className="w-20 hr mb-0 bg-blue-400 sepfoll-hr" />
-        </div>
+        {props.titlemasterfalse ? '' :
+          <div className="sec_title">
+            <h4 className="text-2xl font-semibold text-gray-800 text-left">
+              Fill the below form to <span className="orange-clrsite">Enroll</span>
+            </h4>
+            <hr className="w-20 hr mb-0 bg-blue-400 sepfoll-hr" />
+          </div>
+        }
 
-        <div className="main_heading full-w mb-4 col-12 pt-4">
-          <div className="form-annum talwin-formstyle services-movingr bg-white">
+
+        <div className="main_heading full-w mb-3 col-12 pt-4">
+          <div className={"form-annum talwin-formstyle services-movingr bg-white "+(props.titlemasterfalse ? 'enquiry':'')}>
+          {props.titlemasterfalse ?
+          <h4 className="text-center mb-3 font-semibold">Enquire Now</h4>
+          :''}
             <div className="position-relative row min-height-auto">
               {cntryLoad ?
                 <>
-                  <div className="mb-4 col-12">
+                  <div className="mb-3 col-12">
                     <input
                       type="hidden"
                       name="CountryFullName"
@@ -179,15 +184,15 @@ const Forms = (props) => {
                     />
                     <Form.Select onChange={setvalPhone} value={selectphoneval} className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control">
-                      <option selected>Please select your country</option>
+                      <option>Please select your country</option>
                       {cntry?.length > 0 && cntry.map((item, i) =>
-                        <option  key={i}  value={[item.phonecode, item.country_title]} onChange={(e) => setCountry(e.target.value)}>{item.country_title}</option>
+                        <option key={i} value={[item.phonecode, item.country_title]} onChange={(e) => setCountry(e.target.value)}>{item.country_title}</option>
                       )}
                     </Form.Select>
                   </div>
                 </>
                 : <>
-                  <div className="mb-4 col-12 text-center align-self-end">
+                  <div className="mb-3 col-12 text-center align-self-end">
                     <button className="btn btn-dark shadow-lg" type="button" disabled>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                       <span className="sr-only">Loading...</span>
@@ -197,7 +202,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*cols*/}
 
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 <input
                   type="text"
                   placeholder="Name *"
@@ -213,7 +218,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
 
               {/*cols*/}
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 <input
                   type="email"
                   placeholder="Email *"
@@ -229,120 +234,16 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*cols*/}
 
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
                 {cntryLoad ?
                   <>
                     <InputGroup className="bg-white">
-
-                      {contextcur.currency == "Asia/Kolkata" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[3].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
+                    <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
                           selectphoneval.toString().split(',')[0]
                         }
-                      </InputGroup.Text> */}
-                        </div>}
-
-
-
-                      {contextcur.currency == "Asia/Singapore" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[7].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                        </div>}
-
-
-                      {contextcur.currency == "America/New_York" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[6].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                        </div>}
-
-                      {contextcur.currency == "SGT" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[194].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                        </div>}
-
-
-                      {contextcur.currency == "Europe/London" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[2].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                        </div>}
-
-
-                      {contextcur.currency == "Asia/Dubai" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[5].phonecode :
-                            selectphoneval.toString().split(',')[0]
-                          } &nbsp;
-                        </InputGroup.Text>
-
-                        : <div>
-                          {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-                        </div>}
-
-
-                      {contextcur.currency == "Asia/Dhaka" ?
-                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                          + {selectphoneval == '' ? cntry[30].phonecode :
-                            selectphoneval.toString().split(',')[0]} &nbsp;
-                        </InputGroup.Text>
-                        : ''}
-                      {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval == '' ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
-
-
-
+                      </InputGroup.Text>
+  
                       <FormControl
                         placeholder="Phone*"
                         type="number"
@@ -353,7 +254,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                         onChange={(e) => { Updatephonevalue(e.target.value) }}
                         aria-label="Text input with dropdown button" />
                     </InputGroup>
-                    {selectphoneval == '' ?
+                    {selectphoneval?.length == 0 ?
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
                       :
                       <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
@@ -371,9 +272,8 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               {/*cols*/}
 
               {/*cols*/}
-              <div className="mb-4 col-12">
-
-
+              {props.messageboxnone ?  '' :
+              <div className="mb-3 col-12"> 
                 <Form.Group
                   className="mb-3"
                   controlId="formBasicEmail">
@@ -384,13 +284,13 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control'
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder="Message" />
-                </Form.Group>
-
+                </Form.Group> 
               </div>
+              }
               {/*cols*/}
 
               {/*cols*/}
-              <div className="mb-4 col-12">
+              <div className="mb-3 col-12">
 
                 <ReCAPTCHA
                   sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
@@ -407,8 +307,8 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*row*/}
               <p className="text-center mb-0 mt-4  pt-3">
-                <button className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg" onClick={FormSubmit}>
-                  <span>Submit</span>
+                <button className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
+                  <span className="text-lg btn-widelettspc">Submit</span>
                 </button>
               </p>
               <div className="clear" />

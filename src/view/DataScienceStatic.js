@@ -14,7 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import Forms from '../Atoms/Form'
 
 export default function DataScienceStatic() {
 
@@ -72,7 +72,10 @@ export default function DataScienceStatic() {
             </div>
 
             {/* form */}
-            <EnquireNowForm />
+            <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
+            <Forms titlemasterfalse='empty' messageboxnone='empty'/>
+            </div>
+
           </div>
         </div>
       </div>

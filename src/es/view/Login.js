@@ -85,7 +85,7 @@ const Login = () => {
                                     <div className="row py-2">
                                         <div className="col-lg-12 col-12">
                                             <button className="h-12 btn-site w-100 mt-4 invert">
-                                                <span>Login</span>
+                                                <span className="text-lg btn-widelettspc">Login</span>
                                             </button>
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@ const Login = () => {
                             </p>
 
                             <button className="h-12 btn-site mt-1">
-                                <span>New Panel</span>
+                                <span className="text-lg btn-widelettspc">New Panel</span>
                             </button>
                         </div>
                     </div>
