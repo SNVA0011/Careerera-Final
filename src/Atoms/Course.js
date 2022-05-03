@@ -158,15 +158,7 @@ const Course = (props) => {
                                                                                     />
                                                                                 </div>
                                                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
-                                                                                    <div className="flex-grow-1">
-                                                                                        <div className="post-total-rating text-sm">
-                                                                                            <i className="fas fa-star mr-1"></i>
-                                                                                            <i className="fas fa-star mr-1"></i>
-                                                                                            <i className="fas fa-star mr-1"></i>
-                                                                                            <i className="fas fa-star mr-1"></i>
-                                                                                            <i className="fas fa-star mr-1"></i>
-                                                                                            <span className="ml-2 text-black">5.0</span>
-                                                                                        </div>
+                                                                                    <div className="flex-grow-1"> 
                                                                                         <p className="font-bold text-gray-600 course-title">
                                                                                             {
                                                                                                 dat.CourseTitel
@@ -286,15 +278,7 @@ const Course = (props) => {
                                                                                                         />
                                                                                                     </div>
                                                                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
-                                                                                                        <div className="flex-grow-1">
-                                                                                                            <div className="post-total-rating text-sm">
-                                                                                                                <i className="fas fa-star mr-1"></i>
-                                                                                                                <i className="fas fa-star mr-1"></i>
-                                                                                                                <i className="fas fa-star mr-1"></i>
-                                                                                                                <i className="fas fa-star mr-1"></i>
-                                                                                                                <i className="fas fa-star mr-1"></i>
-                                                                                                                <span className="ml-2 text-black">5.0</span>
-                                                                                                            </div>
+                                                                                                        <div className="flex-grow-1"> 
                                                                                                             <p className="font-bold text-gray-600 course-title">
                                                                                                                 {
                                                                                                                     dat.CourseTitel

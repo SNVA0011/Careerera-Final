@@ -10,7 +10,7 @@ import { base } from '../Base'
 const FullTestimonial = () => {
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
-    async function CallApi() {  
+    async function CallApi() {
         await fetch(base, {
             method: 'POST',
             body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageComment.php' }),
@@ -18,8 +18,8 @@ const FullTestimonial = () => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setdata(json.records[0].Comments)).catch((error) => {
-            setdata(''); 
-        }); 
+            setdata('');
+        });
         setload(true)
     }
 
@@ -35,7 +35,9 @@ const FullTestimonial = () => {
         responsiveClass: true,
         autoplay: true,
         loop: false,
+        navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>'],
         autoplayHoverPause: true,
+        nav: true,
         dots: true,
         responsive: {
             0: {
@@ -51,10 +53,31 @@ const FullTestimonial = () => {
                 items: 2,
             },
             1000: {
-                items: 2,
+                items: 3,
             }
         },
     };
+
+
+    const [You, setYou] = useState([])
+    const [loadYou, setloadYou] = useState(false)
+
+    async function CallYoutube() {
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/reviewlinks.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setYou(json.records)).catch((error) => {
+            setYou('');
+        });
+        setloadYou(true)
+    }
+
+    useEffect(() => {
+        CallYoutube()
+    }, [])
 
 
     return (
@@ -62,74 +85,56 @@ const FullTestimonial = () => {
             {load ? <div>
 
                 <Helmet>
-                <title>What Students Say</title>
-<meta name="description" content="This webpage Testinomials."/>
-<meta name="keywords" content="Careerera Testinomials"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link rel="canonical" href="https://www.careerera.com/review"/>
-
+                    <title>What Students Say</title>
+                    <meta name="description" content="This webpage Testinomials." />
+                    <meta name="keywords" content="Careerera Testinomials" />
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                    <link rel="canonical" href="https://www.careerera.com/review" />
                 </Helmet>
 
 
 
                 <div className="">
 
-                    <div className="querysign-full scroll-spbx">
-                        <div className="container pt-20 pb-8">
-                            <div className="row">
-                                <div className="col-lg-10 col-xl-8 mx-auto col-12 text-center">
-                                    <h1 className="text-center text-gray-700 font-bold text-3xl md:text-4xl uppercase">WHAT <span className="text-blue-500 sitblu-clrsite">PEOPLE SAY</span></h1>
-                                    <hr className="w-20 hr mb-6 bg-blue-400 sepfoll-hr mx-auto" />
-                                </div>
-                            </div>
-
-                            {/* row */}
-                            <div className="d-none d-xl-block">
+                {loadYou ?
+                     You?.length > 0 ?
+                        <div className="querysign-full scroll-spbx">
+                            <div className="container pt-20 pb-8">
                                 <div className="row">
-                                    <div className='col-lg-4 col-12 pb-6'>
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/reVJIWHa4l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
+                                    <div className="col-lg-10 col-xl-8 mx-auto col-12 text-center">
+                                        <h1 className="text-center text-gray-700 font-bold text-3xl md:text-4xl uppercase">WHAT <span className="text-blue-500 sitblu-clrsite">PEOPLE SAY</span></h1>
+                                        <hr className="w-20 hr bg-blue-400 sepfoll-hr mx-auto" />
                                     </div>
+                                </div>
 
-                                    <div className='col-lg-4 col-12 pb-6'>
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/Z5O_me_6jvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-
-
-                                    <div className='col-lg-4 col-12 pb-6'>
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/mtyB6j8AgFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
+                                {/* blgvisibleowlcarousel */}
+                                <div className="mt-3">
+                                    <div className='blgvisibleowlcarousel full-w media-prtslider ourclient-staffing'>
+                                        <OwlCarousel className="slider-items owl-carousel pt-5" {...options}>
+                                            {
+                                                You?.length > 0 && You.map((items, i) => {
+                                                    return (
+                                                        <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden mt-2" key={i}>
+                                                            <iframe className="embed-responsive-item" src={items.video_url}></iframe>
+                                                        </div>
+                                                    )
+                                                })}
+                                        </OwlCarousel>
                                     </div>
                                 </div>
                             </div>
-
-                            {/* blgvisibleowlcarousel */}
-                            <div className="d-xl-none">
-                                <div className='blgvisibleowlcarousel full-w media-prtslider'>
-                                    <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/reVJIWHa4l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/Z5O_me_6jvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-
-                                        <div className="embed-responsive embed-responsive-16by9">
-                                            <iframe className="rounded-lg" width="100%" height="315" src="https://www.youtube.com/embed/mtyB6j8AgFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </OwlCarousel>
-                                </div>
-                            </div>
-
                         </div>
+                        : '' : <div className="pt-5 pb-2 text-center">
+                        <div className="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>}
 
-                    </div>
+
                     <div className='overflow-hidden ppt-clistaff top-2-relativeplus'>
                         <div className="shape-bottom">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -221,7 +226,7 @@ const FullTestimonial = () => {
 
 
                 </div>
-            </div> : <img src={fun} className="w-screen" alt="careerera-loader-image"/>}
+            </div> : <img src={fun} className="w-screen" alt="careerera-loader-image" />}
 
         </>
     )

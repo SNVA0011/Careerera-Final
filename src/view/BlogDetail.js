@@ -192,7 +192,6 @@ const BlogDetail = () => {
                     <span>Recent Posts</span>
                   </h5>
                   <div className="py-0 scroll">
-                    {console.log(BlogDetail[0].RecentBlogList)}
                     {BlogDetail[0].RecentBlogList?.length > 0 && BlogDetail[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/blog/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
                         <div className="flex-shrink-0 font-light pr-2">

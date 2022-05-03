@@ -205,14 +205,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Post Graduate Program in Cyber Security</h5>
 
@@ -255,14 +248,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Cyber Security Professional</h5>
 
@@ -305,14 +291,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Certified Information Systems Security Professional (CISSP)</h5>
 
@@ -354,14 +333,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>CISA Certification Training</h5>
 
@@ -404,14 +376,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>CISM Certification Training</h5>
 
@@ -456,14 +421,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Masters in Cyber Security</h5>
 
@@ -505,14 +463,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Checkpoint Certification Training</h5>
 
@@ -553,14 +504,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Trend Micro Certification Training</h5>
 
@@ -603,14 +547,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>Implementing the NIST Standards using COBIT 5</h5>
 
@@ -652,14 +589,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>COBIT5 Certification Training</h5>
 
@@ -701,14 +631,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>COBIT 5 Implementation Certification Training</h5>
 
@@ -753,14 +676,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>COBIT 5 Assessor for Security Certification Training</h5>
 
@@ -802,14 +718,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>COBIT 5 Assessor Certification Training</h5>
 
@@ -850,14 +759,7 @@ export default function CyberSecurityStatic() {
                                             </div>
                                             <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                    <div className="post-total-rating text-sm">
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <i className="fas fa-star mr-1"></i>
-                                                        <span className="ml-2 text-black">5.0</span>
-                                                    </div>
+                                                    
 
                                                     <h5 className='font-bold text-gray-600 course-title mb-2'>CSF (Cyber Security Fundamental)</h5>
 

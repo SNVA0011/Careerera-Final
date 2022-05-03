@@ -90,6 +90,9 @@ const App = (props) => {
     useEffect(() => {
         RemoveConsole()
     })
+    useEffect(() => {
+        RemoveConsole()
+    },[window.location.href])
   
 
     return (

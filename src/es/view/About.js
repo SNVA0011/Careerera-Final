@@ -37,15 +37,48 @@ const About = () => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setBlog(json.records)).catch((error) => {
-            setBlog(''); 
+            setBlog('');
         });
-        
+
         setblogsts(true);
+    }
+
+    // Total users
+    const [RegUser, setRegUser] = useState([]);
+    const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
+
+    const [catglist, setCatglist] = useState([]);
+    const [loadcatglist, setLoadcatglist] = useState(false);
+
+    async function TotalUser() {
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageCounter.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setRegUser(json.records)).catch((error) => {
+            setRegUser('');
+        });
+
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'http://my.careerera.com/API/course/CategoryList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setCatglist(json.records)).catch((error) => {
+            setCatglist('');
+        });
+
+        setLoadSetRegUser(true);
+        setLoadcatglist(true);
     }
 
 
     useEffect(() => {
         Bloglist()
+        TotalUser();
         window.scrollTo(0, 0);
     }, []);
 
@@ -293,7 +326,7 @@ const About = () => {
             <div className="container pt-16 pb-4">
                 <div className="sec_title text-center">
                     <h2 className="text-2xl md:text-3xl font-bold">
-                    NUESTRAS  <span className="orange-clrsite">FUNDADORAS</span>
+                        NUESTRAS  <span className="orange-clrsite">FUNDADORAS</span>
                     </h2>
                     <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                 </div>
@@ -369,116 +402,132 @@ const About = () => {
                 </div>
             </div>
 
+            {LoadSetRegUser && loadcatglist ?
+                RegUser.RegisteredUsers ?
+                    <div className='regiavail full-w requirement-sale'>
 
-
-            <div className='regiavail full-w requirement-sale'>
-                <div className='overflow-hidden ppt-clistaff norotate'>
-                    <div className="shape-bottom top-2-relativeminus">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                            <path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
-                        </svg>
-                    </div>
-                </div>
-
-                <div className="container pt-16 pb-4">
-                    <div className="sec_title text-center">
-                        <h2 className="text-2xl md:text-3xl font-bold">
-                            NUESTROS <span className="orange-clrsite">LOGROS</span>
-                        </h2>
-                        <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
-                    </div>
-
-
-                    <div className="row pt-3 align-items-center">
-                        <div className='col-lg-6 col-12'>
-
-                            <img src={about4} alt='our_journey_banner' className="rounded-2xl full-w position-relative z-10" />
-                            <div className='text-right'>
-                                <img src={toplayer} alt='dots' className='dotstp d-inline-block right'></img>
+                        <div className='overflow-hidden ppt-clistaff norotate'>
+                            <div className="shape-bottom top-2-relativeminus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                                    <path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                                </svg>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-12 text-center text-lg-left mt-lg-0 pt-lg-4 position-relative z-10">
-                            <div className="row">
 
-                                <div className='col-xl-10 col-12 mx-auto'>
-                                    <div className='row mb-3'>
-                                        <div className="col-sm-6 col-12 mb-4">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                    <div className='d-inline-block'><AnimatedNumbers  animateToNumber={60} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>+
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">Los paises</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-sm-6 col-12 mb-4">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                    <div className='d-inline-block'><AnimatedNumbers  animateToNumber={253851} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">Usuarios</p>
-                                            </div>
-                                        </div>
+                        <div className="container pt-16 pb-4">
+                            <div className="sec_title text-center">
+                                <h2 className="text-2xl md:text-3xl font-bold">
+                                    NUESTROS <span className="orange-clrsite">LOGROS</span>
+                                </h2>
+                                <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
+                            </div>
 
-                                        <div className="col-sm-6 col-12 mb-4">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                    <div className='d-inline-block'><AnimatedNumbers  animateToNumber={29} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">Trayectoria profesional</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-sm-6 col-12 mb-4">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                   <div className='d-inline-block'><AnimatedNumbers animateToNumber={146} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">Cursos</p>
-                                            </div>
-                                        </div>
 
-                                        <div className="col-sm-6 col-12 mb-4">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                   <div className='d-inline-block'><AnimatedNumbers animateToNumber={1054} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">próximas clases</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-sm-6 col-12">
-                                            <div className='shadow-0'>
-                                                <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                   <div className='d-inline-block'><AnimatedNumbers animateToNumber={47} configs={[ { mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 }, ]}></AnimatedNumbers></div>
-                                                </h2>
-                                                <p className="text-gray-700 text-lg lg:text-xl font-semibold">aprendizaje electronico</p>
-                                            </div>
-                                        </div>
+                            <div className="row pt-3 align-items-center">
+                                <div className='col-lg-6 col-12'>
+
+                                    <img src={about4} alt='our_journey_banner' className="rounded-2xl full-w position-relative z-10" />
+                                    <div className='text-right'>
+                                        <img src={toplayer} alt='dots' className='dotstp d-inline-block right'></img>
                                     </div>
                                 </div>
+                                <div className="col-lg-6 col-12 text-center text-lg-left mt-lg-0 pt-lg-4 position-relative z-10">
+                                    <div className="row">
 
+                                        <div className='col-xl-10 col-12 mx-auto'>
+                                            <div className='row mb-3'>
+                                                <div className="col-sm-6 col-12 mb-4">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'><AnimatedNumbers animateToNumber={60} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div> +
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">Los paises</p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6 col-12 mb-4">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'>
+                                                                <AnimatedNumbers animateToNumber={parseInt(RegUser.RegisteredUsers) + 100000} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">Usuarios</p>
+
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-sm-6 col-12 mb-4">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'><AnimatedNumbers animateToNumber={catglist?.length} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">Trayectoria profesional</p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6 col-12 mb-4">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'><AnimatedNumbers animateToNumber={146} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">Cursos</p>
+
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-sm-6 col-12 mb-4">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'><AnimatedNumbers animateToNumber={1054} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">próximas clases</p>
+
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6 col-12">
+                                                    <div className='shadow-0'>
+                                                        <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
+                                                            <div className='d-inline-block'><AnimatedNumbers animateToNumber={47} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                        </h2>
+                                                        <p className="text-gray-700 text-lg lg:text-xl font-semibold">aprendizaje electronico</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
                             </div>
-
-
+                        </div>
+                        <div className='overflow-hidden ppt-clistaff'>
+                            <div className="shape-bottom top-2-relativeminus">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                                    <path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='overflow-hidden ppt-clistaff'>
-                    <div className="shape-bottom top-2-relativeminus">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-                            <path className="shape-fill" fill="#fff" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
-                        </svg>
+                    : ''
+                : <div className="overflow-hidden text-center py-1">
+                    <div className="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
-                </div>
-            </div>
-
-
+                </div>}
+ 
 
             <div className="container py-16">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-12 order-2 order-lg-1  mt-4 mt-lg-0">
                         <div className="sec_title">
                             <h2 className="text-2xl md:text-3xl font-bold">
-                            De Nuestro <span className="orange-clrsite">Blog</span>
-                            </h2> 
+                                De Nuestro <span className="orange-clrsite">Blog</span>
+                            </h2>
                             <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                         </div>
 
@@ -509,8 +558,8 @@ const About = () => {
                                     </div>
                             }
                         </div>
-                        
-                        
+
+
                     </div>
 
                     <div className='col-lg-6 col-12 order-1 order-lg-2'>

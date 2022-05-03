@@ -28,7 +28,7 @@ export default function EnquireNowForm() {
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
   function onChange(value) {
-    console.log("Captcha value:", value)
+    // console.log("Captcha value:", value)
   }
 
 

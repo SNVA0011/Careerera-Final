@@ -1,5 +1,4 @@
 import news from '../Images/news.png' 
-
 import React, { useState, useEffect } from 'react'
 import Hero from '../Atoms/Hero' 
 import fun from '../Images/fun4.gif'
@@ -8,7 +7,7 @@ import Moment from 'react-moment'
 import { Helmet } from 'react-helmet'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { base } from '../Base'
-
+import Spinner from 'react-bootstrap/Spinner'
 
 const News = () => {
     // const { value15, value16 } = useContext(Context)
@@ -221,12 +220,7 @@ const News = () => {
                                 )
                             ) : (
                                 <div className="overflow-hidden text-center py-5 my-20">
-                                    <div className="lds-ellipsis">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
+ <Spinner animation="border" variant="secondary" role="status"><span className="visually-hidden">Loading...</span></Spinner>
                                 </div>
                             )}
 

@@ -19,9 +19,9 @@ import Testimonial from '../Atoms/Testimonial'
 import Blog from "../Atoms/Blog";
 import Form from 'react-bootstrap/Form'
 import { Context, Provider } from "../Api";
-import { Helmet } from 'react-helmet'
-import AnimatedNumbers from "react-animated-numbers";
+import { Helmet } from 'react-helmet' 
 import { base } from '../Base'
+import Spinner from 'react-bootstrap/Spinner'
 
 export default function Mocktest() {
 
@@ -289,7 +289,9 @@ export default function Mocktest() {
                             </div>
                         </div>
                         : '' 
-                : ''}
+                :   <div className="overflow-hidden text-center py-1">
+ <Spinner animation="border" variant="secondary" role="status"><span className="visually-hidden">Loading...</span></Spinner>
+              </div>}
 
             </div>
 

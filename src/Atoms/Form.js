@@ -148,7 +148,7 @@ const Forms = (props) => {
   }
 
   function onChange(value) {
-    console.log("Captcha value:", value)
+    // console.log("Captcha value:", value)
   }
 
 

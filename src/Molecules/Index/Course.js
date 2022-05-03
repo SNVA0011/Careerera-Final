@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel'
 import AnimatedNumbers from "react-animated-numbers";
 import { base } from '../../Base'
+import Spinner from 'react-bootstrap/Spinner'
 
 const Course = () => {
   const { value1, value2 } = useContext(Context)
@@ -174,14 +175,7 @@ async function TotalUser() {
                                       </div>
                                       <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                         <div className="flex-grow-1">
-                                          <div className="post-total-rating text-sm">
-                                            <i className="fas fa-star mr-1"></i>
-                                            <i className="fas fa-star mr-1"></i>
-                                            <i className="fas fa-star mr-1"></i>
-                                            <i className="fas fa-star mr-1"></i>
-                                            <i className="fas fa-star mr-1"></i>
-                                            <span className="ml-2 text-black">5.0</span>
-                                          </div>
+                                          
                                           <p className="font-bold text-gray-600 course-title">
                                             {
                                               dat.CourseTitel
@@ -296,14 +290,7 @@ async function TotalUser() {
                                               </div>
                                               <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                 <div className="flex-grow-1">
-                                                  <div className="post-total-rating text-sm">
-                                                    <i className="fas fa-star mr-1"></i>
-                                                    <i className="fas fa-star mr-1"></i>
-                                                    <i className="fas fa-star mr-1"></i>
-                                                    <i className="fas fa-star mr-1"></i>
-                                                    <i className="fas fa-star mr-1"></i>
-                                                    <span className="ml-2 text-black">5.0</span>
-                                                  </div>
+                                                  
                                                   <p className="font-bold text-gray-600 course-title">
                                                     {
                                                       dat.CourseTitel
@@ -352,9 +339,12 @@ async function TotalUser() {
 
             </div>
           </div>
+
+          
           {/* Counter */}
           {LoadSetRegUser ? 
            RegUser.RegisteredUsers ? 
+           <>
            <div className="regiavail full-w">
            <div className="container pt-12 sm:pt-20">
              <div className="row">
@@ -415,24 +405,21 @@ async function TotalUser() {
              </div>
            </div>
          </div>
+           <div className="shape-bottom">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+             <path className="shape-fill" fill="#084f99" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+           </svg>
+         </div>
+         </>
              : '' 
           : ''}
          
-          <div className="shape-bottom">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-              <path className="shape-fill" fill="#084f99" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
-            </svg>
-          </div>
+        
 
         </> : ''
       ) : (
-        <div className="overflow-hidden text-center py-1">
-          <div className="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+        <div className="overflow-hidden text-center py-10">
+           <Spinner animation="border" variant="secondary" role="status"><span className="visually-hidden">Loading...</span></Spinner>
         </div>
       )}
     </>

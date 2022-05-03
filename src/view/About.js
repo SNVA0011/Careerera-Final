@@ -37,16 +37,50 @@ const About = () => {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setBlog(json.records)).catch((error) => {
-            setBlog(''); 
-        }); 
-         
+            setBlog('');
+        });
+
         setblogsts(true);
     }
 
 
+    // Total users
+    const [RegUser, setRegUser] = useState([]);
+    const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
+
+    const [catglist, setCatglist] = useState([]);
+    const [loadcatglist, setLoadcatglist] = useState(false);
+
+    async function TotalUser() {
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageCounter.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setRegUser(json.records)).catch((error) => {
+            setRegUser('');
+        });
+
+        await fetch(base, {
+            method: 'POST',
+            body: JSON.stringify({ "apiurl": 'http://my.careerera.com/API/course/CategoryList.php' }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }, []).then((response) => response.json()).then((json) => setCatglist(json.records)).catch((error) => {
+            setCatglist('');
+        });
+
+        setLoadSetRegUser(true);
+        setLoadcatglist(true);
+    }
+ 
+
     useEffect(() => {
         Bloglist()
-        window.scrollTo(0, 0); 
+        TotalUser();
+        window.scrollTo(0, 0);
     }, []);
 
 
@@ -403,10 +437,11 @@ const About = () => {
 
                 </div>
             </div>
-
-
-
+             
+            {LoadSetRegUser && loadcatglist ? 
+           RegUser.RegisteredUsers ? 
             <div className='regiavail full-w requirement-sale'>
+            
                 <div className='overflow-hidden ppt-clistaff norotate'>
                     <div className="shape-bottom top-2-relativeminus">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -450,7 +485,8 @@ const About = () => {
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
                                                 <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={253851} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                    <div className='d-inline-block'>
+                                                        <AnimatedNumbers animateToNumber={parseInt(RegUser.RegisteredUsers)+100000} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">
                                                     {' '}
@@ -462,7 +498,7 @@ const About = () => {
                                         <div className="col-sm-6 col-12 mb-4">
                                             <div className='shadow-0'>
                                                 <h2 className="text-blue-500 sitblu-clrsite font-bold text-4xl md:text-5xl ">
-                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={29} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
+                                                    <div className='d-inline-block'><AnimatedNumbers animateToNumber={catglist?.length} configs={[{ mass: 1, tension: 220, friction: 100 }, { mass: 1, tension: 180, friction: 130 }, { mass: 1, tension: 280, friction: 90 }, { mass: 1, tension: 180, friction: 135 }, { mass: 1, tension: 260, friction: 100 }, { mass: 1, tension: 210, friction: 180 },]}></AnimatedNumbers></div>
                                                 </h2>
                                                 <p className="text-gray-700 text-lg lg:text-xl font-semibold">
                                                     Career Path
@@ -519,6 +555,15 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            : '' 
+            :   <div className="overflow-hidden text-center py-1">
+            <div className="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>}
 
 
 

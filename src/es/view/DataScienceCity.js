@@ -149,14 +149,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Post Graduate Program in Data Science
                             </h5>
@@ -198,14 +191,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Data Science Professional Certification
                             </h5>
@@ -247,14 +233,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Post Graduate Program In Business Analytics
                             </h5>
@@ -298,14 +277,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               DSAP (Data Science Analytics Professionals)
                             </h5>
@@ -347,14 +319,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Data Science with Python
                             </h5>
@@ -396,14 +361,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Machine Learning With Python
                             </h5>
@@ -447,14 +405,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Deep Learning Certification Training
                             </h5>
@@ -496,14 +447,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Time Series Forecasting
                             </h5>
@@ -544,14 +488,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Natural Language Processing
                             </h5>
@@ -595,14 +532,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Database Management System
                             </h5>
@@ -645,14 +575,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Introduction of Python for IEM-UTeMSS
                             </h5>
@@ -694,14 +617,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Data Visualization in Python
                             </h5>
@@ -745,14 +661,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Masters in Data Science Engineering
                             </h5>
@@ -794,14 +703,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               Masters in Data Science and Analytics
                             </h5>
@@ -843,14 +745,7 @@ export default function DataScienceCity() {
                         </div>
                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                           <div className="flex-grow-1">
-                            <div className="post-total-rating text-sm">
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <i className="fas fa-star mr-1"></i>
-                              <span className="ml-2 text-black">5.0</span>
-                            </div>
+                            
                             <h5 className="font-bold text-gray-600 course-title mb-2">
                               DSF (Data Science Fundamental)
                             </h5>
