@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Hero from "../Atoms/Hero";
 import blogs from "../Images/blogs.png";
-import { useParams } from "react-router"; 
+import { useParams } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
@@ -20,19 +20,17 @@ const BlogDetail = () => {
   let { url } = useParams();
 
   // List of BlogDetails
-  async function BlogDetails() { 
+  async function BlogDetails() {
     await fetch(base, {
       method: 'POST',
       body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/BlogDetails.php?Url=" + url }),
       headers: {
-          'Content-type': 'application/json; charset=UTF-8',
+        'Content-type': 'application/json; charset=UTF-8',
       },
-  }, []).then((response) => response.json()).then((json) => setBlogDetail(json.records)).catch((error) => {
-    setBlogDetail(''); 
-}); 
-  
- 
-  setblogDetailsts(true);
+    }, []).then((response) => response.json()).then((json) => setBlogDetail(json.records)).catch((error) => {
+      setBlogDetail('');
+    });
+    setblogDetailsts(true);
   }
 
 
@@ -136,7 +134,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target='_blank' rel='noreferrer' 
+                        target='_blank' rel='noreferrer'
                       >
                         <i className="fab fa-linkedin"></i>
                       </a>
@@ -149,7 +147,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target='_blank' rel='noreferrer' 
+                        target='_blank' rel='noreferrer'
                       >
                         <i className="fab fa-twitter"></i>
                       </a>
@@ -162,7 +160,7 @@ const BlogDetail = () => {
                           "/blog/" +
                           BlogDetail[0].url
                         }
-                        target='_blank' rel='noreferrer' 
+                        target='_blank' rel='noreferrer'
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
@@ -198,18 +196,18 @@ const BlogDetail = () => {
                     {BlogDetail[0].RecentBlogList?.length > 0 && BlogDetail[0].RecentBlogList.map((item, i) => (
                       <NavLink to={'/blog/' + item.url} className="d-flex px-3 py-3" key={item.id} activeclassname="active">
                         <div className="flex-shrink-0 font-light pr-2">
-                        <img src={'https://my.careerera.com/'+item.image} alt={item.title} width='100' className="shadow rounded"></img>
+                          <img src={'https://my.careerera.com/' + item.image} alt={item.title} width='100' className="shadow rounded"></img>
                         </div>
 
                         <div className="flex-grow-1 ms-2 w-100 pt-2">
                           <p className="mb-1 text-base font-semibold">
                             {item.title}<br></br>
                             <small className="text-gray-500">
-                            <i className="sitblu-clrsite bi bi-calendar2-event mr-2"></i>
-                            <Moment format="D-MMM-YYYY">{item.Date}</Moment> 
+                              <i className="sitblu-clrsite bi bi-calendar2-event mr-2"></i>
+                              <Moment format="D-MMM-YYYY">{item.Date}</Moment>
                             </small>
                           </p>
-                     
+
                           <button className="btn btn-primary btn-sm d-flex align-items-center">
                             Read More{" "}
                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 d-inline-block" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

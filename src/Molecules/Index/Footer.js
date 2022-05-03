@@ -14,10 +14,10 @@ const Footer = () => {
                 <div className="row">
                     {/* first */}
                     <div className="col-xl-3 col-sm-6 col-12">
-                        <Link to="/" className='mb-4 d-inline-block' >
+                        <Link to="/" className='mb-3 d-inline-block' >
                             <img src={logo} alt='logo' width={169} />
                         </Link>
-                    
+                     
                         <p className="text-sm font-semibold mb-3">
                             {contextcur.currency === 'Asia/Kolkata' ? (
                                 <a target='_blank' rel='noreferrer'  href="mailto:support@careerera.com"
@@ -93,7 +93,7 @@ const Footer = () => {
 
                         <Flag />
 
-
+                        <hr></hr>
                         <div className="rounded-social-buttons mt-4">
                             <a
                                 className="social-button facebook text-center"

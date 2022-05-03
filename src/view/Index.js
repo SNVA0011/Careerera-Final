@@ -1,4 +1,4 @@
-import React, { useEffect,useContext, useState } from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import Footer from '../Molecules/Index/Footer'
 import Header from '../Molecules/Index/Header'
 import Media from '../Molecules/Index/Media'
@@ -20,32 +20,28 @@ import TawkTo from 'tawkto-react'
 
 const Index = () => {
 
-const url= useParams()
-     const [tawk, settawk]= useState()
+    const url = useParams()
+    const [tawk, settawk] = useState()
 
 
- 
 
-
-      
-       
-      // currency inr/usd
-      const [contextcur, setContextCur] = useContext(CurrencyContxt)
-      useEffect(() => {
+    // currency inr/usd
+    const [contextcur, setContextCur] = useContext(CurrencyContxt)
+    useEffect(() => {
         window.scrollTo(0, 0);
-        if(contextcur.currency === 'SGT'){
-            var propertyId= "5f6880254704467e89f0dadd"   
+        if (contextcur.currency === 'SGT') {
+            var propertyId = "5f6880254704467e89f0dadd"
         }
-        else if(contextcur.currency === 'Asia/Singapore'){
-            var propertyId= "5f687a27f0e7167d00124851"   
+        else if (contextcur.currency === 'Asia/Singapore') {
+            var propertyId = "5f687a27f0e7167d00124851"
         }
-        else{
-            var propertyId= "5e579a7f298c395d1cea1549"   
+        else {
+            var propertyId = "5e579a7f298c395d1cea1549"
         }
-        var tawkId= "default"
+        var tawkId = "default"
         var tawk = new TawkTo(propertyId, tawkId)
-        tawk.onStatusChange((status) => 
-        {})},[contextcur]);
+        tawk.onStatusChange((status) => { })
+    }, [contextcur]);
 
 
 
@@ -59,7 +55,7 @@ const url= useParams()
 
                 <script async type="application/ld+json">
                     {
-                       `{"@context" : "http://schema.org",
+                        `{"@context" : "http://schema.org",
                         "@type" : "Organization",
                         "name" : "Careerera",
                         "url" : "https://www.careerera.com/",
@@ -79,10 +75,10 @@ const url= useParams()
                         { "@type" : "ContactPoint", "telephone" : "+65-31-591-123", "contactType" : "Customer Service", "contactOption" : "TollFree", "areaServed" : "SG" }
                         ]}`
                     }
-                </script> 
-<script type="application/ld+json">
-                {
-`                   {"@context": "http://schema.org",
+                </script>
+                <script type="application/ld+json">
+                    {
+                        `                   {"@context": "http://schema.org",
                    "@type": "WebSite",
                    "url": "https://www.careerera.com/",
                    "potentialAction": {
@@ -90,11 +86,11 @@ const url= useParams()
                      "target": "https://www.careerera.com/search?tag={search_term_string}",
                      "query-input": "required name=search_term_string"
                    }}`
-                }
-            </script>
-        <script type="application/ld+json">
-            {
-                `{"@context": "https://schema.org/",
+                    }
+                </script>
+                <script type="application/ld+json">
+                    {
+                        `{"@context": "https://schema.org/",
                 "@type": "WebPage",
                 "name": "World's Leading Online Training and  Certification Course Provider | Careerera",
                 "speakable": {
@@ -105,27 +101,19 @@ const url= useParams()
                     ]
                 },
                 "url": "https://www.careerera.com/"}`
-            }
-        </script>
-                <meta property="og:title" content="Leading Online Certification Training Course Provider | Careerera"/>
-<meta property="og:site_name" content="Careerera"/>
-<meta property="og:url" content="https://www.careerera.com"/>
-<meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills."/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://www.careerera.com/images/logo.png"/>
-
-
-
-
-{/* Tawlk To */}
-
-
-
-
+                    }
+                </script>
+                <meta property="og:title" content="Leading Online Certification Training Course Provider | Careerera" />
+                <meta property="og:site_name" content="Careerera" />
+                <meta property="og:url" content="https://www.careerera.com" />
+                <meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills." />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://www.careerera.com/images/logo.png" />
+                {/* Tawlk To */}
             </Helmet>
 
 
-           
+
             <Hero />
             {/* <Partner /> */}
             <Provider>

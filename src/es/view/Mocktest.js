@@ -213,7 +213,7 @@ export default function Mocktest() {
                                     </svg>
                                     <h2 className="font-bold text-4xl md:text-5xl mb-1">
                                         <div className='animated_numberscenter w-100'>
-                                            <AnimatedNumbers animateToNumber={253851}></AnimatedNumbers>
+                                        {253851}
                                         </div>
                                     </h2>
                                     <h3 className=" text-lg md:text-lg">Usuarios Registrados</h3>
@@ -228,7 +228,7 @@ export default function Mocktest() {
                                     </svg>
                                     <h2 className="font-bold text-4xl md:text-5xl mb-1">
                                         <div className='animated_numberscenter w-100'>
-                                            <AnimatedNumbers animateToNumber={146}></AnimatedNumbers>
+                                        {146}
                                         </div>
                                     </h2>
                                     <h3 className="text-lg md:text-lg">Cursos Disponibles</h3>
@@ -240,7 +240,7 @@ export default function Mocktest() {
                                     </svg>
                                     <h2 className="font-bold text-4xl md:text-5xl mb-1">
                                         <div className='animated_numberscenter w-100'>
-                                            <AnimatedNumbers animateToNumber={1054}></AnimatedNumbers>
+                                        {1054}
                                         </div>
                                     </h2>
                                     <h3 className="text-lg md:text-lg">Próximas Clases</h3>
@@ -252,7 +252,7 @@ export default function Mocktest() {
                                     </svg>
                                     <h2 className="font-bold text-4xl md:text-5xl mb-1">
                                         <div className='animated_numberscenter w-100'>
-                                            <AnimatedNumbers animateToNumber={47}></AnimatedNumbers>
+                                        {47}
                                         </div>
                                     </h2>
                                     <h3 className="text-lg md:text-lg">Aprendizaje electrónico</h3>
