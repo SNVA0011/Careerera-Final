@@ -2360,11 +2360,11 @@ hr.w-20.hr.hrcer-cr {
 }
 
 .offcanvas-menumob {
-    transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
-    -webkit-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
-    -ms-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
-    -o-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
-    -moz-transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+    transition: all 0.5s cubic-bezier(.86,0,.07,1);
+    -webkit-transition: all 0.5s cubic-bezier(.86,0,.07,1);
+    -ms-transition: all 0.5s cubic-bezier(.86,0,.07,1);
+    -o-transition: all 0.5s cubic-bezier(.86,0,.07,1);
+    -moz-transition: all 0.5s cubic-bezier(.86,0,.07,1);
     border: none;
 }
 .offcanvas-footer{
