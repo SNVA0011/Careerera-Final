@@ -6,6 +6,7 @@ import { Context } from "../Api";
 import { CurrencyContxt } from "./Contextcurrency";
 import PopUpSuccess from "./PopUpSuccess";
 import ReCAPTCHA from "react-google-recaptcha"; 
+import ZipProspectus from '../../Prospectus/PGP-Data-Science.zip'
 
 
 const Forms = (props) => {
@@ -144,6 +145,9 @@ const Forms = (props) => {
            
         },2000);
         setTimeout(function(){
+          if (props.prospectusfile == true) {
+            window.location = ZipProspectus
+          }
            setvalue(false)
         },4000);
     }

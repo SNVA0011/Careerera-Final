@@ -144,6 +144,9 @@ const Forms = (props) => {
            
         },2000);
         setTimeout(function(){
+          if (props.prospectusfile == true) {
+            window.location = ZipProspectus
+          }
            setvalue(false)
         },4000);
     }
