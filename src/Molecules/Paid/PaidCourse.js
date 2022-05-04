@@ -71,7 +71,7 @@ const PaidCourse = () => {
                                                             {
                                                                 dats.date.split(
                                                                     '-'
-                                                                )[1]
+                                                                )[1].substring(0, 3)
                                                             }
                                                         </div>
                                                     </div>
