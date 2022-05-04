@@ -69,14 +69,14 @@ export default function MocktestRegisterForm() {
                                         <div className="row pb-2">
                                             <div className="col-12">
                                                 <input type="text" placeholder="Nombre (esto se reflejará en su certificado)" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base" />
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base" />
                                             </div>
                                         </div>
 
                                         <div className="row py-2">
                                             <div className="col-12">
                                                 <input type="text" placeholder="Correo electrónico del usuario" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base" />
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base" />
                                             </div>
                                         </div>
 
@@ -84,7 +84,7 @@ export default function MocktestRegisterForm() {
                                         <div className="row py-2">
                                             <div className="col-12">
                                                 <input type="password" placeholder="Contraseña de usuario" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base" />
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base" />
                                             </div>
                                         </div>
 
@@ -92,21 +92,21 @@ export default function MocktestRegisterForm() {
                                         <div className="row py-2">
                                             <div className="col-12">
                                                 <input type="password" placeholder="Confirmar contraseña" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base" />
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base" />
                                             </div>
                                         </div>
 
                                         <div className="row py-2">
                                             <div className="col-12">
                                                 <input type="text" placeholder="Contacto de usuario" className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base" />
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base" />
                                             </div>
                                         </div>
 
                                         <div className="row py-2">
                                             <div className="col-12">
                                                 <Form.Select onChange={setvalPhone} value={selectphoneval} className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-sm sm:text-base">
+         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-base">
                                                     <option selected>Please select your country</option>
                                                     {cntry?.length > 0 && cntry.map((item, i) =>
                                                         <option value={[item.phonecode, item.country_title]} key={i}>{item.country_title}</option>

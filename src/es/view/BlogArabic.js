@@ -118,7 +118,7 @@ const BlogArabic = () => {
                                     (item, index) => (
                                         <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6*index} animateOnce={true}  className='col-12 mb-4'>
                                             <div className="border-white px-4 py-4 shadow-lg border-1 rounded-lg blog_bxrow" key={index}>
-                                                <div className='row'>
+                                                <div className='row flex-row-reverse'>
                                                     <div className='col-xl-3 col-md-4 col-12 mb-3 mb-md-0'>
                                                         <img
                                                             src={
