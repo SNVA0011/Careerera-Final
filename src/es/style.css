@@ -6160,8 +6160,21 @@ sup.hand-relmn {
 .btn-widelettspc{
     letter-spacing: 0.15em !important;
 }
+.comment-viewslide{
+    padding-top: 32px;
+}
+.comment-viewslide .owl-item {height: 0;}    
+.comment-viewslide .owl-item.active {height: auto;}
 
-
+.indexhome .media-prtslider .comment-viewslide .owl-carousel .owl-dots{
+    margin-top: 12px;
+    margin-bottom: 70px;
+}
+.ourclient-staffing .comment-viewslide .owl-nav {
+    top: -16px;
+    text-align: center;
+    width: 100%;
+}
 
 /* responsive css */
 @media (min-width: 1400px) {
@@ -6602,7 +6615,9 @@ sup.hand-relmn {
     .full-w.start-yourcareer .col-lg-3.col-12.pt-4.sticky.top-24.leftonhover-cr, .megamenu-wrapper .dropdown-menu .col-lg-3.col-12.pt-4.sticky.top-24.leftonhover-cr {
         position: static;
     }
-
+    .comment-viewslide {
+        padding-top: 68px;
+    }
     .megamenu-wrapper .dropdown-menu .row.sm\:hidden.above {
         display: none;
     }

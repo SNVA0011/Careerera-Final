@@ -105,35 +105,35 @@ const FullTestimonial = () => {
                 <div className="">
 
                     {loadYou ?
-                     You?.length > 0 ?
-                        <div className="querysign-full scroll-spbx">
-                            <div className="container pt-20 pb-8">
-                                <div className="row">
-                                    <div className="col-lg-10 col-xl-8 mx-auto col-12 text-center">
-                                        <h1 className="text-center text-gray-700 font-bold text-3xl md:text-4xl uppercase">LO QUE DICE  <span className="text-blue-500 sitblu-clrsite">LA GENTE</span></h1>
-                                        <hr className="w-20 hr bg-blue-400 sepfoll-hr mx-auto" />
+                        You?.length > 0 ?
+                            <div className="querysign-full scroll-spbx">
+                                <div className="container pt-20 pb-8">
+                                    <div className="row">
+                                        <div className="col-lg-10 col-xl-8 mx-auto col-12 text-center">
+                                            <h1 className="text-center text-gray-700 font-bold text-3xl md:text-4xl uppercase">LO QUE DICE  <span className="text-blue-500 sitblu-clrsite">LA GENTE</span></h1>
+                                            <hr className="w-20 hr bg-blue-400 sepfoll-hr mx-auto" />
+                                        </div>
                                     </div>
-                                </div>
 
-                                {/* blgvisibleowlcarousel */}
-                                <div className="mt-3">
-                                    <div className='blgvisibleowlcarousel full-w media-prtslider ourclient-staffing'>
-                                        <OwlCarousel className="slider-items owl-carousel pt-5" {...options}>
-                                            { You?.length > 0 && You.map((items, i) => {
+                                    {/* blgvisibleowlcarousel */}
+                                    <div className="mt-3">
+                                        <div className='blgvisibleowlcarousel full-w media-prtslider ourclient-staffing'>
+                                            <OwlCarousel className="slider-items owl-carousel pt-5" {...options}>
+                                                {You?.length > 0 && You.map((items, i) => {
                                                     return (
                                                         <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden mt-2" key={i}>
                                                             <iframe className="embed-responsive-item" src={items.video_url}></iframe>
                                                         </div>
                                                     )
                                                 })}
-                                        </OwlCarousel>
+                                            </OwlCarousel>
+                                        </div>
                                     </div>
+
+
                                 </div>
-
-
                             </div>
-                        </div>
-                        : '' : <div className="pt-5 pb-2 text-center">
+                            : '' : <div className="pt-5 pb-2 text-center">
                             <div className="lds-ellipsis">
                                 <div></div>
                                 <div></div>
@@ -203,7 +203,7 @@ const FullTestimonial = () => {
                                             </div>
 
                                             <div className="position-relative mt-2 border-top pt-4 d-flex flex-xl-row align-items-center justify-content-between">
-                                                <div className='font-semibold text-gray-400 text-sm mt-1'>
+                                                <div className='font-semibold text-gray-600 text-sm mt-1'>
                                                     <i className='bi bi-calendar2 mr-2'></i>
                                                     <Moment format="D-MMM-YYYY">{item.date}</Moment>
                                                 </div>
