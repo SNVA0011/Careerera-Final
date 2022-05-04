@@ -26,9 +26,9 @@ export default function CategoryUpcomingBatch() {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
-            Catsetfinal(''); 
-        }); 
-         
+            Catsetfinal('');
+        });
+
         Catloadsts(true)
     }
 
@@ -108,7 +108,7 @@ export default function CategoryUpcomingBatch() {
                                                                                 <span className="text-4xl font-bold">
                                                                                     {item.date.split('-')[0]}
                                                                                 </span>
-                                                                                <br /> {item.date.split('-')[1]}
+                                                                                <br /> {item.date.split('-')[1].substring(0, 3)}
                                                                             </div>
                                                                         </div>
                                                                         <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
@@ -117,7 +117,7 @@ export default function CategoryUpcomingBatch() {
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                     <p className="font-semibold mb-1">
-                                                                                          <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ₹{item.INR_Old_price}
@@ -129,7 +129,7 @@ export default function CategoryUpcomingBatch() {
                                                                                     </p>
                                                                                     :
                                                                                     <p className="font-semibold mb-1">
-                                                                                          <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
                                                                                             ${item.Old_price}
@@ -139,12 +139,12 @@ export default function CategoryUpcomingBatch() {
                                                                                 }
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                      <i className="bi bi-building text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                     Careerera ({item.workshop_id})
                                                                                 </p>
 
                                                                                 <p className="font-semibold mb-1">
-                                                                                      <i className="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                     {item.batch_duration}
 
                                                                                     {item.Totalhour > 0 ?
@@ -152,7 +152,7 @@ export default function CategoryUpcomingBatch() {
                                                                                         : ''}
                                                                                 </p>
                                                                                 <p className="font-semibold mb-1">
-                                                                                <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                    <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                     {item.batch_category}
                                                                                 </p>
 
@@ -163,11 +163,11 @@ export default function CategoryUpcomingBatch() {
                                                                                     </p>
                                                                                     : ''}
                                                                             </div>
-
+                                                                            
 
                                                                             <div className='text-left'>
-                                                                                <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id}
-                                                                                    target='_blank' rel='noreferrer' 
+                                                                                <a href={'https://my.careerera.com/signup.php?batchid='+ item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
+                                                                                    target='_blank' rel='noreferrer'
                                                                                     className="no-underline btn-site gray">
                                                                                     <span>ENROLL NOW</span>
                                                                                 </a>
@@ -212,7 +212,7 @@ export default function CategoryUpcomingBatch() {
                                                                                     {
                                                                                         dats.date.split(
                                                                                             '-'
-                                                                                        )[1]
+                                                                                        )[1].substring(0, 3)
                                                                                     }
                                                                                 </div>
                                                                             </div>
@@ -225,7 +225,7 @@ export default function CategoryUpcomingBatch() {
                                                                                         <p className="font-semibold mb-1">
                                                                                             {' '}
                                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                                 <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                 ₹{dats.INR_Old_price}
                                                                                             </span>{' '}
                                                                                             ₹{dats.INR_New_price}
@@ -236,7 +236,7 @@ export default function CategoryUpcomingBatch() {
                                                                                         <p className="font-semibold mb-1">
                                                                                             {' '}
                                                                                             <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                                 <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                                <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                                 ${dats.Old_price}
                                                                                             </span>{' '}
                                                                                             ${dats.New_price}
@@ -245,7 +245,7 @@ export default function CategoryUpcomingBatch() {
 
 
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i className="bi bi-building text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-building text-gray-500 mr-2"></i>
                                                                                         Careerera ({dats.workshop_id})
                                                                                     </p>
 
@@ -255,7 +255,7 @@ export default function CategoryUpcomingBatch() {
                                                                                     </p>
 
                                                                                     <p className="font-semibold mb-1">
-                                                                                         <i className="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-clock-history text-gray-500 mr-2"></i>
                                                                                         {dats.batch_duration}
 
                                                                                         {dats.Totalhour > 0 ?
@@ -263,7 +263,7 @@ export default function CategoryUpcomingBatch() {
                                                                                             : ''}
                                                                                     </p>
                                                                                     <p className="font-semibold mb-1">
-                                                                                            <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                        <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
                                                                                         {dats.batch_category}
                                                                                     </p>
 
@@ -281,11 +281,19 @@ export default function CategoryUpcomingBatch() {
                                                                                         className="no-underline btn-site invert mr-3">
                                                                                         <span>Read More</span>
                                                                                     </Link>
-                                                                                    <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
-                                                                                        target='_blank' rel='noreferrer' 
+
+                                                                                    {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id + "&currency=Rs"}
                                                                                         className="no-underline btn-site gray">
-                                                                                        <span>Enroll Now</span>
-                                                                                    </a>
+                                                                                        <span>
+                                                                                            Enroll Now
+                                                                                        </span>
+                                                                                    </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id}
+                                                                                        className="no-underline btn-site gray">
+                                                                                        <span>
+                                                                                            Enroll Now
+                                                                                        </span>
+                                                                                    </a>}
+
                                                                                 </p>
 
 

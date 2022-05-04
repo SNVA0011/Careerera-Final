@@ -253,7 +253,7 @@ const MasterState = () => {
                                                                                 <span className="text-4xl font-bold">
                                                                                     {item.date.split('-')[0]}
                                                                                 </span>
-                                                                                <br /> {item.date.split('-')[1]}
+                                                                                <br /> {item.date.split('-')[1].substring(0, 3)}
                                                                             </div>
                                                                         </div>
                                                                         <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
@@ -377,7 +377,7 @@ const MasterState = () => {
                                                                     {
                                                                         items.date.split(
                                                                             '-'
-                                                                        )[1]
+                                                                        )[1].substring(0, 3)
                                                                     }
                                                                 </div>
                                                             </div>

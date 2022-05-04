@@ -128,7 +128,7 @@ export default function CategoryUpcomingBatch() {
                                                                                 <span className="text-4xl font-bold">
                                                                                     {item.date.split('-')[0]}
                                                                                 </span>
-                                                                                <br /> {item.date.split('-')[1]}
+                                                                                <br /> {item.date.split('-')[1].substring(0, 3)}
                                                                             </div>
                                                                         </div>
                                                                         <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
@@ -232,7 +232,7 @@ export default function CategoryUpcomingBatch() {
                                                                                     {
                                                                                         dats.date.split(
                                                                                             '-'
-                                                                                        )[1]
+                                                                                        )[1].substring(0, 3)
                                                                                     }
                                                                                 </div>
                                                                             </div>
@@ -300,12 +300,16 @@ export default function CategoryUpcomingBatch() {
                                                                                         to={'/es/' + dats.BatchURL}
                                                                                         className="no-underline btn-site invert mr-3">
                                                                                         <span>Leer más</span>
-                                                                                    </Link>
-                                                                                    <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
-                                                                                        target='_blank' rel='noreferrer' 
+                                                                                    </Link> 
+
+                                                                                    {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id + "&currency=Rs"}
                                                                                         className="no-underline btn-site gray">
                                                                                         <span>Enlístate ahora</span>
-                                                                                    </a>
+                                                                                    </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id}
+                                                                                        className="no-underline btn-site gray">
+                                                                                        <span>Enlístate ahora</span>
+                                                                                    </a>}
+
                                                                                 </p>
 
 

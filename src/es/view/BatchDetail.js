@@ -107,7 +107,7 @@ const BatchDetail = (props) => {
                     <div className="bg-red-600 p-3 text-center text-xs text-white date_freec courbtfullw">
 
                       <span className="text-4xl font-bold">{Detail[0].batchDetails[0].Date.split('-')[0]}</span>
-                      <br /> {Detail[0].batchDetails[0].Date.split('-')[1]}
+                      <br /> {Detail[0].batchDetails[0].Date.split('-')[1].substring(0, 3)}
                     </div>
                   </div>
 
