@@ -300,12 +300,16 @@ export default function CategoryUpcomingBatch() {
                                                                                         to={'/es/' + dats.BatchURL}
                                                                                         className="no-underline btn-site invert mr-3">
                                                                                         <span>Leer más</span>
-                                                                                    </Link>
-                                                                                    <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
-                                                                                        target='_blank' rel='noreferrer' 
+                                                                                    </Link> 
+
+                                                                                    {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id + "&currency=Rs"}
                                                                                         className="no-underline btn-site gray">
                                                                                         <span>Enlístate ahora</span>
-                                                                                    </a>
+                                                                                    </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id}
+                                                                                        className="no-underline btn-site gray">
+                                                                                        <span>Enlístate ahora</span>
+                                                                                    </a>}
+
                                                                                 </p>
 
 

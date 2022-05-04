@@ -212,7 +212,8 @@ const RelatedCourses = (props) => {
                                                                                                                                         className="no-underline btn-site invert mr-3">
                                                                                                                                         <span>Read More</span>
                                                                                                                                     </Link>
-                                                                                                                                    <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id}
+                                                                                                                                    
+                                                                                                                                    <a href={'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
                                                                                                                                         target='_blank' rel='noreferrer' 
                                                                                                                                         className="no-underline btn-site gray">
                                                                                                                                         <span>Enroll Now</span>

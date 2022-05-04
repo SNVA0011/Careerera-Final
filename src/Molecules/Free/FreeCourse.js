@@ -223,9 +223,10 @@ const FreeCourse = () => {
                                                             </Link>
                                                             <a
                                                                 href={
-                                                                    'https://my.careerera.com/signup.php?batchid=' +
-                                                                    dats.workshop_id
+                                                                    'https://my.careerera.com/signup.php?batchid=' + dats.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')
                                                                 }
+
+                                                                
                                                                 target='_blank' rel='noreferrer' 
                                                                 className="no-underline btn-site gray">
                                                                 <span>Enroll Now</span>
