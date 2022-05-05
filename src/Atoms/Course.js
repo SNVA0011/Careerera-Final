@@ -73,7 +73,7 @@ const Course = (props) => {
             <div className="megamenu-wrapper mega">
                 <div className="dropdown" onMouseEnter={(e) => setHidemenust(false)}
                     onMouseLeave={(e) => setHidemenust(true)}>
-                    <button className={"dropdown-toggle btn btn-success "+ (hidemenust ? 'closed' : 'open')}>
+                    <button className={"dropdown-toggle btn btn-success " + (hidemenust ? 'closed' : 'open')}>
                         <i className="bi bi-grid"></i> All Courses
                         <i class="bi bi-caret-down-fill"></i>
                     </button>
@@ -147,18 +147,22 @@ const Course = (props) => {
                                                                                         </div>
                                                                                     </div>
 
-                                                                                    <img
-                                                                                        src={
-                                                                                            dat.courseType === 'Short'
-                                                                                                ? certificate
-                                                                                                : post
-                                                                                        }
-                                                                                        className="w-1/3 relative top-4 border rounded-full"
-                                                                                        alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                                                                    />
+                                                                                    <div className='row'>
+                                                                                        <div className='col-3 relative top-4'>
+                                                                                            <img
+                                                                                                src={
+                                                                                                    dat.courseType === 'Short'
+                                                                                                        ? certificate
+                                                                                                        : post
+                                                                                                }
+                                                                                                className="w-1/4  border rounded-full"
+                                                                                                alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
+                                                                                            />
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
-                                                                                    <div className="flex-grow-1"> 
+                                                                                    <div className="flex-grow-1">
                                                                                         <p className="font-bold text-gray-600 course-title">
                                                                                             {
                                                                                                 dat.CourseTitel
@@ -267,18 +271,22 @@ const Course = (props) => {
                                                                                                             </div>
                                                                                                         </div>
 
-                                                                                                        <img
-                                                                                                            src={
-                                                                                                                dat.courseType === 'Short'
-                                                                                                                    ? certificate
-                                                                                                                    : post
-                                                                                                            }
-                                                                                                            className="w-1/3 relative top-4 border rounded-full"
-                                                                                                            alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                                                                                        />
+                                                                                                        <div className='row'>
+                                                                                                            <div className='col-3 relative top-4'>
+                                                                                                                <img
+                                                                                                                    src={
+                                                                                                                        dat.courseType === 'Short'
+                                                                                                                            ? certificate
+                                                                                                                            : post
+                                                                                                                    }
+                                                                                                                    className="w-1/4  border rounded-full"
+                                                                                                                    alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
+                                                                                                                />
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
                                                                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
-                                                                                                        <div className="flex-grow-1"> 
+                                                                                                        <div className="flex-grow-1">
                                                                                                             <p className="font-bold text-gray-600 course-title">
                                                                                                                 {
                                                                                                                     dat.CourseTitel
@@ -337,13 +345,13 @@ const Course = (props) => {
                                 <div className="row above">
                                     <div className="col-12">
                                         <div className="text-center my-2">
-                                        <Spinner animation="border" variant="secondary" role="status">
+                                            <Spinner animation="border" variant="secondary" role="status">
                                                 <span className="visually-hidden">Loading...</span>
                                             </Spinner>
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         }
                     </div>
 

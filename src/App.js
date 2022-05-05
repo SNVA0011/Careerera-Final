@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Index from './view/Index'
+// import Index from './view/Index'
 import Master from './view/Master'
 import Course from './view/Course'
 import Free from './view/Free'
 import Paid from './view/Paid'
 import { Provider } from './Api'
-import Header from './Molecules/Index/Header'
+// import Header from './Molecules/Index/Header'
 import Footer from './Molecules/Index/Footer'
-import Navbars from './Molecules/Index/Navbar'
+// import Navbars from './Molecules/Index/Navbar'
 import Icon from './Atoms/Icon'
 import Partner from './view/Partner'
 import Instructor from './view/Instructor'
@@ -57,7 +57,7 @@ import DataScienceCountry from './view/DataScienceCountry'
 import DataScienceState from './view/DataScienceState'
 import DataScienceCity from './view/DataScienceCity'
 import CyberSecurityContry from './view/CyberSecurityCountry'
-import CyberSecurityState from './view/CyberSecurityState'
+import CyberSecurityState from './view/CyberSecurityState'  
 import CyberSecurityCity from './view/CyberSecurityCity'
 import CyberSecurityZip from './view/CyberSecurityzip'
 import BatchDetail from './view/BatchDetail'
@@ -65,6 +65,14 @@ import DetailBatch from './view/DetailBatch'
 import BlogArabic from './view/BlogArabic'
 import BlogDetailArabic from './view/BlogDetailArabic'
 import PgpDataScienceNasscom from './view/PgpDataScienceNasscom'
+import loadable from '@loadable/component'
+
+
+
+
+const Header = loadable(() => import('./Molecules/Index/Header'))
+const Navbars = loadable(() => import('./Molecules/Index/Navbar'))
+const Index = loadable(() => import('./view/Index'))
 
 const App = (props) => {
     const [mobmenuclose, setMobmenuclose] = useState();
@@ -102,10 +110,15 @@ const App = (props) => {
             </CurrencyContxt.Provider>
 
             <div className='header-top fixed-top bg-white'>
+                <Suspense fallback={<div/>}>
                 <Header />
+                </Suspense>
+
                 <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
                     <menuCloseMob.Provider value={[mobmenuclose, setMobmenuclose]}>
+                    <Suspense fallback={<div/>}>
                         <Navbars />
+                        </Suspense>
                     </menuCloseMob.Provider>
                 </CurrencyContxt.Provider>
             </div>
