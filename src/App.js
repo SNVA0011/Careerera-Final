@@ -519,7 +519,9 @@ const App = (props) => {
                     <Route exact path="/" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
+                                 <Suspense fallback={<div/>}>
                             <Index />
+                            </Suspense>
                         </CurrencyContxt.Provider>
                     } />
 
