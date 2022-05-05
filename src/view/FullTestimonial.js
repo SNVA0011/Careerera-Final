@@ -195,7 +195,7 @@ const FullTestimonial = () => {
                                             </div>
 
                                             <div className="position-relative mt-2 border-top pt-4 d-flex flex-xl-row align-items-center justify-content-between">
-                                                <div className='font-semibold text-gray-400 text-sm mt-1'>
+                                                <div className='font-semibold text-gray-600 text-sm mt-1'>
                                                     <i className='bi bi-calendar2 mr-2'></i>
                                                     <Moment format="D-MMM-YYYY">{item.date}</Moment>
                                                 </div>
