@@ -1,13 +1,6 @@
 import React, { useEffect, useContext, useState, Suspense, lazy } from 'react'
-import Footer from '../Molecules/Index/Footer'
-import Header from '../Molecules/Index/Header'
-import Navbars from '../Molecules/Index/Navbar'
-import Partner from '../Molecules/Index/Parter'
 import 'tailwindcss/tailwind.css'
 import { Provider } from '../Api'
-import Icon from '../Atoms/Icon'
-import SideIcon from '../Atoms/sideIcon'
-import Careerera from '../Molecules/Master/Careerera'
 import { Helmet } from 'react-helmet'
 import { CurrencyContxt } from '../Atoms/Contextcurrency'
 import { useParams } from 'react-router'
@@ -15,11 +8,11 @@ import TawkTo from 'tawkto-react'
 
 
 
-const Course = lazy(()=>import('../Molecules/Index/Course'))
-const Hero = lazy(()=>import('../Molecules/Index/Hero'))
-const Media =lazy(()=>import('../Molecules/Index/Media'))
-const Testimonial =lazy(()=>import('../Atoms/Testimonial'))
-const Disclaimer =lazy(()=>import('../Molecules/Index/Disclaimer'))
+const Course = lazy(() => import('../Molecules/Index/Course'))
+const Hero = lazy(() => import('../Molecules/Index/Hero'))
+const Media = lazy(() => import('../Molecules/Index/Media'))
+const Testimonial = lazy(() => import('../Atoms/Testimonial'))
+const Disclaimer = lazy(() => import('../Molecules/Index/Disclaimer'))
 
 const Index = () => {
 
@@ -111,34 +104,33 @@ const Index = () => {
                 <meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills." />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://www.careerera.com/images/logo.png" />
-             
+
             </Helmet>
 
 
-<Suspense fallback={<div/>}>
-            <Hero />
+            <Suspense fallback={<div />}>
+                <Hero />
             </Suspense>
-        
+
             <Provider>
-            <Suspense fallback={<div/>}>
-                <Course />
-            </Suspense>
-              
+                <Suspense fallback={<div />}>
+                    <Course />
+                </Suspense>
+
             </Provider>
 
-            <Suspense fallback={<div/>}>
-            <Media />
-</Suspense>
+            <Suspense fallback={<div />}>
+                <Media />
+            </Suspense>
 
-<Suspense fallback={<div/>}>
-            <Testimonial
-                title1="Students"
-                title2="Review" />
-                </Suspense>
-                
+            <Suspense fallback={<div />}>
+                <Testimonial
+                    title1="Students"
+                    title2="Review" />
+            </Suspense>
 
-                <Suspense fallback={<div/>}>
-            <Disclaimer />
+            <Suspense fallback={<div />}>
+                <Disclaimer />
             </Suspense>
         </div>
     )
