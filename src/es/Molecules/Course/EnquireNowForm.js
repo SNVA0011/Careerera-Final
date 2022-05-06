@@ -204,7 +204,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               </InputGroup>
 
               <div className='full-w'>
-                <button className="btn-site w-100 invert shadow-0 btn h-14 btn btn-primary btn btn-primary"
+                <button aria-label="Enviar" className="btn-site w-100 invert shadow-0 btn h-14 btn btn-primary btn btn-primary"
                   type="submit">
                   <span className="text-lg btn-widelettspc">Enviar</span>
                 </button>
@@ -214,7 +214,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
         </div>
         : <div className="col-xl-4 col-lg-6 col-12 align-self-center text-center">
           <div className="p-5">
-            <button className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
+            <button aria-label="Cargando" className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
               <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
               <span className="sr-only">Cargando...</span>
             </button>

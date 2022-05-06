@@ -196,7 +196,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                 </>
                 : <>
                   <div className="mb-3 col-12 text-center align-self-end">
-                    <button className="btn btn-dark shadow-lg" type="button" disabled>
+                    <button aria-label="Loading" className="btn btn-dark shadow-lg" type="button" disabled>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                       <span className="sr-only">Loading...</span>
                     </button>
@@ -264,7 +264,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                     }
                   </>
                   : <div className="text-center align-self-end">
-                    <button className="btn btn-dark shadow-lg" type="button" disabled>
+                    <button  aria-label="Loading" className="btn btn-dark shadow-lg" type="button" disabled>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                       <span className="sr-only">Loading...</span>
                     </button>
@@ -310,7 +310,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
               {/*row*/}
               <p className="text-center mb-0 mt-4  pt-3">
-                <button className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
+                <button  aria-label="Enviar" className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
                   <span className="text-lg btn-widelettspc">Enviar</span>
                 </button>
               </p>

@@ -81,7 +81,7 @@ const NewsDetail = () => {
                 <hr></hr>
 
                 {Eventdetails[0].Tags?.length > 0 && Eventdetails[0].Tags.map((item, i) => (
-                  <button className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase tags_links s" key={i}>
+                  <button aria-label="Tags"  className="px-3 leading-none py-1 text-white bg-blue-600 rounded-3xl mr-2 mb-2 uppercase tags_links s" key={i}>
                     <span className="text-xs">
                       {item}
                     </span>
@@ -110,7 +110,7 @@ const NewsDetail = () => {
                             </small>
                           </p>
                           
-                          <button className="btn btn-primary btn-sm d-flex align-items-center">
+                          <button aria-label="Read More" className="btn btn-primary btn-sm d-flex align-items-center">
                             Read More{" "}
                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-1 d-inline-block" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />

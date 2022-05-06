@@ -117,7 +117,7 @@ export default function MocktestRegisterForm() {
 
                                         <div className="row">
                                             <div className="col-lg-12 col-12">
-                                                <button className="h-12 btn-site w-100 mt-4 invert">
+                                                <button  aria-label="Registrarse" className="h-12 btn-site w-100 mt-4 invert">
                                                     <span className="text-lg btn-widelettspc">Registrarse</span>
                                                 </button>
                                             </div>
@@ -134,7 +134,7 @@ export default function MocktestRegisterForm() {
 
                                 : <div className="col-xxl-8 col-xl-10 col-12 mx-auto text-center align-self-center">
                                     <div className="p-5">
-                                        <button className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
+                                        <button aria-label="Loading" className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
                                             <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
                                             <span className="sr-only">Loading...</span>
                                         </button>

@@ -217,14 +217,14 @@ const Course = () => {
                               <div className="col-12 mt-2 text-center">
                                 {totalcourslice === item.category_title ?
                                   showallcour > 6 ?
-                                    <button className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
+                                    <button aria-label="Show Less" className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
                                       <span>Show Less</span>
                                     </button>
                                     :
-                                    <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                    <button aria-label="Show More" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                       <span>Show More</span>
                                     </button>
-                                  : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                  : <button aria-label="Show More" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                     <span>Show More</span>
                                   </button>
                                 }

@@ -186,7 +186,7 @@ const Blog = () => {
                                                                         {new Array(item.Tags?.length)
                                                                             .fill()
                                                                             .map((_, i) => (
-                                                                                <button
+                                                                                <button  aria-label="Tags"
                                                                                     className="px-3 leading-none py-1 text-white
                                             bg-blue-600 rounded-3xl mr-2 mb-2 uppercase tags_links"
                                                                                 >

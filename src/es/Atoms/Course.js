@@ -73,7 +73,7 @@ const Course = (props) => {
             <div className="megamenu-wrapper mega">
                 <div className="dropdown" onMouseEnter={(e) => setHidemenust(false)}
                     onMouseLeave={(e) => setHidemenust(true)}>
-                    <button className={"dropdown-toggle btn btn-success "+ (hidemenust ? 'closed' : 'open')}>
+                    <button  aria-label="Todos los cursos" className={"dropdown-toggle btn btn-success "+ (hidemenust ? 'closed' : 'open')}>
                         <i className="bi bi-grid"></i> Todos los cursos
                         <i class="bi bi-caret-down-fill"></i>
                     </button>
@@ -211,14 +211,14 @@ const Course = (props) => {
                                                                 <div className="col-12 mt-2 text-center">
                                                                     {totalcourslice === item.category_title ?
                                                                         showallcour > 6 ?
-                                                                            <button className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
+                                                                            <button aria-label="Muestra menos" className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
                                                                                 <span>Muestra menos</span>
                                                                             </button>
                                                                             :
-                                                                            <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                                                            <button aria-label="Mostrar más" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                                                                 <span>Mostrar más</span>
                                                                             </button>
-                                                                        : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                                                        : <button aria-label="Mostrar más" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                                                             <span>Mostrar más</span>
                                                                         </button>
                                                                     }

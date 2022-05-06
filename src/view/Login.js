@@ -83,7 +83,7 @@ const Login = () => {
                             </div>
                             <div className="row py-2">
                                 <div className="col-lg-12 col-12">
-                                    <button className="h-12 btn-site w-100 mt-4 invert">
+                                    <button aria-label="Login" className="h-12 btn-site w-100 mt-4 invert">
                                         <span className="text-lg btn-widelettspc">Login</span>
                                     </button>
                                 </div>
@@ -102,7 +102,7 @@ const Login = () => {
                                 Login After 1st Jan 2021
                             </p>
 
-                            <button className="h-12 btn-site mt-1">
+                            <button aria-label="New Panel" className="h-12 btn-site mt-1">
                                 <span className="text-lg btn-widelettspc">New Panel</span>
                             </button>
                         </div>

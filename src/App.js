@@ -67,9 +67,6 @@ import BlogDetailArabic from './view/BlogDetailArabic'
 import PgpDataScienceNasscom from './view/PgpDataScienceNasscom'
 import loadable from '@loadable/component'
 
-
-
-
 const Header = loadable(() => import('./Molecules/Index/Header'))
 const Navbars = loadable(() => import('./Molecules/Index/Navbar'))
 const Index = loadable(() => import('./view/Index'))

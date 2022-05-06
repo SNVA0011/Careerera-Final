@@ -167,7 +167,7 @@ const Help = () => {
                                                     />
                                                 </InputGroup>
 
-                                                <Button
+                                                <Button aria-label="Enviar"
                                                     className="h-14 btn-site w-100 invert shadow-0"
                                                     type="submit">
                                                     <span className='text-lg btn-widelettspc'>Enviar</span>
@@ -176,7 +176,7 @@ const Help = () => {
                                         ) : (
                                             <div className=" text-center align-self-center">
                                                 <div className="p-5">
-                                                    <button
+                                                    <button aria-label="Loading" 
                                                         className="btn btn-dark pt-2 shadow-lg"
                                                         type="button"
                                                         disabled>

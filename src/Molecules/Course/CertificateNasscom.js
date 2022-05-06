@@ -87,7 +87,7 @@ const CertificateNasscom = (props) => {
 
 
                         <div className="mt-5 mt-lg-4">
-                            <button className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn text-sm">
+                            <button aria-label="DOWNLOAD PROSPECTUS" className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn text-sm">
                                 <span><i class="bi bi-download pr-1 text-lg"></i> DOWNLOAD PROSPECTUS</span>
                             </button> 
                         </div>

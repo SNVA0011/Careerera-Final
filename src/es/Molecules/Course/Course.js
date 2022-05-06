@@ -192,7 +192,7 @@ const Courses = () => {
         </div>
         : <div className="text-center align-self-center">
           <div className="p-5">
-            <button className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
+            <button aria-label="Cargando"  className="btn btn-dark pt-2 shadow-lg" type="button" disabled>
               <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
               <span className="sr-only">Cargando...</span>
             </button>

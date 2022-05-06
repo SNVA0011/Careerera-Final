@@ -94,7 +94,7 @@ const Navbars = () => {
 
         <div className="row align-items-center">
           <div className="col-2 d-block d-lg-none">
-            <button className="btn-site bars-sidemenu" onClick={handleShow}>
+            <button aria-label="bi-text-left" className="btn-site bars-sidemenu" onClick={handleShow}>
               <span><i className="bi bi-text-left"></i></span>
             </button>
           </div>

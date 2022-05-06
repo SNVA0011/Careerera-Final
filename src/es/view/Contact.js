@@ -327,7 +327,7 @@ const Contact = () => {
                   <div className="input-group mt-4 flex-column flex-sm-row">
                     <input type="text" className="form-control rounded flex-grow-1" placeholder="Tu email aquí" />
                     <div className="input-group-append pl-sm-4">
-                      <button className="btn-site invert h-100 shadow-lg btn-widelettspc" type="button">
+                      <button aria-label="Suscribir" className="btn-site invert h-100 shadow-lg btn-widelettspc" type="button">
                         <span>Suscribir</span>
                       </button>
                     </div>

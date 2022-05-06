@@ -202,14 +202,14 @@ async function TotalUser() {
                             <div className="col-12 mt-2 text-center">
                               {totalcourslice === item.category_title ?
                                 showallcour > 6 ?
-                                  <button className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
+                                  <button aria-label="Mostrar menos" className="btn-site" onClick={(e) => loadlessFun(item.category_title, 6)}>
                                     <span>Mostrar menos</span>
                                   </button>
                                   :
-                                  <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                  <button aria-label="Mostrar más" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                     <span>Mostrar más</span>
                                   </button>
-                                : <button className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
+                                : <button aria-label="Mostrar más" className="btn-site invert" onClick={(e) => loadmoreFun(item.category_title, item.Course?.length)}>
                                   <span>Mostrar más</span>
                                 </button>
                               }

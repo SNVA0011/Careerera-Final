@@ -24,7 +24,7 @@ export default function SearchCourses() {
     return (
 
         <>
-            <Button
+            <Button aria-label="search"
                 variant="outline-primary"
                 onClick={handleShow}
                 className="rounded-circle rounded-scourses shadow-md">
@@ -52,10 +52,9 @@ export default function SearchCourses() {
                                         value={coursesname}
                                         onChange={(e) => setCoursesname(e.target.value)}
                                     />
-                                    <Button
+                                    <Button aria-label="search"
                                         variant="outline-secondary"
-                                        className="rounded-circle rounded-scourses shadow-md"
-                                    >
+                                        className="rounded-circle rounded-scourses shadow-md">
                                         <i className="bi bi-search"></i>
                                     </Button>
                                 </InputGroup>

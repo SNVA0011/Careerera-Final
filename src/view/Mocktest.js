@@ -4798,7 +4798,7 @@ export default function Mocktest() {
                                                 </Form.Select>
                                             </div>
                                             : <div className="mb-3 col-12 col-md-6 col-lg-6 text-center align-self-end">
-                                                <button className="btn btn-dark shadow-lg" type="button" disabled>
+                                                <button aria-label="Loading" className="btn btn-dark shadow-lg" type="button" disabled>
                                                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                     <span className="sr-only">Loading...</span>
                                                 </button>
@@ -4807,7 +4807,7 @@ export default function Mocktest() {
                                     </div>
                                     {/*row*/}
                                     <p className="text-center mb-0 mt-4">
-                                        <button className="btn-site invert capitalize no-underline h-12 rounded-t-3xl">
+                                        <button aria-label="Send Message" className="btn-site invert capitalize no-underline h-12 rounded-t-3xl">
                                             <span className="text-lg btn-widelettspc">Send Message</span>
                                         </button>
                                     </p>
