@@ -78,7 +78,7 @@ export default function DataScienceCountry() {
                 <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
 
 
-                <p className="text-base sm:text-lg md:text-xl text-white my-8 font-medium  tracking-wide" >
+                <p className="text-base sm:text-lg md:text-xl text-white my-8 font-medium  tracking-wide">
                   Go beyond the basics and leverage your decision-making abilities while you navigate through the vast metrics and visualizations with Careerera's Data Science certification course in {countrycourse.countrycourse}. Get into immersive training by industry experts with course programs curated conscientiously giving students exposure to hands-on practical projects and key technologies. Unriddle the data ecosystem and foster actionable recommendations by creating a data-driven framework for your organization and yourself. Reading code to comprehend syntax is made easy and quick with the Data Science course at Careerera. Learn, grow and inspire to act based n facts with this world-class Data Science course in {countrycourse.countrycourse}, and propel your Data science career to the next level.
 
                 </p>

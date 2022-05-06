@@ -118,8 +118,7 @@ export const Provider = (props) => {
                     value10: [allfreeCourLoad, setallFreeCourLoad],
                     value11: [allcountryList, setallcountryList],
                     value12: [countryLoad, setcountryLoad]
-                        }}
-            >
+                     }} >
                 {props.children}
             </Context.Provider>
         </>

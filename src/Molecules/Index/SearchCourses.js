@@ -93,7 +93,7 @@ export default function SearchCourses() {
                             : 
                             <p className='text-center font-semibold m-0 text-xl'>No Result !</p>
                             : <div className="mt-1 text-center">
-                            <div className="spinner-border text-secondary" role="status" >
+                            <div className="spinner-border text-secondary" role="status">
                                 <span className="sr-only">Cargando...</span>
                             </div>
                         </div>}
