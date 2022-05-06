@@ -8,6 +8,7 @@ import Moment from 'react-moment'
 import { Helmet } from 'react-helmet'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { base } from '../../Base'
+import { Eventslist1 } from '../../Factory/PhpApi'
 
 
 const News = () => {
@@ -22,7 +23,7 @@ const News = () => {
     async function Eventslist() {  
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            body: JSON.stringify({ "apiurl": Eventslist1 }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

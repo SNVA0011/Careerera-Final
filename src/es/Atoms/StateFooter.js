@@ -14,7 +14,7 @@ const StateFooter = (props) => {
 
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_state.php?id="+props.id }),
+      body: JSON.stringify({ "apiurl": world_state+props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

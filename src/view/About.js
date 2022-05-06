@@ -21,6 +21,7 @@ import { Helmet } from 'react-helmet'
 import AnimatedNumbers from "react-animated-numbers";
 import Spinner from 'react-bootstrap/Spinner'
 import { base } from '../Base'
+import { BlogListS, CategoryList, HomepageCounter } from '../Factory/PhpApi'
 
 
 const About = () => {
@@ -32,7 +33,7 @@ const About = () => {
     async function Bloglist() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/BlogList.php' }),
+            body: JSON.stringify({ "apiurl": BlogListS }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -54,7 +55,7 @@ const About = () => {
     async function TotalUser() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageCounter.php' }),
+            body: JSON.stringify({ "apiurl": HomepageCounter }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -64,7 +65,7 @@ const About = () => {
 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'http://my.careerera.com/API/course/CategoryList.php' }),
+            body: JSON.stringify({ "apiurl": CategoryList }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

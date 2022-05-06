@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import Hero from "../Atoms/Hero";
 import fun from "../Images/fun4.gif"
 import { base } from '../Base'
+import { JObData } from "../Factory/PhpApi";
 
 
 const InnerJob = () => {
@@ -14,7 +15,7 @@ const InnerJob = () => {
     async function getJob() {
        await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "http://jobs.snva.com/api/jobs?api_token=Nxo9A8Koga6hVuTfEWeEBZNbK5OeJYYauuEH6Q9s3Gd9JuMea7XjprMtI4L1" }),
+            body: JSON.stringify({ "apiurl": JObData }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { base } from '../Base'
+import { AllBatchList, CountryList, esBatchList, EsCategoryPage, FreeElearningBatch, TopCategoryMenubar } from '../Factory/PhpApi'
 
 export const Context = createContext()
 
@@ -50,7 +51,7 @@ export const Provider = (props) => {
     async function getData() { 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/course/TopCategoryMenubar.php" }),
+            body: JSON.stringify({ "apiurl": TopCategoryMenubar }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -65,7 +66,7 @@ export const Provider = (props) => {
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CategoryPage.php?url=' + id + "&timeZone=EST" }),
+            body: JSON.stringify({ "apiurl": EsCategoryPage + id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -80,7 +81,7 @@ export const Provider = (props) => {
     async function freeCourse() { 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/FreeElearningBatch.php?timeZone=' + contextcur.currency }),
+            body: JSON.stringify({ "apiurl": FreeElearningBatch + contextcur.currency }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -95,7 +96,7 @@ export const Provider = (props) => {
       async function AllfreeCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/AllBatchList.php?timeZone=' + contextcur.currency }),
+            body: JSON.stringify({ "apiurl": AllBatchList + contextcur.currency }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -111,7 +112,7 @@ export const Provider = (props) => {
     async function Allcountrylist() { 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/CountryList.php' }),
+            body: JSON.stringify({ "apiurl": CountryList }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -139,7 +140,7 @@ export const Provider = (props) => {
     async function escoursoslist() {
          await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CourseList.php?Language=2' }),
+            body: JSON.stringify({ "apiurl": escoursoslist }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -155,7 +156,7 @@ export const Provider = (props) => {
     async function allbatchlist() {
          await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/AllBatchList.php?Language=2&timeZone=' + contextcur.currency }),
+            body: JSON.stringify({ "apiurl": esBatchList + contextcur.currency }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

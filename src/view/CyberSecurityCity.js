@@ -11,6 +11,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
+import { cityDetailCyber } from '../Factory/PhpApi';
 
 
 export default function CyberSecurityCity() {
@@ -30,7 +31,7 @@ export default function CyberSecurityCity() {
         const city = cybercity.cybercity.replace("-", "%20")
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/cityDetail.php?service=cyber-security&state=" + state + "&county=" + county + "&city=" + city }),
+            body: JSON.stringify({ "apiurl": cityDetailCyber + state + "&county=" + county + "&city=" + city }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

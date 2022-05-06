@@ -7,6 +7,7 @@ import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import { base } from '../../Base'
 import fun from '../../Images/fun4.gif'
+import { EventDetails } from "../../Factory/PhpApi";
 
 const NewsDetail = () => {
   const [Eventdetails, setEventdetails] = useState([])
@@ -18,7 +19,7 @@ const NewsDetail = () => {
   async function Eventsdetail() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsDetails.php?Url=' + news }),
+      body: JSON.stringify({ "apiurl": EventDetails + news }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

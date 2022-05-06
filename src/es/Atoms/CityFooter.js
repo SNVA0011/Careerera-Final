@@ -11,7 +11,7 @@ const CityFooter = (props) => {
   async function CallApi() {
    await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_citys.php?id="+props.id }),
+      body: JSON.stringify({ "apiurl": world_citys+props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

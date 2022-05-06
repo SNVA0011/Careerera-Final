@@ -12,6 +12,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
+import { stateDetailCyber } from '../Factory/PhpApi';
 
 export default function CyberSecurityContry() {
     const [conthide, setconthide] = useState(false);
@@ -32,7 +33,7 @@ export default function CyberSecurityContry() {
         const fixed = isuue.replace("-", "%20")
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/statesDetail.php?service=cyber-security&state=" + fixed }),
+            body: JSON.stringify({ "apiurl": stateDetailCyber + fixed }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

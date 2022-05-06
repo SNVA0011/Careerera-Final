@@ -9,6 +9,7 @@ import AnimatedNumbers from "react-animated-numbers";
 import { Context } from '../../Api';
 import { base } from '../../../Base'
 import Spinner from 'react-bootstrap/Spinner'
+import { HomepageCounter } from '../../../Factory/PhpApi';
 
 export default function Courses() {
     const { value13, value14 } = useContext(Context)
@@ -76,7 +77,7 @@ export default function Courses() {
     async function TotalUser() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageCounter.php' }),
+            body: JSON.stringify({ "apiurl": HomepageCounter }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

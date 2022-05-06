@@ -9,6 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { useParams } from 'react-router'
 import NotFound from './NotFound'
 import { base } from '../Base'
+import { ar_blog_list } from '../Factory/PhpApi'
 
 
 const BlogArabic = () => {
@@ -24,7 +25,7 @@ const BlogArabic = () => {
     async function Bloglist() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/ar-blogList.php' }),
+            body: JSON.stringify({ "apiurl": ar_blog_list }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

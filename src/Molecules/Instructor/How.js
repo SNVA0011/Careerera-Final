@@ -7,6 +7,7 @@ import pen from '../../Images/ct.png'
 import tool from '../../Images/ca.png'
 import AnimatedNumbers from "react-animated-numbers";
 import { base } from '../../Base'
+import { HomepageCounter } from "../../Factory/PhpApi";
 
 const How = () => {
 
@@ -18,7 +19,7 @@ const How = () => {
     async function TotalUser() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageCounter.php' }),
+            body: JSON.stringify({ "apiurl": HomepageCounter }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

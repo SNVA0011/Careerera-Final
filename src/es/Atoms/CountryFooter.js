@@ -13,7 +13,7 @@ const CountryFooter = (props) => {
 
    await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
+      body: JSON.stringify({ "apiurl": world_countries }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

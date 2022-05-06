@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { base } from '../Base'
 import Spinner from 'react-bootstrap/Spinner'
 import Moment from 'react-moment'
+import { HomepageComment, Youtube } from '../Factory/PhpApi'
 
 //Owl Carousel Settings
 const options = {
@@ -84,7 +85,7 @@ const Testimonial = (props) => {
 
     async function CallApi() {
         const testimonials = await fetch(
-            'https://my.careerera.com/API/course/HomepageComment.php'
+            HomepageComment
         )
         const review = await testimonials.json()
         setdata(review.records[0].Comments)
@@ -93,7 +94,7 @@ const Testimonial = (props) => {
 
     async function CallYoutube() {
         const youtube = await fetch(
-            'https://my.careerera.com/API/common/reviewlinks.php'
+            Youtube
         )
         const youData = await youtube.json()
         setYou(youData.records)

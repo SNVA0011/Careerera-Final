@@ -7,6 +7,7 @@ import { CurrencyContxt } from "./Contextcurrency";
 import PopUpSuccess from "./PopUpSuccess";
 import ReCAPTCHA from "react-google-recaptcha";
 import ZipProspectus from '../Prospectus/PGP-Data-Science.zip'
+import { query } from "../Factory/PhpApi";
 
 const Forms = (props) => {
   // FormData
@@ -126,7 +127,7 @@ const Forms = (props) => {
       formdata.append("website_URL", "abc.com");  
       }
 
-      fetch("https://my.careerera.com/admin/curl_All_enqery.php", requestOptions)
+      fetch(query, requestOptions)
         .then(response => response.text())
         .then(result => setResponse(result)).catch(error => setResponse(''));
 

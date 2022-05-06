@@ -10,6 +10,7 @@ import StateFooter from "../Atoms/StateFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { base } from '../Base'
+import { CategoryPage, world_countrieS, world_countries } from "../Factory/PhpApi";
 
 
 const MasterCountry = () => {
@@ -46,7 +47,7 @@ const MasterCountry = () => {
     async function CallApi() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
+            body: JSON.stringify({ "apiurl": world_countries }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -63,7 +64,7 @@ const MasterCountry = () => {
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
+            body: JSON.stringify({ "apiurl": CategoryPage + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -78,7 +79,7 @@ const MasterCountry = () => {
     async function NoindexMeta() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/world_countries.php?url=' + countrycaptial }),
+            body: JSON.stringify({ "apiurl": world_countrieS + countrycaptial }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

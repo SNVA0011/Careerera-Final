@@ -11,6 +11,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { useParams } from 'react-router'
 import NotFound from './NotFound'
 import { base } from '../Base'
+import { BlogListS } from '../Factory/PhpApi'
 
 
 const Blog = () => {
@@ -27,7 +28,7 @@ const Blog = () => {
     async function Bloglist() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/BlogList.php' }),
+            body: JSON.stringify({ "apiurl": BlogListS }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

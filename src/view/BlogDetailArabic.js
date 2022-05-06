@@ -9,6 +9,7 @@ import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import fun from '../Images/fun4.gif'
 import { base } from '../Base'
+import { arBlogDetail } from "../Factory/PhpApi";
 
 
 const BlogDetailArabic = () => {
@@ -21,7 +22,7 @@ const BlogDetailArabic = () => {
   async function BlogDetails() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/arBlogDetails.php?Url=" + urlar.urlar }),
+      body: JSON.stringify({ "apiurl": arBlogDetail + urlar.urlar }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

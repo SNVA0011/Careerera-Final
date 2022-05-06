@@ -7,6 +7,7 @@ import Moment from "react-moment";
 import { Helmet } from 'react-helmet'
 import fun from '../Images/fun4.gif'
 import { base } from '../Base'
+import { BlogDetailS } from "../Factory/PhpApi";
 
 
 const BlogDetail = () => {
@@ -23,7 +24,7 @@ const BlogDetail = () => {
   async function BlogDetails() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/BlogDetails.php?Url=" + url }),
+      body: JSON.stringify({ "apiurl": BlogDetailS + url }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

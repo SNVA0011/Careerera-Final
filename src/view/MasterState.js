@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import CityFooter from "../Atoms/CityFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import { base } from '../Base'
+import { CategoryPage, world_countrieS, world_countries, world_state } from "../Factory/PhpApi";
 
 
 const MasterState = () => {
@@ -38,7 +39,7 @@ const MasterState = () => {
     async function CallApi() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
+            body: JSON.stringify({ "apiurl": world_countries }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -64,7 +65,7 @@ const MasterState = () => {
     async function StateApi() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_state.php?id=" + data }),
+            body: JSON.stringify({ "apiurl": world_state + data }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -85,7 +86,7 @@ const MasterState = () => {
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
+            body: JSON.stringify({ "apiurl": CategoryPage + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -101,7 +102,7 @@ const MasterState = () => {
     async function NoindexMeta() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/world_countries.php?url=' + countrycaptial }),
+            body: JSON.stringify({ "apiurl": world_countrieS + countrycaptial }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -115,7 +116,7 @@ const MasterState = () => {
     function StateNoindexMeta() {
         fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/world_state.php?id=' + getnoindex[0].id + '&url=' + country.state }),
+            body: JSON.stringify({ "apiurl": world_state + getnoindex[0].id + '&url=' + country.state }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { base } from '../Base'
+import { world_countries } from "../Factory/PhpApi";
 
 const CountryFooter = (props) => {
   const [data, setdata] = useState([])
@@ -10,7 +11,7 @@ const CountryFooter = (props) => {
   async function CallApi() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
+      body: JSON.stringify({ "apiurl": world_countries }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

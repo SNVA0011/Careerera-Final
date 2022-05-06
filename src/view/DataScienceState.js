@@ -12,6 +12,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
+import { countyDetaildata } from '../Factory/PhpApi';
 
 
 export default function DataScienceState() {
@@ -30,7 +31,7 @@ export default function DataScienceState() {
 
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/countyDetail.php?service=data-science&state=" + state + "&county=" + county }),
+      body: JSON.stringify({ "apiurl": countyDetaildata + state + "&county=" + county }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

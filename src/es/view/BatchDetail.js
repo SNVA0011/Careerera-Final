@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet'
 import Hero from "./../Atoms/Hero";
 import fun from '../../Images/fun4.gif'
 import { base } from '../../Base'
+import { BatchDetails, batch_location } from "../../Factory/PhpApi";
 
 
 const BatchDetail = (props) => {
@@ -25,7 +26,7 @@ const BatchDetail = (props) => {
   async function CallApi() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/course/BatchDetails.php?BId=" + workid.workid + "&timeZone=" + contextcur.currency }),
+      body: JSON.stringify({ "apiurl": BatchDetails + workid.workid + "&timeZone=" + contextcur.currency }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
@@ -40,7 +41,7 @@ const BatchDetail = (props) => {
   async function ListCall() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/batch_location.php" }),
+      body: JSON.stringify({ "apiurl": batch_location }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

@@ -11,6 +11,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
+import { cityDetailData } from '../Factory/PhpApi';
 
 
 export default function DataScienceCity() {
@@ -29,7 +30,7 @@ export default function DataScienceCity() {
     const city = citycourse.citycourse.replace("-", "%20")
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/cityDetail.php?service=data-science&state=" + state + "&county=" + county + "&city=" + city }),
+      body: JSON.stringify({ "apiurl": cityDetailData + state + "&county=" + county + "&city=" + city }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

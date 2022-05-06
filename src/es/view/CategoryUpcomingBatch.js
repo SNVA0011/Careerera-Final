@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { CurrencyContxt } from "../Atoms/Contextcurrency";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { base } from '../../Base'
+import { EsCategoryPage } from "../../Factory/PhpApi";
 
 
 export default function CategoryUpcomingBatch() {
@@ -21,7 +22,7 @@ export default function CategoryUpcomingBatch() {
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://es.careerera.com/API/course/CategoryPage.php?url=' + idbatchmain + '&timeZone=EST' }),
+            body: JSON.stringify({ "apiurl": EsCategoryPage + idbatchmain + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

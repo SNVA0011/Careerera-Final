@@ -5,6 +5,7 @@ import { Context, Provider } from "../Api";
 import Form from 'react-bootstrap/Form'
 import { Link } from 'react-router-dom';
 import { base } from '../Base'
+import { Eventslist1 } from '../Factory/PhpApi';
 
 
 export default function MocktestRegisterForm() {
@@ -16,7 +17,7 @@ export default function MocktestRegisterForm() {
     async function Eventslist() { 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            body: JSON.stringify({ "apiurl": Eventslist1 }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

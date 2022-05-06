@@ -17,7 +17,7 @@ export default function MocktestRegisterForm() {
 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/EventsList.php' }),
+            body: JSON.stringify({ "apiurl": Eventslist }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

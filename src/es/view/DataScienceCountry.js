@@ -16,6 +16,7 @@ import { useParams } from 'react-router';
 import Country from '../Atoms/Country';
 import StateFooterCourse from '../Atoms/StateFooterCourse';
 import { base } from '../../Base'
+import { stateDetailData } from '../../Factory/PhpApi';
 
 
 export default function DataScienceCountry() {
@@ -37,7 +38,7 @@ export default function DataScienceCountry() {
     const fixed = isuue.replace("-", "%20")
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/statesDetail.php?service=data-science&state=" + fixed }),
+      body: JSON.stringify({ "apiurl": stateDetailData + fixed }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

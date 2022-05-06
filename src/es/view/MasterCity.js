@@ -13,6 +13,7 @@ import StateFooter from "../Atoms/StateFooter";
 import MasterCountryHero from "../Atoms/MasterCountryHero";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { base } from '../../Base'
+import { CategoryPage, world_countries } from "../../Factory/PhpApi";
 
 
 const MasterCity = () => {
@@ -43,7 +44,7 @@ const MasterCity = () => {
     async function CallApi() {
       await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/API/common/world_countries.php" }),
+            body: JSON.stringify({ "apiurl": world_countries }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -61,7 +62,7 @@ const MasterCity = () => {
     async function getCourse() {
       await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + country.id + '&timeZone=EST' }),
+            body: JSON.stringify({ "apiurl": CategoryPage + country.id + '&timeZone=EST' }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

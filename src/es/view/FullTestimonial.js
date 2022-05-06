@@ -6,20 +6,21 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { base } from '../../Base'
+import { HomepageComment, Youtube } from "../../Factory/PhpApi";
 
 const FullTestimonial = () => {
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
     async function CallApi() {
         const testimonials = await fetch(
-            'https://my.careerera.com/API/course/HomepageComment.php'
+            HomepageComment
         )
         const review = await testimonials.json()
         setdata(review.records[0].Comments)
 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/HomepageComment.php' }),
+            body: JSON.stringify({ "apiurl": HomepageComment }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -72,7 +73,7 @@ const FullTestimonial = () => {
     async function CallYoutube() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/reviewlinks.php' }),
+            body: JSON.stringify({ "apiurl": Youtube }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

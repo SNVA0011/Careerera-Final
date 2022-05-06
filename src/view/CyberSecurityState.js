@@ -12,6 +12,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
+import { countyDetailCyber } from '../Factory/PhpApi';
 
 
 export default function CyberSecurityState() {
@@ -31,7 +32,7 @@ export default function CyberSecurityState() {
 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/countyDetail.php?service=cyber-security&state=" + state + "&county=" + county }),
+            body: JSON.stringify({ "apiurl": countyDetailCyber + state + "&county=" + county }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

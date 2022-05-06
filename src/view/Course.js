@@ -6,6 +6,7 @@ import fun from '../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
 import NotFound from './NotFound'
 import { base } from '../Base'
+import { CategoryPage } from '../Factory/PhpApi'
 
 
 
@@ -18,7 +19,7 @@ const Course = () => {
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/course/CategoryPage.php?url=' + id.id + "&timeZone=EST" }),
+            body: JSON.stringify({ "apiurl": CategoryPage + id.id + "&timeZone=EST" }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

@@ -16,6 +16,7 @@ import CountryFooterCourse from '../Atoms/CountryFooterCourse';
 import { useParams } from 'react-router';
 import CityFooterCourse from '../Atoms/CityFooterCourse';
 import { base } from '../../Base'
+import { countyDetailCyber } from '../../Factory/PhpApi';
 
 
 export default function CyberSecurityState() {
@@ -35,7 +36,7 @@ export default function CyberSecurityState() {
 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/countyDetail.php?service=cyber-security&state=" + state + "&county=" + county }),
+            body: JSON.stringify({ "apiurl": countyDetailCyber + state + "&county=" + county }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },

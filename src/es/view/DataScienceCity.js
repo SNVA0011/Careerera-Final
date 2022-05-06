@@ -15,6 +15,7 @@ import EnquireNowForm from '../Molecules/Course/EnquireNowForm';
 import { useParams } from 'react-router';
 import ZipFooterCourse from '../Atoms/ZipFooterCourse';
 import { base } from '../../Base'
+import { cityDetailData } from '../../Factory/PhpApi';
 
 
 
@@ -34,7 +35,7 @@ export default function DataScienceCity() {
     const city = citycourse.citycourse.replace("-", "%20")
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/cityDetail.php?service=data-science&state=" + state + "&county=" + county + "&city=" + city }),
+      body: JSON.stringify({ "apiurl": cityDetailData + state + "&county=" + county + "&city=" + city }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

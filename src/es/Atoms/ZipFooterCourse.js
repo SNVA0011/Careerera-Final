@@ -12,7 +12,7 @@ const ZipFooterCourse = (props) => {
   async function CallApi() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": "https://my.careerera.com/admin/admins/api/zip.php?service="+props.title.replace(/\s/g, '-')+"&state="+props.id+"&city="+props.id3+"&county="+props.id2}),
+      body: JSON.stringify({ "apiurl": Zip+props.title.replace(/\s/g, '-')+"&state="+props.id+"&city="+props.id3+"&county="+props.id2}),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

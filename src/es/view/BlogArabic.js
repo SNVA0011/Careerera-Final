@@ -24,7 +24,7 @@ const BlogArabic = () => {
     async function Bloglist() { 
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": 'https://my.careerera.com/API/common/ar-blogList.php' }),
+            body: JSON.stringify({ "apiurl": ar_blog_list }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
