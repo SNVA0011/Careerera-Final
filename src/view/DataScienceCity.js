@@ -12,6 +12,7 @@ import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
 import fun from '../Images/fun4.gif'
+import { cityDetailData } from '../Factory/PhpApi';
 
 export default function DataScienceCity() {
   const citycourse = useParams()
