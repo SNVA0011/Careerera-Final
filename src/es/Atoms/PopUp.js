@@ -19,8 +19,7 @@ const PopUp = (props) => {
     <>
       <Modal className="student-coursepopup modal-width" show={show} onHide={handleClose}  size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header closeButton></Modal.Header>
-        <Modal.Body className="p-0">
-          {/* <div className="grid grid-cols-2 gap-2"> <div> </div> <div> <img src={ds} className="w-100"/> </div> </div> */}
+        <Modal.Body className="p-0"> 
           <Sign title={props.title} />
         </Modal.Body>
       </Modal>
