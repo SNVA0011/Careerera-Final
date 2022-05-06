@@ -6,12 +6,11 @@ import fun from '../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
 
 const Free = () => {
-    // E-Learning Api
+  
     const { value7, value8 } = useContext(Context)
     const [freeCour, setFreeCour] = value7
-    const [freeCourLoad, setFreeCourLoad] = value8
-
-    // Live Online Api
+    const [freeCourLoad, setFreeCourLoad] = value8 
+    
     const { value9, value10 } = useContext(Context)
     const [allfreeCour, setallFreeCour] = value9
     const [allfreeCourLoad, setallFreeCourLoad] = value10

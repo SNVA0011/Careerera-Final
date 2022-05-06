@@ -4,15 +4,14 @@ import '../../style.css'
 import Flag from '../../Atoms/Flag'
 import { CurrencyContxt } from '../../Atoms/Contextcurrency'
 import { Link } from 'react-router-dom'
-const Footer = () => {
-    // currency inr/usd
+const Footer = () => { 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     return (
         <div className='footer-bottom full-w'>
             <div className="container pt-10">
-                {/* section 1 */}
+              
                 <div className="row">
-                    {/* first */}
+                    
                     <div className="col-xl-3 col-sm-6 col-12">
                         <Link to="/" className='mb-3 d-inline-block' >
                             <img src={logo} alt='logo' width={169} />
@@ -96,35 +95,35 @@ const Footer = () => {
                         <hr></hr>
                         <div className="rounded-social-buttons mt-4">
                             <a
-                                className="social-button facebook text-center"
+                                aria-label="social buttons" className="social-button facebook text-center"
                                 href="https://www.facebook.com/careerera"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-facebook-f"></i>
                             </a>
                             <a
-                                className="social-button twitter"
+                                aria-label="social buttons" className="social-button twitter"
                                 href="https://twitter.com/Careerera1"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a
-                                className="social-button linkedin"
+                                aria-label="social buttons" className="social-button linkedin"
                                 href="https://www.linkedin.com/company/careerera"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-linkedin"></i>
                             </a>
                             <a
-                                className="social-button instagram"
+                                aria-label="social buttons" className="social-button instagram"
                                 href="https://www.instagram.com/careereraonline/ "
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-instagram"></i>
                             </a>
                             <a
-                                className="social-button youtube"
+                                aria-label="social buttons" className="social-button youtube"
                                 href="https://www.youtube.com/channel/UCQaNKS04OqIjTs9oJaMWbuQ?view_as=subscriber"
                                 target='_blank' rel='noreferrer' >
                                 <i className="fab fa-youtube"></i>
@@ -133,7 +132,7 @@ const Footer = () => {
 
                     </div>
 
-                    {/* second  */}
+                
                     <div className="col-xl-3 col-sm-6 col-12 hoveff">
                         <p className="text-2xl md:text-3xl font-semibold mt-4 mb-1 mb-md-2">
                             Quick Links
@@ -177,7 +176,7 @@ const Footer = () => {
                         <hr className="d-sm-none" />
                     </div>
 
-                    {/* third */}
+                   
                     <div className="col-xl-3 col-sm-6 col-12 hoveff">
 
                         <p className="text-2xl md:text-3xl font-semibold mt-4 mb-1 mb-md-2">
@@ -218,7 +217,7 @@ const Footer = () => {
                         <hr className="d-sm-none" />
                     </div>
 
-                    {/* fourth */}
+                    
                     <div className="col-xl-3 col-sm-6 col-12 hoveff">
 
                         <p className="text-2xl md:text-3xl font-semibold mt-4 mb-1 mb-md-2">Others</p>
@@ -257,7 +256,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                {/* section 2 */}
+              
                 <div className="row text-black mt-4">
                     <div className="col-12">
 

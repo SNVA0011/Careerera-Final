@@ -34,8 +34,7 @@ const Job = () => {
     useEffect(() => {
         getJob()
         window.scrollTo(0, 0);
-    }, [])
-    // currency inr/usd
+    }, []) 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
     return (
@@ -95,16 +94,12 @@ const Job = () => {
                                                         <div className="border-r-2 border-gray-300 col-md-6 col-xxl-5 col-12">
                                                             <p className="text-sm text-gray-500 font-semibold mb-1">Salario</p>
                                                             {items.show_sal == 1 ? <p className="text-lg font-bold mb-0">No divulgado</p> :
-                                                                <p className="text-lg font-bold mb-0">
-
-
+                                                                <p className="text-lg font-bold mb-0"> 
                                                                     {items.currency} {items.min_sal} - {items.currency} {items.max_sal}</p>}
                                                         </div>
                                                     </div>
                                                 </div>
-
-
-                                                {/* <p className="mt-2 mb-3 font-medium text-gray-600 leading-loose"><i className="bi bi-file-earmark-text mr-1"></i> Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit. Lorem ipsum dolor sit amit lorem ipsum dolor sit amit.</p> */}
+ 
 
                                                 <Link to={'/es/jobs/'+items.job_url + "/" + items.id} className="mt-3 btn-site invert no-underline d-inline-flex justify-content-center align-items-center btnlg-learn">
                                                     <span>Leer más</span>

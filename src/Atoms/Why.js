@@ -9,8 +9,7 @@ const Why = (props) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-
-      {/* why-datasciencesuf */}
+ 
       <div className='why-datasciencesuf scroll-spbx bg-blue-50' id='why'>
         {props.customizable ?
           <div className='container py-16'>

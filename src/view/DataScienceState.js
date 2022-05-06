@@ -12,8 +12,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
-import { countyDetaildata } from '../Factory/PhpApi';
-
+import fun from '../Images/fun4.gif'
 
 export default function DataScienceState() {
   const statecourse = useParams()
@@ -63,7 +62,7 @@ export default function DataScienceState() {
 
         </Helmet>
 
-        {/* certification-courses */}
+        
         <div className='certification-courses full-w staticsyber p-0'>
           <div className="container">
             <div className="row py-16 align-items-center">
@@ -86,7 +85,7 @@ export default function DataScienceState() {
 
               </div>
 
-              {/* form */}
+              
               <EnquireNowForm />
             </div>
           </div>
@@ -110,28 +109,7 @@ export default function DataScienceState() {
                   </div>
                 </div> : ''}
 
-              {/* <div className="des_content content st">
-            
-
-             <div className={"desc_list_show_more " + (conthide ? 'd-none' : 'd-block')}>
-                <a href={void (0)}
-                  onClick={() => { showMorecont() }}
-                  className="desc_show_more btn-site no-underline cursor-pointer invert"><span>Show More</span></a>
-              </div>
-
-              <div className={"desc_after_click " + (conthide ? 'd-block' : 'd-none')}>
-               
-
-                <div className="desc_list_show_less mt-4">
-                  <a href={void (0)} onClick={() => { showMorecont() }} className="desc_show_less btn-site no-underline cursor-pointer">
-                    <span>Show Less</span>
-                  </a>
-                </div>
-              </div> 
-            </div>*/}
-
-
-
+          
             </div>
           </div>
 
@@ -148,7 +126,7 @@ export default function DataScienceState() {
                 <div className="col-12">
                   <div className="row pt-1">
 
-                    {/* col-xl-4 start */}
+                    
                     <div className="col-xl-4 col-md-6 col-12 mb-4">
                       <div className="cards h-100 d-flex flex-column">
                         <div className="pt-2 pl-4 rounded-lg">
@@ -276,7 +254,7 @@ export default function DataScienceState() {
                     </div>
 
 
-                    {/* col-xl-4 start */}
+                    
                     <div className="col-xl-4 col-md-6 col-12 mb-4">
                       <div className="cards h-100 d-flex flex-column">
                         <div className="pt-2 pl-4 rounded-lg">
@@ -404,7 +382,7 @@ export default function DataScienceState() {
                     </div>
 
 
-                    {/* col-xl-4 start */}
+                    
                     <div className="col-xl-4 col-md-6 col-12 mb-4">
                       <div className="cards h-100 d-flex flex-column">
                         <div className="pt-2 pl-4 rounded-lg">
@@ -531,7 +509,7 @@ export default function DataScienceState() {
                     </div>
 
 
-                    {/* col-xl-4 start */}
+                    
                     <div className="col-xl-4 col-md-6 col-12 mb-4">
                       <div className="cards h-100 d-flex flex-column">
                         <div className="pt-2 pl-4 rounded-lg">
@@ -660,7 +638,7 @@ export default function DataScienceState() {
                     </div>
 
 
-                    {/* col-xl-4 start */}
+                    
                     <div className="col-xl-4 col-md-6 col-12 mb-4">
                       <div className="cards h-100 d-flex flex-column">
                         <div className="pt-2 pl-4 rounded-lg">
@@ -823,65 +801,17 @@ export default function DataScienceState() {
 
           <Light image={roles} />
 
-          {/* UserformsApplication */}
+          
           <div className='showprocess-Only'>
             <UserformsApplication />
           </div>
-
-
-
-          {/* discription_sec */}
-          {/* <div className='our_faq_sec custom_locationall scroll-spbx'>
-          <div className='container py-16'>
-
-            <div className="pt-1">
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>Check Out Data Science Course and Batches in Other Locations <div className="btn-site invert ml-3"><span>View</span></div></Accordion.Header>
-                  <Accordion.Body>
-                    <ul className='list-disc text-base row'>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/india"}>India</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/united-kingdom"}>United Kingdom</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/united-states"}>United States</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/australia"}>Australia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/singapore"}>Singapore</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/malaysia"}>Malaysia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/bangladesh"}>Bangladesh</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/saudi-arabia"}>Saudi Arabia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/uae"}>UAE</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/qatar"}>Qatar</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/oman"}>Oman</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/bahrain"}>Bahrain</Link></li>
-                    </ul>
-                  </Accordion.Body>
-                </Accordion.Item>
-
-              </Accordion>
-            </div>
-          </div>
-        </div> */}
+ 
 
           <CityFooterCourse id={statecourse.statecourse} id2={statecourse.countrycourse} title="data-science" />
         </div>
-      </div> : <div>
-
-      </div>}
+      </div> :
+ <img src={fun} className="w-screen" alt="careerera-loader-image"/>}
 
     </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

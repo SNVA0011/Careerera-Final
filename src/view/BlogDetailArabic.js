@@ -18,7 +18,7 @@ const BlogDetailArabic = () => {
   const [BlogDetail, setBlogDetail] = useState([]);
   const [blogDetailsts, setblogDetailsts] = useState(false);
 
-  // List of BlogDetails
+ 
   async function BlogDetails() {
     await fetch(base, {
       method: 'POST',

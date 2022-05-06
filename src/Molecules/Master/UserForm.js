@@ -48,7 +48,7 @@ const UserForm = () => {
                 <p className='text-lg font-semibold text-gray-600'>We have learners for our Data Science Program From Following Companies.</p>
 
                 <div className="pb-2 pt-2 text-center">
-                    {/* <p className="text-center text-6xl font-bold text-gray-600 mb-6">In The Media</p> */}
+                 
                     <OwlCarousel className="slider-items owl-carousel pt-6 pb-6" {...options}>
                         <div className="item">
                             <div className="border w-100 h-100 d-flex align-items-center justify-content-center">

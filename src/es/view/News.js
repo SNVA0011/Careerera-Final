@@ -12,14 +12,10 @@ import { Eventslist1 } from '../../Factory/PhpApi'
 
 
 const News = () => {
-    // const { value15, value16 } = useContext(Context)
-    // const [Event, setEvent] = value15
-    // const [Eventsts, setEventsts] = value16
 
     const [Event, setEvent] = useState([])
     const [Eventsts, setEventsts] = useState(false)
 
-    // List of Event
     async function Eventslist() {  
         await fetch(base, {
             method: 'POST',
@@ -50,7 +46,6 @@ const News = () => {
 
  
 
-    // // pagination
     const [pagination_st, setPaginationst] = useState(0)
     const [parinum, setParinum] = useState([])
 
@@ -143,19 +138,6 @@ const News = () => {
                                                             <i className="text-xs bi bi-chevron-compact-right divblog-sep mx-3"></i>
                                                             <span className="">
                                                                 <i className="orange-lgclr bi bi-tags mr-1"></i>
-                                                                {/* <a
-                                                            href={
-                                                                '/?s=' +
-                                                                item.categoryUrl
-                                                            }>
-                                                            <span className="tag-caturl">                
-                                                                  {
-                                                                    (typeof item.categoryUrl === 'string' ? 
-                                                                    item.categoryUrl.slice(0,1).replace(/-/g, " ").toUpperCase() + item.categoryUrl.slice(1, item.categoryUrl?.length).replace(/-/g, " ")
-                                                                    : '')
-                                                                 }
-                                                            </span>
-                                                        </a> */}
                                                                 Education
                                                             </span>
                                                         </div> 
@@ -281,7 +263,7 @@ const News = () => {
                                                 </a>
                                             </li>
 
-                                            {/*------ pagination map ------*/}
+                                            
                                             {new Array(freeAllbatch[0]?.length - 1)
                                                 .fill()
                                                 .map((_, index) => (
@@ -320,7 +302,7 @@ const News = () => {
 
 
 
-                                            {/* last item */}
+                                            
                                             <li
                                                 className={
                                                     "page-item dots" +
@@ -340,7 +322,7 @@ const News = () => {
                                                     {freeAllbatch[0]?.length}
                                                 </a>
                                             </li>
-                                            {/*------ end pagination map ------*/}
+                                            
 
 
                                             <li className='w-100 d-block d-lg-none'></li>

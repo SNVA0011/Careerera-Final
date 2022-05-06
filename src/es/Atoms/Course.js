@@ -17,16 +17,15 @@ const Course = (props) => {
     const [statu, updatestatus] = useState(false)
     const [hoveactive, sethoveactive] = useState('')
     const [defaultActive, setdefaultActive] = useState(true)
-
-    // totaltitle
+ 
     const [totaltitle, settotaltitle] = useState([]);
     const [totalcour, settotalcour] = useState('');
 
-    // totalcourslice
+ 
     const [totalcourslice, settotalcourslice] = useState();
     const [showallcour, setShowallcour] = useState(6);
 
-    // loadmoreFun
+ 
     function loadmoreFun(title, len) {
         settotalcourslice(title)
         setShowallcour(len)
@@ -48,15 +47,13 @@ const Course = (props) => {
         settotaltitle([e, url])
         settotalcour(len)
     }
-
-
-    // hideMenucourse
+ 
     const [hidemenust, setHidemenust] = useState(true)
 
 
     const [mobmenuclose, setMobmenuclose] = useContext(menuCloseMob);
 
-    // check Desktop screen
+ 
     const [widthsc, setWidthwidthsc] = useState(window.innerWidth);
     function handleWindowSizeChange() {
         setWidthwidthsc(window.innerWidth);
@@ -85,12 +82,12 @@ const Course = (props) => {
                                 <div className="container scroll-area px-scrollbox-12">
                                     {widthsc < 992 ? '' :
                                         <div className="row above">
-                                            {/* Course list */}
+                                          
                                             <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
-                                                {/* <h3 className="font-semibold text-lg pl-1 text-blue-500"  >Choose Your Domain</h3> */}
+                                                 
                                                 {exactData?.length > 0 && exactData.map((item, i) => (
                                                     <div className="font-left mb-1 rounded">
-                                                        {/* <Link to={'/es/'+item.category_url}>Hello</Link> */}
+                                                      
                                                         <Link to={'/es/' + item.category_url} key={i}
                                                             onClick={(e) => { setHidemenust(true) }}
                                                             className={
@@ -119,7 +116,7 @@ const Course = (props) => {
                                                 ))}
                                             </div>
 
-                                            {/* Course detail data */}
+                                        
                                             <div className="col-xxl-9 col-lg-8 col-12 scroll-xxl-9">
 
                                                 {exactData?.length > 0 && exactData

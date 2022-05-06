@@ -13,7 +13,7 @@ import Aboutpartner from '../Molecules/Partner/Aboutpartner'
 
 
 const Partner = () => {
-    // Country List Api
+ 
     const { value11, value12 } = useContext(Context)
     const [cntry, setcntry] = value11
     const [cntryLoad, setcntryLoad] = value12
@@ -25,7 +25,7 @@ const Partner = () => {
         var tawkId = "default"
         var tawk = new TawkTo(propertyId, tawkId)
         tawk.onStatusChange((status) => {
-            // console.log(status)
+            
         })
 
     }, []);

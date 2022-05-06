@@ -16,9 +16,7 @@ const Hero = () => {
                             Become a part of the growing careerera community Join
                             the technological era of education with careerera
                         </span>
-                        {/* <a className="btn-site mt-4 invert no-underline" href="#instructor_contact">
-                            <span>Get Started</span>
-                        </a> */}
+                    
                     </div>
                     <div className="col-xxl-4 col-xl-5 col-12 align-self-center">
                        <BecomeInsForm />

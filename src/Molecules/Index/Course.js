@@ -20,15 +20,12 @@ const Course = () => {
   const [hoveactive, sethoveactive] = useState('')
   const [defaultActive, setdefaultActive] = useState(true)
 
-  // totaltitle
   const [totaltitle, settotaltitle] = useState([]);
   const [totalcour, settotalcour] = useState('');
 
-  // totalcourslice
   const [totalcourslice, settotalcourslice] = useState();
   const [showallcour, setShowallcour] = useState(6);
 
-  // loadmoreFun
   function loadmoreFun(title, len) {
     settotalcourslice(title)
     setShowallcour(len)
@@ -48,14 +45,12 @@ const Course = () => {
     settotalcour(len)
   }
 
-  // check Desktop screen
   const [widthsc, setWidthwidthsc] = useState(window.innerWidth);
   function handleWindowSizeChange() {
     setWidthwidthsc(window.innerWidth);
   }
 
 
-  // Total users
   const [RegUser, setRegUser] = useState([]);
   const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
 
@@ -103,8 +98,7 @@ const Course = () => {
 
                 {widthsc < 992 ? '' :
                   <div className="row">
-
-                    {/* Course list */}
+ 
                     <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
 
                       {exactData?.length > 0 && exactData.map((item, i) => (
@@ -127,7 +121,7 @@ const Course = () => {
                       ))}
                     </div>
 
-                    {/* Course detail data */}
+                   
                     <div className="col-xxl-9 col-lg-8 col-12">
                       {exactData?.length > 0 && exactData
                         .filter(
@@ -164,19 +158,7 @@ const Course = () => {
                                             </div>
                                           </div>
 
-                                          {/* <div className="row">
-                                            <div className="col-3 relative top-8">
-                                              <img
-                                                src={
-                                                  dat.courseType === 'Short'
-                                                    ? certificate
-                                                    : post
-                                                }
-                                                className="w-full border rounded-full"
-                                                alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                              />
-                                            </div>
-                                          </div> */}
+                                         
                                         </div>
                                         <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                           <div className="flex-grow-1">
@@ -283,18 +265,7 @@ const Course = () => {
                                                       </span>
                                                     </div>
                                                   </div>
-                                                  {/* <div className="row">
-                                                   <div className="col-3 relative top-4">
-                                                      <img
-                                                        src={
-                                                          dat.courseType === 'Short'
-                                                            ? certificate
-                                                            : post
-                                                        }
-                                                        className="w-1/4  border rounded-full" alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                                      />
-                                                    </div>
-                                                  </div> */}
+                                                
                                                 </div>
                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                   <div className="flex-grow-1">
@@ -348,8 +319,7 @@ const Course = () => {
               </div>
             </div>
 
-
-            {/* Counter */}
+ 
             {LoadSetRegUser ?
               RegUser.RegisteredUsers ?
                 <>

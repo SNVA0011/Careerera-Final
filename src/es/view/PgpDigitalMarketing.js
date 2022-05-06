@@ -79,8 +79,7 @@ const PgpDigitalMarketing = () => {
                 Application="Application"
                 faq="FAQ"
                 Review="Reviews"
-                hiring="Hiring Partner"
-            // blogs="Blogs"
+                hiring="Hiring Partner" 
             />
             <DescriptionStatic
                 title="DIGITAL MARKETING Online Course"
@@ -595,20 +594,7 @@ const PgpDigitalMarketing = () => {
                             <li>Legal implications</li>
                         </ul></>}
                     />
-
-                    {/* <h4 classNamt-12 me="font-bold text-lg sm:text-xl ">Module 13  <span className="heading-border-line"></span></h4>
-        < ProgramCarriculum
-            topic1="Special Topics"
-                 detail1={<></>}
-            /> */}
-                    {/* 
-<h4 className="mt-12 font-bold text-lg sm:text-xl ">Module 14  <span className="heading-border-line"></span></h4>
-        < ProgramCarriculum
-            topic1="Special Topics"
-                 detail1={<></>}
-            /> */}
-
-
+ 
                 </div>
             </div>
 
@@ -730,25 +716,8 @@ Digital marketing is extremely important in today’s world which runs almost co
                Candidates can opt for demo classes in order to get a good idea of the actual training sessions.
                Careerera provides the online live virtual classroom training model in order to make it easier for working professionals to attend the sessions on one hand while balancing their work on the other.
            
-           "
-
-            />
-            {/* <Blog
-                heading="Blogs"
-                heading2="And Article"
-
-                title1="Is DIGITAL MARKETING Hard?   "
-                url1="https://my.careerera.com/eventimages/Newsid_373_images0.jpg"
-                redirect1="/blog/is-full-stack-development-hard"
-
-                title2="Is it worth becoming a full-stack developer?    "
-                url2="https://my.careerera.com/eventimages/Newsid_335_images0.jpg"
-                redirect2="/blog/is-it-worth-becoming-a-full-stack-developer"
-
-                title3="Do full-stack developers get paid more?  "
-                url3="https://my.careerera.com/eventimages/Newsid_332_images0.jpg"
-                redirect3="/blog/do-full-stack-developers-get-paid-more"
-            /> */}
+           "/>
+            
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
             <CountryFooter pagetitle="Digital Marketing" />

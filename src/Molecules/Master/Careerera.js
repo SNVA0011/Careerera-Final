@@ -16,7 +16,7 @@ const Careerera = (props) => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
 
                         <div className="row pt-1 px-2 text-uppercase">
-                            {/* first */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-blue-100  border-solid border-2 border-white">
                                 <i className="fas fa-users fa-2x border-1 border-white rounded-full bg-blue-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -25,7 +25,7 @@ const Careerera = (props) => {
                                 </div>
                             </div>
 
-                            {/* second */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-red-100  border-solid border-2 border-white">
                                 <i className="fas fa-trophy fa-2x border-1 border-white rounded-full bg-red-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -33,7 +33,7 @@ const Careerera = (props) => {
                                     <p className='text-red-500 font-bold font-italic text-3xl xl:text-4xl mb-0 mt-0'>{props.facultypara2}</p>
                                 </div>
                             </div>
-                            {/* third */}
+                           
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-green-100  border-solid border-2 border-white">
                                 <i className="fas fa-user-shield fa-2x border-1 border-white rounded-full bg-green-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -41,7 +41,7 @@ const Careerera = (props) => {
                                     <p className='text-green-500 font-bold font-italic text-3xl xl:text-4xl mb-0 mt-0'>{props.facultypara3}</p>
                                 </div>
                             </div>
-                            {/* fourth */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-purple-100  border-solid border-2 border-white">
                                 <i className="fas fa-medal fa-2x border-1 border-white rounded-full bg-purple-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -60,7 +60,7 @@ const Careerera = (props) => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
 
                         <div className="row pt-1 text-uppercase">
-                            {/* first */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-blue-100  border-solid border-2 border-white">
                                 <i className="fas fa-users fa-2x border-1 border-white rounded-full bg-blue-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -69,7 +69,7 @@ const Careerera = (props) => {
                                 </div>
                             </div>
 
-                            {/* second */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-red-100  border-solid border-2 border-white">
                                 <i className="fas fa-trophy fa-2x border-1 border-white rounded-full bg-red-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -77,7 +77,7 @@ const Careerera = (props) => {
                                     <p className='text-red-500 font-bold font-italic text-3xl xl:text-4xl mb-0 mt-0'>10</p>
                                 </div>
                             </div>
-                            {/* third */}
+                           
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-green-100  border-solid border-2 border-white">
                                 <i className="fas fa-user-shield fa-2x border-1 border-white rounded-full bg-green-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">
@@ -85,7 +85,7 @@ const Careerera = (props) => {
                                     <p className='text-green-500 font-bold font-italic text-3xl xl:text-4xl mb-0 mt-0'>500+</p>
                                 </div>
                             </div>
-                            {/* fourth */}
+                            
                             <div className="justify-items-center col-xl-3 col-md-6 col-12 text-center bg-purple-100  border-solid border-2 border-white">
                                 <i className="fas fa-medal fa-2x border-1 border-white rounded-full bg-purple-500 p-4 text-white "></i>
                                 <div className="py-10 text-white ">

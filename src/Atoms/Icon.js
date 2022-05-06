@@ -9,8 +9,7 @@ import ae from '../Images/ae.png'
 import bd from '../Images/bd.png'
 
 
-const Icon = () => {
-  // currency inr/usd
+const Icon = () => { 
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
   return (

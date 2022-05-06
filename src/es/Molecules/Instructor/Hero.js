@@ -14,9 +14,7 @@ const Hero = () => {
                         <span className="mt-3 block text-base md:text-lg lg:text-xl text-gray-600 font-medium">
                             Conviértete en parte de la creciente comunidad de Careera Únete a la era tecnológica de la educación con Careera
                         </span>
-                        {/* <a className="btn-site mt-4 invert no-underline" href="#instructor_contact">
-                            <span>Get Started</span>
-                        </a> */}
+                       
                     </div>
                     <div className="col-xxl-4 col-xl-5 col-12 align-self-center">
                        <BecomeInsForm />

@@ -16,8 +16,7 @@ const NewsDetail = () => {
   const [Eventdetailssts, setEventdetailssts] = useState(false)
 
   let { news } = useParams()
-
-  // List of Eventdetail
+ 
   async function Eventsdetail() {
     await fetch(base, {
       method: 'POST',

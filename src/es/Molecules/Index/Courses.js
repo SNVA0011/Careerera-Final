@@ -16,7 +16,6 @@ export default function Courses() {
     const [exactData] = value13
     const [status] = value14
 
-    // settotalcour
     const [totalcour, settotalcour] = useState([3, "Programas De Postgrado"]);
 
     //Owl Carousel Settings
@@ -57,7 +56,6 @@ export default function Courses() {
     };
 
 
-    // onOpentab
     function onOpentab(k) {
         setKeyOwl(options)
         if (k === "postgrado") {
@@ -70,7 +68,6 @@ export default function Courses() {
     }
 
 
-    // Total users
     const [RegUser, setRegUser] = useState([]);
     const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
 
@@ -94,7 +91,7 @@ export default function Courses() {
 
     return (
         <>
-            {/* mockexam-certi */}
+         
             {status ?
                 <div className='mockexam-certi caciones-slider'>
 
@@ -116,7 +113,7 @@ export default function Courses() {
                                             {exactData?.length > 0 && exactData.filter((item) => item.new_label === '1').map((dat, ind) => {
                                                 return (
                                                     <>
-                                                        {/* owlitem */}
+                                                        
                                                         <div className="owlitem" key={dat.course_id}>
                                                             <div className="cards h-100 d-flex flex-column">
                                                                 <Link to={'/es/' + dat.courseFUllURL} className="no-underline mb-1">
@@ -183,7 +180,7 @@ export default function Courses() {
                                             {exactData?.length > 0 && exactData.filter((item) => item.new_label === '2').map((dat, ind) => {
                                                 return (
                                                     <>
-                                                        {/* owlitem */}
+                                                    
                                                         <div className="owlitem" key={dat.course_id}>
                                                             <div className="cards h-100 d-flex flex-column">
                                                                 <Link to={'/es/' + dat.courseFUllURL} className="no-underline mb-1">
@@ -255,7 +252,7 @@ export default function Courses() {
 
 
 
-            {/* Counter */}
+           
             {LoadSetRegUser ?
                 RegUser.RegisteredUsers ?
                     <>

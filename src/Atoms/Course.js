@@ -18,15 +18,12 @@ const Course = (props) => {
     const [hoveactive, sethoveactive] = useState('')
     const [defaultActive, setdefaultActive] = useState(true)
 
-    // totaltitle
     const [totaltitle, settotaltitle] = useState([]);
     const [totalcour, settotalcour] = useState('');
 
-    // totalcourslice
     const [totalcourslice, settotalcourslice] = useState();
     const [showallcour, setShowallcour] = useState(6);
 
-    // loadmoreFun
     function loadmoreFun(title, len) {
         settotalcourslice(title)
         setShowallcour(len)
@@ -50,13 +47,11 @@ const Course = (props) => {
     }
 
 
-    // hideMenucourse
     const [hidemenust, setHidemenust] = useState(true)
 
 
     const [mobmenuclose, setMobmenuclose] = useContext(menuCloseMob);
 
-    // check Desktop screen
     const [widthsc, setWidthwidthsc] = useState(window.innerWidth);
     function handleWindowSizeChange() {
         setWidthwidthsc(window.innerWidth);
@@ -86,12 +81,12 @@ const Course = (props) => {
                                 <div className="container scroll-area px-scrollbox-12">
                                     {widthsc < 992 ? '' :
                                         <div className="row above">
-                                            {/* Course list */}
+                                      
                                             <div className="col-xxl-3 col-lg-4 col-12 pt-4 sticky top-24 leftonhover-cr">
-                                                {/* <h3 className="font-semibold text-lg pl-1 text-blue-500"  >Choose Your Domain</h3> */}
+                                                
                                                 {exactData?.length > 0 && exactData.map((item, i) => (
                                                     <div className="font-left mb-1 rounded" key={i} >
-                                                        {/* <Link to={item.category_url}>Hello</Link> */}
+                                                       
                                                         <Link to={item.category_url}
                                                             onClick={(e) => { setHidemenust(true) }}
                                                             className={
@@ -120,7 +115,7 @@ const Course = (props) => {
                                                 ))}
                                             </div>
 
-                                            {/* Course detail data */}
+                                         
                                             <div className="col-xxl-9 col-lg-8 col-12 scroll-xxl-9">
 
                                                 {exactData?.length > 0 && exactData.filter(statu ? (item) => item.category_title === value : (item) => item.category_title === 'Data Science').map((item, e) => (
@@ -146,20 +141,7 @@ const Course = (props) => {
                                                                                             </span>
                                                                                         </div>
                                                                                     </div>
-
-                                                                                    {/* <div className='row'>
-                                                                                        <div className='col-3 relative top-4'>
-                                                                                            <img
-                                                                                                src={
-                                                                                                    dat.courseType === 'Short'
-                                                                                                        ? certificate
-                                                                                                        : post
-                                                                                                }
-                                                                                                className="w-1/4  border rounded-full"
-                                                                                                alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                                                                            />
-                                                                                        </div>
-                                                                                    </div> */}
+ 
                                                                                 </div>
                                                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                     <div className="flex-grow-1">
@@ -270,20 +252,7 @@ const Course = (props) => {
                                                                                                                 </span>
                                                                                                             </div>
                                                                                                         </div>
-{/* 
-                                                                                                        <div className='row'>
-                                                                                                            <div className='col-3 relative top-4'>
-                                                                                                                <img
-                                                                                                                    src={
-                                                                                                                        dat.courseType === 'Short'
-                                                                                                                            ? certificate
-                                                                                                                            : post
-                                                                                                                    }
-                                                                                                                    className="w-1/4  border rounded-full"
-                                                                                                                    alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
-                                                                                                                />
-                                                                                                            </div>
-                                                                                                        </div> */}
+ 
                                                                                                     </div>
                                                                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                                         <div className="flex-grow-1">

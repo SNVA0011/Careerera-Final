@@ -50,8 +50,7 @@ const PgpAidizaje = () => {
                 <link rel="canonical" href="https://www.careerera.com/es/artificial-intelligence-and-machine-learning/programa-de-postgrado-en-inteligencia-artificial-y-aprendizaje-automatico" />
             </Helmet>
         
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO"
-                  urlpath={dats} /> */}
+         
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN INTELIGENCIA ARTIFICIAL Y APRENDIZAJE AUTOMÁTICO"
@@ -181,9 +180,9 @@ const PgpAidizaje = () => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                     </div>
 
-                    {/*==================== h4 title ================*/}
+                    
                     <div className="row">
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3">la fundación
                             <span className="heading-border-line"></span></h4>
 
@@ -217,7 +216,7 @@ const PgpAidizaje = () => {
                                 </div>} />
                         </div>
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3">Distribuciones de probabilidad
                             <span className="heading-border-line"></span></h4>
 
@@ -281,7 +280,7 @@ const PgpAidizaje = () => {
                                 </div>} />
                         </div>
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3">Inteligencia artificial
                             <span className="heading-border-line"></span></h4>
 
@@ -572,7 +571,7 @@ const PgpAidizaje = () => {
 
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
-            {/* <CountryFooter  pagetitle="UI and UX"/> */}
+             
         </div>
     )
 }

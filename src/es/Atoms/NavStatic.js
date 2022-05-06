@@ -19,8 +19,7 @@ const NavStatic = (props) => {
             {props.Colocacion ? <Nav.Link href="#tieupsguarantee" className='text-base'>{props.Colocacion}</Nav.Link> : ''}
             { props.Application ? <Nav.Link href="#ApplicationProcess" className='text-base'>{props.Application}</Nav.Link> : ''}
             {props.queryInscribirse ? <Nav.Link href="#query" className='text-base'>{props.queryInscribirse}</Nav.Link> : ''}
-            {props.Project ? <Nav.Link href="#capstone" className='text-base'>{props.Project}</Nav.Link> : ''}
-            {/* { props.Placement ? <Nav.Link href="#profile" className='text-base'>{props.Placement}</Nav.Link> : ''} */} 
+            {props.Project ? <Nav.Link href="#capstone" className='text-base'>{props.Project}</Nav.Link> : ''} 
             {props.faq ? <Nav.Link href="#FAQ" className='text-base'>{props.faq}</Nav.Link> : ''}
             {props.blogs ? <Nav.Link href="#blog" className='text-base'>{props.blogs}</Nav.Link> : ''}
             {props.Review ? <Nav.Link href="#review" className='text-base'>{props.Review}</Nav.Link> : ''}

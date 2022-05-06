@@ -16,33 +16,17 @@ import { CategoryPage, world_countries } from "../../Factory/PhpApi";
 
 const MasterCountry = () => {
     let country = useParams()
-
-    // const { value7, value8 } = useContext(Context)
-    // const [freeCour, setFreeCour] = value7
-    // const [freeCourLoad, setFreeCourLoad] = value8
-
-    // All courses Api
-    // const { value5, value6 } = useContext(Context)
-    // const [Catfinal, Catsetfinal] = value5
-    // const [Catsts, Catloadsts] = value6
+  
 
     const { value9, value10 } = useContext(Context)
     const [allfreeCour, setallFreeCour] = value9
     const [allfreeCourLoad, setallFreeCourLoad] = value10
 
-    const [contextcur, setContextCur] = useContext(CurrencyContxt);
-
-
-
-
+    const [contextcur, setContextCur] = useContext(CurrencyContxt); 
     const [Catfinal, Catsetfinal] = useState([]);
-    const [Catsts, Catloadsts] = useState(false);
-
-    // country Api
+    const [Catsts, Catloadsts] = useState(false); 
     const [data, setdata] = useState([])
-    const [load, setload] = useState(false)
-
-
+    const [load, setload] = useState(false) 
 
     async function CallApi() {
         await fetch(base, {
@@ -58,9 +42,7 @@ const MasterCountry = () => {
     }
 
 
-
-
-    // List of BlogDetails
+ 
 
     async function getCourse() {
        await fetch(base, {
@@ -90,9 +72,7 @@ const MasterCountry = () => {
 
     const finalId = data.filter((items) => items.countries_url == country.country)
 
-
-
-    // getWords
+ 
     function getWords(monthCount) {
         function getPlural(number, word) {
             return number === 1 && word.one || word.other;
@@ -136,9 +116,7 @@ const MasterCountry = () => {
                 : ''}
 
             <div className="free-batches bg-gray-50 country-master full-w">
-
-
-                {/* free */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pt-16 pb-8">
 
@@ -270,8 +248,7 @@ const MasterCountry = () => {
                     </div>
                 </div>
 
-
-                {/* COURSE */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pb-16">
                         <h3 className='font-semibold text-2xl mb-3'>LIVE ONLINE</h3>

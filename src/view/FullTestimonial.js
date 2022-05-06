@@ -108,8 +108,7 @@ const FullTestimonial = () => {
                                         <hr className="w-20 hr bg-blue-400 sepfoll-hr mx-auto" />
                                     </div>
                                 </div>
-
-                                {/* blgvisibleowlcarousel */}
+ 
                                 <div className="mt-3">
                                     <div className='blgvisibleowlcarousel full-w media-prtslider ourclient-staffing'>
                                         <OwlCarousel className="slider-items owl-carousel pt-5" {...options}>
@@ -203,7 +202,7 @@ const FullTestimonial = () => {
 
                                                 {item.linkedin.includes('linkedin') ?
                                                     <div className="rounded-social-buttons m-0"> <a
-                                                        className="social-button linkedin m-0"
+                                                    aria-label="social buttons" className="social-button linkedin m-0"
                                                         href={item.linkedin}
                                                         target='_blank' rel='noreferrer' >
                                                         <i className="fab fa-linkedin"></i>

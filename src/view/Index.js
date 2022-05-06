@@ -8,11 +8,11 @@ import TawkTo from 'tawkto-react'
 
 
 
-const Course = lazy(()=>import('../Molecules/Index/Course'))
-const Hero = lazy(()=>import('../Molecules/Index/Hero'))
-const Media =lazy(()=>import('../Molecules/Index/Media'))
-const Testimonial =lazy(()=>import('../Atoms/Testimonial'))
-const Disclaimer =lazy(()=>import('../Molecules/Index/Disclaimer'))
+const Course = lazy(() => import('../Molecules/Index/Course'))
+const Hero = lazy(() => import('../Molecules/Index/Hero'))
+const Media = lazy(() => import('../Molecules/Index/Media'))
+const Testimonial = lazy(() => import('../Atoms/Testimonial'))
+const Disclaimer = lazy(() => import('../Molecules/Index/Disclaimer'))
 
 const Index = () => {
 
@@ -21,7 +21,6 @@ const Index = () => {
 
 
 
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -105,34 +104,33 @@ const Index = () => {
                 <meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills." />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://www.careerera.com/images/logo.png" />
-                {/* Tawlk To */}
+
             </Helmet>
 
 
-<Suspense fallback={<div/>}>
-            <Hero />
+            <Suspense fallback={<div />}>
+                <Hero />
             </Suspense>
-            {/* <Partner /> */}
+
             <Provider>
-            <Suspense fallback={<div/>}>
-                <Course />
-            </Suspense>
-                {/* <Testimonial/> */}
+                <Suspense fallback={<div />}>
+                    <Course />
+                </Suspense>
+
             </Provider>
 
-            <Suspense fallback={<div/>}>
-            <Media />
-</Suspense>
+            <Suspense fallback={<div />}>
+                <Media />
+            </Suspense>
 
-<Suspense fallback={<div/>}>
-            <Testimonial
-                title1="Students"
-                title2="Review" />
-                </Suspense>
-                
+            <Suspense fallback={<div />}>
+                <Testimonial
+                    title1="Students"
+                    title2="Review" />
+            </Suspense>
 
-                <Suspense fallback={<div/>}>
-            <Disclaimer />
+            <Suspense fallback={<div />}>
+                <Disclaimer />
             </Suspense>
         </div>
     )

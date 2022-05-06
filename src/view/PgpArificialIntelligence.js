@@ -799,29 +799,11 @@ const PgpArtificalIntelligence = () => {
 
 
         </div>'/>
-
-            {/* <Blog
-                heading="Blogs"
-                heading2="And Articles"
-
-                title1="Is ARTIFICIAL INTELLIGENCE & MACHINE LEARNING Hard?"
-                url1="https://my.careerera.com/eventimages/Newsid_367_images0.jpg"
-                redirect1="/blog/is-it-hard-to-learn-data-science"
-
-                title2="Is data scientist a good career in India? "
-                url2="https://my.careerera.com/eventimages/Newsid_365_images0.jpg"
-                redirect2="/blog/is-data-scientist-a-good-career-in-india"
-
-                title3="How can I become a data scientist in Delhi? "
-                url3="https://my.careerera.com/eventimages/Newsid_362_images0.jpg"
-                redirect3="/blog/how-can-i-become-a-data-scientist-in-delhi"
-            /> */}
+ 
 
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
-
-            {/* 
-            <CountryFooter pagetitle="Atificial Intelligence" /> */}
+ 
         </div>
     )
 }

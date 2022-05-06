@@ -8,8 +8,6 @@ const Certificate = (props) => {
     const [allcountryList, setallcountryList] = useState([])
     const [countryLoad, setcountryLoad] = useState(false)
 
-
-    // setvalPhoneCode
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)
@@ -17,7 +15,7 @@ const Certificate = (props) => {
     if (selectphoneval == 'Please select your country') {
         setselectphoneval('')
     }
-    // phoneSetvalue
+ 
     const [phoneSetvalue, Updatephonevalue] = useState();
 
 
@@ -47,7 +45,7 @@ const Certificate = (props) => {
                             </p>
                         </div>
 
-                        {/* form */}
+                    
                         <EnquireNowForm />
                     </div>
                 </div>

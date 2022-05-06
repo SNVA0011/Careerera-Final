@@ -16,8 +16,7 @@ const Navs = () => {
             <Nav.Link href="#Careera">Por qué careerera</Nav.Link>
             <Nav.Link href="#HiringPartner">Socios de contratación</Nav.Link>
             <Nav.Link href="#query">Inscribirse</Nav.Link>
-            <Nav.Link href="#FAQ">Preguntas Más Frecuentes</Nav.Link>
-            {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
+            <Nav.Link href="#FAQ">Preguntas Más Frecuentes</Nav.Link> 
             <Nav.Link href="#review">Reseñas</Nav.Link>
           </Nav>
         </Navbar>

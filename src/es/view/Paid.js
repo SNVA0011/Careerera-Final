@@ -6,8 +6,7 @@ import fun from '../../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
 
 
-const Paid = () => {
-    // All courses Api
+const Paid = () => { 
     const { value15, value16 } = useContext(Context)
     const [allbatches, setallbatches] = value15
     const [allbatchesLoad, allBatchesLoad] = value16

@@ -1,10 +1,9 @@
 import React, { useContext, useState } from 'react' 
-import EnquireNowForm from './EnquireNowForm';
+import Forms from '../../Atoms/Form';
  
 
 const CertificateNasscom = (props) => { 
-
-    // setvalPhoneCode
+ 
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)
@@ -94,8 +93,11 @@ const CertificateNasscom = (props) => {
  
                     </div>
 
-                    {/* form */}
-                    <EnquireNowForm />
+                    <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
+                    <Forms titlemasterfalse='empty' messageboxnone='empty'/>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>

@@ -76,8 +76,7 @@ const App = (props) => {
         title: '+1-844-889-4054',
     })
 
-
-    // remove console 
+ 
     function RemoveConsole() {
         const noop = () => { }
         ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
@@ -86,9 +85,7 @@ const App = (props) => {
             'timeline', 'timelineEnd', 'timeStamp', 'trace',
         ].forEach((method) => {
             window.console[method] = noop
-        });
- 
-
+        });  
     }
     RemoveConsole()
     useEffect(() => {
@@ -168,7 +165,7 @@ const App = (props) => {
                             </Provider>
                         </CurrencyContxt.Provider>
                     } />
-
+ 
                     <Route exact path="/become-an-instructor" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
@@ -177,11 +174,7 @@ const App = (props) => {
                             </Provider>
                         </CurrencyContxt.Provider>
                     } />
-
-
-
-
-                    {/* /blog english */}
+ 
                     <Route exact path="/blog" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
@@ -199,11 +192,7 @@ const App = (props) => {
                             </Provider>
                         </CurrencyContxt.Provider>
                     } />
-                    {/* end /blog english */}
-
-
-
-                    {/* /blog arabic */}
+                    
                     <Route exact path="/ar/blog" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
                         <Provider>
@@ -217,7 +206,7 @@ const App = (props) => {
                             <BlogArabic />
                         </Provider>
                     </CurrencyContxt.Provider>} />
-                    {/* end /blog arabic */}
+       
 
                     <Route exact path="/blog/:url" element={
                         <CurrencyContxt.Provider
@@ -292,8 +281,7 @@ const App = (props) => {
                     <Route exact path="/terms-and-conditions" element={<TermsandCondition />} />
 
                     <Route exact path="/rescheduling-policy" element={<Rescheduling />} />
-
-                    {/* COURSE STATIC */}
+ 
                     <Route exact path="/pgp-in-data-science-for-nasscom" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
@@ -301,8 +289,7 @@ const App = (props) => {
                                 <PgpDataScienceNasscom />
                             </Provider>
                         </CurrencyContxt.Provider>} />
-
-                    {/* MASTERS COURSE STATIC */}
+ 
                     <Route exact path="/data-science/post-graduate-program-in-data-science" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
                         <Provider>
@@ -372,8 +359,7 @@ const App = (props) => {
                     </CurrencyContxt.Provider>} />
 
 
-
-                    {/* view */}
+ 
                     <Route exact path="/:id/certification-course/:countrycourse" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
                         <Provider>
@@ -444,9 +430,7 @@ const App = (props) => {
                             <DetailBatch />
                         </Provider>
                     </CurrencyContxt.Provider>} />
-
-
-                    {/* CATOGORY COURSE */}
+ 
 
                     <Route exact path="/data-science" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
@@ -463,7 +447,7 @@ const App = (props) => {
                     </CurrencyContxt.Provider>} />
 
 
-                    {/* REST */}
+                  
                     <Route exact path="/:idbatchmain/:idbatch/batch" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
                         <Provider>
@@ -504,9 +488,7 @@ const App = (props) => {
                                 <InnerJob />
                             </Provider>
                         </CurrencyContxt.Provider>} />
-
-
-                    {/* Index & Not found page */}
+ 
                     <Route path="*" element={<NotFound />} />
 
                     <Route exact path="/" element={

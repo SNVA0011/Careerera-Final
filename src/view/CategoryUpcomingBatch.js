@@ -18,7 +18,7 @@ export default function CategoryUpcomingBatch() {
     let { idbatch } = useParams();
     let { idbatchmain } = useParams();
 
-    // List of BlogDetails
+ 
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
@@ -32,8 +32,7 @@ export default function CategoryUpcomingBatch() {
 
         Catloadsts(true)
     }
-
-    // currency inr/usd
+ 
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
 

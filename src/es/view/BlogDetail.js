@@ -10,17 +10,13 @@ import { base } from '../../Base'
 import { esBlogDetail } from "../../Factory/PhpApi";
 
 
-const BlogDetail = () => {
-  // const { value19, value20 } = useContext(Context)
-  // const [BlogDetail, setBlogDetail] = value19
-  // const [blogDetailsts, setblogDetailsts] = value20
+const BlogDetail = () => { 
 
   const [BlogDetail, setBlogDetail] = useState([]);
   const [blogDetailsts, setblogDetailsts] = useState(false);
 
   let { url } = useParams();
-
-  // List of BlogDetails
+ 
   async function BlogDetails() {
     await fetch(base, {
       method: 'POST',

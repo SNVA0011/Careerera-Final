@@ -5,7 +5,12 @@ import Sign from "../Molecules/Course/Sign";
 const PopUp = (props) => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false) 
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+     }, 300)
+  }
   const handleShow = () => setShow(true);
 
   useEffect(() => {

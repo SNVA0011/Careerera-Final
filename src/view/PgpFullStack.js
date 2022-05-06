@@ -1142,25 +1142,11 @@ const PgpFullStack = () => {
 
               </div>'
          />
-         {/* <Blog
-            heading="Blogs"
-            heading2="And Articles"
-
-            title1="Is Full Stack Development Hard?   "
-            url1="https://my.careerera.com/eventimages/Newsid_373_images0.jpg"
-            redirect1="/blog/is-full-stack-development-hard"
-
-            title2="Is it worth becoming a full-stack developer?    "
-            url2="https://my.careerera.com/eventimages/Newsid_335_images0.jpg"
-            redirect2="/blog/is-it-worth-becoming-a-full-stack-developer"
-
-            title3="Do full-stack developers get paid more?  "
-            url3="https://my.careerera.com/eventimages/Newsid_332_images0.jpg"
-            redirect3="/blog/do-full-stack-developers-get-paid-more"
-         /> */}
+        
          <Testimonial title1="STUDENT'S"
-            title2="Review" />
-         {/* <CountryFooter pagetitle="Full Stack" /> */}
+            title2="Review" /> 
+
+            
       </div>
    )
 }

@@ -38,12 +38,9 @@ const Hero = () => {
   };
 
   return (
-    <>
-      {/* Hero image at top */}
+    <> 
       <div className="home-banner full-w">
-
-       
-
+ 
         <div className='box'>
           <div className='wave -one'></div>
           <div className='wave -two'></div>
@@ -73,11 +70,7 @@ const Hero = () => {
                   <i className="bi bi-play-circle-fill mr-1"></i> LIVE AND ONLINE</span></h2>
                 </div>
               </div>
-      
-
-              {/* <p className="text-lg xl:text-xl">
-                Explore the academic degree options available at Careerera.<br></br> A  education is an <b>investment</b> in your future.
-              </p> */}
+       
 
               <div className="col-xl-10 mt-4 media-prtslider p-0">
                 <OwlCarousel className="slider-items owl-carousel" {...options}>
@@ -122,7 +115,7 @@ const Hero = () => {
 
             <div className="col-lg-5 col-xxl-4 col-12 mx-auto text-center mt-lg-0">
               <img src={i1} alt='Ready to learn' className="w-100"/>
-              {/* <SideIcon /> */}
+ 
             </div>
           </div>
         </div>
@@ -138,25 +131,7 @@ const Hero = () => {
 
 
 
-      {/* <div className="pl-8 pt-8 pr-2 lg:pl-0 lg:pr-0 ">
-          <div className="grid grid-cols-2 justify-items-center lg:pt-10 md:pt-8">
-            <img src={banner1} className="w-2/3  " />
-            <img src={banner2} className="w-2/3 " />
-          </div>
-          <div className="text-center lg:text-left">
-            <p className="text-3xl lg:text-2xl xl:text-4xl text-gray-800 font-bold">Prestigious Brand 2020-21 by</p>
-            <p className="text-3xl  md:text-2xl xl:text-4xl text-gray-800 font-bold eco">The <span className="text-red-700">Economic</span> Times </p>
-           </div>
-        </div> */}
-
-
-      {/* learner */}
-      {/* <div className="grid grid-cols-6 gap-4 mb-24 pl-40 pr-40"> */}
-      {/* <div className="col-span-4 bg-blue-400 text-white border-white rounded-2xl p-4 flex justify-items-center ">
-<p className="text-4xl font-semibold">Learn Courses
-Live and Online</p>
-  </div> */}
-      {/* </div> */}
+   
 
 
       <div className="col-12 design">

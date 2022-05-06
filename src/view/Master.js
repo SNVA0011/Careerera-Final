@@ -15,8 +15,7 @@ import UserformsApplication from '../Molecules/Course/UserformsApplication'
 import Sign from '../Molecules/Course/Sign'
 import CountryFooter from '../Atoms/CountryFooter'
 import PopUp from '../Atoms/PopUp'
-import NotFound from './NotFound'
-// import {  } from "react-router-dom";
+import NotFound from './NotFound' 
 import { base } from '../Base'
 import About from './About'
 
@@ -42,7 +41,7 @@ const Master = () => {
         loadsts(true)
     }
 
-    function randomIntFromInterval(min, max) { // min and max included 
+    function randomIntFromInterval(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 
@@ -53,7 +52,7 @@ const Master = () => {
 
 
 
-    function randomIntFromInterva(min, max) { // min and max included 
+    function randomIntFromInterva(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 
@@ -66,7 +65,6 @@ const Master = () => {
         loadsts(false)
         getMaster()
         window.scrollTo(0, 0); 
-
     }, [dats])
 
     return (
@@ -142,19 +140,19 @@ const Master = () => {
                             <div className={'Cariculam-pageid-' + final[0].course_id}></div>
                             {(() => {
                                 switch (final[0].course_id) {
-                                    case '166': return <Cariculambyid data={[{ 'filename': 'pgp-in-ai-and-machine-learning-Curriculum.php', 'curriculum_id': 166 }]} />;
-                                    case '167': return <Cariculambyid data={[{ 'filename': 'masters-in-Data-Science-Curriculum.php', 'curriculum_id': 167 }]} />;
-                                    case '114': return <Cariculambyid data={[{ 'filename': 'pgp-in-cloud-computing-Curriculum.php', 'curriculum_id': 114 }]} />;
-                                    case '118': return <Cariculambyid data={[{ 'filename': 'pgp-in-digital-marketing-Curriculum.php', 'curriculum_id': 118 }]} />;
-                                    case '168': return <Cariculambyid data={[{ 'filename': 'pgp-in-cyber-security-Curriculum.php', 'curriculum_id': 168 }]} />;
-                                    case '169': return <Cariculambyid data={[{ 'filename': 'pgp-in-business-analytics-Curriculum.php', 'curriculum_id': 169 }]} />;
-                                    case '170': return <Cariculambyid data={[{ 'filename': 'executive-mba-Curriculum.php', 'curriculum_id': 170 }]} />;
-                                    case '171': return <Cariculambyid data={[{ 'filename': 'masters-in-full-stack-development-curriculum.php', 'curriculum_id': 171 }]} />;
-                                    case '223': return <Cariculambyid data={[{ 'filename': 'masters-in-full-stack-development-curriculum.php', 'curriculum_id': 223 }]} />;
-                                    case '267': return <Cariculambyid data={[{ 'filename': 'php-Curriculum.php', 'curriculum_id': 267 }]} />;
-                                    case '1': return <Cariculambyid data={[{ 'filename': 'pmp-Curriculum.php', 'curriculum_id': 1 }]} />;
-                                    case '182': return <Cariculambyid data={[{ 'filename': 'Digital-Marketing-Professional-(DMP-by-DMVersity)-curriculum.php', 'curriculum_id': 182 }]} />;
-                                    case '111': return <Cariculambyid data={[{ 'filename': 'Artificial-Intelligence-Curriculum.php', 'curriculum_id': 111 }]} />;
+                                    case '166': return <Cariculambyid seprate="Done" data={[{ 'filename': 'pgp-in-ai-and-machine-learning-Curriculum.php', 'curriculum_id': 166 }]} />;
+                                    case '167': return <Cariculambyid seprate="" data={[{ 'filename': 'masters-in-Data-Science-Curriculum.php', 'curriculum_id': 167 }]} />;
+                                    case '114': return <Cariculambyid seprate="" data={[{ 'filename': 'pgp-in-cloud-computing-Curriculum.php', 'curriculum_id': 114 }]} />;
+                                    case '118': return <Cariculambyid seprate="" data={[{ 'filename': 'pgp-in-digital-marketing-Curriculum.php', 'curriculum_id': 118 }]} />;
+                                    case '168': return <Cariculambyid seprate="" data={[{ 'filename': 'pgp-in-cyber-security-Curriculum.php', 'curriculum_id': 168 }]} />;
+                                    case '169': return <Cariculambyid seprate="" data={[{ 'filename': 'pgp-in-business-analytics-Curriculum.php', 'curriculum_id': 169 }]} />;
+                                    case '170': return <Cariculambyid seprate="" data={[{ 'filename': 'executive-mba-Curriculum.php', 'curriculum_id': 170 }]} />;
+                                    case '171': return <Cariculambyid seprate="Done" data={[{ 'filename': 'masters-in-full-stack-development-curriculum.php', 'curriculum_id': 171 }]} />;
+                                    case '223': return <Cariculambyid seprate="Done" data={[{ 'filename': 'masters-in-full-stack-development-curriculum.php', 'curriculum_id': 223 }]} />;
+                                    case '267': return <Cariculambyid seprate="" data={[{ 'filename': 'php-Curriculum.php', 'curriculum_id': 267 }]} />;
+                                    case '1': return <Cariculambyid seprate="" data={[{ 'filename': 'pmp-Curriculum.php', 'curriculum_id': 1 }]} />;
+                                    case '182': return <Cariculambyid seprate="" data={[{ 'filename': 'Digital-Marketing-Professional-(DMP-by-DMVersity)-curriculum.php', 'curriculum_id': 182 }]} />;
+                                    case '111': return <Cariculambyid seprate="Done" data={[{ 'filename': 'Artificial-Intelligence-Curriculum.php', 'curriculum_id': 111 }]} />;
                                     default: return <Cariculam data={final[0].Curriculum} />
                                 }
                             })()}

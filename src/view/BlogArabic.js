@@ -13,15 +13,11 @@ import { ar_blog_list } from '../Factory/PhpApi'
 
 
 const BlogArabic = () => {
-    // const { value13, value14 } = useContext(Context)
-    // const [Blog, setBlog] = value13
-    // const [blogsts, setblogsts] = value14
     const pageblgid = useParams();
 
     const [Blog, setBlog] = useState([])
     const [blogsts, setblogsts] = useState(false)
 
-    // List of Blog
     async function Bloglist() {
         await fetch(base, {
             method: 'POST',
@@ -52,7 +48,6 @@ const BlogArabic = () => {
 
 
 
-    // // pagination
     const [pagination_st, setPaginationst] = useState(0)
     const [parinum, setParinum] = useState([])
 
@@ -294,7 +289,7 @@ const BlogArabic = () => {
                                                                 </Link>
                                                             </li>
 
-                                                            {/*------ pagination map ------*/}
+                                                            
                                                             {new Array(freeAllbatch[0]?.length - 1)
                                                                 .fill()
                                                                 .map((_, index) => (
@@ -334,7 +329,7 @@ const BlogArabic = () => {
 
 
 
-                                                            {/* last item */}
+                                                            
                                                             <li
                                                                 className={
                                                                     'page-item dots' +
@@ -376,7 +371,7 @@ const BlogArabic = () => {
                                                                     {freeAllbatch[0]?.length}
                                                                 </Link>
                                                             </li>
-                                                            {/*------ end pagination map ------*/}
+                                                            
 
                                                             <li className='w-100 d-block d-lg-none'></li>
                                                             <li

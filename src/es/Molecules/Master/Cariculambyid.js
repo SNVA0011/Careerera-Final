@@ -21,14 +21,14 @@ export default function Cariculambyid(props) {
                     {final ?
                         <div className="curriculum-masterid full-w">
 
-                            {/* final[0].curriculum_id == '259' */}
+                             
                             {final[0].curriculum_id == '259' ?
                                 <div> {final[0].curriculum_id + ', ' + final[0].filename}</div>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '259' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '166' */}
+                             
                             {final[0].curriculum_id == '166' ?
                                 <>
                                     <div className="course-list-header">
@@ -833,10 +833,10 @@ export default function Cariculambyid(props) {
 
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '166' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '167' */}
+                             
                             {final[0].curriculum_id == '167' ?
                                 <>
                                     <div className="course-list-header">
@@ -1209,10 +1209,10 @@ export default function Cariculambyid(props) {
 
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '167' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '114' */}
+                             
                             {final[0].curriculum_id == '114' ?
                                 <>
                                     <div className="course-list-header">
@@ -1933,10 +1933,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '114' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '118' */}
+                             
                             {final[0].curriculum_id == '118' ?
                                 <>
                                     <div className="course-list-header">
@@ -2964,10 +2964,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '118' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '168' */}
+                             
                             {final[0].curriculum_id == '168' ?
                                 <>
                                     <div className="course-list-header">
@@ -4162,10 +4162,10 @@ export default function Cariculambyid(props) {
 
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '168' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '169' */}
+                             
                             {final[0].curriculum_id == '169' ?
                                 <>
                                     <div className="course-list-header">
@@ -4880,10 +4880,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '169' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '170' */}
+                             
                             {final[0].curriculum_id == '170' ?
                                 <>
                                     <div className="course-list-header">
@@ -5032,10 +5032,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '170' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '171' Or final[0].curriculum_id == '223' */}
+                             
                             {final[0].curriculum_id == '171' || final[0].curriculum_id == '223' ?
                                 <>
                                     <div className="course-list-header">
@@ -6109,10 +6109,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '171' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '267' */}
+                             
                             {final[0].curriculum_id == '267' ?
                                 <>
                                     <div className="course-list-header">
@@ -6454,10 +6454,10 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '267' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '1' */}
+                             
                             {final[0].curriculum_id == '1' ?
                                 <>
                                     <div className="course-list-header">
@@ -6614,10 +6614,10 @@ export default function Cariculambyid(props) {
 
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '1' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '182' */}
+                             
                             {final[0].curriculum_id == '182' ?
                                 <>
                                     <div className="course-list-header">
@@ -7236,10 +7236,10 @@ export default function Cariculambyid(props) {
 
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '182' */}
+                            
 
 
-                            {/* final[0].curriculum_id == '111' */}
+                             
                             {final[0].curriculum_id == '111' ?
                                 <>
                                     <div className="course-list-header">
@@ -7777,7 +7777,7 @@ export default function Cariculambyid(props) {
                                     </div>
                                 </>
                                 : ''}
-                            {/* End - final[0].curriculum_id == '111' */}
+                            
 
 
 

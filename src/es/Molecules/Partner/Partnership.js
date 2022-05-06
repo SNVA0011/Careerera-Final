@@ -181,9 +181,7 @@ const Partnership = () => {
                 </div>
             </div>
 
-
-
-    {/*======== our counseling office ========*/}
+ 
     <div className="certification-courseslight full-w">
                 <div className="container pt-16 pb-10">
                     <h3 className="font-semibold text-3xl mb-2">Nuestra Oficina de Consejería</h3>
@@ -219,7 +217,7 @@ const Partnership = () => {
                                         <span className="text-base font-bold mb-1 d-block">
                                         Address
                                         </span>
-                                        <p  className="text-gray-500 font-semibold no-underline m-0" >
+                                        <p  className="text-gray-500 font-semibold no-underline m-0">
                                            C-56, A/28 ,3RD FLOOR, SECTOR 62 NOIDA 
                                            </p>
                                     </div>
@@ -230,7 +228,7 @@ const Partnership = () => {
                 </div>
             </div>
 
-            {/*====== end our counseling office ======*/}
+         
 
 
         </div>

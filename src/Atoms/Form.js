@@ -10,8 +10,7 @@ import ZipProspectus from '../Prospectus/PGP-Data-Science.zip'
 import { query } from "../Factory/PhpApi";
 
 const Forms = (props) => {
-  // FormData
-  const [name, setName] = useState("")
+   const [name, setName] = useState("")
   const [email, setemail] = useState("")
   const [Mobile, setMobile] = useState("")
   const [Country, setCountry] = useState("")
@@ -26,19 +25,16 @@ const Forms = (props) => {
 
 
 
-  // loading
-  const [Response, setResponse] = useState(false)
+   const [Response, setResponse] = useState(false)
   const [value, setvalue] = useState(false)
 
 
 
-  // Country List Api
-  const { value11, value12 } = useContext(Context);
+   const { value11, value12 } = useContext(Context);
   const [cntry, setcntry] = value11;
   const [cntryLoad, setcntryLoad] = value12;
 
-  // setvalPhoneCode
-  const [selectphoneval, setselectphoneval] = useState([])
+   const [selectphoneval, setselectphoneval] = useState([])
 
   function setvalPhone(e) {
     setselectphoneval(e.target.value)
@@ -48,11 +44,9 @@ const Forms = (props) => {
     setselectphoneval('')
   }
 
-  // phoneSetvalue
-  const [phoneSetvalue, Updatephonevalue] = useState()
+   const [phoneSetvalue, Updatephonevalue] = useState()
 
-  // currency inr/usd
-  const [contextcur, setContextCur] = useContext(CurrencyContxt)
+   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
 
 
@@ -99,11 +93,7 @@ const Forms = (props) => {
     else{
       inputref_3.current.classList.remove('bg-red50-error')
     }
-    // else if (Notes == "") {
-    //   alert("Please Enter Valid Message")
-    //   inputref_4.current.focus();
-    // } 
-
+    
 
     if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0) {
       inputref_1.current.classList.remove('bg-red50-error')
@@ -154,8 +144,7 @@ const Forms = (props) => {
   }
 
   function onChange(value) {
-    // console.log("Captcha value:", value)
-  }
+   }
 
   return (
     <div className="">
@@ -204,7 +193,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                   </div>
                 </>}
 
-              {/*cols*/}
+              
 
               <div className="mb-3 col-12">
                 <input
@@ -221,7 +210,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
               </div>
 
 
-              {/*cols*/}
+              
               <div className="mb-3 col-12">
                 <input
                   type="email"
@@ -236,7 +225,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                 />
               </div>
 
-              {/*cols*/}
+              
 
               <div className="mb-3 col-12">
                 {cntryLoad ?
@@ -251,7 +240,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                       <FormControl
                         placeholder="Phone*"
                         type="number"
-                        className='dd placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                        className='dd  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                             h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
                         value={phoneSetvalue}
                         ref={inputref_3}
@@ -271,11 +260,11 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                     </button>
                   </div>}
               </div>
-              {/*cols*/}
+              
 
-              {/*cols*/}
+              
 
-              {/*cols*/}
+              
               {props.messageboxnone ?  '' :
               <div className="mb-3 col-12"> 
                 <Form.Group
@@ -291,32 +280,24 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                 </Form.Group> 
               </div>
               }
-              {/*cols*/}
+              
 
-              {/*cols*/}
+              
               <div className="mb-3 col-12">
 
                 <ReCAPTCHA
                   sitekey={'6LfBaa8fAAAAAMaAnWScNvAjw1n9swoA8dKHmfDT'}
                   onChange={onChange}
-                />
-
-                {/* <InputGroup className='mb-0'>
-                <InputGroup.Text className='py-1 fw-medium shadow-sm input-group-text'>5 + 2 =</InputGroup.Text>
-                <FormControl placeholder='?' onChange={(e) => setUrl(e.target.value)} className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control" />
-              </InputGroup> */}
+                /> 
               </div>
-              {/*cols*/}
-
-              {/*row*/}
+              
+ 
               <p className="text-center mb-0 mt-4  pt-3">
                 <button  aria-label="Submit" className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
                   <span className="text-lg btn-widelettspc">Submit</span>
                 </button>
               </p>
-              <div className="clear" />
-              {/*clear*/}
+              <div className="clear" /> 
             </div>
           </div>
         </div>

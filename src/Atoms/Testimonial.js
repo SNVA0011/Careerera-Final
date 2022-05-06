@@ -15,7 +15,7 @@ const options = {
     margin: 20,
     loop: true,
     autoplayTimeout: 4000,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     dots: true,
     nav: true,
     responsive: {
@@ -34,46 +34,7 @@ const options = {
     },
 }
 
-
-// const options = {
-//     items: 3,
-//     loop: true,
-//     video: true,
-//     autoplay: true,
-//     autoplayTimeout: 1800,
-//     autoplayHoverPause: true,
-//     smartSpeed: 400,
-//     center: true,
-//     dots: true,
-//     nav: false,
-//     responsive: {
-//         0: {
-//             items: 1,
-//             margin: 0,
-//             startPosition: 0,
-//             stagePadding: 40,
-//         },
-//         575: {
-//             items: 2,
-//             margin: 15,
-//             startPosition: 0,
-//             stagePadding: 30,
-//         },
-//         992: {
-//             items: 3,
-//             margin: 50,
-//             startPosition: 0,
-//             stagePadding: 0,
-//         },
-//         1200: {
-//             items: 3,
-//             margin: 50,
-//             startPosition: 1,
-//             stagePadding: 0,
-//         },
-//     },
-// }
-
+ 
 
 const Testimonial = (props) => {
 
@@ -120,14 +81,13 @@ const Testimonial = (props) => {
                                     <div className="container-xxl py-20 media-prtslider ">
 
 
-                                        {/* <p className="text-center text-6xl font-bold text-gray-600 mb-6">In The Media</p> */}
+                                      
                                         <p className="text-3xl md:text-4xl  lg:text-5xl  font-bold text-gray-700 mb-3  softwarelike">
                                             Our {props.title1} <span className="text-blue-500 sitblu-clrsite"> {props.title2}</span>
                                         </p>
                                         <div className='clearfix w-100'></div>
 
-
-                                        {/* Reviews by Comments */}
+ 
                                         <div className='ourclient-staffing'>
                                             <div className='full-w position-relative comment-viewslide'>
                                                 <OwlCarousel className="slider-items owl-carousel" {...options}>
@@ -175,7 +135,7 @@ const Testimonial = (props) => {
 
                                                                     {item.linkedin.includes('linkedin') ?
                                                                         <div className="rounded-social-buttons m-0"> <a
-                                                                            className="social-button linkedin m-0"
+                                                                        aria-label="social buttons" className="social-button linkedin m-0"
                                                                             href={item.linkedin}
                                                                             target='_blank' rel='noreferrer' >
                                                                             <i className="fab fa-linkedin"></i>
@@ -191,33 +151,7 @@ const Testimonial = (props) => {
 
                                             </div>
                                         </div>
-
-
-                                        {/* Reviews by video */}
-
-
-                                        {/* <div className='row'>
-                                            <div className='full-w media-prtslider px-0 pt-2'>
-                                                <div className="w-full explore_Data_science ourclient-staffing">
-
-
-                                                    <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                                        {You.map((items, i) => {
-                                                            return (
-                                                                <>
-                                                                    <div className="item" key={i}>
-                                                                        <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
-                                                                            <iframe className="embed-responsive-item" src={items.video_url}></iframe>
-                                                                        </div>
-                                                                    </div>
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </OwlCarousel>
-
-                                                </div>
-                                            </div>
-                                        </div> */}
+ 
 
                                         <div className='mt-6'>
                                             <Link to="/review" className='btn-site invert capitalize no-underline py-3'>

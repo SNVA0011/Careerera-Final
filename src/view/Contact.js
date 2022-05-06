@@ -8,12 +8,10 @@ import { Helmet } from 'react-helmet'
 import Forms from '../Atoms/Form'
 
 const Contact = () => {
-  // Country List Api
   const { value11, value12 } = useContext(Context);
   const [cntry, setcntry] = value11;
   const [cntryLoad, setcntryLoad] = value12;
 
-  // setvalPhoneCode
   const [selectphoneval, setselectphoneval] = useState([]);
 
   function setvalPhone(e) {
@@ -24,10 +22,8 @@ const Contact = () => {
     setselectphoneval('')
   }
 
-  // currency inr/usd
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
-  // phoneSetvalue
   const [phoneSetvalue, Updatephonevalue] = useState();
 
 
@@ -58,9 +54,6 @@ const Contact = () => {
 
       <div className='querysign-full full-w partnetapk-area'>
         <div className="container py-16">
-          {/* <div className="text-center font-bold text-5xl text-blue-500 py-4">
-                <span className="text-gray-700"> Login</span> with your account
-            </div> */}
           <div className="row">
             <div className="col-xl-5 col-12 text-center">
               <h3 className="font-bold text-left  text-gray-700 text-3xl md:text-4xl">
@@ -154,11 +147,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -175,11 +164,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -195,11 +180,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
                 {contextcur.currency == "SGT" ? <div>
@@ -214,11 +195,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -234,11 +211,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -265,11 +238,7 @@ const Contact = () => {
 
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -285,11 +254,7 @@ const Contact = () => {
                   </div>
 
                 </div> : <div>
-                  {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                  
                 </div>}
 
 
@@ -309,7 +274,7 @@ const Contact = () => {
 
 
 
-              {/* FORM */}
+              
               <Forms />
 
             </div>

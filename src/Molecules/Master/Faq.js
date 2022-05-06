@@ -55,10 +55,7 @@ const Faq = (props) => {
                   }
 
                 </div>
-
-                {/* <div className="col-lg-6 col-12">
-                 <DemoCertificateOne />
-                </div> */}
+ 
 
               </div>
 

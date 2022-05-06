@@ -8,13 +8,13 @@ import { Context, Provider } from "../Api";
 import { CurrencyContxt } from './Contextcurrency';
 
 export default function MasterCountryHero(props) {
-    // Country List Api
+ 
     const { value11, value12 } = useContext(Context);
     const [cntry, setcntry] = value11;
     const [cntryLoad, setcntryLoad] = value12;
 
 
-    // setvalPhoneCode
+ 
     const [selectphoneval, setselectphoneval] = useState([]);
 
     function setvalPhone(e) {
@@ -25,10 +25,9 @@ export default function MasterCountryHero(props) {
         setselectphoneval('')
     }
 
-    // phoneSetvalue
+ 
     const [phoneSetvalue, Updatephonevalue] = useState();
-
-    // currency inr/usd
+ 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
 
@@ -221,8 +220,7 @@ export default function MasterCountryHero(props) {
                                         <>
                                             <Form.Group
                                                 className="mb-3"
-                                                controlId="formBasicEmail"
-                                            >
+                                                controlId="formBasicEmail">
                                                 <Form.Control className='block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
  h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base' type="text" placeholder="Nombre *" required />
                                             </Form.Group>
@@ -279,7 +277,7 @@ export default function MasterCountryHero(props) {
                                     <Form.Group
                                         className="mb-3"
                                         controlId="formBasicEmail">
-                                        <Form.Control className='placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                        <Form.Control className=' placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
  h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
                                             as="textarea" rows={4}
                                             placeholder="Descripción" />

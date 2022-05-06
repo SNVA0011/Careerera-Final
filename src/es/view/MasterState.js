@@ -33,7 +33,6 @@ const MasterState = () => {
         setCountrycaptial(countrycaptial.charAt(0).toUpperCase() + countrycaptial.slice(1))
     }, []);
 
-    // country Api
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
 
@@ -56,7 +55,6 @@ const MasterState = () => {
 
 
 
-    //   state api
     const [datas, setdatas] = useState([])
     const [loads, setloads] = useState(false)
 
@@ -77,7 +75,6 @@ const MasterState = () => {
 
 
 
-    // List of BlogDetails
 
     async function getCourse() {
  await fetch(base, {
@@ -113,7 +110,6 @@ const MasterState = () => {
 
 
 
-    // getWords
     function getWords(monthCount) {
         function getPlural(number, word) {
             return number === 1 && word.one || word.other;
@@ -160,9 +156,7 @@ const MasterState = () => {
 
 
             <div className="free-batches bg-gray-50 country-master full-w">
-
-
-                {/* free */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pt-16 pb-8">
 
@@ -294,8 +288,7 @@ const MasterState = () => {
                     </div>
                 </div>
 
-
-                {/* COURSE */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pb-16">
                         <h3 className='font-semibold text-2xl mb-3'>LIVE ONLINE</h3>

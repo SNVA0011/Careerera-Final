@@ -7,12 +7,10 @@ import { Context, Provider } from '../../Api'
 import { Link, useNavigate } from 'react-router-dom'
 
 export default function SearchCourses() {
-    // Api courses
     const { value13, value14 } = useContext(Context)
     const [exactData, setData] = value13
     const [status, loadStatus] = value14
 
-    // Modal
     const [coursesname, setCoursesname] = useState('')
     const [show, setShow] = useState(false)
     const handleClose = () => {
@@ -96,7 +94,7 @@ export default function SearchCourses() {
                             : 
                             <p className='text-center font-semibold m-0 text-xl'>No Result !</p>
                             : <div className="mt-1 text-center">
-                            <div className="spinner-border text-secondary" role="status" >
+                            <div className="spinner-border text-secondary" role="status">
                                 <span className="sr-only">Cargando...</span>
                             </div>
                         </div>}

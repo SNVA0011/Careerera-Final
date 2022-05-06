@@ -12,7 +12,7 @@ import { base } from '../../../Base'
 import { HomepageCounter } from '../../../Factory/PhpApi'
 
 const How = () => {
-        // Total users
+ 
         const [RegUser, setRegUser] = useState([]);
         const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
     

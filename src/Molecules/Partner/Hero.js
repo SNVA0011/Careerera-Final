@@ -9,16 +9,13 @@ import { CurrencyContxt } from '../../Atoms/Contextcurrency'
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Hero = () => {
-  // Country List Api
   const { value11, value12 } = useContext(Context);
   const [cntry, setcntry] = value11;
   const [cntryLoad, setcntryLoad] = value12;
 
-  // currency inr/usd
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
 
-  // setvalPhoneCode
   const [selectphoneval, setselectphoneval] = useState([]);
 
   function setvalPhone(e) {
@@ -29,12 +26,10 @@ const Hero = () => {
     setselectphoneval('')
   }
 
-  // phoneSetvalue
   const [phoneSetvalue, Updatephonevalue] = useState();
 
 
     function onChange(value) {
-    // console.log("Captcha value:", value)
   }
 
 
@@ -152,11 +147,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </InputGroup.Text>
 
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
 
@@ -169,11 +160,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </InputGroup.Text>
 
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
 
@@ -185,11 +172,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </InputGroup.Text>
 
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
                         {contextcur.currency == "SGT" ?
@@ -200,11 +183,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </InputGroup.Text>
 
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
 
@@ -215,11 +194,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                             } &nbsp;
                           </InputGroup.Text>
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
 
@@ -231,11 +206,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                           </InputGroup.Text>
 
                           : <div>
-                            {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                            
                           </div>}
 
 
@@ -245,11 +216,7 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                               selectphoneval.toString().split(',')[0]} &nbsp;
                           </InputGroup.Text>
                           : ''}
-                        {/* <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text> */}
+                        
 
                         <FormControl
                           placeholder="Phone*"

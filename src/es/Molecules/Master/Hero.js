@@ -17,9 +17,7 @@ const Hero = (props) => {
 
             <div className="container py-16 xl:py-20">
                 <div className="row">
-                    <div className="col-xl-7 col-lg-8 col-12">
-                        {/* <span className="text-lg sm:text-xl lg:text-2xl text-white font-semibold mb-3 leading-15-loose">Build a career in <b className="text-yellow-400 font-semibold d-inline-block lowercase-firstl">{props.categoryUrl}</b> */}
-                        {/* </span> */}
+                    <div className="col-xl-7 col-lg-8 col-12"> 
                         <span className="heading-border-line d-block left-0"></span>
                         <h1 className="text-2xl md:text-3xl text-white font-bold mt-1 mb-4 uppercase maintitle" dangerouslySetInnerHTML={{ __html: props.title }} />
                         <div className="row mt-1 mb-4 text-gray-300">
@@ -77,10 +75,7 @@ const Hero = (props) => {
                         <Link to={'batch'} className="btn-site gray md:h-12 no-underline d-inline-block">
                             <span><i className="bi bi-file-text-fill pr-1 text-lg"></i> Próximos lotes</span>
                         </Link>
-                    </div>
-                    {/* <div className="col-xl-6 col-12">
-                        <img src={datascince} className="rounded-lg" />
-                    </div> */}
+                    </div> 
                 </div>
             </div>
 

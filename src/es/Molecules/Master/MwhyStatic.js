@@ -8,8 +8,7 @@ import whysci_icon_5 from '../../../Images/2020.png'
 const MwhyStatic = (props) => {
     const [open, setOpen] = useState(false);
     return (
-        <>
-        {/* why-datasciencesuf */}
+        <> 
         <div className='why-datasciencesuf scroll-spbx bg-blue-50' id='why'>
           <div className='container py-16'>
             <div className="sec_title">

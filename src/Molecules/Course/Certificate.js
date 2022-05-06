@@ -11,7 +11,6 @@ const Certificate = (props) => {
     const [countryLoad, setcountryLoad] = useState(false)
 
 
-    // setvalPhoneCode
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)
@@ -19,10 +18,8 @@ const Certificate = (props) => {
     if (selectphoneval == 'Please select your country') {
         setselectphoneval('')
     }
-    // phoneSetvalue
     const [phoneSetvalue, Updatephonevalue] = useState();
 
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
 
@@ -41,9 +38,7 @@ const Certificate = (props) => {
                             : ''}
                         <span className="heading-border-line d-block left-0  mt-3 mb-4"></span>
                      
-                        {/* {props.data[0].courseList[0].CourseDetails ?
-                            <p className="text-base sm:text-lg text-gray-300 mb-4 font-medium tracking-wide" dangerouslySetInnerHTML={{ __html: props.data[0].courseList[0].CourseDetails }}>
-                            </p> : ""} */}
+                        
 
 
 
@@ -194,7 +189,7 @@ const Certificate = (props) => {
 
                     </div>
 
-                    {/* form */}
+                    
                     <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
                     <Forms titlemasterfalse='empty' messageboxnone='empty'/>
 

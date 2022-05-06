@@ -23,9 +23,7 @@ const Login = () => {
                 batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
                     <span className="mx-2"> / </span>Login </>}
                 img={login} />
-            {/* <div className="text-center font-bold text-5xl text-blue-500 py-4">
-                <span className="text-gray-700"> Login</span> with your account
-            </div> */}
+         
 
             <div className="container py-16">
                 <div className="row align-items-center">
@@ -45,7 +43,7 @@ const Login = () => {
                                             <input
                                                 type="text"
                                                 placeholder="Enter Your Name"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                             />
                                         </div>
@@ -60,7 +58,7 @@ const Login = () => {
                                             <input
                                                 type="password"
                                                 placeholder="Enter Your Password"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                             />
                                         </div>

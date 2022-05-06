@@ -7,17 +7,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const FreeCourse = () => {
-    // E-Learning Api
     const { value7, value8 } = useContext(Context)
     const [freeCour, setFreeCour] = value7
     const [freeCourLoad, setFreeCourLoad] = value8
 
-    // Live Online Api
     const { value9, value10 } = useContext(Context)
     const [allfreeCour, setallFreeCour] = value9
     const [allfreeCourLoad, setallFreeCourLoad] = value10
 
-    // groupdata (Live Online Api)
     const [setallbatch, allbatch] = useState([])
     const freeAllbatch = []
     if (allfreeCourLoad) {
@@ -40,12 +37,11 @@ const FreeCourse = () => {
     }
 
 
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
     return (
         <div className='free-batches full-w'>
-            {/* E-Learning */}
+          
             {freeCourLoad ? (
 
                 <div className="container py-16">
@@ -129,8 +125,7 @@ const FreeCourse = () => {
                 ''
             )}
 
-            {/* Live Online */}
-
+       
             {allfreeCourLoad ? (
                 <div className='all-allfreecour full-w'>
                     <div className="container mb-16">

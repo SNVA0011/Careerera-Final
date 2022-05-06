@@ -29,7 +29,7 @@ export default function TrainingRoom() {
                 batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
                     <span className="mx-2"> / </span>SALAS DE FORMACIÓN </>} />
 
-            {/*=========== discription_sec ===========*/}
+            
             <div className="discription_sec">
                 <div className="container py-16">
 
@@ -118,7 +118,7 @@ export default function TrainingRoom() {
 
 
 
-            {/*=========== why-datasciencesuf ===========*/}
+            
             <div className="why-datasciencesuf scroll-spbx bg-blue-50">
                 <div className="container pt-16 pb-2">
                     <div className="sec_title">
@@ -172,7 +172,7 @@ export default function TrainingRoom() {
 
 
 
-            {/*=========== discription_sec ===========*/}
+            
             <div className="discription_sec">
                 <div className="container py-16 text-gray-500 font-medium">
                     <div className="course_content_area">
@@ -257,7 +257,7 @@ export default function TrainingRoom() {
 
 
 
-            {/*=========== why-datasciencesuf ===========*/}
+            
             <div className="why-datasciencesuf scroll-spbx bg-blue-50">
                 <div className="container pt-16 pb-2">
                     <div className="sec_title">
@@ -308,7 +308,7 @@ export default function TrainingRoom() {
 
 
 
-            {/*=========== discription_sec ===========*/}
+            
             <div className="discription_sec full-w contact-page">
                 <div className="container py-16">
                     <div className="course_content_area pt-1">

@@ -38,9 +38,7 @@ const PgpGradociber = () => {
                 <meta name="keywords" content="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" />
                 <link rel="canonical" href="https://www.careerera.com/es/cyber-security/programa-de-postgrado-en-seguridad-cibernetica" />
             </Helmet>
-
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA" /> urlpath={dats}*/}
-
+ 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN SEGURIDAD CIBERNÉTICA"
                 duration="12 meses"
@@ -264,7 +262,7 @@ const PgpGradociber = () => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                     </div>
 
-                    {/*==================== h4 title ================*/}
+                    
                     <div className="row">
 
                         <div className="col-lg-6 col-12">
@@ -329,7 +327,7 @@ const PgpGradociber = () => {
                                 </div>} />
                         </div>
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3">Curso Preliminar para iniciar Cyber Security  <span className="heading-border-line"></span></h4>
 
                         <div className="col-lg-6 col-12">
@@ -1385,10 +1383,7 @@ const PgpGradociber = () => {
                 <Careerera 
                 curso="empty" cursoval="500" lomejores='Inscríbase en el proveedor de cursos educativos en línea número uno de la India.' cursotitle3='EXPERTO EN LA INDUSTRIA' cursotitle4="FACULTADES EXPERTAS" />
             </div>
-
-
-            {/* <Profile profcurso="empty" title="Perfil de lote de ciencia de datos"
-            /> */}
+ 
 
             <CareerAssistance
                 title='Asistencia'
@@ -1529,8 +1524,7 @@ const PgpGradociber = () => {
             </div>
 
             <Testimonial title1="STUDENT'S"
-                title2="Review" />
-            {/* <CountryFooter  pagetitle="UI and UX"/> */}
+                title2="Review" /> 
         </div>
     )
 }
