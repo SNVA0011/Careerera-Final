@@ -7959,3 +7959,11 @@ sup.hand-relmn {
         line-height: 58px;
     }
 }
+
+
+.comment-viewslide .owl-carousel .owl-stage{
+min-height: 638px !important;
+}
+.start-career-blank{
+    min-height: 600px;
+}

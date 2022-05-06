@@ -1,72 +1,69 @@
 import React, { useState, useEffect, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import Index from './view/Index'
-import Master from './view/Master'
-import Course from './view/Course'
-import Free from './view/Free'
-import Paid from './view/Paid'
 import { Provider } from './Api'
-// import Header from './Molecules/Index/Header'
-import Footer from './Molecules/Index/Footer'
-// import Navbars from './Molecules/Index/Navbar'
-import Icon from './Atoms/Icon'
-import Partner from './view/Partner'
-import Instructor from './view/Instructor'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { menuCloseMob } from './Atoms/Contextcurrency'
-import Blog from './view/Blog'
-import News from './view/News'
-import BlogDetail from './view/BlogDetail'
-import NewsDetail from './view/NewsDetail'
-import Help from './view/Help'
-import Payment from './view/Payment'
-import Disclaimer from './view/Disclaimer'
-import Terms from './view/Terms'
-import Privacy from './view/Privacy'
-import Refund from './view/Refund'
-import TermsandCondition from './view/TermsandCondition'
-import Rescheduling from './view/Rescheduling'
-import Contact from './view/Contact'
-import About from './view/About'
-import DataScienceStatic from './view/DataScienceStatic'
-import CyberSecurityStatic from './view/CyberSecurityStatic'
-import NotFound from './view/NotFound'
-import CategoryUpcomingBatch from './view/CategoryUpcomingBatch'
-import PostGraduation from './view/PostGraduation'
-import Certificate from './view/Certificate'
-import Language from './view/Language'
-import StaffingSolution from './view/StaffingSolution'
-import TrainingRoom from './view/TrainingRoom'
-import Mocktest from './view/Mocktest'
-import Media from './view/Media'
-import PartnerAll from './view/PartnerAll'
-import FullTestimonial from './view/FullTestimonial'
-import PgpDataScience from './view/PgpDataScience'
-import PgpArtificalIntelligence from './view/PgpArificialIntelligence'
-import PgpCyberSecurity from './view/PgpCyberSecurity'
-import PgpDigitalMarketing from './view/PgpDigitalMarketing'
-import PgpFullStack from './view/PgpFullStack'
-import PgpUi from './view/PgpUi'
-import MocktestRegisterForm from './view/MocktestRegisterForm'
-import MasterCountry from './view/MasterCountry'
-import Job from './view/Job'
-import InnerJob from './view/InnerJob'
-import MasterState from './view/MasterState'
-import MasterCity from './view/MasterCity'
-import DataScienceCountry from './view/DataScienceCountry'
-import DataScienceState from './view/DataScienceState'
-import DataScienceCity from './view/DataScienceCity'
-import CyberSecurityContry from './view/CyberSecurityCountry'
-import CyberSecurityState from './view/CyberSecurityState'  
-import CyberSecurityCity from './view/CyberSecurityCity'
-import CyberSecurityZip from './view/CyberSecurityzip'
-import BatchDetail from './view/BatchDetail'
-import DetailBatch from './view/DetailBatch'
-import BlogArabic from './view/BlogArabic'
-import BlogDetailArabic from './view/BlogDetailArabic'
-import PgpDataScienceNasscom from './view/PgpDataScienceNasscom'
 import loadable from '@loadable/component'
 
+const Master= loadable(() => import( './view/Master'))
+const Course= loadable(() => import( './view/Course'))
+const Free= loadable(() => import( './view/Free'))
+const Paid = loadable(() => import( './view/Paid'))
+const Footer = loadable(() => import( './Molecules/Index/Footer'))
+const Icon = loadable(() => import( './Atoms/Icon'))
+const Partner = loadable(() => import( './view/Partner'))
+const Instructor = loadable(() => import( './view/Instructor'))
+const Blog= loadable(() => import( './view/Blog'))
+const News= loadable(() => import( './view/News'))
+const BlogDetail= loadable(() => import( './view/BlogDetail'))
+const NewsDetail= loadable(() => import( './view/NewsDetail'))
+const Help= loadable(() => import( './view/Help'))
+const Payment= loadable(() => import( './view/Payment'))
+const Disclaimer= loadable(() => import( './view/Disclaimer'))
+const Terms= loadable(() => import( './view/Terms'))
+const Privacy= loadable(() => import( './view/Privacy'))
+const Refund= loadable(() => import( './view/Refund'))
+const TermsandCondition= loadable(() => import( './view/TermsandCondition'))
+const Rescheduling= loadable(() => import( './view/Rescheduling'))
+const Contact= loadable(() => import( './view/Contact'))
+const About= loadable(() => import( './view/About'))
+const DataScienceStatic= loadable(() => import( './view/DataScienceStatic'))
+const CyberSecurityStatic= loadable(() => import( './view/CyberSecurityStatic'))
+const NotFound= loadable(() => import( './view/NotFound'))
+const CategoryUpcomingBatch= loadable(() => import( './view/CategoryUpcomingBatch'))
+const PostGraduation= loadable(() => import( './view/PostGraduation'))
+const Certificate= loadable(() => import( './view/Certificate'))
+const Language= loadable(() => import( './view/Language'))
+const StaffingSolution= loadable(() => import( './view/StaffingSolution'))
+const TrainingRoom= loadable(() => import( './view/TrainingRoom'))
+const Mocktest= loadable(() => import( './view/Mocktest'))
+const Media= loadable(() => import( './view/Media'))
+const PartnerAll= loadable(() => import( './view/PartnerAll'))
+const FullTestimonial= loadable(() => import( './view/FullTestimonial'))
+const PgpDataScience= loadable(() => import( './view/PgpDataScience'))
+const PgpArtificalIntelligence= loadable(() => import( './view/PgpArificialIntelligence'))
+const PgpCyberSecurity= loadable(() => import( './view/PgpCyberSecurity'))
+const PgpDigitalMarketing= loadable(() => import( './view/PgpDigitalMarketing'))
+const PgpFullStack= loadable(() => import( './view/PgpFullStack'))
+const PgpUi= loadable(() => import( './view/PgpUi'))
+const MocktestRegisterForm= loadable(() => import( './view/MocktestRegisterForm'))
+const MasterCountry= loadable(() => import( './view/MasterCountry'))
+const Job= loadable(() => import( './view/Job'))
+const InnerJob= loadable(() => import( './view/InnerJob'))
+const MasterState= loadable(() => import( './view/MasterState'))
+const MasterCity= loadable(() => import( './view/MasterCity'))
+const DataScienceCountry= loadable(() => import( './view/DataScienceCountry'))
+const DataScienceState= loadable(() => import( './view/DataScienceState'))
+const DataScienceCity= loadable(() => import( './view/DataScienceCity'))
+const CyberSecurityContry= loadable(() => import( './view/CyberSecurityCountry'))
+const CyberSecurityState = loadable(() => import( './view/CyberSecurityState'  ))
+const CyberSecurityCity =  loadable(() => import('./view/CyberSecurityCity'))
+const CyberSecurityZip =  loadable(() => import('./view/CyberSecurityzip'))  
+const BatchDetail =  loadable(() => import('./view/BatchDetail'))  
+const DetailBatch =  loadable(() => import('./view/DetailBatch')) 
+const BlogArabic = loadable(() => import('./view/BlogArabic'))   
+const BlogDetailArabic = loadable(() => import('./view/BlogDetailArabic'))  
+const PgpDataScienceNasscom = loadable(() => import('./view/PgpDataScienceNasscom')) 
 const Header = loadable(() => import('./Molecules/Index/Header'))
 const Navbars = loadable(() => import('./Molecules/Index/Navbar'))
 const Index = loadable(() => import('./view/Index'))
@@ -351,9 +348,6 @@ const App = (props) => {
                     </CurrencyContxt.Provider>} />
 
 
-
-
-
                     <Route exact path="/:id/:dats/:country" element={<CurrencyContxt.Provider
                         value={[contextcur, setContextCur]}>
                         <Provider>
@@ -516,7 +510,9 @@ const App = (props) => {
                     <Route exact path="/" element={
                         <CurrencyContxt.Provider
                             value={[contextcur, setContextCur]}>
+                                 <Suspense fallback={<div/>}>
                             <Index />
+                            </Suspense>
                         </CurrencyContxt.Provider>
                     } />
 
