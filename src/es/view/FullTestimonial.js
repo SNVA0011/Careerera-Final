@@ -209,7 +209,7 @@ const FullTestimonial = () => {
 
                                                 {item.linkedin.includes('linkedin') ?
                                                     <div className="rounded-social-buttons m-0"> <a
-                                                        className="social-button linkedin m-0"
+                                                    aria-label="social buttons" className="social-button linkedin m-0"
                                                         href={item.linkedin}
                                                         target='_blank' rel='noreferrer' >
                                                         <i className="fab fa-linkedin"></i>

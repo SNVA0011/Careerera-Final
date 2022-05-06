@@ -98,35 +98,35 @@ const Footer = () => {
                         <hr></hr>
                         <div className="rounded-social-buttons mt-4">
                             <a
-                                className="social-button facebook text-center"
+                                aria-label="social buttons" className="social-button facebook text-center"
                                 href="https://www.facebook.com/careerera"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-facebook-f"></i>
                             </a>
                             <a
-                                className="social-button twitter"
+                                aria-label="social buttons" className="social-button twitter"
                                 href="https://twitter.com/Careerera1"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a
-                                className="social-button linkedin"
+                                aria-label="social buttons" className="social-button linkedin"
                                 href="https://www.linkedin.com/company/careerera"
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-linkedin"></i>
                             </a>
                             <a
-                                className="social-button instagram"
+                                aria-label="social buttons" className="social-button instagram"
                                 href="https://www.instagram.com/careereraonline/ "
                                 target='_blank' rel='noreferrer' >
 
                                 <i className="fab fa-instagram"></i>
                             </a>
                             <a
-                                className="social-button youtube"
+                                aria-label="social buttons" className="social-button youtube"
                                 href="https://www.youtube.com/channel/UCQaNKS04OqIjTs9oJaMWbuQ?view_as=subscriber"
                                 target='_blank' rel='noreferrer' >
                                 <i className="fab fa-youtube"></i>
