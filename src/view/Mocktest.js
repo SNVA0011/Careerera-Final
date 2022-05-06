@@ -4693,7 +4693,7 @@ export default function Mocktest() {
                                             <input
                                                 type="text"
                                                 placeholder="Name (This will Reflect on Your Certificate)"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                                 required=""
                                                 name="Name"
@@ -4706,7 +4706,7 @@ export default function Mocktest() {
                                             <input
                                                 type="email"
                                                 placeholder="Email *"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                                 name="Email"
                                                 required=""
@@ -4719,7 +4719,7 @@ export default function Mocktest() {
                                             <input
                                                 type="text"
                                                 placeholder="User Password"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                                 name="Password"
                                                 required=""
@@ -4732,7 +4732,7 @@ export default function Mocktest() {
                                             <input
                                                 type="text"
                                                 placeholder="Confirm Password"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                                 name="CPassword"
                                                 required=""
@@ -4745,7 +4745,7 @@ export default function Mocktest() {
                                             <input
                                                 type="text"
                                                 placeholder="Phone *"
-                                                className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base"
                                                 name="Mobile"
                                                 id="mobile"
@@ -4763,7 +4763,7 @@ export default function Mocktest() {
                                                     defaultValue=""
                                                 />
                                                 <label className='text-gray-700 font-bold text-base w-100 mb-1'>Country</label>
-                                                <Form.Select onChange={setvalPhone} value={selectphoneval} className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                                <Form.Select onChange={setvalPhone} value={selectphoneval} className=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
                                         h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base">
                                                     <option selected>Please select your country</option>
                                                     {cntry?.length > 0 && cntry.map((item, i) =>

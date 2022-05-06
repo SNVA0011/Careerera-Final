@@ -6490,6 +6490,13 @@ sup.hand-relmn {
     text-align: center;
     width: 100%;
 }
+.invert,.btn-site{
+    -webkit-filter: invert(0%) !important;
+    -moz-filter: invert(0%) !important;
+    -ms-filter: invert(0%) !important;
+    -o-filter: invert(0%) !important;
+    filter: invert(0%) !important;
+}
 
 /* responsive css */
 @media (min-width: 1400px) {

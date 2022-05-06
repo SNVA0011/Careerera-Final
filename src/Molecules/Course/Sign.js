@@ -1,4 +1,4 @@
-import React, {  useState, useContext } from 'react'; 
+import React, { useState, useContext } from 'react'; 
 import { Context, Provider } from "../../Api";
 import { CurrencyContxt } from '../../Atoms/Contextcurrency';
 import logo from "../../Images/logo.svg"
@@ -22,11 +22,10 @@ const Sign = (props) => {
     setselectphoneval('')
   }
 
-
   const [phoneSetvalue, Updatephonevalue] = useState()
-
-
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
+
+ 
 
   return (
     <div className="student-coursepopup pop-back scroll-spbx" id="query">

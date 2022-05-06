@@ -9,6 +9,7 @@
     image-rendering: -webkit-optimize-contrast;
 }
 
+
 body, html, div#root {
     height: 100%;
 }
@@ -6172,6 +6173,13 @@ sup.hand-relmn {
     top: -16px;
     text-align: center;
     width: 100%;
+}
+.invert,.btn-site{
+    -webkit-filter: invert(0%) !important;
+    -moz-filter: invert(0%) !important;
+    -ms-filter: invert(0%) !important;
+    -o-filter: invert(0%) !important;
+    filter: invert(0%) !important;
 }
 
 /* responsive css */

@@ -21,7 +21,6 @@ const Sign = (props) => {
   }
 
   const [phoneSetvalue, Updatephonevalue] = useState()
-
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
   return (
