@@ -147,7 +147,7 @@ const Course = (props) => {
                                                                                         </div>
                                                                                     </div>
 
-                                                                                    <div className='row'>
+                                                                                    {/* <div className='row'>
                                                                                         <div className='col-3 relative top-4'>
                                                                                             <img
                                                                                                 src={
@@ -159,7 +159,7 @@ const Course = (props) => {
                                                                                                 alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
                                                                                             />
                                                                                         </div>
-                                                                                    </div>
+                                                                                    </div> */}
                                                                                 </div>
                                                                                 <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                     <div className="flex-grow-1">
@@ -270,7 +270,7 @@ const Course = (props) => {
                                                                                                                 </span>
                                                                                                             </div>
                                                                                                         </div>
-
+{/* 
                                                                                                         <div className='row'>
                                                                                                             <div className='col-3 relative top-4'>
                                                                                                                 <img
@@ -283,7 +283,7 @@ const Course = (props) => {
                                                                                                                     alt={dat.courseType === 'Short' ? 'certificate-program' : 'post-graduate-program'}
                                                                                                                 />
                                                                                                             </div>
-                                                                                                        </div>
+                                                                                                        </div> */}
                                                                                                     </div>
                                                                                                     <div className="px-3 pb-2 pt-6 d-flex flex-column flex-grow-1 overflow-hidden">
                                                                                                         <div className="flex-grow-1">
