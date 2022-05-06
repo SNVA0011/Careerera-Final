@@ -27,8 +27,7 @@ const About = () => {
 
     const [Blog, setBlog] = useState([])
     const [blogsts, setblogsts] = useState(false)
-
-    // List of Blog
+ 
     async function Bloglist() {
         await fetch(base, {
             method: 'POST',
@@ -42,8 +41,7 @@ const About = () => {
 
         setblogsts(true);
     }
-
-    // Total users
+ 
     const [RegUser, setRegUser] = useState([]);
     const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
 
@@ -229,7 +227,7 @@ const About = () => {
                     </div>
 
                     <div className="row align-items-center justify-content-center">
-                        {/* 1st */}
+                      
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -238,7 +236,7 @@ const About = () => {
                                 <h4 className="text-gray-700 font-bold text-lg lg:text-xl xxl:text-2xl mb-0">Vive en línea</h4>
                             </div>
                         </div>
-                        {/* 2nd */}
+                       
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -248,7 +246,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 3rd */}
+                     
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -258,7 +256,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 4th */}
+                        
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -268,7 +266,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 5th */}
+                      
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -278,7 +276,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 6th */}
+                   
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -288,7 +286,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 7th */}
+                    
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -298,7 +296,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 8th */}
+     
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">
@@ -308,7 +306,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* 9th */}
+          
                         <div className='col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12'>
                             <div className="text-center py-6">
                                 <div className="tt-iconbox-customimg mb-3">

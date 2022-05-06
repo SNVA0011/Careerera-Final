@@ -114,8 +114,7 @@ const FullTestimonial = () => {
                                             <hr className="w-20 hr bg-blue-400 sepfoll-hr mx-auto" />
                                         </div>
                                     </div>
-
-                                    {/* blgvisibleowlcarousel */}
+ 
                                     <div className="mt-3">
                                         <div className='blgvisibleowlcarousel full-w media-prtslider ourclient-staffing'>
                                             <OwlCarousel className="slider-items owl-carousel pt-5" {...options}>

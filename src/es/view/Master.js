@@ -13,8 +13,7 @@ import { Context } from '../Api'
 import fun from '../../Images/fun4.gif' 
 import UserformsApplication from '../Molecules/Course/UserformsApplication'
 import Sign from '../Molecules/Course/Sign' 
-import NotFound from './NotFound'
-// import {  } from "react-router-dom";
+import NotFound from './NotFound' 
 import { base } from '../../Base'
 
 
@@ -43,7 +42,7 @@ const Master = () => {
 
     }
 
-    function randomIntFromInterval(min, max) { // min and max included 
+    function randomIntFromInterval(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 
@@ -55,7 +54,7 @@ const Master = () => {
  
 
 
-    function randomIntFromInterva(min, max) { // min and max included 
+    function randomIntFromInterva(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 
@@ -177,14 +176,11 @@ const Master = () => {
 
                         <Sign title={final[0].CourseTitel} />
                         <Faq data={final[0].faq_List} />
-
-                        {/* <Blog data={final[0].blog_List} /> */}
+ 
 
                         <Testimonial title1="ESTUDIANTES"
                             title2="Hablar" />
-
-                        {/* <CountryFooter pagetitle={final[0].CourseTitel} /> */}
-                        {/* <PopUp title={final[0].CourseTitel}  urlpath={dats} /> */}
+ 
                     </>
                     : <NotFound />}
 

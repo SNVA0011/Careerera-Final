@@ -32,47 +32,7 @@ const options = {
         },
     },
 }
-
-
-// const options = {
-//     items: 3,
-//     loop: true,
-//     video: true,
-//     autoplay: true,
-//     autoplayTimeout: 1800,
-//     autoplayHoverPause: true,
-//     smartSpeed: 400,
-//     center: true,
-//     dots: true,
-//     nav: false,
-//     responsive: {
-//         0: {
-//             items: 1,
-//             margin: 0,
-//             startPosition: 0,
-//             stagePadding: 40,
-//         },
-//         575: {
-//             items: 2,
-//             margin: 15,
-//             startPosition: 0,
-//             stagePadding: 30,
-//         },
-//         992: {
-//             items: 3,
-//             margin: 50,
-//             startPosition: 0,
-//             stagePadding: 0,
-//         },
-//         1200: {
-//             items: 3,
-//             margin: 50,
-//             startPosition: 1,
-//             stagePadding: 0,
-//         },
-//     },
-// }
-
+ 
 
 const Testimonial = (props) => {
 
@@ -117,17 +77,12 @@ const Testimonial = (props) => {
                         <div className='indexhome'>
                             <div className='testimonials-areamock'>
                                 <div className='partner-spkrat text-center bg-white'>
-                                    <div className="container-xxl py-20 media-prtslider ">
-
-
-                                        {/* <p className="text-center text-6xl font-bold text-gray-600 mb-6">In The Media</p> */}
+                                    <div className="container-xxl py-20 media-prtslider"> 
                                         <p className="text-3xl md:text-4xl  lg:text-5xl  font-bold text-gray-700 mb-3  softwarelike">
                                             Nuestra {props.title1} <span className="text-blue-500 sitblu-clrsite"> {props.title2}</span>
                                         </p>
                                         <div className='clearfix w-100'></div>
-
-
-                                        {/* Reviews by Comments */}
+ 
                                         <div className='ourclient-staffing'>
                                             <div className='full-w position-relative comment-viewslide'>
                                                 <OwlCarousel className="slider-items owl-carousel" {...options}>
@@ -191,31 +146,7 @@ const Testimonial = (props) => {
 
                                             </div>
                                         </div>
-
-
-
-                                        {/* Reviews by video */}
-                                        {/* <div className='row'>
-                                            <div className='full-w media-prtslider px-0 pt-2'>
-                                                <div className="w-full explore_Data_science ourclient-staffing">
-                                                    <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                                        {You?.length > 0 && You.map((items, i) => {
-                                                            return (
-                                                                <>
-                                                                    <div className="item" key={i}>
-                                                                        <div className="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
-                                                                            <iframe className="embed-responsive-item" src={items.video_url}></iframe>
-                                                                        </div>
-                                                                    </div>
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </OwlCarousel>
-
-                                                </div>
-                                            </div>
-                                        </div> */}
-
+ 
                                         <div className='mt-6'>
                                             <Link to="/es/review" className='btn-site invert capitalize no-underline py-3'>
                                                 <span>Ver todo</span>

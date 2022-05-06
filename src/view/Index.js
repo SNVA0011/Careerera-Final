@@ -1,18 +1,13 @@
 import React, { useEffect, useContext, useState, Suspense, lazy } from 'react'
 import Footer from '../Molecules/Index/Footer'
 import Header from '../Molecules/Index/Header'
-// import Media from '../Molecules/Index/Media'
 import Navbars from '../Molecules/Index/Navbar'
 import Partner from '../Molecules/Index/Parter'
-// import Disclaimer from '../Molecules/Index/Disclaimer'
-// import Hero from '../Molecules/Index/Hero'
-// import Course from '../Molecules/Index/Course'
 import 'tailwindcss/tailwind.css'
 import { Provider } from '../Api'
 import Icon from '../Atoms/Icon'
 import SideIcon from '../Atoms/sideIcon'
 import Careerera from '../Molecules/Master/Careerera'
-// import Testimonial from '../Atoms/Testimonial'
 import { Helmet } from 'react-helmet'
 import { CurrencyContxt } from '../Atoms/Contextcurrency'
 import { useParams } from 'react-router'
@@ -33,7 +28,6 @@ const Index = () => {
 
 
 
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -117,19 +111,19 @@ const Index = () => {
                 <meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills." />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://www.careerera.com/images/logo.png" />
-                {/* Tawlk To */}
+             
             </Helmet>
 
 
 <Suspense fallback={<div/>}>
             <Hero />
             </Suspense>
-            {/* <Partner /> */}
+        
             <Provider>
             <Suspense fallback={<div/>}>
                 <Course />
             </Suspense>
-                {/* <Testimonial/> */}
+              
             </Provider>
 
             <Suspense fallback={<div/>}>

@@ -122,33 +122,7 @@ const Support = () => {
                         </ul>
                     </div>
 
-                    {/* <div className='col-lg-6 col-12'>
-                        <div className="services-movingr">
-                            <div className='position-relative'>
-                                <p className="font-light font-semibold text-xl md:text-2xl mb-2 text-gray-900 text-center">
-                                    Pre Launch
-                                </p>
-                                <br />
-                                <div className="justify-content-center flex">
-                                    <img alt='Pre Launch' src={pre} className="mx-auto" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-lg-6 col-12 mt-4 mt-lg-0'>
-                        <div className="services-movingr">
-                            <div className='position-relative'>
-                                <p className="font-light font-semibold text-xl md:text-2xl mb-2 text-gray-900 text-center">
-                                    Post Launch
-                                </p>
-                                <br />
-                                <div className="justify-content-center flex">
-                                    <img alt='Post Launch' src={post} className="mx-auto" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>  */}
+                  
                 </div>
 
             </div>

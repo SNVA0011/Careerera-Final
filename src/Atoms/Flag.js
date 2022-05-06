@@ -16,14 +16,11 @@ const Flag = (props) => {
     const [exactData, setData] = value1
     const [status, loadStatus] = value2
 
-    // countryflag-menu
     const [ctrylang, setctrylang] = useState('inr')
     const [ctryflag, setctryflag] = useState(india)
     const [ctryflagtitle, setctryflagtitle] = useState('+91-92-5000-4000')
 
-    // loadspin
     const [spindrop, setSpindrop] = useState(false);
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
     function countryChange(src, title, currency) {
@@ -39,32 +36,6 @@ const Flag = (props) => {
 
     return (
         <>
-            {/* {status ? (
-                <div className="float-right ">
-                    <DropdownButton
-                        className="mt-4"
-                        variant="danger"
-                        id="dropdown-basic-button"
-                        size="sm"
-                        title="Explore Courses">
-                        {exactData?.length > 0 && exactData.map((val, e) => (
-                            <Dropdown.Item>
-                                <Link
-                                    className="no-underline text-black "
-                                    to={val.category_url}
-                                >
-                                    {val.category_title}
-                                </Link>
-                            </Dropdown.Item>
-                        ))}
-                    </DropdownButton>
-                </div>
-            ) : (
-                <Spinner animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
-            )} */}
-
             <DropdownButton
                 className="countryflag-menu"
                 variant="primary"

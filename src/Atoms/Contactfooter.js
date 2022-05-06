@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { CurrencyContxt } from '../Atoms/Contextcurrency'
-export default function Contactfooter() {
-    // currency inr/usd
+export default function Contactfooter() { 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     return (
         <div className='certification-courseslight full-w'>

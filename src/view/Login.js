@@ -21,10 +21,7 @@ const Login = () => {
             <Hero title="Login " detail=""  
             batch={<> <Link to="/" className="no-underline badge bg-info">Home</Link>
             <span className="mx-2"> / </span>Login </>} 
-            img={login} />
-            {/* <div className="text-center font-bold text-5xl text-blue-500 py-4">
-                <span className="text-gray-700"> Login</span> with your account
-            </div> */}
+            img={login} /> 
 
             <div className="container py-16">
                 <div className="row align-items-center">

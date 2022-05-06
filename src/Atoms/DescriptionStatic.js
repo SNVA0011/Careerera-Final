@@ -13,7 +13,7 @@ const DescriptionStatic = (props) => {
         <div className='container py-16'>
           <div className="sec_title">
             <h2 className='text-xl sm:text-2xl md:text-3xl font-bold'>{props.title}
-              {/* <span className='orange-clrsite'>Online Course</span> */}
+            
             </h2>
             <p className='text-gray-500 text-base md:text-lg fw-medium'>{props.heading}</p>
             <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr"></hr>

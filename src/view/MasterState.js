@@ -30,7 +30,6 @@ const MasterState = () => {
         setCountrycaptial(countrycaptial.charAt(0).toUpperCase() + countrycaptial.slice(1))
     }, []);
 
-    // country Api
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
 
@@ -50,14 +49,12 @@ const MasterState = () => {
     }
 
 
-    // country Api
     const [getnoindex, setNoindex] = useState([])
     const [loadNoindex, setNoindexLoad] = useState(false)
     const [getnoindex_2, setNoindex_2] = useState([])
     const [loadNoindex_2, setNoindexLoad_2] = useState(false)
 
 
-    //   state api
     const [datas, setdatas] = useState([])
     const [loads, setloads] = useState(false)
 
@@ -80,7 +77,6 @@ const MasterState = () => {
 
 
 
-    // List of BlogDetails
 
     async function getCourse() {
         await fetch(base, {
@@ -146,7 +142,6 @@ const MasterState = () => {
  
 
     
-    // getWords
     function getWords(monthCount) {
         function getPlural(number, word) {
             return number === 1 && word.one || word.other;
@@ -201,8 +196,7 @@ const MasterState = () => {
 
             <div className="free-batches bg-gray-50 country-master full-w">
 
-
-                {/* free */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pt-16 pb-8">
 
@@ -335,12 +329,9 @@ const MasterState = () => {
                     </div>
                 </div>
 
-
-                {/* COURSE */}
+ 
                 <div className='all-batches full-w'>
-                    <div className="container pb-16">
-
-
+                    <div className="container pb-16"> 
                         {allfreeCourLoad ? <>
                             {allfreeCour[0].LVC.filter((items) => items.BatchURL.includes(country.dats))?.length > 0 ?
                                 <>

@@ -11,7 +11,7 @@ import roles from "../Images/roles_offer.png";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import Light from "../Molecules/Master/Light";
 import { base } from '../Base'
-
+import fun from '../Images/fun4.gif'
 
 export default function CyberSecurityCity() {
 
@@ -60,7 +60,7 @@ export default function CyberSecurityCity() {
 
             </Helmet>
 
-                {/* certification-courses */}
+                
                 <div className='certification-courses full-w staticsyber p-0'>
                     <div className="container">
                         <div className="row py-16 align-items-center">
@@ -76,7 +76,7 @@ export default function CyberSecurityCity() {
 
                             </div>
 
-                            {/* form */}
+                            
                             <EnquireNowForm />
                         </div>
                     </div>
@@ -201,7 +201,7 @@ export default function CyberSecurityCity() {
                                         </div>
 
 
-                                        {/* col-xl-4 start */}
+                                        
                                         <div className="col-xl-4 col-md-6 col-12 mb-4">
                                             <div className="cards h-100 d-flex flex-column">
                                                 <div className="pt-2 pl-4 rounded-lg">
@@ -331,7 +331,7 @@ export default function CyberSecurityCity() {
                                         </div>
 
 
-                                        {/* col-xl-4 start */}
+                                        
                                         <div className="col-xl-4 col-md-6 col-12 mb-4">
                                             <div className="cards h-100 d-flex flex-column">
                                                 <div className="pt-2 pl-4 rounded-lg">
@@ -457,7 +457,7 @@ export default function CyberSecurityCity() {
                                         </div>
 
 
-                                        {/* col-xl-4 start */}
+                                        
                                         <div className="col-xl-4 col-md-6 col-12 mb-4">
                                             <div className="cards h-100 d-flex flex-column">
                                                 <div className="pt-2 pl-4 rounded-lg">
@@ -586,7 +586,7 @@ export default function CyberSecurityCity() {
                                         </div>
 
 
-                                        {/* col-xl-4 start */}
+                                        
                                         <div className="col-xl-4 col-md-6 col-12 mb-4">
                                             <div className="cards h-100 d-flex flex-column">
                                                 <div className="pt-2 pl-4 rounded-lg">
@@ -748,69 +748,13 @@ export default function CyberSecurityCity() {
 
                     <Light image={roles} />
 
-                    {/* UserformsApplication */}
+                    
                     <div className='showprocess-Only'>
                         <UserformsApplication />
                     </div>
-
-
-
-                    {/* discription_sec */}
-                    {/* <div className='our_faq_sec custom_locationall scroll-spbx'>
-                    <div className='container py-16'>
-
-                        <div className="pt-1">
-                            <Accordion>
-                                <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Check Out Cyber Security Course and Batches in Other Locations <div className="btn-site invert ml-3"><span>View</span></div></Accordion.Header>
-                                    <Accordion.Body>
-                                        <ul className='list-disc text-base row'>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/india"}>
-                                                    India
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/malaysia"}>
-                                                    Malaysia
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/singapore"}>
-                                                    Singapore
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/uae"}>
-                                                    UAE
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/united-kingdom"}>
-                                                    United Kingdom
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/canada"}>
-                                                    Canada
-                                                </Link>
-                                            </li>
-                                            <li className='col-xxl-3 col-lg-6 col-12'>
-                                                <Link to={"/" + "cyber-security/certification-course/new-zealand"}>
-                                                    New Zealand
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-
-                            </Accordion>
-                        </div>
-                    </div>
-                </div> */}
-
-                    {/* <ZipFooterCourse title="Cyber Security" id={cybercity.cybercountry} id2={cybercity.cyberstate} id3={cybercity.cybercity} /> */}
-                </div></div> : <div></div>}
+  
+                </div></div> : 
+ <img src={fun} className="w-screen" alt="careerera-loader-image"/>}
 
         </>
     )

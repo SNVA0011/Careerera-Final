@@ -6,12 +6,10 @@ import Forms from '../../Atoms/Form'
 
 
 const Sign = (props) => {
-  // Country List Api
   const { value11, value12 } = useContext(Context);
   const [cntry, setcntry] = value11;
   const [cntryLoad, setcntryLoad] = value12;
 
-  // setvalPhoneCode
   const [selectphoneval, setselectphoneval] = useState([])
 
   function setvalPhone(e) {
@@ -22,10 +20,8 @@ const Sign = (props) => {
     setselectphoneval('')
   }
 
-  // phoneSetvalue
   const [phoneSetvalue, Updatephonevalue] = useState()
 
-  // currency inr/usd
   const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
   return (
@@ -43,7 +39,7 @@ const Sign = (props) => {
                 </p> 
 
               <p className="call_box mb-0">
-                {/* OR<br></br> */}
+             
                 Llamenos al
                 <div className='text-center'>
                   <a href={"tel:" + contextcur.title} className="btn-site invert orangebtn no-underline">
@@ -58,9 +54,7 @@ const Sign = (props) => {
         <div className="col-md-7 col-12 px-4">
         <Forms/>
         </div>
-
-
-        {/*cols*/}
+ 
       </div>
      </div>
     </div>

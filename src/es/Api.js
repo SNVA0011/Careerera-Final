@@ -7,10 +7,8 @@ export const Context = createContext()
 
 export const Provider = (props) => {
     let { id } = useParams()
-    // let { news } = useParams()
 
 
-    // Store Api data in variable of usestate
     const [exactData, setData] = useState([])
     const [Catfinal, Catsetfinal] = useState([])
     const [freeCour, setFreeCour] = useState([])
@@ -18,12 +16,7 @@ export const Provider = (props) => {
     const [allcountryList, setallcountryList] = useState([])
     const [cursospost, setcursospost] = useState([])
     const [allbatches, setallbatches] = useState([])
-    // const [Blog, setBlog] = useState([])
-    // const [BlogDetail, setBlogDetail] = useState([])
-    // const [Event, setEvent] = useState([])
-    // const [Eventdetails, setEventdetails] = useState([])
 
-    // On api load : status (true/false)
     const [status, loadStatus] = useState(false)
     const [Catsts, Catloadsts] = useState(false)
     const [freeCourLoad, setFreeCourLoad] = useState(false)
@@ -33,20 +26,11 @@ export const Provider = (props) => {
     const [allbatchesLoad, allBatchesLoad] = useState(false)
  
 
-    // const [blogsts, setblogsts] = useState(false)
-    // const [blogDetailsts, setblogDetailsts] = useState(false)
-    // const [Eventsts, setEventsts] = useState(false)
-    // const [Eventdetailssts, setEventdetailssts] = useState(false)
 
-    // currency inr/usd
     const [contextcur] = useContext(CurrencyContxt)
-    // console.log('Currency=>',contextcur);
-
-    // Logger()
-    // const [logger, setLogger] = useState([])
 
 
-    // Menu API -
+
     async function getData() { 
         await fetch(base, {
             method: 'POST',
@@ -76,7 +60,6 @@ export const Provider = (props) => {
         Catloadsts(true)
     }
 
-    // Free Courses
     async function freeCourse() { 
         await fetch(base, {
             method: 'POST',
@@ -91,7 +74,6 @@ export const Provider = (props) => {
         setFreeCourLoad(true); 
     }
 
-    // Live Online Api
       async function AllfreeCourse() {
         await fetch(base, {
             method: 'POST',
@@ -107,7 +89,6 @@ export const Provider = (props) => {
     }
 
 
-    // Country List Api
     async function Allcountrylist() { 
         await fetch(base, {
             method: 'POST',
@@ -122,20 +103,8 @@ export const Provider = (props) => {
         setcountryLoad(true);
     }
 
-    // async function CallApi(){
-    //     fetch(base, {
-    //       method: 'POST',
-    //       body: JSON.stringify({"apiurl":"https://my.careerera.com/API/course/TopCategoryMenubar.php"}),
-    //       headers: {
-    //         'Content-type': 'application/json; charset=UTF-8',
-    //       },
-    //     },[])
-    //       .then((response) => response.json())
-    //       .then((json) => console.log("real",json));
 
-    //   } 
 
-    // escoursoslist Api
     async function escoursoslist() {
          await fetch(base, {
             method: 'POST',
@@ -151,7 +120,6 @@ export const Provider = (props) => {
     }
 
 
-    // escoursoslist Api
     async function allbatchlist() {
          await fetch(base, {
             method: 'POST',

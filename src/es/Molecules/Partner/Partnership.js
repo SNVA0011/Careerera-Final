@@ -181,9 +181,7 @@ const Partnership = () => {
                 </div>
             </div>
 
-
-
-    {/*======== our counseling office ========*/}
+ 
     <div className="certification-courseslight full-w">
                 <div className="container pt-16 pb-10">
                     <h3 className="font-semibold text-3xl mb-2">Nuestra Oficina de Consejería</h3>
@@ -230,7 +228,7 @@ const Partnership = () => {
                 </div>
             </div>
 
-            {/*====== end our counseling office ======*/}
+         
 
 
         </div>

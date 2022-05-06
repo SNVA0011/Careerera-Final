@@ -34,7 +34,7 @@ const MasterCity = () => {
         setCountrycaptial(countrycaptial.charAt(0).toUpperCase() + countrycaptial.slice(1))
     }, []);
 
-    // country Api
+ 
     const [data, setdata] = useState([])
     const [load, setload] = useState(false)
 
@@ -53,10 +53,7 @@ const MasterCity = () => {
         setload(true)
     }
 
-
-
-
-    // List of BlogDetails
+ 
 
     async function getCourse() {
       await fetch(base, {
@@ -70,10 +67,7 @@ const MasterCity = () => {
         });  
         Catloadsts(true)
     }
-
  
-
-
     useEffect(() => {
         getCourse()
         CallApi()
@@ -84,7 +78,7 @@ const MasterCity = () => {
 
     const finalId = data.filter((items) => items.countries_url == country.city)
 
-    // getWords
+ 
     function getWords(monthCount) {
         function getPlural(number, word) {
             return number === 1 && word.one || word.other;
@@ -127,8 +121,7 @@ const MasterCity = () => {
 
             <div className="free-batches bg-gray-50 country-master full-w">
 
-
-                {/* free */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pt-16 pb-8">
 
@@ -262,8 +255,7 @@ const MasterCity = () => {
                     </div>
                 </div>
 
-
-                {/* COURSE */}
+ 
                 <div className='all-batches full-w'>
                     <div className="container pb-16">
                         <h3 className='font-semibold text-2xl mb-3'>LIVE ONLINE</h3>

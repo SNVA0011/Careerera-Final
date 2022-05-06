@@ -3,11 +3,11 @@ import { Context, Provider } from "../../Api";
 import Form from 'react-bootstrap/Form' 
 
 export default function BecomeInsForm() {
-    // Country List Api
+ 
     const { value11, value12 } = useContext(Context);
     const [cntry, setcntry] = value11;
     const [cntryLoad, setcntryLoad] = value12;
-    // setvalPhoneCode
+ 
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)

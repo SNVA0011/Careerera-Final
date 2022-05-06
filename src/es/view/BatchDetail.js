@@ -18,8 +18,7 @@ const BatchDetail = (props) => {
   const [Load, setLoad] = useState(false)
   const [List, setList] = useState([])
   const [Loadlist, setLoadlist] = useState(false)
-
-  // currency inr/usd
+ 
   const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
   async function CallApi() {
@@ -194,7 +193,7 @@ const BatchDetail = (props) => {
 
 
           {Loadlist ? <div>
-            {/* list of cities_url */}
+ 
             <div className='our_faq_sec custom_locationall scroll-spbx'>
               <div className='container py-16 '>
                 <div className="pt-1">

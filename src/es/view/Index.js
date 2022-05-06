@@ -15,8 +15,7 @@ const Index = () => {
 
     const url = useParams()
     const [tawk, settawk] = useState()
-
-    // currency inr/usd
+ 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -99,18 +98,16 @@ const Index = () => {
                 <meta property="og:url" content="https://www.careerera.com" />
                 <meta property="og:description" content="Careerera is a well-known online certification course and classroom training provider. It offers the industry’s best online education. Enroll to upgrade your skills." />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://www.careerera.com/images/logo.png" />
-                {/* Tawlk To */}
-
+                <meta property="og:image" content="https://www.careerera.com/images/logo.png" /> 
             </Helmet>
 
 
 
             <Hero />
-            {/* <Partner /> */}
+          
             <Provider>
                 <Courses />
-                {/* <Testimonial/> */}
+               
             </Provider>
 
             <Media />

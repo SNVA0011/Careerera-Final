@@ -7,7 +7,7 @@ import Screeningcall from './../../Images/Screening-call.png'
 const Application = () => {
     return (
         <>
- {/* application_process_sec */}
+ 
             <div className='application_process_sec scroll-spbx bg-gray-50' id='application'>
                 <div className='container py-16'>
                     <div className="sec_title">
@@ -18,7 +18,7 @@ const Application = () => {
 
                     <div className="pt-0">
                         <div className="row pt-1">
-                            {/* first */}
+                            
                             <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                <div className='tt-iconbox-customimg'>
                                    <img className="img-round" src={Applybyfilling}/>
@@ -30,7 +30,7 @@ const Application = () => {
                                 </div>
                             </div>
 
-                            {/* second */}
+                            
                             <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                <div className='tt-iconbox-customimg'>
                                    <img className="img-round" src={Admissions}/>
@@ -43,7 +43,7 @@ const Application = () => {
 
                                 </div>
                             </div>
-                            {/* third */}
+                           
                             <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                <div className='tt-iconbox-customimg'>
                                    <img className="img-round" src={Shortlisted}/>
@@ -57,7 +57,7 @@ const Application = () => {
 
                                 </div>
                             </div>
-                            {/* fourth */}
+                            
                             <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                <div className='tt-iconbox-customimg'>
                                    <img className="img-round" src={Screeningcall}/>

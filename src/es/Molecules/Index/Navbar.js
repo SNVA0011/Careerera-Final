@@ -44,14 +44,7 @@ const Navbars = () => {
           </Offcanvas.Header>
           <Offcanvas.Body >
 
-            {/* <div className="bodyoffcanvas mb-4">
-              <Provider>
-                <menuCloseMob.Provider value={[mobmenuclose, setMobmenuclose]}>
-                  <Course />
-                </menuCloseMob.Provider>
-              </Provider>
-            </div>
-            <hr></hr> */}
+        
             <div className="footer">
               <div className="container">
                 <Link
@@ -105,11 +98,7 @@ const Navbars = () => {
                 <img src={logo} className="w-40 mainlogo" alt="logo" />
               </Link>
             </div>
-            {/* <div className="align-middle mr-auto d-none d-lg-inline-block allcour-btn">
-              <Provider>
-                <Course />
-              </Provider>
-            </div> */}
+           
           </div>
 
           <div className="col d-none d-lg-block allcour-batchcol">

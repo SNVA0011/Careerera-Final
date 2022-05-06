@@ -1332,9 +1332,7 @@ const PgpCyberSecurity = () => {
             <div className="why-pgpedu">
                 <Careerera />
             </div>
-
-            {/* <Profile title="CYBER SECURITY"
-            /> */}
+ 
 
             <CareerAssistance
                 title='Career'
@@ -1413,28 +1411,7 @@ non-profit organizations are making considerable expenditures in cyber defenses 
 hiring an expanding number of cyber security professionals as cyber threats develop and
 change. As a result, as per the Bureau of Labor Statistics, the demand for cybersecurity
 professionals in information systems design and services related is expected to expand
-by 33% between 2020 and 2030."
-            // ques13="Q12 : Which topics are covered in the course curriculum of the PGP in CYBER SECURITY course from Careerera?"
-            // ans13="A : There are several topics pertinent to the field of CYBER SECURITY which are covered in this PGP in CYBER SECURITY course. Some of them are as follows – Regression, Predictive modelling, Clustering, Time Series Forecasting, Classification etc. There are exercises which require one to structure a business problem into an analytics framework using Statistics and Data Modelling. There are also data cleaning, data transformation, Deep learning, and Natural Language Processing (NLP) topics."
-            // ques14="Q13 : Which sectors are the capstone projects based on?"
-            // ans14="A : Retail, Web and Social Media, Supply Chain, Entrepreneurship, E-commerce, Banking, Healthcare, Insurance, Finance and Accounts etc."
-            // ques15="Q14 : Is there any guarantee of placement after the completion of the PGP in CYBER SECURITY course?"
-            // ans15="A : We provide dedicated placement assistance after the program completion. we give guidance on resume writing, Conduct Workshops on Interview Preparation."
-            // ques16="Q15 : Why should one choose Careerera?"
-            // ans16="
-
-            //          As an education provider, Careerera aims at developing the overall personality of an individual so that they can progress into becoming highly skilled working professionals.
-            //          Careerera’s faculty utilize contemporary tactics in order to deliver training sessions which include one-to-one interaction between the participants and the instructor.
-            //          The trainers appointed for Careerera’s courses possess a very high level of expertise in their subjects and fields. Therefore Careerera can easily guarantee positive results for all the participants.
-            //          24x7 guidance is provided to those who need it via call, email, or video call.
-            //          Candidates can opt for demo classes in order to get a good idea of the actual training sessions.
-            //          Careerera provides the online live virtual classroom training model in order to make it easier for working professionals to attend the sessions on one hand while balancing their work on the other.
-
-            //      "
-            // ques17=""
-            // ans17=""
-
-            />
+by 33% between 2020 and 2030." />
             <Blog
                 heading="Blogs"
                 heading2="And Article"

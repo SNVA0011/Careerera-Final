@@ -4,17 +4,14 @@ import fun from '../../../Images/fun4.gif'
 import { CurrencyContxt } from "../../Atoms/Contextcurrency"; 
 
 const PaidCourse = () => {
-    // All courses Api
+ 
     const { value15, value16 } = useContext(Context)
     const [allbatches, setallbatches] = value15
     const [allbatchesLoad, allBatchesLoad] = value16
-
-
-    // currency inr/usd
-    const [contextcur, setContextCur] = useContext(CurrencyContxt);
-
  
+    const [contextcur, setContextCur] = useContext(CurrencyContxt); 
 
+    
     return (
         <div className='all-batches full-w'>
             {allbatchesLoad ? (

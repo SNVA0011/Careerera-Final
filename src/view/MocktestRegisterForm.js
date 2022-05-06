@@ -8,11 +8,9 @@ import { base } from '../Base'
 
 
 export default function MocktestRegisterForm() {
-    // Event
     const [Event, setEvent] = useState([])
     const [Eventsts, setEventsts] = useState(false)
 
-    // List of Event
     async function Eventslist() { 
         await fetch(base, {
             method: 'POST',
@@ -28,11 +26,9 @@ export default function MocktestRegisterForm() {
         setEventsts(true)
     }
 
-    // Country List Api
     const { value11, value12 } = useContext(Context);
     const [cntry, setcntry] = value11;
     const [cntryLoad, setcntryLoad] = value12;
-    // setvalPhoneCode
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)

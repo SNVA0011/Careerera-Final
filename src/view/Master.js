@@ -15,8 +15,7 @@ import UserformsApplication from '../Molecules/Course/UserformsApplication'
 import Sign from '../Molecules/Course/Sign'
 import CountryFooter from '../Atoms/CountryFooter'
 import PopUp from '../Atoms/PopUp'
-import NotFound from './NotFound'
-// import {  } from "react-router-dom";
+import NotFound from './NotFound' 
 import { base } from '../Base'
 
 
@@ -41,7 +40,7 @@ const Master = () => {
         loadsts(true)
     }
 
-    function randomIntFromInterval(min, max) { // min and max included 
+    function randomIntFromInterval(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 
@@ -52,7 +51,7 @@ const Master = () => {
 
 
 
-    function randomIntFromInterva(min, max) { // min and max included 
+    function randomIntFromInterva(min, max) {  
         return Math.random() * (max - min + 1) + min
     }
 

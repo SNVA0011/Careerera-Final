@@ -6,12 +6,10 @@ import { CurrencyContxt } from "../../Atoms/Contextcurrency";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const PaidCourse = () => {
-    // All courses Api
     const { value9, value10 } = useContext(Context)
     const [allfreeCour, setallFreeCour] = value9
     const [allfreeCourLoad, setallFreeCourLoad] = value10
 
-    // groupdata (Live Online Api)
     const freeAllbatch = []
     if (allfreeCourLoad) {
         const groups = allfreeCour[0].LVC.reduce((groups, game) => {
@@ -36,7 +34,6 @@ const PaidCourse = () => {
    
 
 
-    // currency inr/usd
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
 

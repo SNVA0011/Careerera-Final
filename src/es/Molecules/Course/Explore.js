@@ -107,7 +107,7 @@ const Explore = () => {
                     </div>
 
                     <div className='md:hidden block pl-10'>
-                        {/* slider */}
+                      
                         <OwlCarousel className="slider-items owl-carousel" {...options}>
 
                             <div className='border-2 rounded-2xl shadow w-10/12 h-auto'>

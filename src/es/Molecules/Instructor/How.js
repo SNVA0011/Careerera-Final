@@ -11,7 +11,7 @@ import AnimatedNumbers from "react-animated-numbers";
 import { base } from '../../../Base'
 
 const How = () => {
-        // Total users
+ 
         const [RegUser, setRegUser] = useState([]);
         const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
     

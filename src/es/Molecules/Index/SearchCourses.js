@@ -7,12 +7,10 @@ import { Context, Provider } from '../../Api'
 import { Link, useNavigate } from 'react-router-dom'
 
 export default function SearchCourses() {
-    // Api courses
     const { value13, value14 } = useContext(Context)
     const [exactData, setData] = value13
     const [status, loadStatus] = value14
 
-    // Modal
     const [coursesname, setCoursesname] = useState('')
     const [show, setShow] = useState(false)
     const handleClose = () => {

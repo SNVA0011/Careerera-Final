@@ -9,14 +9,12 @@ import { Helmet } from 'react-helmet'
 import ReCAPTCHA from "react-google-recaptcha"; 
 
 
-const Help = () => {
-    // Country List Api
+const Help = () => { 
     const { value11, value12 } = useContext(Context)
     const [cntry, setcntry] = value11
     const [cntryLoad, setcntryLoad] = value12
 
-
-    // setvalPhoneCode
+ 
     const [selectphoneval, setselectphoneval] = useState([])
 
     function setvalPhone(e) {
@@ -26,8 +24,7 @@ const Help = () => {
     if (selectphoneval == 'Please select your country') {
         setselectphoneval('')
     }
-
-    // phoneSetvalue
+ 
     const [phoneSetvalue, Updatephonevalue] = useState()
 
     useEffect(() => {
@@ -35,8 +32,7 @@ const Help = () => {
     }, []);
 
     
-  function onChange(value) {
-    // console.log("Captcha value:", value)
+  function onChange(value) { 
   }
 
     return (

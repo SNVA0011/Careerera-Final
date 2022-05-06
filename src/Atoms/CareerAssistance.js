@@ -18,10 +18,10 @@ export default function CareerAssistance(props) {
         </div>
 
 
-        {/* application_process_sec */}
+     
         <div className='application_process_sec full-w start-yourcareer pt-6 '>
           <div className="row capstone-skills">
-            {/* first */}
+        
             <div className="col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg">
               <div className='d-flex align-items-center'>
                 <div className='left'>
@@ -37,7 +37,7 @@ export default function CareerAssistance(props) {
               </div>
             </div>
 
-            {/* second */}
+           
             <div className="col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg">
               <div className='d-flex align-items-center'>
                 <div className='left'>
@@ -52,7 +52,7 @@ export default function CareerAssistance(props) {
                 </div>
               </div>
             </div>
-            {/* third */}
+            
             <div className="col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg">
               <div className='d-flex align-items-center'>
                 <div className='left'>

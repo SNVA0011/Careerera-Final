@@ -45,8 +45,7 @@ export default function UserformsApplication(props) {
 
     return (
         <>
-
-            {/* our-users-from  */}
+ 
             <div className={props.title && props.subtitle && props.titleheading ? 'training-room full-w mb-3' : 'full-w'}>
                 {props.title && props.subtitle && props.titleheading ?
                     <div className='overflow-hidden ppt-clistaff top-2-relativeplus'>
@@ -278,9 +277,7 @@ export default function UserformsApplication(props) {
 
             </div>
 
-
-
-            {/* application_process_sec */}
+ 
             {props.title && props.subtitle && props.titleheading ?
                 <></> :
                 <div className='application_process_sec scroll-spbx bg-gray-50' id='ApplicationProcess'>
@@ -294,7 +291,7 @@ export default function UserformsApplication(props) {
                             </div>
                             <div className="pt-0">
                                 <div className="row pt-1">
-                                    {/* first */}
+                                 
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Applybyfilling} alt={'Applybyfilling'} />
@@ -303,8 +300,7 @@ export default function UserformsApplication(props) {
                                             <h4 className='text-gray-700 font-bold text-base mb-0'>{props.customliz4}</h4>
                                         </div>
                                     </div>
-
-                                    {/* second */}
+ 
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Admissions} alt={'Admissions'} />
@@ -313,7 +309,7 @@ export default function UserformsApplication(props) {
                                             <h4 className='text-gray-700 font-bold text-base mb-0'>{props.customliz5}</h4>
                                         </div>
                                     </div>
-                                    {/* third */}
+                                    
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Shortlisted} alt={'Shortlisted'} />
@@ -322,7 +318,7 @@ export default function UserformsApplication(props) {
                                             <h4 className='text-gray-700 font-bold text-base mb-0'>{props.customliz6}</h4>
                                         </div>
                                     </div>
-                                    {/* fourth */}
+                                 
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Screeningcall} alt={'Screeningcall'} />
@@ -343,7 +339,7 @@ export default function UserformsApplication(props) {
                             </div>
                             <div className="pt-0">
                                 <div className="row pt-1">
-                                    {/* first */}
+                                  
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Applybyfilling} alt={'Applybyfilling'} />
@@ -352,8 +348,7 @@ export default function UserformsApplication(props) {
                                             <h4 className='text-gray-700 font-bold text-base mb-0'>Solicite completando un simple formulario de solicitud en línea</h4>
                                         </div>
                                     </div>
-
-                                    {/* second */}
+ 
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Admissions} alt={'Admissions'} />
@@ -361,8 +356,8 @@ export default function UserformsApplication(props) {
                                         <div className="full-w">
                                             <h4 className='text-gray-700 font-bold text-base mb-0'>El comité de admisiones revisará y preseleccionará.</h4>
                                         </div>
-                                    </div>
-                                    {/* third */}
+                                    </div> 
+
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Shortlisted} alt={'Shortlisted'} />
@@ -372,7 +367,7 @@ export default function UserformsApplication(props) {
 
                                         </div>
                                     </div>
-                                    {/* fourth */}
+                           
                                     <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                         <div className='tt-iconbox-customimg'>
                                             <img className="img-round" src={Screeningcall} alt={'Screeningcall'} />

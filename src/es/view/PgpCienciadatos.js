@@ -39,8 +39,7 @@ const PgpCienciadatos = () => {
                 <meta name="keywords" content="Curso de certificación de ciencia de datos, PGP en ciencia de datos, programa de posgrado en ciencia de datos, curso de ciencia de datos, capacitación en certificación de ciencia de datos" />
                 <link rel="canonical" href="https://www.careerera.com/es/data-science/programa-de-postgrado-en-ciencia-de-datos" />
             </Helmet>
-
-            {/* <PopUp title="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS" urlpath={dats}/> */}
+ 
 
             <Hero
                 categoryUrl="PROGRAMA DE POSTGRADO EN CIENCIA DE DATOS"
@@ -177,7 +176,7 @@ const PgpCienciadatos = () => {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr" />
                     </div>
 
-                    {/*==================== h4 title ================*/}
+                    
                     <div className="row">
                         <h4 className="font-weight-bold text-lg sm:text-xl mb-3">Cimientos <span className="heading-border-line"></span></h4>
 
@@ -258,7 +257,7 @@ const PgpCienciadatos = () => {
 
 
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3 ">Análisis de los datos  <span className="heading-border-line"></span></h4>
 
                         <div className="col-lg-6 col-12">
@@ -298,7 +297,7 @@ const PgpCienciadatos = () => {
                         </div>
 
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3 ">Técnicas de aprendizaje automático <span className="heading-border-line"></span></h4>
 
                         <div className="col-lg-6 col-12">
@@ -426,7 +425,7 @@ const PgpCienciadatos = () => {
                         </div>
 
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3 ">Visualización de datos <span className="heading-border-line"></span></h4>
 
                         <div className="col-lg-6 col-12">
@@ -497,7 +496,7 @@ const PgpCienciadatos = () => {
                         </div>
 
 
-                        {/*==================== h4 title ================*/}
+                        
                         <h4 className="mt-12 font-weight-bold text-lg sm:text-xl mb-3 ">Introducción a la inteligencia artificial <span className="heading-border-line"></span></h4>
 
                         <div className="col-lg-6 col-12">
@@ -836,8 +835,7 @@ const PgpCienciadatos = () => {
             </div>
 
             <Testimonial title1="STUDENT'S"
-                title2="Review" />
-            {/* <CountryFooter  pagetitle="UI and UX"/> */}
+                title2="Review" /> 
         </div>
     )
 }

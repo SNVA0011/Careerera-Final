@@ -70,7 +70,7 @@ const Blog = (props) => {
                             </div>
                         </div>
 
-                        {/* second */}
+    
                         <div className="col-xl-4 col-md-6 col-12 mb-4 mb-xl-0">
                             <div className="full-w shadow-customblg rounded-xl overflow-hidden bg-white position-relative">
                                 <img src={props.url2} className="w-full" alt={props.title2} />
@@ -94,9 +94,7 @@ const Blog = (props) => {
                                 </div>
                             </div>
                         </div>
-
-
-                        {/* third */}
+ 
                         <div className="col-xl-4 col-md-6 col-12 mb-4 mb-xl-0">
                             <div className="full-w shadow-customblg rounded-xl overflow-hidden bg-white position-relative">
                                 <img src={props.url3} className="w-full" alt={props.title3} />

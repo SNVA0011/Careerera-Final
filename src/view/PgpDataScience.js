@@ -67,8 +67,7 @@ const PgpDataScience = (props) => {
                 point1="25+ Industry Graded Projects"
                 point5="Multiple Live Projects"
                 point6="Career Assistance "
-                title="POST GRADUATE PROGRAM IN DATA SCIENCE"
-            // count={props.countryName.country}
+                title="POST GRADUATE PROGRAM IN DATA SCIENCE" 
             />
 
             <NavStatic

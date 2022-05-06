@@ -289,9 +289,7 @@ const Faq = (props) => {
 
 
             </div>
-            {/* <div className="col-lg-5 col-12">
-                  <img src={certi} className="ml-auto"/>
-                </div> */}
+           
           </div>
         </div>
 

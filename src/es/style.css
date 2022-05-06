@@ -6162,9 +6162,7 @@ sup.hand-relmn {
 }
 .comment-viewslide{
     padding-top: 32px;
-}
-.comment-viewslide .owl-item {height: 0;}    
-.comment-viewslide .owl-item.active {height: auto;}
+} 
 
 .indexhome .media-prtslider .comment-viewslide .owl-carousel .owl-dots{
     margin-top: 12px;
@@ -7646,7 +7644,7 @@ sup.hand-relmn {
         font-size: 13px;
     }
 }
-
+ 
 @media (max-width:386px) {
     .partner-marketing-affiliates.would .btnlg-learn.partneremail-us .bi {
         margin-top: -9px;

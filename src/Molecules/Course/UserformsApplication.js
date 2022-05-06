@@ -46,7 +46,7 @@ export default function UserformsApplication(props) {
     return (
         <>
 
-            {/* our-users-from  */}
+         
             <div className={props.title && props.subtitle && props.titleheading ? 'training-room full-w mb-3' : 'full-w'}>
                 {props.title && props.subtitle && props.titleheading ?
                     <div className='overflow-hidden ppt-clistaff top-2-relativeplus'>
@@ -279,9 +279,7 @@ export default function UserformsApplication(props) {
 
             </div>
 
-
-
-            {/* application_process_sec */}
+ 
             {props.title && props.subtitle && props.titleheading ?
                 <></> :
                 <div className='application_process_sec scroll-spbx bg-gray-50' id='ApplicationProcess'>
@@ -299,7 +297,7 @@ export default function UserformsApplication(props) {
 
                         <div className="pt-0">
                             <div className="row pt-1">
-                                {/* first */}
+                                
                                 <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                     <div className='tt-iconbox-customimg'>
                                         <img className="img-round" src={Applybyfilling} alt={'Applybyfilling'} />
@@ -311,7 +309,7 @@ export default function UserformsApplication(props) {
                                     </div>
                                 </div>
 
-                                {/* second */}
+                                
                                 <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                     <div className='tt-iconbox-customimg'>
                                         <img className="img-round" src={Admissions} alt={'Admissions'} />
@@ -324,7 +322,7 @@ export default function UserformsApplication(props) {
 
                                     </div>
                                 </div>
-                                {/* third */}
+                               
                                 <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                     <div className='tt-iconbox-customimg'>
                                         <img className="img-round" src={Shortlisted} alt={'Shortlisted'} />
@@ -338,7 +336,7 @@ export default function UserformsApplication(props) {
 
                                     </div>
                                 </div>
-                                {/* fourth */}
+                                
                                 <div className="justify-items-center  col-lg-3 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                     <div className='tt-iconbox-customimg'>
                                         <img className="img-round" src={Screeningcall} alt={'Screeningcall'} />

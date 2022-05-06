@@ -74,10 +74,8 @@ const PgpFullStack = () => {
          />
          <NavStatic
             about="Full Stack Development"
-            Why='Why Full Stack Development'
-            // Program="Program Highlight"
-            Carriculum="Curriculum"
-            // Project="Capstone Project"
+            Why='Why Full Stack Development' 
+            Carriculum="Curriculum" 
             WhyC="Why Careerera"
             Placement="Placement"
             Application="Application"
@@ -720,33 +718,13 @@ const PgpFullStack = () => {
             </div>
          </div>
 
-         {/* 
-            <Capstone
-            title1="Network Based Intrusion Detection System (NIDS)"
-            data1="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title2="Host Based Intrusion Detection System (HIDS)"
-            data2="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title3="Honey pot"
-            data3="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title4="Memory Forensic"
-            data4="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title5="Secure Inventory Management"
-            data5="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title6="Application Communication Protocol Testing Tool"
-            data6="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title7="Application Control"
-            data7="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-            title8="Device Control"
-            data8="Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum v Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-             /> */}
+       
 
          <div className="why-pgpedu">
             <Careerera />
          </div>
 
-
-         {/* <Profile title="Full Stack Development"
-            /> */}
+ 
          <CareerAssistance
             title='Placement'
             titlesub='Guarantee'
@@ -756,8 +734,7 @@ const PgpFullStack = () => {
             box3='Career Guidance and Mentorship by Careerera and Industry Leaders' />
 
 
-
-         {/* <Light image={csr} /> */}
+ 
          <UserformsApplication />
          <Sign />
          <Faq
@@ -842,11 +819,7 @@ with a high school certificate, work experience, and relevant skill certificatio
 developer's salary?"
             ans16="Salaries for all professions, including full-stack developers, can be influenced by corporate
 characteristics and requirements, geographical location, and interview performance.
-              "
-         // ques17=""
-         // ans17=""
-
-         />
+              " />
          <Blog
             heading="Blogs"
             heading2="And Article"

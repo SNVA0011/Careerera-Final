@@ -8,13 +8,13 @@ import { Context, Provider } from "../Api";
 import { CurrencyContxt } from './Contextcurrency';
 
 export default function MasterCountryHero(props) {
-    // Country List Api
+ 
     const { value11, value12 } = useContext(Context);
     const [cntry, setcntry] = value11;
     const [cntryLoad, setcntryLoad] = value12;
 
 
-    // setvalPhoneCode
+ 
     const [selectphoneval, setselectphoneval] = useState([]);
 
     function setvalPhone(e) {
@@ -25,10 +25,9 @@ export default function MasterCountryHero(props) {
         setselectphoneval('')
     }
 
-    // phoneSetvalue
+ 
     const [phoneSetvalue, Updatephonevalue] = useState();
-
-    // currency inr/usd
+ 
     const [contextcur, setContextCur] = useContext(CurrencyContxt)
 
 

@@ -68,11 +68,9 @@ export default function Mocktest() {
     };
 
 
-    // Event
     const [Event, setEvent] = useState([])
     const [Eventsts, setEventsts] = useState(false)
 
-    // List of Event
     async function Eventslist() {
         await fetch(base, {
             method: 'POST',
@@ -88,18 +86,15 @@ export default function Mocktest() {
         setEventsts(true)
     }
 
-    // Country List Api
     const { value11, value12 } = useContext(Context);
     const [cntry, setcntry] = value11;
     const [cntryLoad, setcntryLoad] = value12;
-    // setvalPhoneCode
     const [selectphoneval, setselectphoneval] = useState([]);
     function setvalPhone(e) {
         setselectphoneval(e.target.value)
     }
 
 
-    // Total users
     const [RegUser, setRegUser] = useState([]);
     const [LoadSetRegUser, setLoadSetRegUser] = useState(false);
 
@@ -307,10 +302,9 @@ export default function Mocktest() {
                         <hr className="w-20 hr mb-4 bg-blue-400 sepfoll-hr mx-auto" />
                     </div>
 
-                    <div className='pt-2'>
-                        {/* The Timeline */}
+                    <div className='pt-2'> 
                         <ul className="timeline">
-                            {/* Item 1 */}
+                            
                             <li>
                                 <div className="direction-r">
                                     <div className="flag-wrapper">
@@ -328,7 +322,7 @@ export default function Mocktest() {
 
                                 </div>
                             </li>
-                            {/* Item 2 */}
+                            
                             <li>
                                 <div className="direction-l">
                                     <div className="flag-wrapper">
@@ -345,7 +339,7 @@ export default function Mocktest() {
 
                                 </div>
                             </li>
-                            {/* Item 3 */}
+                            
                             <li>
                                 <div className="direction-r">
                                     <div className="flag-wrapper">
@@ -363,7 +357,7 @@ export default function Mocktest() {
                                 </div>
                             </li>
 
-                            {/* Item 4 */}
+                            
                             <li>
                                 <div className="direction-l">
                                     <div className="flag-wrapper">
@@ -388,13 +382,7 @@ export default function Mocktest() {
 
 
 
-
-
-
-
-
-
-            {/* application_process_sec */}
+ 
             <div className='application_process_sec full-w start-yourcareer'>
                 <div className='container py-20'>
                     <div className="sec_title text-center">
@@ -405,7 +393,7 @@ export default function Mocktest() {
 
                     <div className="pt-4">
                         <div className="row pt-1 justify-content-center">
-                            {/* first */}
+                            
                             <div className="justify-items-center  col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                 <div className='tt-iconbox-customimg'>
                                     <img className="img-round" src={allinone} width="45" alt="All-in-One" />
@@ -416,7 +404,7 @@ export default function Mocktest() {
                                 </div>
                             </div>
 
-                            {/* second */}
+                            
                             <div className="justify-items-center  col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                 <div className='tt-iconbox-customimg'>
                                     <img className="img-round" src={expertadvice} width="45" alt="Expert Advice" />
@@ -428,7 +416,7 @@ export default function Mocktest() {
 
                                 </div>
                             </div>
-                            {/* third */}
+                           
                             <div className="justify-items-center  col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                 <div className='tt-iconbox-customimg'>
                                     <img className="img-round" src={freemocktests} width="45" alt="Free Mock Tests" />
@@ -440,7 +428,7 @@ export default function Mocktest() {
 
                                 </div>
                             </div>
-                            {/* fourth */}
+                            
                             <div className="justify-items-center  col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                 <div className='tt-iconbox-customimg'>
                                     <img className="img-round" src={evaluation} width="45" alt="Evaluation" />
@@ -452,8 +440,7 @@ export default function Mocktest() {
 
                                 </div>
                             </div>
-
-                            {/* fifth */}
+ 
                             <div className="justify-items-center  col-lg-4 col-md-6 col-12 text-center py-4 rounded-lg mb-4">
                                 <div className='tt-iconbox-customimg'>
                                     <img className="img-round" src={colloquium} width="45" alt="Colloquium" />
@@ -471,10 +458,7 @@ export default function Mocktest() {
                 </div>
             </div>
 
-
-
-
-            {/* mockexam-certi */}
+ 
             <div className='mockexam-certi scroll-spbx' id='mockexamcerti'>
                 <div className='container py-20'>
                     <div className="sec_title text-center">
@@ -487,7 +471,7 @@ export default function Mocktest() {
                             <Tabs defaultActiveKey="Certifications" transition={true} onSelect={(k) => setKeyOwl(options)}>
                                 <Tab eventKey="Certifications" title="Certifications">
                                     <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -510,10 +494,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -536,10 +520,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -562,10 +546,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -588,10 +572,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -614,9 +598,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -639,9 +623,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -664,9 +648,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -689,9 +673,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -714,9 +698,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -739,10 +723,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -765,10 +749,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -791,10 +775,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -817,10 +801,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -843,10 +827,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -869,9 +853,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -894,9 +878,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -919,9 +903,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -944,9 +928,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -969,9 +953,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -996,10 +980,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1025,10 +1009,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1051,10 +1035,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1079,10 +1063,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1107,10 +1091,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1133,9 +1117,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1158,9 +1142,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1183,9 +1167,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1208,9 +1192,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1233,9 +1217,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1258,10 +1242,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1284,10 +1268,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1310,10 +1294,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1336,10 +1320,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1362,10 +1346,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1388,9 +1372,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1413,9 +1397,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1438,9 +1422,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1463,9 +1447,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1488,9 +1472,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1513,10 +1497,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1539,10 +1523,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1565,10 +1549,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1594,10 +1578,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1620,10 +1604,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1646,9 +1630,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1671,9 +1655,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1696,9 +1680,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1721,9 +1705,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1746,9 +1730,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1771,9 +1755,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1798,10 +1782,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1824,10 +1808,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1850,10 +1834,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1876,10 +1860,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1902,9 +1886,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1927,9 +1911,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1952,9 +1936,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -1977,9 +1961,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2002,9 +1986,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2027,10 +2011,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2055,10 +2039,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2081,10 +2065,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2107,10 +2091,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2136,10 +2120,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2165,9 +2149,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2190,9 +2174,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2218,9 +2202,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2243,9 +2227,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2268,9 +2252,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2293,9 +2277,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2318,10 +2302,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2344,10 +2328,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2373,10 +2357,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2399,10 +2383,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2425,9 +2409,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2450,9 +2434,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2475,9 +2459,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2500,9 +2484,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2525,9 +2509,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2550,9 +2534,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2575,10 +2559,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2601,10 +2585,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2627,10 +2611,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2653,10 +2637,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2679,9 +2663,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2704,9 +2688,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2729,9 +2713,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2754,9 +2738,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2779,9 +2763,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2804,10 +2788,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2830,10 +2814,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2856,10 +2840,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2882,10 +2866,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2908,10 +2892,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2934,9 +2918,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2959,9 +2943,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -2987,9 +2971,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3012,9 +2996,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3037,9 +3021,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3062,9 +3046,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3087,10 +3071,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3113,10 +3097,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3139,10 +3123,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3165,10 +3149,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3191,9 +3175,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3219,9 +3203,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3247,9 +3231,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3272,9 +3256,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3297,9 +3281,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3322,10 +3306,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3348,10 +3332,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3374,10 +3358,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3400,10 +3384,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3426,10 +3410,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3452,9 +3436,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3479,9 +3463,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3504,9 +3488,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3529,9 +3513,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3554,9 +3538,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3579,11 +3563,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3606,9 +3590,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3634,9 +3618,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3659,9 +3643,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3684,14 +3668,14 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
                                     </OwlCarousel>
                                 </Tab>
 
 
                                 <Tab eventKey="Preparations" title="Test Preparations">
                                     <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3714,9 +3698,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3739,10 +3723,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3765,10 +3749,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3791,10 +3775,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3817,10 +3801,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3843,10 +3827,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3869,10 +3853,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3895,10 +3879,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3921,10 +3905,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3947,10 +3931,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -3973,7 +3957,7 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
                                     </OwlCarousel>
@@ -3981,7 +3965,7 @@ export default function Mocktest() {
 
                                 <Tab eventKey="ktwelve" title="K +12">
                                     <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4004,11 +3988,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4031,11 +4015,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4058,11 +4042,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4085,11 +4069,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4112,11 +4096,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4139,11 +4123,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4166,11 +4150,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4193,11 +4177,11 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4220,7 +4204,7 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
                                     </OwlCarousel>
@@ -4228,7 +4212,7 @@ export default function Mocktest() {
 
                                 <Tab eventKey="kidsLearning" title="Kids Learning">
                                     <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4251,9 +4235,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4276,10 +4260,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4302,10 +4286,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4328,10 +4312,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4354,10 +4338,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4380,7 +4364,7 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
 
@@ -4389,7 +4373,7 @@ export default function Mocktest() {
 
                                 <Tab eventKey="Language" title="Language">
                                     <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4412,10 +4396,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4438,10 +4422,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4464,10 +4448,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4490,9 +4474,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4515,10 +4499,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4541,10 +4525,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4567,10 +4551,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4593,10 +4577,10 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4619,9 +4603,9 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
-                                        {/* owlitem */}
+                                        
                                         <div className="owlitem">
                                             <div className="cards h-100 d-flex flex-column w-100">
                                                 <div className="mb-1">
@@ -4644,7 +4628,7 @@ export default function Mocktest() {
                                             </div>
 
                                         </div>
-                                        {/* end owlitem */}
+                                        
 
 
                                     </OwlCarousel>
@@ -4655,16 +4639,11 @@ export default function Mocktest() {
                 </div>
             </div>
 
-
-
-
-            {/* TESTIMONIALS */}
+ 
             <Testimonial
                 title1="TESTIMONIALS" />
 
-
-
-            {/* TESTIMONIALS */}
+ 
             <div className='newsev-mocktest full-w'>
                 {Eventsts ?
                     <Blog
@@ -4695,11 +4674,7 @@ export default function Mocktest() {
             </div>
 
 
-
-
-
-
-            {/* background_contact_us */}
+ 
             <div className="disclaimer-bx background_contactus_mocktest">
                 <div className="container py-16">
                     <div className="row">
@@ -4710,8 +4685,7 @@ export default function Mocktest() {
                             <div className="main_heading bg-white rounded-xl px-4 py-5 px-sm-5 py-sm-5">
                                 <h3 className="text-2xl md:text-3xl font-bold text-center">Sign Up <span className='orange-clrsite'>for Mocktest</span></h3>
                                 <div className="border-t-2 border-gray-300 w-14 mt-3 mb-4 mb-sm-5 mx-auto"></div>
-
-                                {/*main_heading*/}
+ 
                                 <form className="mocktest_form" action="" method="post" id="Enquire">
                                     <div className="row">
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
@@ -4726,7 +4700,7 @@ export default function Mocktest() {
                                                 id="name"
                                             />
                                         </div>
-                                        {/*cols*/}
+                                        
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>User Email</label>
                                             <input
@@ -4739,7 +4713,7 @@ export default function Mocktest() {
                                                 id="email"
                                             />
                                         </div>
-                                        {/*cols*/}
+                                        
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>User Password</label>
                                             <input
@@ -4752,7 +4726,7 @@ export default function Mocktest() {
                                                 id="Password"
                                             />
                                         </div>
-                                        {/*cols*/}
+                                        
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>Confirm Password</label>
                                             <input
@@ -4765,7 +4739,7 @@ export default function Mocktest() {
                                                 id="CPassword"
                                             />
                                         </div>
-                                        {/*cols*/}
+                                        
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className='text-gray-700 font-bold text-base w-100 mb-1'>Contact No.</label>
                                             <input
@@ -4778,7 +4752,7 @@ export default function Mocktest() {
                                                 required=""
                                             />
                                         </div>
-                                        {/*cols*/}
+                                        
 
                                         {cntryLoad ?
                                             <div className="mb-3 col-12 col-md-6 col-lg-6">
@@ -4803,27 +4777,27 @@ export default function Mocktest() {
                                                     <span className="sr-only">Loading...</span>
                                                 </button>
                                             </div>}
-                                        {/*cols*/}
+                                        
                                     </div>
-                                    {/*row*/}
+                                    
                                     <p className="text-center mb-0 mt-4">
                                         <button aria-label="Send Message" className="btn-site invert capitalize no-underline h-12 rounded-t-3xl">
                                             <span className="text-lg btn-widelettspc">Send Message</span>
                                         </button>
                                     </p>
                                     <div className="clear" />
-                                    {/*clear*/}
+                                    
                                 </form>
                             </div>
 
                         </div>
 
 
-                        {/*cols*/}
+                        
                     </div>
-                    {/*row*/}
-                </div>
-                {/*container*/}
+                    
+                </div> 
+                
             </div>
 
 

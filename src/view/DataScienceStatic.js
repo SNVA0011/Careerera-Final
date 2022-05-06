@@ -54,7 +54,7 @@ export default function DataScienceStatic() {
 
       </Helmet>
 
-      {/* certification-courses */}
+      
       <div className='certification-courses full-w staticsyber'>
         <div className="container">
           <div className="row py-16 align-items-center">
@@ -71,7 +71,7 @@ export default function DataScienceStatic() {
 
             </div>
 
-            {/* form */}
+            
             <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
             <Forms titlemasterfalse='empty' messageboxnone='empty'/>
             </div>
@@ -80,9 +80,7 @@ export default function DataScienceStatic() {
         </div>
       </div>
 
-
-
-      {/* navbar-highcr background1 */}
+ 
       <div className="full-w navbar-highcr background1 z-0 sticky top-28 z-10 des-explornav">
         <div className="container">
           <Navbar variant="dark" className="shadow-0">
@@ -181,7 +179,7 @@ export default function DataScienceStatic() {
               <div className="col-12">
                 <div className="row pt-1">
 
-                  {/* col-xl-4 start */}
+                  
                   <ScrollAnimation className="col-xl-4 col-md-6 col-12 mb-4" animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' animateOnce={true}>
                     <div className="cards h-100 d-flex flex-column">
                       <div className="pt-2 pl-4 rounded-lg">
@@ -309,7 +307,7 @@ export default function DataScienceStatic() {
                   </ScrollAnimation>
 
 
-                  {/* col-xl-4 start */}
+                  
                   <ScrollAnimation className="col-xl-4 col-md-6 col-12 mb-4" animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' animateOnce={true}>
                     <div className="cards h-100 d-flex flex-column">
                       <div className="pt-2 pl-4 rounded-lg">
@@ -437,7 +435,7 @@ export default function DataScienceStatic() {
                   </ScrollAnimation>
 
 
-                  {/* col-xl-4 start */}
+                  
                   <ScrollAnimation className="col-xl-4 col-md-6 col-12 mb-4" animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' animateOnce={true}>
                     <div className="cards h-100 d-flex flex-column">
                       <div className="pt-2 pl-4 rounded-lg">
@@ -564,7 +562,7 @@ export default function DataScienceStatic() {
                   </ScrollAnimation>
 
 
-                  {/* col-xl-4 start */}
+                  
                   <ScrollAnimation className="col-xl-4 col-md-6 col-12 mb-4" animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' animateOnce={true}>
                     <div className="cards h-100 d-flex flex-column">
                       <div className="pt-2 pl-4 rounded-lg">
@@ -693,7 +691,7 @@ export default function DataScienceStatic() {
                   </ScrollAnimation>
 
 
-                  {/* col-xl-4 start */}
+                  
                   <ScrollAnimation className="col-xl-4 col-md-6 col-12 mb-4" animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' animateOnce={true}>
                     <div className="cards h-100 d-flex flex-column">
                       <div className="pt-2 pl-4 rounded-lg">
@@ -830,7 +828,7 @@ export default function DataScienceStatic() {
         </div>
 
 
-        {/* discription_sec */}
+        
         <div className='discription_sec'>
           <div className='container py-16'>
             <div className="sec_title">
@@ -880,7 +878,7 @@ export default function DataScienceStatic() {
 
 
 
-        {/* discription_sec */}
+        
         <div className='discription_sec'>
           <div className='container pb-16'>
             <div className="sec_title">
@@ -914,7 +912,7 @@ export default function DataScienceStatic() {
 
 
 
-        {/* discription_sec */}
+        
         <div className='discription_sec'>
           <div className='container pb-16'>
             <div className="sec_title">
@@ -960,7 +958,7 @@ export default function DataScienceStatic() {
 
 
 
-        {/* why-datasciencesuf */}
+        
         <div className='why-datasciencesuf scroll-spbx bg-blue-50' id='why'>
           <div className='container py-16'>
             <div className="sec_title">
@@ -1046,7 +1044,7 @@ export default function DataScienceStatic() {
 
 
 
-        {/* discription_sec */}
+        
         <div className='discription_sec'>
           <div className='container py-16'>
             <div className="sec_title">
@@ -1082,7 +1080,7 @@ export default function DataScienceStatic() {
 
 
 
-        {/* discription_sec */}
+        
         <div className='discription_sec bg-gray-100'>
           <div className='container py-16'>
             <div className="sec_title">
@@ -1120,7 +1118,7 @@ export default function DataScienceStatic() {
         </div>
 
 
-        {/* discription_sec */}
+        
         <div className='our_faq_sec scroll-spbx' id='FAQ'>
           <div className='container py-16'>
             <div className="sec_title">
@@ -1288,45 +1286,11 @@ export default function DataScienceStatic() {
         </div>
 
 
-        {/* UserformsApplication */}
+        
         <UserformsApplication customizeheading='true'
           cantitle='Our'
           cansubtitle='Users From'
-          cantitleheading='We Have Users For Our Data Science Program From Following Companies' />
-
-
-
-        {/* discription_sec */}
-        {/* <div className='our_faq_sec custom_locationall scroll-spbx'>
-          <div className='container py-16'>
-
-            <div className="pt-1">
-              <Accordion>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>Check Out Data Science Course and Batches in Other Locations <div className="btn-site invert ml-3"><span>View</span></div></Accordion.Header>
-                  <Accordion.Body>
-                    <ul className='list-disc text-base row'>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/india"}>India</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/united-kingdom"}>United Kingdom</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/united-states"}>United States</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/australia"}>Australia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/singapore"}>Singapore</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/malaysia"}>Malaysia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/bangladesh"}>Bangladesh</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/saudi-arabia"}>Saudi Arabia</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/uae"}>UAE</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/qatar"}>Qatar</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/oman"}>Oman</Link></li>
-                      <li className='col-xxl-3 col-lg-6 col-12'><Link to={"/" + "data-science/certification-course/bahrain"}>Bahrain</Link></li>
-                    </ul>
-                  </Accordion.Body>
-                </Accordion.Item>
-
-              </Accordion>
-            </div>
-          </div>
-        </div> */}
-
+          cantitleheading='We Have Users For Our Data Science Program From Following Companies' /> 
 
       </div>
       <CountryFooterCourse title="data-science" />
