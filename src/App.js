@@ -4,6 +4,7 @@ import { Provider } from './Api'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { menuCloseMob } from './Atoms/Contextcurrency'
 import loadable from '@loadable/component'
+import fun from "./Images/fun4.gif"
 
 const Master = lazy(() => import('./view/Master'))
 const Course = lazy(() => import('./view/Course'))
@@ -99,15 +100,15 @@ const App = (props) => {
     return (
         <div className='d-flex flex-column minh-100'>
 
-<Suspense fallback={<div>Loading...</div>}>
+<Suspense fallback={<div><img src={fun} width={`100%`} height={`100vh`}/></div>}>
             <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
                 <Icon />
             </CurrencyContxt.Provider>
 
             <div className='header-top fixed-top bg-white'>
-                <Suspense fallback={<div />}>
+                {/* <Suspense fallback={<div />}> */}
                     <Header />
-                </Suspense>
+                {/* </Suspense> */}
 
                 <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
                     <menuCloseMob.Provider value={[mobmenuclose, setMobmenuclose]}>
@@ -509,7 +510,9 @@ const App = (props) => {
 
             <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
                 <Provider>
+                    <Suspense fallback={<div>Loading..</div>}>
                     <Footer />
+                    </Suspense>
                 </Provider>
             </CurrencyContxt.Provider>
 
