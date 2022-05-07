@@ -1,72 +1,72 @@
-import React, { useState, useEffect, Suspense } from 'react'
+import React, { useState, useEffect, Suspense,lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Provider } from './Api'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { menuCloseMob } from './Atoms/Contextcurrency'
 import loadable from '@loadable/component'
 
-const Master = loadable(() => import('./view/Master'))
-const Course = loadable(() => import('./view/Course'))
-const Free = loadable(() => import('./view/Free'))
-const Paid = loadable(() => import('./view/Paid'))
-const Footer = loadable(() => import('./Molecules/Index/Footer'))
-const Icon = loadable(() => import('./Atoms/Icon'))
-const Partner = loadable(() => import('./view/Partner'))
-const Instructor = loadable(() => import('./view/Instructor'))
-const Blog = loadable(() => import('./view/Blog'))
-const News = loadable(() => import('./view/News'))
-const BlogDetail = loadable(() => import('./view/BlogDetail'))
-const NewsDetail = loadable(() => import('./view/NewsDetail'))
-const Help = loadable(() => import('./view/Help'))
-const Payment = loadable(() => import('./view/Payment'))
-const Disclaimer = loadable(() => import('./view/Disclaimer'))
-const Terms = loadable(() => import('./view/Terms'))
-const Privacy = loadable(() => import('./view/Privacy'))
-const Refund = loadable(() => import('./view/Refund'))
-const TermsandCondition = loadable(() => import('./view/TermsandCondition'))
-const Rescheduling = loadable(() => import('./view/Rescheduling'))
-const Contact = loadable(() => import('./view/Contact'))
-const About = loadable(() => import('./view/About'))
-const DataScienceStatic = loadable(() => import('./view/DataScienceStatic'))
-const CyberSecurityStatic = loadable(() => import('./view/CyberSecurityStatic'))
-const NotFound = loadable(() => import('./view/NotFound'))
-const CategoryUpcomingBatch = loadable(() => import('./view/CategoryUpcomingBatch'))
-const PostGraduation = loadable(() => import('./view/PostGraduation'))
-const Certificate = loadable(() => import('./view/Certificate'))
-const Language = loadable(() => import('./view/Language'))
-const StaffingSolution = loadable(() => import('./view/StaffingSolution'))
-const TrainingRoom = loadable(() => import('./view/TrainingRoom'))
-const Mocktest = loadable(() => import('./view/Mocktest'))
-const Media = loadable(() => import('./view/Media'))
-const PartnerAll = loadable(() => import('./view/PartnerAll'))
-const FullTestimonial = loadable(() => import('./view/FullTestimonial'))
-const PgpDataScience = loadable(() => import('./view/PgpDataScience'))
-const PgpArtificalIntelligence = loadable(() => import('./view/PgpArificialIntelligence'))
-const PgpCyberSecurity = loadable(() => import('./view/PgpCyberSecurity'))
-const PgpDigitalMarketing = loadable(() => import('./view/PgpDigitalMarketing'))
-const PgpFullStack = loadable(() => import('./view/PgpFullStack'))
-const PgpUi = loadable(() => import('./view/PgpUi'))
-const MocktestRegisterForm = loadable(() => import('./view/MocktestRegisterForm'))
-const MasterCountry = loadable(() => import('./view/MasterCountry'))
-const Job = loadable(() => import('./view/Job'))
-const InnerJob = loadable(() => import('./view/InnerJob'))
-const MasterState = loadable(() => import('./view/MasterState'))
-const MasterCity = loadable(() => import('./view/MasterCity'))
-const DataScienceCountry = loadable(() => import('./view/DataScienceCountry'))
-const DataScienceState = loadable(() => import('./view/DataScienceState'))
-const DataScienceCity = loadable(() => import('./view/DataScienceCity'))
-const CyberSecurityContry = loadable(() => import('./view/CyberSecurityCountry'))
-const CyberSecurityState = loadable(() => import('./view/CyberSecurityState'))
-const CyberSecurityCity = loadable(() => import('./view/CyberSecurityCity'))
-const CyberSecurityZip = loadable(() => import('./view/CyberSecurityzip'))
-const BatchDetail = loadable(() => import('./view/BatchDetail'))
-const DetailBatch = loadable(() => import('./view/DetailBatch'))
-const BlogArabic = loadable(() => import('./view/BlogArabic'))
-const BlogDetailArabic = loadable(() => import('./view/BlogDetailArabic'))
-const PgpDataScienceNasscom = loadable(() => import('./view/PgpDataScienceNasscom'))
-const Header = loadable(() => import('./Molecules/Index/Header'))
-const Navbars = loadable(() => import('./Molecules/Index/Navbar'))
-const Index = loadable(() => import('./view/Index'))
+const Master = lazy(() => import('./view/Master'))
+const Course = lazy(() => import('./view/Course'))
+const Free = lazy(() => import('./view/Free'))
+const Paid = lazy(() => import('./view/Paid'))
+const Footer = lazy(() => import('./Molecules/Index/Footer'))
+const Icon = lazy(() => import('./Atoms/Icon'))
+const Partner = lazy(() => import('./view/Partner'))
+const Instructor = lazy(() => import('./view/Instructor'))
+const Blog = lazy(() => import('./view/Blog'))
+const News = lazy(() => import('./view/News'))
+const BlogDetail = lazy(() => import('./view/BlogDetail'))
+const NewsDetail = lazy(() => import('./view/NewsDetail'))
+const Help = lazy(() => import('./view/Help'))
+const Payment = lazy(() => import('./view/Payment'))
+const Disclaimer = lazy(() => import('./view/Disclaimer'))
+const Terms = lazy(() => import('./view/Terms'))
+const Privacy = lazy(() => import('./view/Privacy'))
+const Refund = lazy(() => import('./view/Refund'))
+const TermsandCondition = lazy(() => import('./view/TermsandCondition'))
+const Rescheduling = lazy(() => import('./view/Rescheduling'))
+const Contact = lazy(() => import('./view/Contact'))
+const About = lazy(() => import('./view/About'))
+const DataScienceStatic = lazy(() => import('./view/DataScienceStatic'))
+const CyberSecurityStatic = lazy(() => import('./view/CyberSecurityStatic'))
+const NotFound = lazy(() => import('./view/NotFound'))
+const CategoryUpcomingBatch = lazy(() => import('./view/CategoryUpcomingBatch'))
+const PostGraduation = lazy(() => import('./view/PostGraduation'))
+const Certificate = lazy(() => import('./view/Certificate'))
+const Language = lazy(() => import('./view/Language'))
+const StaffingSolution = lazy(() => import('./view/StaffingSolution'))
+const TrainingRoom = lazy(() => import('./view/TrainingRoom'))
+const Mocktest = lazy(() => import('./view/Mocktest'))
+const Media = lazy(() => import('./view/Media'))
+const PartnerAll = lazy(() => import('./view/PartnerAll'))
+const FullTestimonial = lazy(() => import('./view/FullTestimonial'))
+const PgpDataScience = lazy(() => import('./view/PgpDataScience'))
+const PgpArtificalIntelligence = lazy(() => import('./view/PgpArificialIntelligence'))
+const PgpCyberSecurity = lazy(() => import('./view/PgpCyberSecurity'))
+const PgpDigitalMarketing = lazy(() => import('./view/PgpDigitalMarketing'))
+const PgpFullStack = lazy(() => import('./view/PgpFullStack'))
+const PgpUi = lazy(() => import('./view/PgpUi'))
+const MocktestRegisterForm = lazy(() => import('./view/MocktestRegisterForm'))
+const MasterCountry = lazy(() => import('./view/MasterCountry'))
+const Job = lazy(() => import('./view/Job'))
+const InnerJob = lazy(() => import('./view/InnerJob'))
+const MasterState = lazy(() => import('./view/MasterState'))
+const MasterCity = lazy(() => import('./view/MasterCity'))
+const DataScienceCountry = lazy(() => import('./view/DataScienceCountry'))
+const DataScienceState = lazy(() => import('./view/DataScienceState'))
+const DataScienceCity = lazy(() => import('./view/DataScienceCity'))
+const CyberSecurityContry = lazy(() => import('./view/CyberSecurityCountry'))
+const CyberSecurityState = lazy(() => import('./view/CyberSecurityState'))
+const CyberSecurityCity = lazy(() => import('./view/CyberSecurityCity'))
+const CyberSecurityZip = lazy(() => import('./view/CyberSecurityzip'))
+const BatchDetail = lazy(() => import('./view/BatchDetail'))
+const DetailBatch = lazy(() => import('./view/DetailBatch'))
+const BlogArabic = lazy(() => import('./view/BlogArabic'))
+const BlogDetailArabic = lazy(() => import('./view/BlogDetailArabic'))
+const PgpDataScienceNasscom = lazy(() => import('./view/PgpDataScienceNasscom'))
+const Header = lazy(() => import('./Molecules/Index/Header'))
+const Navbars = lazy(() => import('./Molecules/Index/Navbar'))
+const Index = lazy(() => import('./view/Index'))
 
 const App = (props) => {
     const [mobmenuclose, setMobmenuclose] = useState();
@@ -98,6 +98,8 @@ const App = (props) => {
 
     return (
         <div className='d-flex flex-column minh-100'>
+
+<Suspense fallback={<div>Loading...</div>}>
             <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
                 <Icon />
             </CurrencyContxt.Provider>
@@ -118,6 +120,7 @@ const App = (props) => {
             <div className='header-top-empty'></div>
 
             <div className='min-bxscreen w-100 flex-grow-1'>
+                
                 <Routes>
                     <Route path="/:id/:dats" element={
                         <CurrencyContxt.Provider
@@ -501,6 +504,7 @@ const App = (props) => {
                     } />
 
                 </Routes>
+               
             </div>
 
             <CurrencyContxt.Provider value={[contextcur, setContextCur]}>
@@ -509,7 +513,7 @@ const App = (props) => {
                 </Provider>
             </CurrencyContxt.Provider>
 
-
+            </Suspense>
         </div>
     )
 }

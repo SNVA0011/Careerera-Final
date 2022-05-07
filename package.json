@@ -31,13 +31,14 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "rellax": "^1.12.1",
+    "source-map-explorer": "^2.5.2",
     "tawkto-react": "^3.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:tailwind": "tailwindcss build src/style.css -o public/style.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
