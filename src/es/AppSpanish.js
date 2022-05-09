@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState,useEffect} from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Index from './view/Index'
 import Master from './view/Master'
@@ -56,7 +56,6 @@ const AppSpanish = (props) => {
         title: '+1-844-889-4054',
     })
 
- 
     function RemoveConsole() {
         const noop = () => { }
         ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
@@ -65,7 +64,7 @@ const AppSpanish = (props) => {
             'timeline', 'timelineEnd', 'timeStamp', 'trace',
         ].forEach((method) => {
             window.console[method] = noop
-        });
+        });  
     }
     RemoveConsole()
     useEffect(() => {
@@ -73,7 +72,7 @@ const AppSpanish = (props) => {
     })
     useEffect(() => {
         RemoveConsole()
-    },[window.location.href])
+    }, [window.location.href])
 
 
     return (
