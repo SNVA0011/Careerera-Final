@@ -194,11 +194,6 @@ const Partnership = () => {
                 </div>
             </div>
 
- 
-   
-
- 
-
 
         </div>
     )
