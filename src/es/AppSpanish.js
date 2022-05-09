@@ -47,6 +47,7 @@ import CoursesLists from './view/CoursesLists'
 import PgpCienciadatos from './view/PgpCienciadatos'
 import PgpGradociber from './view/PgpGradociber'
 import PgpAidizaje from './view/PgpAidizaje'
+ 
 
 const AppSpanish = (props) => {
     const [mobmenuclose, setMobmenuclose] = useState();
