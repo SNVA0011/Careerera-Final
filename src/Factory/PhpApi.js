@@ -32,7 +32,7 @@ export const cityDetailData= "https://my.careerera.com/admin/admins/api/cityDeta
 export const stateDetailData= "https://my.careerera.com/admin/admins/api/statesDetail.php?service=data-science&state="
 export const countyDetaildata= "https://my.careerera.com/admin/admins/api/countyDetail.php?service=data-science&state="
 export const JObData = "http://jobs.snva.com/api/jobs?api_token=Nxo9A8Koga6hVuTfEWeEBZNbK5OeJYYauuEH6Q9s3Gd9JuMea7XjprMtI4L1"
-export const About ="https://my.careerera.com/API/course/AboutCourse.php?course_url="
+export const AboutProgram ="https://my.careerera.com/API/course/AboutCourse.php?course_url="
 export const Eventslist = "https://my.careerera.com/API/common/EventsList.php"
 export const Eventslist1 = "https://my.careerera.com/API/common/EventsList.php"
 export const EventDetails= "https://my.careerera.com/API/common/EventsDetails.php?Url="

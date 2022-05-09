@@ -78,23 +78,23 @@ const App = (props) => {
     })
 
  
-    function RemoveConsole() {
-        const noop = () => { }
-        ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
-            'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
-            'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-            'timeline', 'timelineEnd', 'timeStamp', 'trace',
-        ].forEach((method) => {
-            window.console[method] = noop
-        });  
-    }
-    RemoveConsole()
-    useEffect(() => {
-        RemoveConsole()
-    })
-    useEffect(() => {
-        RemoveConsole()
-    }, [window.location.href])
+    // function RemoveConsole() {
+    //     const noop = () => { }
+    //     ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
+    //         'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
+    //         'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    //         'timeline', 'timelineEnd', 'timeStamp', 'trace',
+    //     ].forEach((method) => {
+    //         window.console[method] = noop
+    //     });  
+    // }
+    // RemoveConsole()
+    // useEffect(() => {
+    //     RemoveConsole()
+    // })
+    // useEffect(() => {
+    //     RemoveConsole()
+    // }, [window.location.href])
 
 
     return (
