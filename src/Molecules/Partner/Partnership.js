@@ -195,51 +195,7 @@ const Partnership = () => {
             </div>
 
  
-            <div className="certification-courseslight full-w">
-                <div className="container pt-16 pb-10">
-                    <h3 className="font-semibold text-3xl mb-2">Our Counseling Office</h3>
-                    <span className="heading-border-line m-0 d-block left-0 mb-5" />
-                    <div className="full-w contact-page">
-                        <div className="row">
-                            <div className="col-lg-6 col-12 mb-6"> 
-                                <div className="bg-white rounded-lg shadow-sm p-3 pt-4 d-flex">
-                                    <div className="media-left  w-10 text-left">
-                                    <i className="text-xs fas fa-phone-alt fa-2x text-blue-500"></i> 
-                                    </div>
-                                    <div className="media-body text-left">
-                                        <span className="text-base font-bold mb-1 d-block">
-                                            Phone No.
-                                        </span>
-                                        <a className="text-gray-500 font-semibold no-underline"
-                                            href="tel:+919643032964"
-                                            target="_blank"
-                                            rel="noreferrer">
-                                            +91-9643-032-964
-                                        </a>
-                                    </div>
-                                </div>
-                             
-                            </div>
-                            <div className="col-lg-6 col-12 mb-6"> 
-                                <div className="bg-white rounded-lg shadow-sm p-3 pt-4 d-flex">
-                                    <div className="media-left  w-10 text-left">
-                                    <i className="text-xs fas fa-map-marker-alt fa-2x text-blue-500"></i>
-
-                                    </div>
-                                    <div className="media-body text-left">
-                                        <span className="text-base font-bold mb-1 d-block">
-                                        Address
-                                        </span>
-                                        <p  className="text-gray-500 font-semibold no-underline m-0">
-                                           C-56, A/28 ,3RD FLOOR, SECTOR 62 NOIDA 
-                                           </p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+   
 
  
 
