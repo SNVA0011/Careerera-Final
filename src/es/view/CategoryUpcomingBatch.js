@@ -17,7 +17,7 @@ export default function CategoryUpcomingBatch() {
 
     let { idbatch } = useParams();
     let { idbatchmain } = useParams();
- 
+
     async function getCourse() {
         await fetch(base, {
             method: 'POST',
@@ -26,13 +26,13 @@ export default function CategoryUpcomingBatch() {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => Catsetfinal(json.records)).catch((error) => {
-            Catsetfinal(''); 
-        }); 
- 
+            Catsetfinal('');
+        });
+
         Catloadsts(true)
     }
 
- 
+
     const [contextcur, setContextCur] = useContext(CurrencyContxt);
 
 
@@ -86,63 +86,168 @@ export default function CategoryUpcomingBatch() {
                         : ''}
 
                     {Catfinal[0].courseList?.length > 0 && Catfinal[0].courseList.filter(courseList => courseList.courseFUllURL === idbatchmain + '/' + idbatch).map((listcour, i) =>
-                            <>
-                                <Hero title="PRÓXIMOS LOTES"
-                                    batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
-                                        <span className="mx-2"> / </span> {listcour.CourseTitel} </>} />
+                        <>
+                            <Hero title="PRÓXIMOS LOTES"
+                                batch={<> <Link to="/es/" className="no-underline badge bg-info">Hogar</Link>
+                                    <span className="mx-2"> / </span> {listcour.CourseTitel} </>} />
 
-                                <div className={"free-batches bg-gray-50 full-w" + (listcour.CourseBatchList.Elearning?.length > 0 || listcour.CourseBatchList.LVC?.length > 0 ? ' py-16' : '')}>
+                            <div className={"free-batches bg-gray-50 full-w" + (listcour.CourseBatchList.Elearning?.length > 0 || listcour.CourseBatchList.LVC?.length > 0 ? ' py-16' : '')}>
 
-                                    {listcour.CourseBatchList.Elearning?.length == 0 && listcour.CourseBatchList.LVC?.length == 0 ?
-                                        <section className="page_404 py-16">
-                                            <div className="container text-center my-sm-3">
-                                                <div className="contant_box_404">
-                                                    <i className="bi bi-exclamation-triangle text-danger text-5xl"></i>
-                                                    <h3 className="text-xl md:text-2xl font-semibold text-blue-500 my-3">
-                                                        No se han encontrado resultados
-                                                    </h3>
-                                                    <p className='text-base md:text-lg mb-4 font-semibold'>Haga clic en el botón de abajo para volver a la página de inicio.</p>
-                                                    <Link to="/es/" className="btn-site invert w-auto no-underline md:h-12 d-inline-flex align-items-center">
-                                                        <span>De vuelta a casa</span>
-                                                    </Link>
-                                                </div>
+                                {listcour.CourseBatchList.Elearning?.length == 0 && listcour.CourseBatchList.LVC?.length == 0 ?
+                                    <section className="page_404 py-16">
+                                        <div className="container text-center my-sm-3">
+                                            <div className="contant_box_404">
+                                                <i className="bi bi-exclamation-triangle text-danger text-5xl"></i>
+                                                <h3 className="text-xl md:text-2xl font-semibold text-blue-500 my-3">
+                                                    No se han encontrado resultados
+                                                </h3>
+                                                <p className='text-base md:text-lg mb-4 font-semibold'>Haga clic en el botón de abajo para volver a la página de inicio.</p>
+                                                <Link to="/es/" className="btn-site invert w-auto no-underline md:h-12 d-inline-flex align-items-center">
+                                                    <span>De vuelta a casa</span>
+                                                </Link>
                                             </div>
-                                        </section>
-                                        : ''}
+                                        </div>
+                                    </section>
+                                    : ''}
 
 
-                                    <div className={"container" + (listcour.CourseBatchList.Elearning?.length > 0 && listcour.CourseBatchList.LVC?.length > 0 ? ' pb-12' : '')}>
-                                        {listcour.CourseBatchList.Elearning ?
-                                            listcour.CourseBatchList.Elearning?.length > 0 ?
+                                <div className={"container" + (listcour.CourseBatchList.Elearning?.length > 0 && listcour.CourseBatchList.LVC?.length > 0 ? ' pb-12' : '')}>
+                                    {listcour.CourseBatchList.Elearning ?
+                                        listcour.CourseBatchList.Elearning?.length > 0 ?
+                                            <div className="full-w">
+                                                <h3 className="font-semibold text-3xl mb-3">Aprendizaje electrónico</h3>
+                                                <div className="row">
+                                                    {
+                                                        listcour.CourseBatchList.Elearning?.length > 0 && listcour.CourseBatchList.Elearning.map((item, ind) => (
+
+                                                            <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ind} animateOnce={true} className='col-lg-6 col-12 mb-4' key={ind}>
+                                                                <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row bg-white">
+                                                                    <div className="">
+                                                                        <div className="bg-red-600 p-3 text-center text-xs text-white date_freec">
+                                                                            <span className="text-4xl font-bold">
+                                                                                {item.date.split('-')[0]}
+                                                                            </span>
+                                                                            <br /> {item.date.split('-')[1].substring(0, 3)}
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
+                                                                        <div className='flex-grow-1 pb-2'>
+                                                                            <h2 className="text-xl sm:text-2xl font-bold" dangerouslySetInnerHTML={{ __html: item.CourseTitel }} />
+
+                                                                            {contextcur.currency === 'Asia/Kolkata' ?
+                                                                                <p className="font-semibold mb-1">
+                                                                                    <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                    {' '}
+                                                                                    <span className="line-through text-gray-500 font-semibold mr-1">
+                                                                                        ₹{item.INR_Old_price}
+                                                                                    </span>{' '}
+                                                                                    ₹{item.INR_New_price}
+
+                                                                                    <span className='mr-2'></span>
+                                                                                    <span className='text-gray-500 text-xs'>(INCLUYENDO TODOS LOS IMPUESTOS)</span>
+                                                                                </p>
+                                                                                :
+                                                                                <p className="font-semibold mb-1">
+                                                                                    <i className="bi bi-cash text-gray-500 mr-2"></i>
+                                                                                    {' '}
+                                                                                    <span className="line-through text-gray-500 font-semibold mr-1">
+                                                                                        ${item.Old_price}
+                                                                                    </span>{' '}
+                                                                                    ${item.New_price}
+                                                                                </p>
+                                                                            }
+
+                                                                            <p className="font-semibold mb-1">
+                                                                                <i className="bi bi-building text-gray-500 mr-2"></i>
+                                                                                Careerera ({item.workshop_id})
+                                                                            </p>
+
+                                                                            <p className="font-semibold mb-1">
+                                                                                <i className="bi bi-clock-history text-gray-500 mr-2"></i>
+                                                                                {item.batch_duration}
+
+                                                                                {item.Totalhour > 0 ?
+                                                                                    (' (' + item.Totalhour + ' Hours)')
+                                                                                    : ''}
+                                                                            </p>
+                                                                            <p className="font-semibold mb-1">
+                                                                                <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
+                                                                                {item.batch_category}
+                                                                            </p>
+
+                                                                            {contextcur.currency === 'Asia/Kolkata' ?
+                                                                                <p className="font-semibold orange-clrsite">
+                                                                                    <i className="bi bi-mortarboard-fill"></i>
+                                                                                    <i className="bi bi-chevron-compact-right mx-1"></i> Becas disponibles
+                                                                                </p>
+                                                                                : ''}
+                                                                        </div>
+
+
+                                                                        <div className='text-left'>
+                                                                            <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
+                                                                                target='_blank' rel='noreferrer'
+                                                                                className="no-underline btn-site gray">
+                                                                                <span>ENLÍSTATE AHORA</span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ScrollAnimation>
+
+
+                                                        ))
+                                                    }
+
+                                                </div>
+
+                                            </div>
+                                            : '' : ''}
+                                </div>
+
+                                <div className="all-allfreecour full-w">
+                                    <div className="container">
+
+                                        {listcour.CourseBatchList.LVC ?
+                                            listcour.CourseBatchList.LVC?.length > 0 ?
                                                 <div className="full-w">
-                                                    <h3 className="font-semibold text-3xl mb-3">Aprendizaje electrónico</h3>
+                                                    <h3 className="font-semibold text-3xl mb-3">Vive en línea</h3>
                                                     <div className="row">
                                                         {
-                                                            listcour.CourseBatchList.Elearning?.length > 0 && listcour.CourseBatchList.Elearning.map((item, ind) => (
+                                                            listcour.CourseBatchList.LVC?.length > 0 && listcour.CourseBatchList.LVC.map((dats, index) => (
 
-                                                                <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * ind} animateOnce={true} className='col-lg-6 col-12 mb-4' key={ind}>
+                                                                <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-lg-6 col-12 mb-4' key={index}>
                                                                     <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row bg-white">
                                                                         <div className="">
                                                                             <div className="bg-red-600 p-3 text-center text-xs text-white date_freec">
                                                                                 <span className="text-4xl font-bold">
-                                                                                    {item.date.split('-')[0]}
+                                                                                    {
+                                                                                        dats.date.split(
+                                                                                            '-'
+                                                                                        )[0]
+                                                                                    }
                                                                                 </span>
-                                                                                <br /> {item.date.split('-')[1].substring(0, 3)}
+                                                                                <br />{' '}
+                                                                                {
+                                                                                    dats.date.split(
+                                                                                        '-'
+                                                                                    )[1].substring(0, 3)
+                                                                                }
                                                                             </div>
                                                                         </div>
+
                                                                         <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
                                                                             <div className='flex-grow-1 pb-2'>
-                                                                                <h2 className="text-xl sm:text-2xl font-bold" dangerouslySetInnerHTML={{ __html: item.CourseTitel }} />
+                                                                                <h2 className="text-xl sm:text-2xl font-bold" dangerouslySetInnerHTML={{ __html: dats.CourseTitel }} />
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
                                                                                     <p className="font-semibold mb-1">
                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                            ₹{item.INR_Old_price}
+                                                                                            ₹{dats.INR_Old_price}
                                                                                         </span>{' '}
-                                                                                        ₹{item.INR_New_price}
-
+                                                                                        ₹{dats.INR_New_price}
                                                                                         <span className='mr-2'></span>
                                                                                         <span className='text-gray-500 text-xs'>(INCLUYENDO TODOS LOS IMPUESTOS)</span>
                                                                                     </p>
@@ -151,28 +256,34 @@ export default function CategoryUpcomingBatch() {
                                                                                         <i className="bi bi-cash text-gray-500 mr-2"></i>
                                                                                         {' '}
                                                                                         <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                            ${item.Old_price}
+                                                                                            ${dats.Old_price}
                                                                                         </span>{' '}
-                                                                                        ${item.New_price}
+                                                                                        ${dats.New_price}
                                                                                     </p>
                                                                                 }
 
+
                                                                                 <p className="font-semibold mb-1">
                                                                                     <i className="bi bi-building text-gray-500 mr-2"></i>
-                                                                                    Careerera ({item.workshop_id})
+                                                                                    Careerera ({dats.workshop_id})
+                                                                                </p>
+
+                                                                                <p className="font-semibold mb-1">
+                                                                                    <i className="bi bi-calendar4-event text-gray-500 mr-2"></i>
+                                                                                    {dats.date}
                                                                                 </p>
 
                                                                                 <p className="font-semibold mb-1">
                                                                                     <i className="bi bi-clock-history text-gray-500 mr-2"></i>
-                                                                                    {item.batch_duration}
+                                                                                    {dats.batch_duration}
 
-                                                                                    {item.Totalhour > 0 ?
-                                                                                        (' (' + item.Totalhour + ' Hours)')
+                                                                                    {dats.Totalhour > 0 ?
+                                                                                        (' (' + dats.Totalhour + ' Hours)')
                                                                                         : ''}
                                                                                 </p>
                                                                                 <p className="font-semibold mb-1">
                                                                                     <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
-                                                                                    {item.batch_category}
+                                                                                    {dats.batch_category}
                                                                                 </p>
 
                                                                                 {contextcur.currency === 'Asia/Kolkata' ?
@@ -183,153 +294,42 @@ export default function CategoryUpcomingBatch() {
                                                                                     : ''}
                                                                             </div>
 
+                                                                            <p className="mb-0">
+                                                                                <Link
+                                                                                    to={'/es/' + dats.BatchURL}
+                                                                                    className="no-underline btn-site invert mr-3">
+                                                                                    <span>Leer más</span>
+                                                                                </Link>
 
-                                                                            <div className='text-left'>
-                                                                                <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id}
-                                                                                    target='_blank' rel='noreferrer' 
+                                                                                {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id + "&currency=Rs"}
                                                                                     className="no-underline btn-site gray">
-                                                                                    <span>ENLÍSTATE AHORA</span>
-                                                                                </a>
-                                                                            </div>
+                                                                                    <span>Enlístate ahora</span>
+                                                                                </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id}
+                                                                                    className="no-underline btn-site gray">
+                                                                                    <span>Enlístate ahora</span>
+                                                                                </a>}
+
+                                                                            </p>
+
+
+
                                                                         </div>
                                                                     </div>
                                                                 </ScrollAnimation>
-
-
                                                             ))
                                                         }
 
                                                     </div>
-
                                                 </div>
                                                 : '' : ''}
                                     </div>
 
-                                    <div className="all-allfreecour full-w">
-                                        <div className="container">
 
-                                            {listcour.CourseBatchList.LVC ?
-                                                listcour.CourseBatchList.LVC?.length > 0 ?
-                                                    <div className="full-w">
-                                                        <h3 className="font-semibold text-3xl mb-3">Vive en línea</h3>
-                                                        <div className="row">
-                                                            {
-                                                                listcour.CourseBatchList.LVC?.length > 0 && listcour.CourseBatchList.LVC.map((dats, index) => (
-
-                                                                    <ScrollAnimation animateIn='fadeInUpscrl' animateOut='fadeInUpscrlout' delay={6 * index} animateOnce={true} className='col-lg-6 col-12 mb-4' key={index}>
-                                                                        <div className="d-flex border-2 shadow px-3 py-3 h-100 flex-column flex-sm-row bg-white">
-                                                                            <div className="">
-                                                                                <div className="bg-red-600 p-3 text-center text-xs text-white date_freec">
-                                                                                    <span className="text-4xl font-bold">
-                                                                                        {
-                                                                                            dats.date.split(
-                                                                                                '-'
-                                                                                            )[0]
-                                                                                        }
-                                                                                    </span>
-                                                                                    <br />{' '}
-                                                                                    {
-                                                                                        dats.date.split(
-                                                                                            '-'
-                                                                                        )[1].substring(0, 3)
-                                                                                    }
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div className="flex-grow-1 pl-sm-4 d-flex flex-column  mt-3 mt-sm-0">
-                                                                                <div className='flex-grow-1 pb-2'>
-                                                                                    <h2 className="text-xl sm:text-2xl font-bold" dangerouslySetInnerHTML={{ __html: dats.CourseTitel }} />
-
-                                                                                    {contextcur.currency === 'Asia/Kolkata' ?
-                                                                                        <p className="font-semibold mb-1">
-                                                                                            <i className="bi bi-cash text-gray-500 mr-2"></i>
-                                                                                            {' '}
-                                                                                            <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                                ₹{dats.INR_Old_price}
-                                                                                            </span>{' '}
-                                                                                            ₹{dats.INR_New_price}
-                                                                                            <span className='mr-2'></span>
-                                                                                            <span className='text-gray-500 text-xs'>(INCLUYENDO TODOS LOS IMPUESTOS)</span>
-                                                                                        </p>
-                                                                                        :
-                                                                                        <p className="font-semibold mb-1">
-                                                                                            <i className="bi bi-cash text-gray-500 mr-2"></i>
-                                                                                            {' '}
-                                                                                            <span className="line-through text-gray-500 font-semibold mr-1">
-                                                                                                ${dats.Old_price}
-                                                                                            </span>{' '}
-                                                                                            ${dats.New_price}
-                                                                                        </p>
-                                                                                    }
-
-
-                                                                                    <p className="font-semibold mb-1">
-                                                                                        <i className="bi bi-building text-gray-500 mr-2"></i>
-                                                                                        Careerera ({dats.workshop_id})
-                                                                                    </p>
-
-                                                                                    <p className="font-semibold mb-1">
-                                                                                        <i className="bi bi-calendar4-event text-gray-500 mr-2"></i>
-                                                                                        {dats.date}
-                                                                                    </p>
-
-                                                                                    <p className="font-semibold mb-1">
-                                                                                        <i className="bi bi-clock-history text-gray-500 mr-2"></i>
-                                                                                        {dats.batch_duration}
-
-                                                                                        {dats.Totalhour > 0 ?
-                                                                                            (' (' + dats.Totalhour + ' Hours)')
-                                                                                            : ''}
-                                                                                    </p>
-                                                                                    <p className="font-semibold mb-1">
-                                                                                        <i className="bi bi-camera-video-fill text-gray-500 mr-2"></i>
-                                                                                        {dats.batch_category}
-                                                                                    </p>
-
-                                                                                    {contextcur.currency === 'Asia/Kolkata' ?
-                                                                                        <p className="font-semibold orange-clrsite">
-                                                                                            <i className="bi bi-mortarboard-fill"></i>
-                                                                                            <i className="bi bi-chevron-compact-right mx-1"></i> Becas disponibles
-                                                                                        </p>
-                                                                                        : ''}
-                                                                                </div>
-
-                                                                                <p className="mb-0">
-                                                                                    <Link
-                                                                                        to={'/es/' + dats.BatchURL}
-                                                                                        className="no-underline btn-site invert mr-3">
-                                                                                        <span>Leer más</span>
-                                                                                    </Link> 
-
-                                                                                    {contextcur.currency === 'Asia/Kolkata' ? <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id + "&currency=Rs"}
-                                                                                        className="no-underline btn-site gray">
-                                                                                        <span>Enlístate ahora</span>
-                                                                                    </a> : <a href={"https://my.careerera.com/signup.php?batchid=" + dats.workshop_id}
-                                                                                        className="no-underline btn-site gray">
-                                                                                        <span>Enlístate ahora</span>
-                                                                                    </a>}
-
-                                                                                </p>
-
-
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </ScrollAnimation>
-                                                                ))
-                                                            }
-
-                                                        </div>
-                                                    </div>
-                                                    : '' : ''}
-                                        </div>
-
-
-                                    </div>
                                 </div>
+                            </div>
 
-                            </>
-                        )
+                        </>
+                    )
                     }
 
 

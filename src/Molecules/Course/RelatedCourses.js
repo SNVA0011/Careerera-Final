@@ -112,7 +112,7 @@ const RelatedCourses = (props) => {
 
 
                                                                                                                             <div className='text-left'>
-                                                                                                                                <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id}
+                                                                                                                                <a href={'https://my.careerera.com/signup.php?batchid=' + item.workshop_id + (contextcur.currency === 'Asia/Kolkata' ? '&currency=Rs' : '')}
                                                                                                                                     target='_blank' rel='noreferrer' 
                                                                                                                                     className="no-underline btn-site gray">
                                                                                                                                     <span>ENROLL NOW</span>
