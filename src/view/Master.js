@@ -17,7 +17,7 @@ import CountryFooter from '../Atoms/CountryFooter'
 import PopUp from '../Atoms/PopUp'
 import NotFound from './NotFound' 
 import { base } from '../Base'
-import About from './About'
+import { AboutProgram } from '../Factory/PhpApi'
 
 
 const Master = () => {
@@ -29,7 +29,7 @@ const Master = () => {
     async function getMaster() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": About + dats }),
+            body: JSON.stringify({ "apiurl": AboutProgram + dats }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
@@ -66,6 +66,9 @@ const Master = () => {
         getMaster()
         window.scrollTo(0, 0); 
     }, [dats])
+
+
+
 
     return (
         <div className='master-progsection'>
