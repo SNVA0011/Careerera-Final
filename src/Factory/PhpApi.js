@@ -21,6 +21,7 @@ export const BatchDetails = "https://my.careerera.com/API/course/BatchDetails.ph
 export const batch_location= "https://my.careerera.com/API/common/batch_location.php"
 export const ar_blog_list = "https://my.careerera.com/API/common/ar-blogList.php"
 export const escoursoslist= "https://es.careerera.com/API/course/CourseList.php?Language=2"
+export const Escoursoslistlang= "https://es.careerera.com/API/course/CourseList.php?Language=2"
 export const esBatchList = "https://es.careerera.com/API/course/AllBatchList.php?Language=2&timeZone="
 export const esBlogList = "https://es.careerera.com/API/common/BlogList.php"
 export const esBlogDetail= "https://es.careerera.com/API/common/BlogDetails.php?Url="

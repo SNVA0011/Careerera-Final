@@ -62,7 +62,9 @@ const Forms = (props) => {
 
     var formdata = new FormData();
 
-
+    inputref_1.current.classList.remove('bg-red50-error')
+    inputref_2.current.classList.remove('bg-red50-error')
+    inputref_3.current.classList.remove('bg-red50-error')
 
     const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 

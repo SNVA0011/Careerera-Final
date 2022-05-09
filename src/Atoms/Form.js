@@ -8,12 +8,18 @@ import PopUpSuccess from "./PopUpSuccess";
 import ReCAPTCHA from "react-google-recaptcha";
 import ZipProspectus from '../Prospectus/PGP-Data-Science.zip'
 import { query } from "../Factory/PhpApi";
+import { Link } from 'react-router-dom'
+
 
 const Forms = (props) => {
   const [name, setName] = useState("")
   const [email, setemail] = useState("")
   const [Mobile, setMobile] = useState("")
   const [Country, setCountry] = useState("")
+  const [agreeerror, setAgreeerror] = useState(false)
+  const [agreecheck, setAgreecheck] = useState(false)
+
+
   const [Ip, setIp] = useState("")
   const [Notes, setNotes] = useState("")
   const [Url, setUrl] = useState("")
@@ -22,6 +28,7 @@ const Forms = (props) => {
   const inputref_2 = useRef();
   const inputref_3 = useRef();
   const inputref_4 = useRef();
+  const inputref_5 = useRef();
 
 
 
@@ -63,7 +70,12 @@ const Forms = (props) => {
 
     var formdata = new FormData();
 
-
+    inputref_1.current.classList.remove('bg-red50-error')
+    inputref_2.current.classList.remove('bg-red50-error')
+    inputref_3.current.classList.remove('bg-red50-error')
+    if (props.Popnasscomagree) {
+      inputref_5.current.classList.remove('bg-red50-error')
+    }
 
     const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
@@ -90,61 +102,138 @@ const Forms = (props) => {
       inputref_3.current.focus();
       inputref_3.current.classList.add('bg-red50-error')
     }
-    else {
-      inputref_3.current.classList.remove('bg-red50-error')
+    else if (agreecheck == false) {
+      if (props.Popnasscomagree) {  
+        setAgreeerror(true)
+        inputref_5.current.focus();
+        inputref_5.current.classList.add('bg-red50-error')
+      }
     }
-
-
-    if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0) {
+    else {
       inputref_1.current.classList.remove('bg-red50-error')
       inputref_2.current.classList.remove('bg-red50-error')
       inputref_3.current.classList.remove('bg-red50-error')
-
-      var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: formdata,
-        redirect: 'follow'
-      };
-
-      if (cntryLoad) {
-        formdata.append("Name", name);
-        formdata.append("Email", email);
-        formdata.append("Mobile", selectphoneval?.length == 0 ? '+' + cntry[0].phonecode + '-' + phoneSetvalue : '+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue);
-        formdata.append("notes", Notes);
-        formdata.append("Country", "INDIA");
-        formdata.append("ip_address", "127.0.0.01");
-        formdata.append("website_URL", "abc.com");
+      if (props.Popnasscomagree) {
+        inputref_5.current.classList.remove('bg-red50-error')
       }
-
-      fetch(query, requestOptions)
-        .then(response => response.text())
-        .then(result => setResponse(result)).catch(error => setResponse(''));
-
-      setvalue(true)
-
-      setTimeout(function () {
-        setName('');
-        setemail('');
-        Updatephonevalue('');
-        setselectphoneval('')
-        setNotes('');
-        inputref_1.current.value = '';
-        inputref_2.current.value = '';
-        inputref_3.current.value = '';
-
-      }, 2000);
-      setTimeout(function () {
-        if (props.prospectusfile == true) {
-          window.location = ZipProspectus
-        }
-        setvalue(false)
-      }, 4000);
     }
+
+    if (props.Popnasscomagree) {
+      if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0 && agreecheck == true) {
+        inputref_1.current.classList.remove('bg-red50-error')
+        inputref_2.current.classList.remove('bg-red50-error')
+        inputref_3.current.classList.remove('bg-red50-error')
+        inputref_5.current.classList.remove('bg-red50-error')
+       
+        if (props.Popnasscomagree) {  
+          setAgreeerror(false) 
+        }
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: formdata,
+          redirect: 'follow'
+        };
+
+        if (cntryLoad) {
+          formdata.append("Name", name);
+          formdata.append("Email", email);
+          formdata.append("Mobile", props.nasscomphoneboxnone ?
+            '+91' + '-' + phoneSetvalue
+            :
+            selectphoneval?.length == 0 ? '+' + cntry[0].phonecode + '-' + phoneSetvalue : '+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue
+          );
+          formdata.append("notes", Notes);
+          formdata.append("Country", "INDIA");
+          formdata.append("ip_address", "127.0.0.01");
+          formdata.append("website_URL", "abc.com");
+        }
+
+        fetch(query, requestOptions)
+          .then(response => response.text())
+          .then(result => setResponse(result)).catch(error => setResponse(''));
+
+        setvalue(true)
+
+        setTimeout(function () {
+          setName('');
+          setemail('');
+          Updatephonevalue('');
+          setselectphoneval('')
+          setNotes('');
+          setAgreecheck(false) 
+          inputref_1.current.value = '';
+          inputref_2.current.value = '';
+          inputref_3.current.value = '';
+
+        }, 2000);
+        setTimeout(function () {
+          if (props.prospectusfile == true) {
+            window.location = ZipProspectus
+          }
+          setvalue(false)
+        }, 4000);
+      }
+    }
+    else {
+      if (name != "" && email != "" && regex.test(email) === true && phoneSetvalue?.length > 0) {
+        inputref_1.current.classList.remove('bg-red50-error')
+        inputref_2.current.classList.remove('bg-red50-error')
+        inputref_3.current.classList.remove('bg-red50-error')
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: formdata,
+          redirect: 'follow'
+        };
+
+        if (cntryLoad) {
+          formdata.append("Name", name);
+          formdata.append("Email", email);
+          formdata.append("Mobile", props.nasscomphoneboxnone ?
+            '+91' + '-' + phoneSetvalue
+            :
+            selectphoneval?.length == 0 ? '+' + cntry[0].phonecode + '-' + phoneSetvalue : '+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue
+          );
+          formdata.append("notes", Notes);
+          formdata.append("Country", "INDIA");
+          formdata.append("ip_address", "127.0.0.01");
+          formdata.append("website_URL", "abc.com");
+        }
+
+        fetch(query, requestOptions)
+          .then(response => response.text())
+          .then(result => setResponse(result)).catch(error => setResponse(''));
+
+        setvalue(true)
+
+        setTimeout(function () {
+          setName('');
+          setemail('');
+          Updatephonevalue('');
+          setselectphoneval('')
+          setNotes('');
+          inputref_1.current.value = '';
+          inputref_2.current.value = '';
+          inputref_3.current.value = '';
+        }, 2000);
+        setTimeout(function () {
+          if (props.prospectusfile == true) {
+            window.location = ZipProspectus
+          }
+          setvalue(false)
+        }, 4000);
+      }
+    }
+
   }
 
   function onChange(value) {
   }
+
+
 
   return (
     <div className="">
@@ -176,8 +265,8 @@ const Forms = (props) => {
                         id="CountryFullName"
                         defaultValue=""
                       />
-                      <Form.Select onChange={setvalPhone} value={selectphoneval} 
-                      className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control">
+                      <Form.Select onChange={setvalPhone} value={selectphoneval}
+                        className="block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base form-control">
                         <option selected>Please select your country</option>
                         {cntry?.length > 0 && cntry.map((item, i) =>
                           <option key={i} value={[item.phonecode, item.country_title]} onChange={(e) => setCountry(e.target.value)}>{item.country_title}</option>
@@ -230,31 +319,54 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
 
               <div className="mb-3 col-12">
-                {cntryLoad ?
-                  <>
-                    <InputGroup className="bg-white">
-                      <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
-                        + {selectphoneval?.length == 0 ? cntry[0].phonecode :
-                          selectphoneval.toString().split(',')[0]
-                        }
-                      </InputGroup.Text>
 
-                      <FormControl
-                        placeholder="Phone*"
-                        type="number"
-                        className='dd  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
-                            h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
-                        value={phoneSetvalue}
-                        ref={inputref_3}
-                        onChange={(e) => { Updatephonevalue(e.target.value) }}
-                        aria-label="Text input with dropdown button" />
-                    </InputGroup>
-                    {selectphoneval?.length == 0 ?
-                      <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
-                      :
-                      <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
-                    }
-                  </>
+                {cntryLoad ?
+                  props.nasscomphoneboxnone ?
+                    <>
+                      <InputGroup className="bg-white">
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          +91
+                        </InputGroup.Text>
+
+                        <FormControl
+                          placeholder="Phone*"
+                          type="number"
+                          className='dd  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                        h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
+                          value={phoneSetvalue}
+                          ref={inputref_3}
+                          onChange={(e) => { Updatephonevalue(e.target.value) }}
+                          aria-label="Text input with dropdown button" />
+                      </InputGroup>
+                    </>
+                    :
+                    <>
+                      <InputGroup className="bg-white">
+                        <InputGroup.Text id="basic-addon1" className='py-1 fw-medium shadow-sm input-group-text'>
+                          + {selectphoneval?.length == 0 ? cntry[0].phonecode :
+                            selectphoneval.toString().split(',')[0]
+                          }
+                        </InputGroup.Text>
+
+                        <FormControl
+                          placeholder="Phone*"
+                          type="number"
+                          className='dd  placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-3 
+                                        h-14 shadow-l=md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm lg:text-base'
+                          value={phoneSetvalue}
+                          ref={inputref_3}
+                          onChange={(e) => { Updatephonevalue(e.target.value) }}
+                          aria-label="Text input with dropdown button" />
+                      </InputGroup>
+                      {selectphoneval?.length == 0 ?
+                        <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + cntry[0].phonecode + '-' + phoneSetvalue} />
+                        :
+                        <input type="hidden" name="phone-bycountry" required onChange={(e) => setMobile(e.target.value)} value={'+' + selectphoneval.toString().split(',')[0] + '-' + phoneSetvalue} />
+                      }
+                    </>
+
+
+
                   : <div className="text-center align-self-end">
                     <button aria-label="Loading" className="btn btn-dark shadow-lg" type="button" disabled>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -293,6 +405,24 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
                 />
               </div>
 
+              {props.Popnasscomagree ?
+                <div className="mb-3 col-12">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="DataCheckbox"
+                      checked={agreecheck ? true : false}
+                      ref={inputref_5}
+                      onChange={() => { setAgreecheck(!agreecheck) }} />
+                    <label class="form-check-label" for="DataCheckbox">
+                      <span class="check-label">I agree to the <Link to="/terms-and-conditions">Terms and Conditions</Link></span>
+                    </label>
+                  </div>
+
+                  {agreeerror && agreecheck == false ? <div className="text-danger text-sm mt-2 font-medium">Please Accept Terms and Conditions</div> : ''}
+
+
+                </div>
+                : ''}
+
 
               <p className="text-center mb-0 mt-4  pt-3">
                 <button aria-label="Submit" className="btn-site invert shadow-0 btn h-14 btn btn-primary btn btn-primary text-lg btn-widelettspc" onClick={FormSubmit}>
@@ -313,10 +443,6 @@ h-12 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:
 
 
     </div>
-
-
-
-
   )
 }
 

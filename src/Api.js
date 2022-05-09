@@ -94,9 +94,7 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records)).catch((error) => {
-            setallcountryList(''); 
-        });
+        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records))
         setcountryLoad(true);
     }
  

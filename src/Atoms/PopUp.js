@@ -15,9 +15,13 @@ const PopUp = (props) => {
 
   useEffect(() => {
     setTimeout(() => {
-      handleShow()
+      handleShow() 
      }, 4000)
 }, [props.urlpath]);
+
+useEffect(() => {
+  handleShow() 
+}, [props.ShowPopupclick]);
 
 
   return (
@@ -25,7 +29,12 @@ const PopUp = (props) => {
       <Modal className="student-coursepopup modal-width" show={show} onHide={handleClose}  size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="p-0"> 
-          <Sign title={props.title} Downloadprospectus={props.Downloadprospectus}/>
+          <Sign title={props.title} 
+          Downloadprospectus={props.Downloadprospectus} 
+          nasscompupupmobile={props.nasscompupupmobile}
+          Popmsgboxnone={props.Popmsgboxnone}
+          Popnasscomagree={props.Popnasscomagree}
+          />
         </Modal.Body>
       </Modal>
     </>

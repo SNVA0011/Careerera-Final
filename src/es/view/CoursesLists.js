@@ -10,7 +10,7 @@ export default function CoursesLists() {
     const { value13, value14 } = useContext(Context)
     const [exactData] = value13
     const [status] = value14
-
+ 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -43,6 +43,7 @@ export default function CoursesLists() {
                             <div className="megamenu-wrapper media-prtslider">
 
                                 <div className="row pt-8">
+                                  
                                     {exactData?.length > 0 && exactData.map((items, i) => {
                                         return (
                                             <>

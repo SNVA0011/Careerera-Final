@@ -9,3 +9,4 @@
 
 /* custom css ver 2 */
 .rounded-circle.rounded-scourses{box-shadow: none;}
+.form-check-input[type=checkbox]:checked { background-color: #084f99 !important;}

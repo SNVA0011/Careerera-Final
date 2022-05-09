@@ -2,13 +2,12 @@ import React, { createContext, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router'
 import { CurrencyContxt } from './Atoms/Contextcurrency'
 import { base } from '../Base'
-import { AllBatchList, CountryList, esBatchList, EsCategoryPage, FreeElearningBatch, TopCategoryMenubar } from '../Factory/PhpApi'
+import { AllBatchList, CountryList, esBatchList, Escoursoslistlang, EsCategoryPage, FreeElearningBatch, TopCategoryMenubar } from '../Factory/PhpApi'
 
 export const Context = createContext()
 
 export const Provider = (props) => {
     let { id } = useParams()
-
 
     const [exactData, setData] = useState([])
     const [Catfinal, Catsetfinal] = useState([])
@@ -97,10 +96,7 @@ export const Provider = (props) => {
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
-        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records)).catch((error) => {
-            setallcountryList(''); 
-        });
-
+        }, []).then((response) => response.json()).then((json) => setallcountryList(json.records))
         setcountryLoad(true);
     }
 
@@ -109,13 +105,13 @@ export const Provider = (props) => {
     async function escoursoslist() {
          await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": escoursoslist }),
+            body: JSON.stringify({ "apiurl": Escoursoslistlang }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         }, []).then((response) => response.json()).then((json) => setcursospost(json.records)).catch((error) => {
             setcursospost(''); 
-        });
+        }); 
             
         cursosPostLoad(true)
     }
@@ -145,6 +141,8 @@ export const Provider = (props) => {
         allbatchlist()
     }, [])
 
+    console.log('cursospost-',cursospost)
+    console.log('cursospostLoad-',cursospostLoad)
 
     return (
         <>

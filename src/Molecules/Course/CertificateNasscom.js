@@ -86,16 +86,14 @@ const CertificateNasscom = (props) => {
 
 
                         <div className="mt-5 mt-lg-4">
-                            <button aria-label="DOWNLOAD PROSPECTUS" data-toggle="modal" data-target="#query" 
-                             className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn text-sm">
-                                <span><i class="bi bi-download pr-1 text-lg"></i> DOWNLOAD PROSPECTUS</span>
-                            </button> 
+                            {props.DownloadPros}
                         </div>
  
                     </div>
 
                     <div className='col-xxl-4 col-xl-5 col-lg-6 col-12 align-self-center'>
                     <Forms 
+                    nasscomphoneboxnone='empty'
                     titlemasterfalse='empty'
                     countriesboxnone='empty'
                     messageboxnone='empty'

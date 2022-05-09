@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Blog from "../Atoms/Blog";
 import DescriptionStatic from "../Atoms/DescriptionStatic";
 import Faq from "../Atoms/Faq";
 import Highlight from "../Atoms/Highlight";
 import NavStatic from "../Atoms/NavStatic";
 import Testimonial from "../Atoms/Testimonial";
-import Sign from "../Molecules/Course/Sign";
 import UserformsApplication from "../Molecules/Course/UserformsApplication";
 import Capstone from "../Molecules/Master/Capstone";
 import Careerera from "../Molecules/Master/Careerera";
 import Completition from "../Molecules/Master/Completition";
 import CertificateNasscom from "../Molecules/Course/CertificateNasscom";
 import Light from "../Molecules/Master/Light";
-import MWhy from "../Molecules/Master/MWhy";
 import Why from "../Atoms/Why";
-import Navs from "../Molecules/Master/Nav";
 import Profile from "../Molecules/Master/Profile";
 import roles from "../Images/roles_offer.png";
 import ProgramCarriculum from "../Atoms/ProgramCarriculum";
-import CountryFooter from "../Atoms/CountryFooter";
 import CareerAssistance from '../Atoms/CareerAssistance';
 import { Helmet } from "react-helmet";
 import PopUp from "../Atoms/PopUp";
@@ -26,6 +22,8 @@ import fullSimg from "../Images/data_science.png";
 
 
 const PgpDataScienceNasscom = (props) => {
+    const [showcom, setShowcom] = useState(false);
+
 
     return (
         <div className="static-pgpintell">
@@ -38,11 +36,20 @@ const PgpDataScienceNasscom = (props) => {
                 <link rel="canonical" href="https://www.careerera.com/pgp-in-data-science-for-nasscom" />
             </Helmet>
 
+            
             <PopUp
                 title="Post Graduate Program in Data Science"
-                Downloadprospectus={true} />
+                nasscompupupmobile='empty'
+                Popmsgboxnone='empty'
+                Popnasscomagree='empty'
+                Downloadprospectus={true}
+                ShowPopupclick={showcom}
+                urlpath={window.location.href} />
 
-            <CertificateNasscom />
+            <CertificateNasscom DownloadPros={<><button aria-label="DOWNLOAD PROSPECTUS" onClick={()=>{setShowcom(!showcom)}}
+                className="md:h-12 btn-site invert mr-4 no-underline d-inline-flex justify-content-center align-items-center btnlg-learn text-sm">
+                <span><i class="bi bi-download pr-1 text-lg"></i> DOWNLOAD PROSPECTUS</span>
+            </button></>}/>
 
             <NavStatic
                 containerleftbox='true'
@@ -723,7 +730,7 @@ const PgpDataScienceNasscom = (props) => {
                                         <li>LSTMs with attention mechanism</li>
                                         <li>Neural Machine Translation</li>
                                         <li>Advanced Language Models:</li>
-                                        <li>Transformers, BERT, XLNet</li> 
+                                        <li>Transformers, BERT, XLNet</li>
 
                                     </ul>
 
@@ -814,12 +821,12 @@ const PgpDataScienceNasscom = (props) => {
             <Light image={roles} />
 
             <UserformsApplication customizeheading='true'
-                    cantitle='Our'
-                    cansubtitle='Users From'
-                    cantitleheading='We Have Users For Our Data Science Program From Following Companies' />
- 
-            <Faq 
-             ques1='Q1 : What is the PGP in Data Science course from Careerera and what makes it different from individual courses?'
+                cantitle='Our'
+                cansubtitle='Users From'
+                cantitleheading='We Have Users For Our Data Science Program From Following Companies' />
+
+            <Faq
+                ques1='Q1 : What is the PGP in Data Science course from Careerera and what makes it different from individual courses?'
                 ans1='<div class="accord_body_content">
                 <p>A : Post Graduate Program in Data Science is a carefully designed learning path that has been created by some of the leading industry experts. The structure of the course curriculum has been set up in a way that even a complete beginner to Data Science will be able to follow the course progression and understand all the course materials clearly. Our world-class instructors will ensure that you become a master of Data Science by the time you complete the course.</p>
 
@@ -919,7 +926,7 @@ easier for working professionals to attend the sessions on one hand while balanc
 their work on the other.</li>
                 </ul>
 
-              </div>' 
+              </div>'
             />
 
             <Blog
@@ -944,7 +951,7 @@ their work on the other.</li>
             />
             <Testimonial title1="STUDENT'S"
                 title2="Review" />
- 
+
         </div>
     )
 }
