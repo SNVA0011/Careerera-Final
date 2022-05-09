@@ -3,6 +3,7 @@ import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router'
 import { base } from '../../Base'
+import { world_citys } from "../../Factory/PhpApi";
 
 const CityFooter = (props) => {
   const [data, setdata] = useState([])
@@ -11,7 +12,7 @@ const CityFooter = (props) => {
   async function CallApi() {
    await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": world_citys+props.id }),
+      body: JSON.stringify({ "apiurl": world_citys +props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

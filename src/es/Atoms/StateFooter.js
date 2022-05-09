@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
 import { Link } from "react-router-dom"; 
 import { base } from '../../Base'
+import { world_state } from "../../Factory/PhpApi";
 
 
 const StateFooter = (props) => {
@@ -14,7 +15,7 @@ const StateFooter = (props) => {
 
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": world_state+props.id }),
+      body: JSON.stringify({ "apiurl": world_state + props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },

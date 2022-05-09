@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { useParams } from 'react-router'
 import NotFound from './NotFound'
 import { base } from '../../Base'
-
+import { ar_blog_list } from "../../Factory/PhpApi";
 
 const BlogArabic = () => { 
     const pageblgid = useParams();

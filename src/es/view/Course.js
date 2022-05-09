@@ -6,7 +6,7 @@ import fun from '../../Images/fun4.gif'
 import { Helmet } from 'react-helmet'
 import NotFound from './NotFound'
 import { base } from '../../Base'
-
+import { CategoryPage } from "../../Factory/PhpApi";
 
 const Course = () => {
     const [Catfinal, Catsetfinal] = useState([])

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Accordion from 'react-bootstrap/Accordion'
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import { base } from '../../Base'
+import { city1 } from "../../Factory/PhpApi";
 
 
 const CityFooterCourse = (props) => {
@@ -13,14 +14,14 @@ const CityFooterCourse = (props) => {
   async function CallApi() {
     await fetch(base, {
       method: 'POST',
-      body: JSON.stringify({ "apiurl": city1+props.title.replace(/\s/g, '-')+"&state="+props.id2+"&county="+props.id }),
+      body: JSON.stringify({ "apiurl": city1 + props.title.replace(/\s/g, '-') + "&state=" + props.id2 + "&county=" + props.id }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     }, []).then((response) => response.json()).then((json) => setdata(json.cityList)).catch((error) => {
-      setdata(''); 
-  });
-      
+      setdata('');
+    });
+
 
     setload(true)
   }
@@ -34,19 +35,19 @@ const CityFooterCourse = (props) => {
 
   return (
     <>
-      {load?<div className='our_faq_sec custom_locationall scroll-spbx'>
+      {load ? <div className='our_faq_sec custom_locationall scroll-spbx'>
         <div className='container py-16'>
 
           <div className="pt-1">
             <Accordion>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                <span className="capitalize" dangerouslySetInnerHTML={{__html: props.title}}></span>, este curso y el lote también están disponibles en otras ubicaciones <div className="btn-site invert ml-3"><span>Vista</span></div></Accordion.Header>
+                  <span className="capitalize" dangerouslySetInnerHTML={{ __html: props.title }}></span>, este curso y el lote también están disponibles en otras ubicaciones <div className="btn-site invert ml-3"><span>Vista</span></div></Accordion.Header>
                 <Accordion.Body>
                   <ul className='list-disc text-base row'>
                     {data?.length > 0 && data.map((items, i) => (
                       <>
-                        <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={'/es/'+items.url}>{items.city}</Link></li>
+                        <li className='col-xxl-3 col-lg-6 col-12' key={i}><Link to={'/es/' + items.url}>{items.city}</Link></li>
                       </>
                     ))}
 
@@ -57,7 +58,7 @@ const CityFooterCourse = (props) => {
             </Accordion>
           </div>
         </div>
-      </div>:"Loading"}
+      </div> : "Loading"}
     </>
   )
 }

@@ -452,9 +452,8 @@ const MasterCountry = () => {
                                                             <i className="bi bi-file-earmark-text-fill mr-2 text-blue-400" />
                                                             {item.Unit_num}
                                                         </div>
-                                                        <div className="flex-grow-1 font-semibold mt-2 mt-md-0 snochap-placeholder">
-                                                            {item.Unit_Name}
-                                                        </div>
+                                                        <div className="flex-grow-1 font-semibold mt-2 mt-md-0 snochap-placeholder" dangerouslySetInnerHTML={{__html: item.Unit_Name}}/>
+
                                                     </div>
                                                 </div>
                                             </div>

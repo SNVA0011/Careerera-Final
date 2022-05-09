@@ -21,8 +21,7 @@ import Form from 'react-bootstrap/Form'
 import { Context, Provider } from "../Api";
 import { Helmet } from 'react-helmet' 
 import { base } from '../../Base'
-import { HomepageCounter } from '../../Factory/PhpApi';
-
+import { HomepageCounter, Eventslist1 } from '../../Factory/PhpApi'; 
 
 export default function Mocktest() {
 
@@ -75,7 +74,7 @@ export default function Mocktest() {
     async function Eventslist() {
         await fetch(base, {
             method: 'POST',
-            body: JSON.stringify({ "apiurl": Eventslist }),
+            body: JSON.stringify({ "apiurl": Eventslist1 }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
