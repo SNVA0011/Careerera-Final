@@ -62,8 +62,7 @@ const AppSpanish = (props) => {
         ['info', 'warn', 'error', 'assert', 'clear', 'count', 'debug', 'dir', 'dirxml',
             'exception', 'group', 'groupCollapsed', 'groupEnd', 'log',
             'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-            'timeline', 'timelineEnd', 'timeStamp', 'trace',
-        ].forEach((method) => {
+            'timeline', 'timelineEnd', 'timeStamp', 'trace'].forEach((method) => {
             window.console[method] = noop
         });  
     }
